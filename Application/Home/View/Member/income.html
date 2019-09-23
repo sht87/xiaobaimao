@@ -1,0 +1,113 @@
+		<include file="Layout/header"/>
+		<link rel="stylesheet" href="__PUBLIC__/css/dropload.css" />
+		<style>
+			.weui-navbar:after{
+				border-bottom: none;
+			}
+			.weui-navbar__item:after{
+				
+			}
+			.weui-navbar__item{
+				margin: 10px 0;
+				padding: 0;
+			}
+		</style>
+		<header class="header" >
+			<a href="{:U('Member/wallet')}" class="go_left"></a>
+			<div class="tab_income">
+				<a href="<?php echo U('Member/wdpromot');?>" >推广收入</a>
+				<a href="{:U('Member/income')}" class="cur" >会员收入</a>
+				<div class=""></div>
+			</div> 
+		</header> 
+		<div style="height: 50px;"></div>  
+		<!----> 
+		<div class="weui-tab">
+		  <div class="weui-navbar" style="background:#fff; height: 45px;">
+		    <a class="weui-navbar__item weui-bar__item&#45;&#45;on" href="#tab1">
+		      推荐会员
+		    </a>
+		    <!--<a class="weui-navbar__item weui-bar__item&#45;&#45;on" href="#tab2">-->
+		      <!--二级会员-->
+		    <!--</a>-->
+		  </div> 
+		 
+		<!---->
+
+
+			<div class="weui-tab__bd" style="padding-top: 55px;">
+				<div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+					<!--一级会员-->
+					<article class="khfxWarp" style="padding-bottom:60px;">
+						<div class="weui-panel weui-panel_access">
+
+						</div>
+					</article>
+				</div>
+		    	<!--一级会员 end--> 
+		    </div>
+		</div>
+		</div>
+		<!--下两级会员 -->
+		<!--下两级会员 END -->
+		<include file="Layout/footer"/>
+		<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/js/dropload.js"></script>
+		<script type="text/javascript">
+			//加载更多推荐会员
+			$(function () {
+				var current_page=0;
+				// dropload
+				var dropload = $('.khfxWarp').dropload({
+					scrollArea: window,
+					loadDownFn: function (me) {
+
+						$.ajax({
+							type: 'POST',
+							url: "{:U('Member/incomedata')}",
+							data:"pages="+current_page,
+							dataType: 'json',
+							success: function(data){
+								var result = '';
+								if(!data.result){
+									me.lock();
+									me.noData();
+									me.resetload();
+								}else{
+									result='';
+									for(var i = 0; i < data.message.length; i++) {
+										result+='<div class="weui-panel__bd">'
+												+'<div class="weui-media-box weui-media-box_appmsg">'
+												+'<div class="weui-media-box__hd" style="width: 54px; height: 54px;">'
+												+'<img class="weui-media-box__thumb" src="__PUBLIC__/images/icon_touxiang.png" style="width: 54px; height: 54px;">'
+												+'</div>'
+												+'<div class="weui-media-box__bd">'
+												+'<h4 class="weui-media-box__title">手机号码：'+data.message[i].Mobile.replace(/(\d{3})\d{4}(\d{4})/,'$1****$2')+'</h4>'
+												+'<div style="color:#b0b0b0;">'
+												+'<span class="fl icon_time">'+data.message[i].UpdateTime+'</span>'
+												+'<span class="fr">佣金: <label style="color:#ff9600;">+'+data.message[i].Amount+'</label></span>'
+												+'<div class="clear"></div>'
+												+'</div>'
+												+'</div>'
+												+'</div>'
+												+'</div>'
+									}
+
+									setTimeout(function(){
+										$('.weui-panel').append(result);
+										current_page++;
+										me.resetload();
+									},0);
+								}
+							},
+							error: function(xhr, type){
+								XB.Tip('加载数据出错');
+								// 即使加载出错，也得重置
+								me.lock();
+								me.noData();
+							}
+						});
+					}
+				});
+			});
+		</script>

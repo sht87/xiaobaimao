@@ -1,0 +1,128 @@
+<include file="Shared:Header" />
+<body class="Bodybg">
+    
+<form id="FF">
+    <div class="tools" id="tools">
+        {:W('RolePerm/RolePermTop')}
+    </div>
+    <div class="search" id="search">
+        <table border="0" id="SearchTable" class="SearchTable" cellpadding="3">
+            <thead>
+                <tr>
+                    <td width="70" align="right">产品编码：</td>
+                    <td width="180">
+                        <input id="GoodsNo" name="GoodsNo" type="text" />
+                    </td>
+                    <td width="70" align="right">产品类型：</td>
+                    <td width="180">
+                        <select id="Itype" name="Itype">
+                            <option value="-5">全部</option>
+                            <option value="1">平台网贷</option>
+                            <option value="2">信用卡贷</option>
+                        </select>
+                    </td>
+                    <td width="70" align="right">记录id：</td>
+                    <td width="200">
+                        <input id="Recordid" name="Recordid" type="text" />
+                    </td>
+                    <td>
+                        <input id="btnSearch" onclick="$.XB.search();" type="button" value="查 看">
+                    </td>
+                    <td>
+                        <input id="MoreSearch" onclick="$.XB.moresearch()" type="button" value="更多条件">
+                    </td>
+                </tr>
+            </thead>
+            <tbody id="stbody">
+                <tr>
+                    <td width="70" align="right">推荐会员：</td>
+                    <td width="180">
+                        <input id="UserName" name="UserName" type="text" />
+                    </td>
+                    <td width="70" align="right">姓名：</td>
+                    <td width="100">
+                        <input id="TrueName" name="TrueName" type="text" />
+                    </td>
+                    <td width="70" align="right">身份证号：</td>
+                    <td width="100">
+                        <input id="IDCard" name="IDCard" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td width="70" align="right">手机号码：</td>
+                    <td width="100">
+                        <input id="Mobile" name="Mobile" type="text" />
+                    </td>
+                    <td width="70" align="right">佣金模式：</td>
+                    <td width="180">
+                        <select id="Yjtype" name="Yjtype">
+                            <option value="-5">全部</option>
+                            <option value="1">按比例</option>
+                            <option value="2">按金额</option>
+                        </select>
+                    </td>
+                    <td width="70" align="right">变更日期：</td>
+                    <td width="200">
+                        <input id="StartTime" name="StartTime" type="text" class="easyui-datebox" data-options="width:93,editable:false" />
+                        -
+                        <input id="EndTime" name="EndTime" type="text" class="easyui-datebox" data-options="width:93,editable:false" />
+                    </td>
+                </tr>
+                <tr>
+                    <td width="70" align="right">匹配结果：</td>
+                    <td width="180">
+                        <select id="Status" name="Status">
+                            <option value="-5">全部</option>
+                            <option value="0">未匹配</option>
+                            <option value="1">匹配上了</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="TabelContent" class="TabelContent">
+        <table id="DataList"></table>
+    </div>
+</form>
+
+<script type="text/javascript">
+    var frozenColumns = [
+        { field: 'ID', checkbox: true },
+        { field: 'Recordid', title: '记录id', width: 40  },
+        { field: 'ItemName', title: '产品名称', width: 120  },
+        { field: 'GoodsNo', title: '产品编码', width: 120  },
+        { field: 'Itype', title: '产品类型', width: 60},
+    ];
+    var columns = [
+        { field: 'TrueName', title: '姓名', width: 70  },
+        { field: 'IDCard', title: '身份证号', width: 150 },
+        { field: 'Mobile', title: '手机号码', width: 90 },
+        { field: 'UserID', title: '推荐会员ID', width: 70  },
+        { field: 'UserName', title: '推荐会员名字', width: 80 },
+        { field: 'Yjtype', title: '佣金模式', width: 60 },
+        { field: 'BonusRate', title: '奖金点数', width: 60 },
+        { field: 'Ymoney', title: '奖金金额', width: 60 },
+        { field: 'Addtime', title: '添加时间', width: 120 },
+
+        { field: 'Status', title: '与放款记录匹配结果', width: 120 },
+        { field: 'ListID', title: '放款记录id', width: 70 },
+        { field: 'Money', title: '放款金额', width: 70  },
+        { field: 'Isfan', title: '是否返推荐奖金', width: 90 },
+        { field: 'Bonus', title: '推荐奖金', width: 70 },
+        { field: 'PipeiTime', title: '匹配时间', width: 120 },
+
+		{ field: 'applyStatus', title: '与申请记录匹配结果', width: 120 },
+        { field: 'IsApplyfan', title: '是否返推荐奖金', width: 90 },
+        { field: 'applyBonus', title: '推荐奖金', width: 70 },
+        // { field: 'OperatorID', title: '更新人', width: 100},
+        // { field: 'UpdateTime', title: '更新时间', width: 120 ,sortable:true}
+
+    ];
+    $.XB.datagrid({ "frozenColumns": frozenColumns, "columns": columns});
+    $.XB.enter();
+</script>
+    {:W('RolePerm/RolePermBottom')}
+</body>
+<include file="Shared:Footer" />
+

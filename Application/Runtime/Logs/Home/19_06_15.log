@@ -1,0 +1,159 @@
+[ 2019-06-15T23:06:32+08:00 ] 112.9.22.233 /remind/1006.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+ERR: 无法加载控制器:Remind
+
+[ 2019-06-15T23:07:41+08:00 ] 112.9.22.233 /remind/1006.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+ERR: 无法加载控制器:Remind
+
+[ 2019-06-15T23:07:42+08:00 ] 112.9.22.233 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2019-06-15T23:07:42+08:00 ] 112.9.22.233 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2019-06-15T23:07:44+08:00 ] 112.9.22.233 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2019-06-15T23:07:44+08:00 ] 112.9.22.233 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2019-06-15T23:07:44+08:00 ] 112.9.22.233 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2019-06-15T23:07:44+08:00 ] 112.9.22.233 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2019-06-15T23:07:44+08:00 ] 112.9.22.233 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2019-06-15T23:07:45+08:00 ] 112.9.22.233 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2019-06-15T23:07:58+08:00 ] 112.9.22.233 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+ERR: 1146:Table 'xbm.xb_sys_ipaddress' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `xb_sys_ipaddress`
+ERR: 1146:Table 'xbm.xb_sys_ipaddress' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `xb_sys_ipaddress`
+
+[ 2019-06-15T23:08:05+08:00 ] 112.9.22.233 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+ERR: 1146:Table 'xbm.xb_sys_ipaddress' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `xb_sys_ipaddress`
+ERR: 1146:Table 'xbm.xb_sys_ipaddress' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `xb_sys_ipaddress`
+
+[ 2019-06-15T23:08:06+08:00 ] 112.9.22.233 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+ERR: 1146:Table 'xbm.xb_sys_ipaddress' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `xb_sys_ipaddress`
+ERR: 1146:Table 'xbm.xb_sys_ipaddress' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `xb_sys_ipaddress`
+

@@ -1,0 +1,441 @@
+[ 2019-06-16T00:01:27+08:00 ] 112.9.22.233 /api.php/Home/home/version?client=ios&package=com.xbm.app&upload=upload&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+SQL: SHOW COLUMNS FROM `xb_version` [ RunTime:0.0005s ]
+SQL: SELECT `ID`,`Ver`,`isForced`,`Url`,`Updates` FROM `xb_version` WHERE `Client` = 'ios' AND `IsDefault` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-06-16T00:01:36+08:00 ] 112.9.22.233 /api.php/core/tool/getcode?Mobile=15092216493&client=ios&code=1234&package=com.xbm.app&type=5&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_code` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_code` WHERE `Name` = '15092216493' ORDER BY UpdateTime Asc LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `xb_mem_info` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xb_mem_info` WHERE `Mobile` = '15092216493' AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0372s ]
+SQL: DELETE FROM `xb_code` WHERE `ID` = 81207 [ RunTime:0.0040s ]
+SQL: INSERT INTO `xb_code` (`Name`,`Code`,`UpdateTime`) VALUES ('15092216493','9327','2019-06-16 00:01:36') [ RunTime:0.0038s ]
+
+[ 2019-06-16T00:02:32+08:00 ] 112.9.22.233 /api.php/Home/home/version?client=ios&package=com.xbm.app&upload=upload&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+SQL: SHOW COLUMNS FROM `xb_version` [ RunTime:0.0005s ]
+SQL: SELECT `ID`,`Ver`,`isForced`,`Url`,`Updates` FROM `xb_version` WHERE `Client` = 'ios' AND `IsDefault` = 1 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-06-16T00:03:03+08:00 ] 112.9.22.233 /api.php/Home/home/version?client=ios&package=com.xbm.app&upload=upload&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `xb_version` [ RunTime:0.0005s ]
+SQL: SELECT `ID`,`Ver`,`isForced`,`Url`,`Updates` FROM `xb_version` WHERE `Client` = 'ios' AND `IsDefault` = 1 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-06-16T00:03:30+08:00 ] 112.9.22.233 /api.php/Home/home/version?client=ios&package=com.xbm.app&upload=upload&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `xb_version` [ RunTime:0.0005s ]
+SQL: SELECT `ID`,`Ver`,`isForced`,`Url`,`Updates` FROM `xb_version` WHERE `Client` = 'ios' AND `IsDefault` = 1 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-06-16T10:12:44+08:00 ] 112.9.22.187 /api.php/center/Register/getxy?client=android&ver=1.0.0&package=com.xbm.app
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `xb_sys_simplepage` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_simplepage` WHERE `ID` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_sys_simplepage` WHERE `ID` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `xb_sys_simplepage` WHERE `ID` = 9 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-06-16T10:13:07+08:00 ] 112.9.22.187 /api.php/core/public/checkimgcode?client=android&ver=1.0.0&package=com.xbm.app
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+
+[ 2019-06-16T10:13:08+08:00 ] 112.9.22.187 /api.php/Home/T/getImgCode?a=1560651185155
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000386s ]
+
+[ 2019-06-16T10:13:13+08:00 ] 112.9.22.187 /api.php/core/tool/getcode?client=android&ver=1.0.0&package=com.xbm.app&Mobile=15762311024&type=1&code=3038
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `xb_code` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_code` WHERE `Name` = '15762311024' ORDER BY UpdateTime Asc LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `xb_mem_info` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xb_mem_info` WHERE `Mobile` = '15762311024' AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-06-16T10:13:48+08:00 ] 112.9.22.187 /api.php/core/public/checkimgcode?client=android&ver=1.0.0&package=com.xbm.app
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+
+[ 2019-06-16T10:13:48+08:00 ] 112.9.22.187 /api.php/Home/T/getImgCode?a=1560651225758
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2019-06-16T10:13:54+08:00 ] 112.9.22.187 /api.php/core/tool/getcode?client=android&ver=1.0.0&package=com.xbm.app&Mobile=15092216493&type=1&code=1578
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `xb_code` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_code` WHERE `Name` = '15092216493' ORDER BY UpdateTime Asc LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `xb_mem_info` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xb_mem_info` WHERE `Mobile` = '15092216493' AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-06-16T10:16:24+08:00 ] 112.9.22.187 /api.php/center/Register/getxy?client=android&ver=1.0.0&package=com.xbm.app
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `xb_sys_simplepage` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_simplepage` WHERE `ID` = 5 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_simplepage` WHERE `ID` = 8 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_simplepage` WHERE `ID` = 9 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-06-16T10:16:31+08:00 ] 112.9.22.187 /api.php/core/public/checkimgcode?client=android&ver=1.0.0&package=com.xbm.app
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+
+[ 2019-06-16T10:16:32+08:00 ] 112.9.22.187 /api.php/core/tool/getcode?client=android&ver=1.0.0&package=com.xbm.app&Mobile=15092216493&type=5&code=1234
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `xb_code` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_code` WHERE `Name` = '15092216493' ORDER BY UpdateTime Asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_mem_info` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xb_mem_info` WHERE `Mobile` = '15092216493' AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-06-16T10:16:38+08:00 ] 112.9.22.187 /api.php/core/public/checkimgcode?client=android&ver=1.0.0&package=com.xbm.app
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+
+[ 2019-06-16T10:16:38+08:00 ] 112.9.22.187 /api.php/core/tool/getcode?client=android&ver=1.0.0&package=com.xbm.app&Mobile=15092216493&type=5&code=1234
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `xb_code` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_code` WHERE `Name` = '15092216493' ORDER BY UpdateTime Asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_mem_info` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xb_mem_info` WHERE `Mobile` = '15092216493' AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+

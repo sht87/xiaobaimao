@@ -1,0 +1,1567 @@
+[ 2019-07-19T09:14:25+08:00 ] 47.92.5.11 /api.php/center/register/getxy?client=android&ver=1.0.0&package=com.xbm.app
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `xb_sys_simplepage` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_simplepage` WHERE `ID` = 5 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_simplepage` WHERE `ID` = 8 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_simplepage` WHERE `ID` = 9 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-07-19T10:07:09+08:00 ] 114.91.121.218 /api.php/center/Register/getxy?client=android&ver=1.0.0&package=com.xbm.app
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `xb_sys_simplepage` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_simplepage` WHERE `ID` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `xb_sys_simplepage` WHERE `ID` = 8 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_simplepage` WHERE `ID` = 9 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-07-19T10:08:33+08:00 ] 114.91.121.218 /api.php/core/public/checkimgcode?client=android&ver=1.0.0&package=com.xbm.app
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+
+[ 2019-07-19T10:08:33+08:00 ] 114.91.121.218 /api.php/core/tool/getcode?client=android&ver=1.0.0&package=com.xbm.app&Mobile=13128754624&type=5&code=1234
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `xb_code` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_code` WHERE `Name` = '13128754624' ORDER BY UpdateTime Asc LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `xb_mem_info` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xb_mem_info` WHERE `Mobile` = '13128754624' AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: INSERT INTO `xb_code` (`Name`,`Code`,`UpdateTime`) VALUES ('13128754624','3736','2019-07-19 10:08:33') [ RunTime:0.0045s ]
+
+[ 2019-07-19T10:08:46+08:00 ] 114.91.121.218 /api.php/core/tool/timestamp?client=android&package=com.xbm.app&ver=1.0.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `xb_sys_timestamp` [ RunTime:0.0004s ]
+SQL: INSERT INTO `xb_sys_timestamp` (`Time`,`Val`) VALUES ('1563502126','f85d50cf265a02ed201e89a2ea580b') [ RunTime:0.0038s ]
+
+[ 2019-07-19T10:08:46+08:00 ] 114.91.121.218 /api.php/center/member/login?client=android&package=com.xbm.app&ver=1.0.0&mobile=13128754624&token=90cbc7d77c10231aaee936aa0cd126893113c542cde848722acf2fbf8491&ticksid=38166&ticks=f85d50cf265a02ed201e89a2ea580b&DeviceToken=&loginType=1&code=3736
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `xb_sys_timestamp` [ RunTime:0.0004s ]
+SQL: SELECT `Val` FROM `xb_sys_timestamp` WHERE `ID` = 38166 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xb_mem_info` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_mem_info` WHERE `Mobile` = '13128754624' AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: INSERT INTO `xb_mem_info` (`TrueName`,`UserName`,`Mobile`,`Tjcode`,`Password`,`RegTime`,`Mtype`,`PhoneType`,`Status`) VALUES ('4624','13128754624','13128754624','13128754624','afdd0b4ad2ec172c586e2150770fbf9e','2019-07-19 10:08:46','1','android','1') [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `xb_code` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_code` WHERE `Name` = '13128754624' AND `Code` = '3736' ORDER BY UpdateTime ASC LIMIT 1   [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: alive /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Center/MemberController.class.php 第 121 行.
+NOTIC: [8] Undefined index: TgadminID /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Center/MemberController.class.php 第 122 行.
+SQL: SHOW COLUMNS FROM `xb_tg_admin` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_tg_admin` WHERE `Status` = 1 AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_channel_statistics` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_channel_statistics` WHERE `channelName` = '渠道1' AND `createDate` = '2019-07-19' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: Token /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Center/MemberController.class.php 第 125 行.
+NOTIC: [8] Undefined index: LoginTime /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Center/MemberController.class.php 第 131 行.
+NOTIC: [8] Undefined index: LoginIP /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Center/MemberController.class.php 第 133 行.
+NOTIC: [8] Undefined index: IpCity /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Center/MemberController.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '114.91.121.218' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 385 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 386 行.
+SQL: UPDATE `xb_mem_info` SET `LoginClient`='android',`LastLoginTime`=NULL,`LoginTime`='2019-07-19 10:08:46',`LastLoginIP`=NULL,`LoginIP`='114.91.121.218',`LastIpCity`=NULL,`IpCity`=NULL,`Token`='90cbc7d77c10231aaee936aa0cd126b0eb577d62602a9ec9ed3bdde472cb',`KEY`='XBcbc7d77c10231aaee936aa0cd126f6',`IV`='XBeaa96dfc76a90e',`PhoneType`='android',`alive`='1' WHERE `ID` = 41168 [ RunTime:0.0032s ]
+SQL: DELETE FROM `xb_code` WHERE `Name` = '13128754624' [ RunTime:0.0045s ]
+
+[ 2019-07-19T10:08:46+08:00 ] 114.91.121.218 /api.php/home/home/tanimg?client=android&ver=1.0.0&package=com.xbm.app
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `xb_sys_basicinfo` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `xb_sys_basicinfo` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-07-19T10:08:46+08:00 ] 114.91.121.218 /api.php/Home/home/version?client=android&ver=1.0.0&package=com.xbm.app&upload=upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `xb_version` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Ver`,`isForced`,`Url`,`Updates` FROM `xb_version` WHERE `Client` = 'android' AND `IsDefault` = 1 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-07-19T10:08:46+08:00 ] 114.91.121.218 /api.php/home/home/ads?client=android&package=com.xbm.app&ver=1.0.0&aid=1&num=20
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `xb_sys_adcontent` [ RunTime:0.0005s ]
+SQL: SELECT `Name`,`Pic`,`Url`,`UrlType`,`SystemClass`,`SystemClassVal`,`productID` FROM `xb_sys_adcontent` WHERE `AdvertisingID` = 1 AND `Status` = 1 ORDER BY Sort asc,ID desc LIMIT 20   [ RunTime:0.0001s ]
+
+[ 2019-07-19T10:08:46+08:00 ] 114.91.121.218 /api.php/Home/News/getnewslist?client=android&package=com.xbm.app&ver=1.0.0&cid=2&page=0&rows=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `xb_sys_contentmanagement` [ RunTime:0.0005s ]
+SQL: SELECT `ID`,`Title`,`AddTime` FROM `xb_sys_contentmanagement` WHERE `CategoriesID` = 2 AND `IsPublish` = 1 ORDER BY Sort asc,ID desc LIMIT 0,4   [ RunTime:0.0001s ]
+
+[ 2019-07-19T10:08:46+08:00 ] 114.91.121.218 /api.php/home/home/getcate?client=android&package=com.xbm.app&ver=1.0.0&aid=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: rows /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Home/HomeController.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0005s ]
+SQL: SELECT `ID`,`Name`,`Imageurl` FROM `xb_items_category` WHERE `ParentID` = 0 AND `IsRec` = 1 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID desc LIMIT 8   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '114.91.121.218' LIMIT 1   [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+
+[ 2019-07-19T10:08:46+08:00 ] 114.91.121.218 /api.php/home/home/getitems?client=android&package=com.xbm.app&ver=1.0.0&isrec=1&rows=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0009s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '114.91.121.218' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Home/HomeController.class.php 第 248 行.
+SQL: SELECT `ID`,`Name`,`Logurl`,`AppNumbs`,`linkType`,`Openurl` FROM `xb_items` WHERE `IsRec` = 1 AND `Itype` = 1 AND `IsDel` = 0 AND `Status` = '1' AND `Showtype` IN ('1','3') AND `Isshow` = '1' ORDER BY Sort asc,ID desc LIMIT 4   [ RunTime:0.0001s ]
+
+[ 2019-07-19T10:08:46+08:00 ] 114.91.121.218 /api.php/home/home/getitems?client=android&package=com.xbm.app&ver=1.0.0&isrec=0&rows=20
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0009s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '114.91.121.218' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Home/HomeController.class.php 第 265 行.
+SQL: SELECT a.ID,a.Name,a.Logurl,a.AppNumbs,a.Intro,c.Name as Jkdays,a.DayfeeRate,b.Name as TypeName,a.linkType,a.Openurl FROM xb_items a left join xb_items_moneytype b on b.ID=a.MoneytypeID left join xb_items_jktimes c on a.JktimesID=c.ID  WHERE a.IsHot = 1 AND a.Itype = 1 AND a.IsDel = 0 AND a.Status = '1' AND a.Showtype IN ('1','3') AND a.Isshow = '1' ORDER BY a.Sort asc,a.ID desc LIMIT 20   [ RunTime:0.0005s ]
+
+[ 2019-07-19T10:08:46+08:00 ] 114.91.121.218 /api.php/center/member/isnoreadmsg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `xb_mem_message` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_mem_message` WHERE (  `UserID` IN (0,'41168') AND `Status` = '1' ) AND `Type` = 0 ORDER BY SendTime desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_mem_message` WHERE (  `UserID` IN (0,'41168') AND `Status` = '1' ) AND `Type` = 1 ORDER BY SendTime desc  [ RunTime:0.0010s ]
+
+[ 2019-07-19T10:08:46+08:00 ] 114.91.121.218 /api.php/center/member/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `xb_mem_info` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `xb_mem_info` WHERE `ID` = 41168 AND `Status` = 1 AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `xb_mem_money` [ RunTime:0.0020s ]
+SQL: SELECT `Money` FROM `xb_mem_money` WHERE `Uid` = 41168 AND `Type` = 0 AND `IsAduit` = 2  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xb_mem_balances` [ RunTime:0.0004s ]
+SQL: SELECT `Amount` FROM `xb_mem_balances` WHERE `UserID` = 41168 AND `Type` = 0 AND `SruType` <> '5'  [ RunTime:0.0002s ]
+
+[ 2019-07-19T10:08:46+08:00 ] 114.91.121.218 /api.php/center/member/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `xb_mem_info` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_mem_info` WHERE `ID` = 41168 AND `Status` = 1 AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xb_mem_money` [ RunTime:0.0005s ]
+SQL: SELECT `Money` FROM `xb_mem_money` WHERE `Uid` = 41168 AND `Type` = 0 AND `IsAduit` = 2  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_mem_balances` [ RunTime:0.0004s ]
+SQL: SELECT `Amount` FROM `xb_mem_balances` WHERE `UserID` = 41168 AND `Type` = 0 AND `SruType` <> '5'  [ RunTime:0.0001s ]
+
+[ 2019-07-19T10:08:46+08:00 ] 114.91.121.218 /api.php/center/member/isnoreadmsg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `xb_mem_message` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_mem_message` WHERE (  `UserID` IN (0,'41168') AND `Status` = '1' ) AND `Type` = 0 ORDER BY SendTime desc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_mem_message` WHERE (  `UserID` IN (0,'41168') AND `Status` = '1' ) AND `Type` = 1 ORDER BY SendTime desc  [ RunTime:0.0001s ]
+
+[ 2019-07-19T10:08:46+08:00 ] 114.91.121.218 /api.php/center/member/isnoreadmsg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `xb_mem_message` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_mem_message` WHERE (  `UserID` IN (0,'41168') AND `Status` = '1' ) AND `Type` = 0 ORDER BY SendTime desc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_mem_message` WHERE (  `UserID` IN (0,'41168') AND `Status` = '1' ) AND `Type` = 1 ORDER BY SendTime desc  [ RunTime:0.0001s ]
+
+[ 2019-07-19T10:08:50+08:00 ] 114.91.121.218 /api.php/center/member/modifyAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+NOTIC: [8] Undefined index: HTTP_ACCEPT /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Controller/RestController.class.php 第 118 行.
+
+[ 2019-07-19T10:09:51+08:00 ] 117.136.38.39 /api.php/Home/home/version?client=ios&package=com.xbm.app&upload=upload&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `xb_version` [ RunTime:0.0005s ]
+SQL: SELECT `ID`,`Ver`,`isForced`,`Url`,`Updates` FROM `xb_version` WHERE `Client` = 'ios' AND `IsDefault` = 1 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-07-19T10:13:52+08:00 ] 117.136.38.39 /api.php/Home/home/version?client=ios&package=com.xbm.app&upload=upload&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `xb_version` [ RunTime:0.0005s ]
+SQL: SELECT `ID`,`Ver`,`isForced`,`Url`,`Updates` FROM `xb_version` WHERE `Client` = 'ios' AND `IsDefault` = 1 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-07-19T10:14:06+08:00 ] 117.136.38.39 /api.php/core/tool/getcode?Mobile=13716431042&client=ios&code=1234&package=com.xbm.app&type=5&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_code` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_code` WHERE `Name` = '13716431042' ORDER BY UpdateTime Asc LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `xb_mem_info` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xb_mem_info` WHERE `Mobile` = '13716431042' AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `xb_code` (`Name`,`Code`,`UpdateTime`) VALUES ('13716431042','8099','2019-07-19 10:14:06') [ RunTime:0.0045s ]
+
+[ 2019-07-19T10:14:16+08:00 ] 117.136.38.39 /api.php/Home/home/version?client=ios&package=com.xbm.app&upload=upload&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `xb_version` [ RunTime:0.0005s ]
+SQL: SELECT `ID`,`Ver`,`isForced`,`Url`,`Updates` FROM `xb_version` WHERE `Client` = 'ios' AND `IsDefault` = 1 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-07-19T10:14:20+08:00 ] 117.136.38.39 /api.php/core/tool/timestamp?client=ios&package=com.xbm.app&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_sys_timestamp` [ RunTime:0.0004s ]
+SQL: INSERT INTO `xb_sys_timestamp` (`Time`,`Val`) VALUES ('1563502460','ce7378442fff91415f4f9748f9e8c2') [ RunTime:0.0039s ]
+
+[ 2019-07-19T10:14:20+08:00 ] 117.136.38.39 /api.php/center/member/login?DeviceToken=af43700e96f17be8c828af6882d30c460c43aad097299ced05f8b77902fc068a&client=ios&code=8099&loginType=1&mobile=13716431042&package=com.xbm.app&ticks=ce7378442fff91415f4f9748f9e8c2&ticksid=38167&token=2d64636e019962ecfe5fdd9dd768a3303629623df905e380cc8a06795601&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_sys_timestamp` [ RunTime:0.0004s ]
+SQL: SELECT `Val` FROM `xb_sys_timestamp` WHERE `ID` = 38167 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xb_mem_info` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_mem_info` WHERE `Mobile` = '13716431042' AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_code` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_code` WHERE `Name` = '13716431042' AND `Code` = '8099' ORDER BY UpdateTime ASC LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '117.136.38.39' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 385 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 386 行.
+SQL: UPDATE `xb_mem_info` SET `LoginClient`='ios',`LastLoginTime`='2019-07-17 15:15:25',`LoginTime`='2019-07-19 10:14:20',`LastLoginIP`='117.136.38.41',`LoginIP`='117.136.38.39',`LastIpCity`='中国北京市朝阳区朝阳路慈云寺桥东北角',`IpCity`=NULL,`Token`='2d64636e019962ecfe5fdd9dd768a30d5e82918beccb9b3a5702c4e2e934',`KEY`='XB64636e019962ecfe5fdd9dd768a398',`IV`='XB3d34b32d32158e',`PhoneType`='ios',`alive`='1',`DeviceToken`='af43700e96f17be8c828af6882d30c460c43aad097299ced05f8b77902fc068a' WHERE `ID` = 40968 [ RunTime:0.0040s ]
+SQL: DELETE FROM `xb_code` WHERE `Name` = '13716431042' [ RunTime:0.0047s ]
+
+[ 2019-07-19T10:14:20+08:00 ] 117.136.38.39 /api.php/home/home/tanimg?client=ios&package=com.xbm.app&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_sys_basicinfo` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `xb_sys_basicinfo` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-07-19T10:14:21+08:00 ] 117.136.38.39 /api.php/home/home/ads?aid=1&client=ios&num=10&package=com.xbm.app&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_sys_adcontent` [ RunTime:0.0006s ]
+SQL: SELECT `Name`,`Pic`,`Url`,`UrlType`,`SystemClass`,`SystemClassVal`,`productID` FROM `xb_sys_adcontent` WHERE `AdvertisingID` = 1 AND `Status` = 1 ORDER BY Sort asc,ID desc LIMIT 10   [ RunTime:0.0001s ]
+
+[ 2019-07-19T10:14:21+08:00 ] 117.136.38.39 /api.php/Home/home/getnotice?client=ios&package=com.xbm.app&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_sys_contentmanagement` [ RunTime:0.0005s ]
+SQL: SELECT `Title` FROM `xb_sys_contentmanagement` WHERE `CategoriesID` = 2 ORDER BY Sort asc,ID desc LIMIT 3   [ RunTime:0.0001s ]
+
+[ 2019-07-19T10:14:21+08:00 ] 117.136.38.39 /api.php/center/member/isnoreadmsg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.025470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.025519s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_mem_message` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_mem_message` WHERE (  `UserID` IN (0,'40968') AND `Status` = '1' ) AND `Type` = 0 ORDER BY SendTime desc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_mem_message` WHERE (  `UserID` IN (0,'40968') AND `Status` = '1' ) AND `Type` = 1 ORDER BY SendTime desc  [ RunTime:0.0001s ]
+
+[ 2019-07-19T10:14:21+08:00 ] 117.136.38.39 /api.php/Home/home/getitems?client=ios&isrec=0&package=com.xbm.app&rows=100&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '117.136.38.39' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Home/HomeController.class.php 第 265 行.
+SQL: SELECT a.ID,a.Name,a.Logurl,a.AppNumbs,a.Intro,c.Name as Jkdays,a.DayfeeRate,b.Name as TypeName,a.linkType,a.Openurl FROM xb_items a left join xb_items_moneytype b on b.ID=a.MoneytypeID left join xb_items_jktimes c on a.JktimesID=c.ID  WHERE a.IsHot = 1 AND a.Itype = 1 AND a.IsDel = 0 AND a.Status = '1' AND a.Showtype IN ('1','3') AND a.Isshow = '1' ORDER BY a.Sort asc,a.ID desc LIMIT 20   [ RunTime:0.0005s ]
+
+[ 2019-07-19T10:14:21+08:00 ] 117.136.38.39 /api.php/Home/home/getcate?client=ios&package=com.xbm.app&rows=8&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Name`,`Imageurl` FROM `xb_items_category` WHERE `ParentID` = 0 AND `IsRec` = 1 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID desc LIMIT 8   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '117.136.38.39' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+
+[ 2019-07-19T10:14:21+08:00 ] 117.136.38.39 /api.php/Home/home/getitems?client=ios&isrec=1&package=com.xbm.app&rows=4&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '117.136.38.39' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Home/HomeController.class.php 第 248 行.
+SQL: SELECT `ID`,`Name`,`Logurl`,`AppNumbs`,`linkType`,`Openurl` FROM `xb_items` WHERE `IsRec` = 1 AND `Itype` = 1 AND `IsDel` = 0 AND `Status` = '1' AND `Showtype` IN ('1','3') AND `Isshow` = '1' ORDER BY Sort asc,ID desc LIMIT 4   [ RunTime:0.0001s ]
+
+[ 2019-07-19T10:14:23+08:00 ] 117.136.38.39 /api.php/Home/home/version?client=ios&package=com.xbm.app&upload=upload&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `xb_version` [ RunTime:0.0005s ]
+SQL: SELECT `ID`,`Ver`,`isForced`,`Url`,`Updates` FROM `xb_version` WHERE `Client` = 'ios' AND `IsDefault` = 1 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-07-19T10:14:24+08:00 ] 117.136.38.39 /api.php/center/member/modifyAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_mem_info` [ RunTime:0.0007s ]
+SQL: UPDATE `xb_mem_info` SET `PhoneType`='ios',`LoginIP`='117.136.38.39',`IpCity`='中国北京市朝阳区朝阳路慈云寺桥东北角' WHERE `ID` = 40968 [ RunTime:0.0039s ]
+
+[ 2019-07-19T10:14:25+08:00 ] 117.136.38.39 /api.php/Home/items/getmoneytype?client=ios&package=com.xbm.app&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_items_moneytype` [ RunTime:0.0005s ]
+SQL: SELECT `ID`,`Name` FROM `xb_items_moneytype` WHERE `IsDel` = 0 AND `Status` = 1 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+
+[ 2019-07-19T10:14:25+08:00 ] 117.136.38.39 /api.php/Home/items/getjktimes?client=ios&package=com.xbm.app&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_items_jktimes` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Name` FROM `xb_items_jktimes` WHERE `IsDel` = 0 AND `Status` = 1 ORDER BY Sort asc  [ RunTime:0.0001s ]
+
+[ 2019-07-19T10:14:25+08:00 ] 117.136.38.39 /api.php/Home/items/getcate?client=ios&package=com.xbm.app&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Name` FROM `xb_items_category` WHERE `IsDel` = 0 AND `Status` = 1 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+
+[ 2019-07-19T10:14:26+08:00 ] 117.136.38.39 /api.php/Home/items/getneed?client=ios&package=com.xbm.app&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_items_needs` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Name` FROM `xb_items_needs` WHERE `IsDel` = 0 AND `Status` = 1 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+
+[ 2019-07-19T10:14:26+08:00 ] 117.136.38.39 /api.php/Home/Items/getitems?cid=0&client=ios&jkday=0&nids=0&package=com.xbm.app&page=0&rows=8&tid=0&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '117.136.38.39' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Home/ItemsController.class.php 第 72 行.
+SQL: SELECT a.ID,a.Name,a.Openurl,a.linkType,a.Logurl,a.AppNumbs,a.Intro,c.Name as Jkdays,a.DayfeeRate,b.Name as TypeName FROM xb_items a left join xb_items_moneytype b on b.ID=a.MoneytypeID left join xb_items_jktimes c on a.JktimesID=c.ID  WHERE a.Isshow = '1' AND a.Itype = 1 AND a.Showtype IN ('1','3') AND a.IsDel = 0 AND a.Status = '1' ORDER BY a.Sort asc,a.ID desc LIMIT 0,8   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: jkday /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Home/ItemsController.class.php 第 112 行.
+NOTIC: [8] Undefined variable: mtype /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Home/ItemsController.class.php 第 115 行.
+NOTIC: [8] Undefined variable: jkday /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Home/ItemsController.class.php 第 112 行.
+NOTIC: [8] Undefined variable: mtype /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Home/ItemsController.class.php 第 115 行.
+
+[ 2019-07-19T10:14:27+08:00 ] 117.136.38.39 /api.php/Home/Items/getitems?cid=0&client=ios&jkday=0&nids=0&package=com.xbm.app&page=1&rows=8&tid=0&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '117.136.38.39' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Home/ItemsController.class.php 第 72 行.
+SQL: SELECT a.ID,a.Name,a.Openurl,a.linkType,a.Logurl,a.AppNumbs,a.Intro,c.Name as Jkdays,a.DayfeeRate,b.Name as TypeName FROM xb_items a left join xb_items_moneytype b on b.ID=a.MoneytypeID left join xb_items_jktimes c on a.JktimesID=c.ID  WHERE a.Isshow = '1' AND a.Itype = 1 AND a.Showtype IN ('1','3') AND a.IsDel = 0 AND a.Status = '1' ORDER BY a.Sort asc,a.ID desc LIMIT 8,8   [ RunTime:0.0005s ]
+
+[ 2019-07-19T10:45:49+08:00 ] 117.136.38.39 /api.php/Home/home/version?client=ios&package=com.xbm.app&upload=upload&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `xb_version` [ RunTime:0.0005s ]
+SQL: SELECT `ID`,`Ver`,`isForced`,`Url`,`Updates` FROM `xb_version` WHERE `Client` = 'ios' AND `IsDefault` = 1 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-07-19T10:58:52+08:00 ] 117.136.38.39 /api.php/Home/home/version?client=ios&package=com.xbm.app&upload=upload&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `xb_version` [ RunTime:0.0005s ]
+SQL: SELECT `ID`,`Ver`,`isForced`,`Url`,`Updates` FROM `xb_version` WHERE `Client` = 'ios' AND `IsDefault` = 1 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-07-19T11:28:21+08:00 ] 117.136.38.39 /api.php/Home/home/version?client=ios&package=com.xbm.app&upload=upload&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `xb_version` [ RunTime:0.0005s ]
+SQL: SELECT `ID`,`Ver`,`isForced`,`Url`,`Updates` FROM `xb_version` WHERE `Client` = 'ios' AND `IsDefault` = 1 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-07-19T11:29:54+08:00 ] 117.136.38.39 /api.php/center/member/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_mem_info` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xb_mem_info` WHERE `ID` = 40968 AND `Status` = 1 AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xb_mem_money` [ RunTime:0.0004s ]
+SQL: SELECT `Money` FROM `xb_mem_money` WHERE `Uid` = 40968 AND `Type` = 0 AND `IsAduit` = 2  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_mem_balances` [ RunTime:0.0003s ]
+SQL: SELECT `Amount` FROM `xb_mem_balances` WHERE `UserID` = 40968 AND `Type` = 0 AND `SruType` <> '5'  [ RunTime:0.0001s ]
+
+[ 2019-07-19T11:29:55+08:00 ] 117.136.38.39 /api.php/Home/home/version?client=ios&package=com.xbm.app&upload=upload&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `xb_version` [ RunTime:0.0005s ]
+SQL: SELECT `ID`,`Ver`,`isForced`,`Url`,`Updates` FROM `xb_version` WHERE `Client` = 'ios' AND `IsDefault` = 1 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-07-19T11:29:55+08:00 ] 117.136.38.39 /api.php/home/home/tanimg?client=ios&package=com.xbm.app&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_sys_basicinfo` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `xb_sys_basicinfo` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-07-19T11:29:56+08:00 ] 117.136.38.39 /api.php/center/member/isnoreadmsg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_mem_message` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_mem_message` WHERE (  `UserID` IN (0,'40968') AND `Status` = '1' ) AND `Type` = 0 ORDER BY SendTime desc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_mem_message` WHERE (  `UserID` IN (0,'40968') AND `Status` = '1' ) AND `Type` = 1 ORDER BY SendTime desc  [ RunTime:0.0001s ]
+
+[ 2019-07-19T11:29:56+08:00 ] 117.136.38.39 /api.php/Home/home/getitems?client=ios&isrec=0&package=com.xbm.app&rows=100&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '117.136.38.39' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Home/HomeController.class.php 第 265 行.
+SQL: SELECT a.ID,a.Name,a.Logurl,a.AppNumbs,a.Intro,c.Name as Jkdays,a.DayfeeRate,b.Name as TypeName,a.linkType,a.Openurl FROM xb_items a left join xb_items_moneytype b on b.ID=a.MoneytypeID left join xb_items_jktimes c on a.JktimesID=c.ID  WHERE a.IsHot = 1 AND a.Itype = 1 AND a.IsDel = 0 AND a.Status = '1' AND a.Showtype IN ('1','3') AND a.Isshow = '1' ORDER BY a.Sort asc,a.ID desc LIMIT 20   [ RunTime:0.0005s ]
+
+[ 2019-07-19T11:29:56+08:00 ] 117.136.38.39 /api.php/home/home/ads?aid=1&client=ios&num=10&package=com.xbm.app&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016610s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_sys_adcontent` [ RunTime:0.0004s ]
+SQL: SELECT `Name`,`Pic`,`Url`,`UrlType`,`SystemClass`,`SystemClassVal`,`productID` FROM `xb_sys_adcontent` WHERE `AdvertisingID` = 1 AND `Status` = 1 ORDER BY Sort asc,ID desc LIMIT 10   [ RunTime:0.0001s ]
+
+[ 2019-07-19T11:29:56+08:00 ] 117.136.38.39 /api.php/Home/home/getitems?client=ios&isrec=1&package=com.xbm.app&rows=4&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '117.136.38.39' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Home/HomeController.class.php 第 248 行.
+SQL: SELECT `ID`,`Name`,`Logurl`,`AppNumbs`,`linkType`,`Openurl` FROM `xb_items` WHERE `IsRec` = 1 AND `Itype` = 1 AND `IsDel` = 0 AND `Status` = '1' AND `Showtype` IN ('1','3') AND `Isshow` = '1' ORDER BY Sort asc,ID desc LIMIT 4   [ RunTime:0.0001s ]
+
+[ 2019-07-19T11:29:56+08:00 ] 117.136.38.39 /api.php/Home/home/getnotice?client=ios&package=com.xbm.app&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_sys_contentmanagement` [ RunTime:0.0004s ]
+SQL: SELECT `Title` FROM `xb_sys_contentmanagement` WHERE `CategoriesID` = 2 ORDER BY Sort asc,ID desc LIMIT 3   [ RunTime:0.0001s ]
+
+[ 2019-07-19T11:29:56+08:00 ] 117.136.38.39 /api.php/Home/home/getcate?client=ios&package=com.xbm.app&rows=8&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Name`,`Imageurl` FROM `xb_items_category` WHERE `ParentID` = 0 AND `IsRec` = 1 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID desc LIMIT 8   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '117.136.38.39' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+
+[ 2019-07-19T11:29:56+08:00 ] 117.136.38.39 /api.php/center/member/modifyAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_mem_info` [ RunTime:0.0006s ]
+SQL: UPDATE `xb_mem_info` SET `PhoneType`='ios',`LoginIP`='117.136.38.39',`IpCity`='中国北京市朝阳区朝阳路慈云寺桥东北角' WHERE `ID` = 40968 [ RunTime:0.0042s ]
+
+[ 2019-07-19T11:30:12+08:00 ] 117.136.38.39 /api.php/Home/home/version?client=ios&package=com.xbm.app&upload=upload&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `xb_version` [ RunTime:0.0005s ]
+SQL: SELECT `ID`,`Ver`,`isForced`,`Url`,`Updates` FROM `xb_version` WHERE `Client` = 'ios' AND `IsDefault` = 1 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-07-19T11:31:48+08:00 ] 117.136.38.39 /api.php/Home/home/version?client=ios&package=com.xbm.app&upload=upload&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `xb_version` [ RunTime:0.0005s ]
+SQL: SELECT `ID`,`Ver`,`isForced`,`Url`,`Updates` FROM `xb_version` WHERE `Client` = 'ios' AND `IsDefault` = 1 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-07-19T11:31:54+08:00 ] 117.136.38.39 /api.php/center/member/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_mem_info` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xb_mem_info` WHERE `ID` = 40968 AND `Status` = 1 AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_mem_money` [ RunTime:0.0004s ]
+SQL: SELECT `Money` FROM `xb_mem_money` WHERE `Uid` = 40968 AND `Type` = 0 AND `IsAduit` = 2  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_mem_balances` [ RunTime:0.0003s ]
+SQL: SELECT `Amount` FROM `xb_mem_balances` WHERE `UserID` = 40968 AND `Type` = 0 AND `SruType` <> '5'  [ RunTime:0.0001s ]
+
+[ 2019-07-19T11:31:54+08:00 ] 117.136.38.39 /api.php/Home/home/version?client=ios&package=com.xbm.app&upload=upload&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `xb_version` [ RunTime:0.0005s ]
+SQL: SELECT `ID`,`Ver`,`isForced`,`Url`,`Updates` FROM `xb_version` WHERE `Client` = 'ios' AND `IsDefault` = 1 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-07-19T11:31:54+08:00 ] 117.136.38.39 /api.php/home/home/tanimg?client=ios&package=com.xbm.app&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_sys_basicinfo` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `xb_sys_basicinfo` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-07-19T11:31:55+08:00 ] 117.136.38.39 /api.php/center/member/isnoreadmsg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_mem_message` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xb_mem_message` WHERE (  `UserID` IN (0,'40968') AND `Status` = '1' ) AND `Type` = 0 ORDER BY SendTime desc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_mem_message` WHERE (  `UserID` IN (0,'40968') AND `Status` = '1' ) AND `Type` = 1 ORDER BY SendTime desc  [ RunTime:0.0001s ]
+
+[ 2019-07-19T11:31:55+08:00 ] 117.136.38.39 /api.php/Home/home/getcate?client=ios&package=com.xbm.app&rows=8&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0005s ]
+SQL: SELECT `ID`,`Name`,`Imageurl` FROM `xb_items_category` WHERE `ParentID` = 0 AND `IsRec` = 1 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID desc LIMIT 8   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '117.136.38.39' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+
+[ 2019-07-19T11:31:55+08:00 ] 117.136.38.39 /api.php/Home/home/getitems?client=ios&isrec=1&package=com.xbm.app&rows=4&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '117.136.38.39' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Home/HomeController.class.php 第 248 行.
+SQL: SELECT `ID`,`Name`,`Logurl`,`AppNumbs`,`linkType`,`Openurl` FROM `xb_items` WHERE `IsRec` = 1 AND `Itype` = 1 AND `IsDel` = 0 AND `Status` = '1' AND `Showtype` IN ('1','3') AND `Isshow` = '1' ORDER BY Sort asc,ID desc LIMIT 4   [ RunTime:0.0001s ]
+
+[ 2019-07-19T11:31:55+08:00 ] 117.136.38.39 /api.php/Home/home/getnotice?client=ios&package=com.xbm.app&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_sys_contentmanagement` [ RunTime:0.0004s ]
+SQL: SELECT `Title` FROM `xb_sys_contentmanagement` WHERE `CategoriesID` = 2 ORDER BY Sort asc,ID desc LIMIT 3   [ RunTime:0.0001s ]
+
+[ 2019-07-19T11:31:55+08:00 ] 117.136.38.39 /api.php/Home/home/getitems?client=ios&isrec=0&package=com.xbm.app&rows=100&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '117.136.38.39' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Home/HomeController.class.php 第 265 行.
+SQL: SELECT a.ID,a.Name,a.Logurl,a.AppNumbs,a.Intro,c.Name as Jkdays,a.DayfeeRate,b.Name as TypeName,a.linkType,a.Openurl FROM xb_items a left join xb_items_moneytype b on b.ID=a.MoneytypeID left join xb_items_jktimes c on a.JktimesID=c.ID  WHERE a.IsHot = 1 AND a.Itype = 1 AND a.IsDel = 0 AND a.Status = '1' AND a.Showtype IN ('1','3') AND a.Isshow = '1' ORDER BY a.Sort asc,a.ID desc LIMIT 20   [ RunTime:0.0005s ]
+
+[ 2019-07-19T11:31:55+08:00 ] 117.136.38.39 /api.php/center/member/modifyAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_mem_info` [ RunTime:0.0005s ]
+SQL: UPDATE `xb_mem_info` SET `PhoneType`='ios',`LoginIP`='117.136.38.39',`IpCity`='中国北京市朝阳区朝阳路慈云寺桥东北角' WHERE `ID` = 40968 [ RunTime:0.0039s ]
+
+[ 2019-07-19T11:31:55+08:00 ] 117.136.38.39 /api.php/home/home/ads?aid=1&client=ios&num=10&package=com.xbm.app&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_sys_adcontent` [ RunTime:0.0004s ]
+SQL: SELECT `Name`,`Pic`,`Url`,`UrlType`,`SystemClass`,`SystemClassVal`,`productID` FROM `xb_sys_adcontent` WHERE `AdvertisingID` = 1 AND `Status` = 1 ORDER BY Sort asc,ID desc LIMIT 10   [ RunTime:0.0001s ]
+
+[ 2019-07-19T11:34:37+08:00 ] 117.136.38.39 /api.php/Home/home/version?client=ios&package=com.xbm.app&upload=upload&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `xb_version` [ RunTime:0.0005s ]
+SQL: SELECT `ID`,`Ver`,`isForced`,`Url`,`Updates` FROM `xb_version` WHERE `Client` = 'ios' AND `IsDefault` = 1 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-07-19T11:34:54+08:00 ] 117.136.38.39 /api.php/Home/items/getcate?client=ios&package=com.xbm.app&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0006s ]
+SQL: SELECT `ID`,`Name` FROM `xb_items_category` WHERE `IsDel` = 0 AND `Status` = 1 ORDER BY Sort asc,ID desc  [ RunTime:0.0003s ]
+
+[ 2019-07-19T11:34:54+08:00 ] 117.136.38.39 /api.php/Home/items/getjktimes?client=ios&package=com.xbm.app&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_items_jktimes` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Name` FROM `xb_items_jktimes` WHERE `IsDel` = 0 AND `Status` = 1 ORDER BY Sort asc  [ RunTime:0.0001s ]
+
+[ 2019-07-19T11:34:54+08:00 ] 117.136.38.39 /api.php/Home/items/getmoneytype?client=ios&package=com.xbm.app&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_items_moneytype` [ RunTime:0.0003s ]
+SQL: SELECT `ID`,`Name` FROM `xb_items_moneytype` WHERE `IsDel` = 0 AND `Status` = 1 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+
+[ 2019-07-19T11:34:54+08:00 ] 117.136.38.39 /api.php/Home/Items/getitems?cid=0&client=ios&jkday=0&nids=0&package=com.xbm.app&page=0&rows=8&tid=0&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '117.136.38.39' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Home/ItemsController.class.php 第 72 行.
+SQL: SELECT a.ID,a.Name,a.Openurl,a.linkType,a.Logurl,a.AppNumbs,a.Intro,c.Name as Jkdays,a.DayfeeRate,b.Name as TypeName FROM xb_items a left join xb_items_moneytype b on b.ID=a.MoneytypeID left join xb_items_jktimes c on a.JktimesID=c.ID  WHERE a.Isshow = '1' AND a.Itype = 1 AND a.Showtype IN ('1','3') AND a.IsDel = 0 AND a.Status = '1' ORDER BY a.Sort asc,a.ID desc LIMIT 0,8   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: jkday /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Home/ItemsController.class.php 第 112 行.
+NOTIC: [8] Undefined variable: mtype /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Home/ItemsController.class.php 第 115 行.
+NOTIC: [8] Undefined variable: jkday /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Home/ItemsController.class.php 第 112 行.
+NOTIC: [8] Undefined variable: mtype /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Home/ItemsController.class.php 第 115 行.
+
+[ 2019-07-19T11:34:54+08:00 ] 117.136.38.39 /api.php/Home/items/getneed?client=ios&package=com.xbm.app&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_items_needs` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Name` FROM `xb_items_needs` WHERE `IsDel` = 0 AND `Status` = 1 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+
+[ 2019-07-19T11:34:55+08:00 ] 117.136.38.39 /api.php/Home/Items/getitems?cid=0&client=ios&jkday=0&nids=0&package=com.xbm.app&page=1&rows=8&tid=0&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '117.136.38.39' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Home/ItemsController.class.php 第 72 行.
+SQL: SELECT a.ID,a.Name,a.Openurl,a.linkType,a.Logurl,a.AppNumbs,a.Intro,c.Name as Jkdays,a.DayfeeRate,b.Name as TypeName FROM xb_items a left join xb_items_moneytype b on b.ID=a.MoneytypeID left join xb_items_jktimes c on a.JktimesID=c.ID  WHERE a.Isshow = '1' AND a.Itype = 1 AND a.Showtype IN ('1','3') AND a.IsDel = 0 AND a.Status = '1' ORDER BY a.Sort asc,a.ID desc LIMIT 8,8   [ RunTime:0.0005s ]
+
+[ 2019-07-19T11:34:59+08:00 ] 117.136.38.39 /api.php/center/member/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_mem_info` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_mem_info` WHERE `ID` = 40968 AND `Status` = 1 AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xb_mem_money` [ RunTime:0.0004s ]
+SQL: SELECT `Money` FROM `xb_mem_money` WHERE `Uid` = 40968 AND `Type` = 0 AND `IsAduit` = 2  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_mem_balances` [ RunTime:0.0004s ]
+SQL: SELECT `Amount` FROM `xb_mem_balances` WHERE `UserID` = 40968 AND `Type` = 0 AND `SruType` <> '5'  [ RunTime:0.0001s ]
+
+[ 2019-07-19T11:34:59+08:00 ] 117.136.38.39 /api.php/center/member/isnoreadmsg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_mem_message` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_mem_message` WHERE (  `UserID` IN (0,'40968') AND `Status` = '1' ) AND `Type` = 0 ORDER BY SendTime desc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_mem_message` WHERE (  `UserID` IN (0,'40968') AND `Status` = '1' ) AND `Type` = 1 ORDER BY SendTime desc  [ RunTime:0.0001s ]
+
+[ 2019-07-19T11:34:59+08:00 ] 117.136.38.39 /api.php/center/member/bankuais
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_mem_bankuai` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Name`,`Intro`,`Backurl` FROM `xb_mem_bankuai` WHERE `Status` = 1 AND `IsDel` = 0  [ RunTime:0.0001s ]
+
+[ 2019-07-19T11:34:59+08:00 ] 117.136.38.39 /api.php/center/member/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_mem_info` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_mem_info` WHERE `ID` = 40968 AND `Status` = 1 AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_mem_money` [ RunTime:0.0004s ]
+SQL: SELECT `Money` FROM `xb_mem_money` WHERE `Uid` = 40968 AND `Type` = 0 AND `IsAduit` = 2  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_mem_balances` [ RunTime:0.0003s ]
+SQL: SELECT `Amount` FROM `xb_mem_balances` WHERE `UserID` = 40968 AND `Type` = 0 AND `SruType` <> '5'  [ RunTime:0.0001s ]
+
+[ 2019-07-19T11:35:00+08:00 ] 117.136.38.39 /api.php/Home/items/getmoneytype?client=ios&package=com.xbm.app&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_items_moneytype` [ RunTime:0.0006s ]
+SQL: SELECT `ID`,`Name` FROM `xb_items_moneytype` WHERE `IsDel` = 0 AND `Status` = 1 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+
+[ 2019-07-19T11:35:00+08:00 ] 117.136.38.39 /api.php/Home/items/getjktimes?client=ios&package=com.xbm.app&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_items_jktimes` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Name` FROM `xb_items_jktimes` WHERE `IsDel` = 0 AND `Status` = 1 ORDER BY Sort asc  [ RunTime:0.0001s ]
+
+[ 2019-07-19T11:35:00+08:00 ] 117.136.38.39 /api.php/Home/items/getcate?client=ios&package=com.xbm.app&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Name` FROM `xb_items_category` WHERE `IsDel` = 0 AND `Status` = 1 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+
+[ 2019-07-19T11:35:00+08:00 ] 117.136.38.39 /api.php/Home/items/getneed?client=ios&package=com.xbm.app&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_items_needs` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Name` FROM `xb_items_needs` WHERE `IsDel` = 0 AND `Status` = 1 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+
+[ 2019-07-19T11:35:00+08:00 ] 117.136.38.39 /api.php/Home/Items/getitems?cid=0&client=ios&jkday=0&nids=0&package=com.xbm.app&page=0&rows=8&tid=0&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '117.136.38.39' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Home/ItemsController.class.php 第 72 行.
+SQL: SELECT a.ID,a.Name,a.Openurl,a.linkType,a.Logurl,a.AppNumbs,a.Intro,c.Name as Jkdays,a.DayfeeRate,b.Name as TypeName FROM xb_items a left join xb_items_moneytype b on b.ID=a.MoneytypeID left join xb_items_jktimes c on a.JktimesID=c.ID  WHERE a.Isshow = '1' AND a.Itype = 1 AND a.Showtype IN ('1','3') AND a.IsDel = 0 AND a.Status = '1' ORDER BY a.Sort asc,a.ID desc LIMIT 0,8   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: jkday /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Home/ItemsController.class.php 第 112 行.
+NOTIC: [8] Undefined variable: mtype /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Home/ItemsController.class.php 第 115 行.
+NOTIC: [8] Undefined variable: jkday /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Home/ItemsController.class.php 第 112 行.
+NOTIC: [8] Undefined variable: mtype /www/wwwroot/xbm.mashangbang.top/Application/Api/Controller/Home/ItemsController.class.php 第 115 行.
+

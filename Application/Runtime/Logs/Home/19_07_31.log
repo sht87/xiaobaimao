@@ -1,0 +1,1029 @@
+[ 2019-07-31T02:30:56+08:00 ] 190.128.231.114 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '190.128.231.114' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+SQL: SHOW COLUMNS FROM `xb_sys_adcontent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_adcontent` WHERE `AdvertisingID` = 1 AND `Status` = 1 ORDER BY Sort ASC,ID DESC LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_contentmanagement` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Title` FROM `xb_sys_contentmanagement` WHERE `CategoriesID` = 2 ORDER BY Sort asc,ID desc LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0003s ]
+SQL: SELECT `ID`,`Name`,`Imageurl` FROM `xb_items_category` WHERE `ParentID` = 0 AND `IsDel` = 0 AND `IsRec` = 1 AND `Status` = 1 ORDER BY Sort asc,ID desc LIMIT 8   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0006s ]
+SQL: SELECT `ID`,`Name`,`Logurl`,`AppNumbs` FROM `xb_items` WHERE `Itype` = '1' AND `IsRec` = '1' AND `IsDel` = '0' AND `Status` = '1' AND `Showtype` IN ('1','3') AND `Isshow` = '1' ORDER BY Sort asc,ID desc LIMIT 4   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 45 行.
+SQL: SELECT a.ID,a.Name,a.Logurl,a.Intro,a.AppNumbs,c.Name as Jkdays,a.DayfeeRate,b.Name as eduname FROM xb_items a left join xb_items_moneytype b on a.MoneytypeID=b.ID left join xb_items_jktimes c on a.JktimesID=c.ID  WHERE a.Itype = '1' AND a.IsHot = '1' AND a.IsDel = '0' AND a.Status = '1' AND a.Showtype IN ('1','3') AND a.Isshow = '1' ORDER BY a.Sort asc,a.ID desc LIMIT 20   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: SEOTitle /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 11 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006857s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+
+[ 2019-07-31T04:43:15+08:00 ] 106.14.143.216 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '106.14.143.216' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+SQL: SHOW COLUMNS FROM `xb_sys_adcontent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_adcontent` WHERE `AdvertisingID` = 1 AND `Status` = 1 ORDER BY Sort ASC,ID DESC LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_contentmanagement` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Title` FROM `xb_sys_contentmanagement` WHERE `CategoriesID` = 2 ORDER BY Sort asc,ID desc LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0003s ]
+SQL: SELECT `ID`,`Name`,`Imageurl` FROM `xb_items_category` WHERE `ParentID` = 0 AND `IsDel` = 0 AND `IsRec` = 1 AND `Status` = 1 ORDER BY Sort asc,ID desc LIMIT 8   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT `ID`,`Name`,`Logurl`,`AppNumbs` FROM `xb_items` WHERE `Itype` = '1' AND `IsRec` = '1' AND `IsDel` = '0' AND `Status` = '1' AND `Showtype` IN ('1','3') AND `Isshow` = '1' ORDER BY Sort asc,ID desc LIMIT 4   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 45 行.
+SQL: SELECT a.ID,a.Name,a.Logurl,a.Intro,a.AppNumbs,c.Name as Jkdays,a.DayfeeRate,b.Name as eduname FROM xb_items a left join xb_items_moneytype b on a.MoneytypeID=b.ID left join xb_items_jktimes c on a.JktimesID=c.ID  WHERE a.Itype = '1' AND a.IsHot = '1' AND a.IsDel = '0' AND a.Status = '1' AND a.Showtype IN ('1','3') AND a.Isshow = '1' ORDER BY a.Sort asc,a.ID desc LIMIT 20   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: SEOTitle /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 11 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007140s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000356s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000386s ]
+
+[ 2019-07-31T05:35:12+08:00 ] 113.44.103.198 /register/content_c?mobile=18310425701
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005053s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000406s ]
+
+[ 2019-07-31T05:35:15+08:00 ] 113.44.103.198 /register/getdownloadurl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `xb_sys_basicinfo` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `xb_sys_basicinfo` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-07-31T05:35:15+08:00 ] 113.44.103.198 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+
+[ 2019-07-31T05:37:16+08:00 ] 113.44.103.198 /register/submitcontent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+SQL: SHOW COLUMNS FROM `xb_mem_info` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_mem_info` WHERE `Mobile` = '18310425701' AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `xb_mem_ed` [ RunTime:0.0004s ]
+SQL: INSERT INTO `xb_mem_ed` (`name`,`mobile`,`userId`,`sex`,`createDate`,`money`,`card`,`houseType`,`carType`,`zy`,`work`,`gjj`,`ysr`,`sb`,`xyk`,`bd`,`city`) VALUES ('郑夏颖','18310425701','41186','0','2019-07-31 05:37:16','2','','0','0','1','3','0','2','0','0','0','') [ RunTime:0.0038s ]
+
+[ 2019-07-31T05:37:34+08:00 ] 113.44.103.198 /register/content_c?mobile=18310425701
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000373s ]
+
+[ 2019-07-31T05:37:34+08:00 ] 113.44.103.198 /register/getdownloadurl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `xb_sys_basicinfo` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `xb_sys_basicinfo` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-07-31T05:37:34+08:00 ] 113.44.103.198 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+
+[ 2019-07-31T05:38:17+08:00 ] 113.44.103.198 /register/submitcontent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `xb_mem_info` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_mem_info` WHERE `Mobile` = '18310425701' AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xb_mem_ed` [ RunTime:0.0004s ]
+SQL: INSERT INTO `xb_mem_ed` (`name`,`mobile`,`userId`,`sex`,`createDate`,`money`,`card`,`houseType`,`carType`,`zy`,`work`,`gjj`,`ysr`,`sb`,`xyk`,`bd`,`city`) VALUES ('郑夏颖','18310425701','41186','0','2019-07-31 05:38:17','2','','0','0','1','3','0','2','0','0','0','') [ RunTime:0.0040s ]
+
+[ 2019-07-31T05:41:16+08:00 ] 202.59.171.174 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '202.59.171.174' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+SQL: SHOW COLUMNS FROM `xb_sys_adcontent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_adcontent` WHERE `AdvertisingID` = 1 AND `Status` = 1 ORDER BY Sort ASC,ID DESC LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_contentmanagement` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Title` FROM `xb_sys_contentmanagement` WHERE `CategoriesID` = 2 ORDER BY Sort asc,ID desc LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0003s ]
+SQL: SELECT `ID`,`Name`,`Imageurl` FROM `xb_items_category` WHERE `ParentID` = 0 AND `IsDel` = 0 AND `IsRec` = 1 AND `Status` = 1 ORDER BY Sort asc,ID desc LIMIT 8   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT `ID`,`Name`,`Logurl`,`AppNumbs` FROM `xb_items` WHERE `Itype` = '1' AND `IsRec` = '1' AND `IsDel` = '0' AND `Status` = '1' AND `Showtype` IN ('1','3') AND `Isshow` = '1' ORDER BY Sort asc,ID desc LIMIT 4   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 45 行.
+SQL: SELECT a.ID,a.Name,a.Logurl,a.Intro,a.AppNumbs,c.Name as Jkdays,a.DayfeeRate,b.Name as eduname FROM xb_items a left join xb_items_moneytype b on a.MoneytypeID=b.ID left join xb_items_jktimes c on a.JktimesID=c.ID  WHERE a.Itype = '1' AND a.IsHot = '1' AND a.IsDel = '0' AND a.Status = '1' AND a.Showtype IN ('1','3') AND a.Isshow = '1' ORDER BY a.Sort asc,a.ID desc LIMIT 20   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined variable: SEOTitle /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 11 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006978s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2019-07-31T06:02:57+08:00 ] 123.186.119.132 /register/content_c?mobile=18940314506
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005149s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005181s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000407s ]
+
+[ 2019-07-31T06:02:58+08:00 ] 123.186.119.132 /register/getdownloadurl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `xb_sys_basicinfo` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `xb_sys_basicinfo` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-07-31T06:02:58+08:00 ] 123.186.119.132 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+
+[ 2019-07-31T06:03:31+08:00 ] 123.186.119.132 /register/submitcontent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `xb_mem_info` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_mem_info` WHERE `Mobile` = '18940314506' AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xb_mem_ed` [ RunTime:0.0004s ]
+SQL: INSERT INTO `xb_mem_ed` (`name`,`mobile`,`userId`,`sex`,`createDate`,`money`,`card`,`houseType`,`carType`,`zy`,`work`,`gjj`,`ysr`,`sb`,`xyk`,`bd`,`city`) VALUES ('甘璐瑶','18940314506','41187','0','2019-07-31 06:03:31','11','','0','0','1','3','0','2','0','0','0','') [ RunTime:0.0039s ]
+
+[ 2019-07-31T06:03:39+08:00 ] 123.186.119.132 /register/content_c?mobile=18940314506
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005135s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005169s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000397s ]
+
+[ 2019-07-31T06:03:39+08:00 ] 123.186.119.132 /register/getdownloadurl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+SQL: SHOW COLUMNS FROM `xb_sys_basicinfo` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `xb_sys_basicinfo` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-07-31T06:03:39+08:00 ] 123.186.119.132 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+
+[ 2019-07-31T06:03:57+08:00 ] 123.186.119.132 /register/submitcontent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `xb_mem_info` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_mem_info` WHERE `Mobile` = '18940314506' AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xb_mem_ed` [ RunTime:0.0004s ]
+SQL: INSERT INTO `xb_mem_ed` (`name`,`mobile`,`userId`,`sex`,`createDate`,`money`,`card`,`houseType`,`carType`,`zy`,`work`,`gjj`,`ysr`,`sb`,`xyk`,`bd`,`city`) VALUES ('甘璐瑶','18940314506','41187','0','2019-07-31 06:03:57','3','','0','0','1','3','0','2','0','0','0','') [ RunTime:0.0042s ]
+
+[ 2019-07-31T06:04:03+08:00 ] 123.186.119.132 /register/content_c?mobile=18940314506
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000415s ]
+
+[ 2019-07-31T06:04:03+08:00 ] 123.186.119.132 /register/getdownloadurl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+SQL: SHOW COLUMNS FROM `xb_sys_basicinfo` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `xb_sys_basicinfo` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-07-31T06:04:03+08:00 ] 123.186.119.132 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+
+[ 2019-07-31T06:04:19+08:00 ] 123.186.119.132 /register/submitcontent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+SQL: SHOW COLUMNS FROM `xb_mem_info` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_mem_info` WHERE `Mobile` = '18940314506' AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xb_mem_ed` [ RunTime:0.0004s ]
+SQL: INSERT INTO `xb_mem_ed` (`name`,`mobile`,`userId`,`sex`,`createDate`,`money`,`card`,`houseType`,`carType`,`zy`,`work`,`gjj`,`ysr`,`sb`,`xyk`,`bd`,`city`) VALUES ('甘璐瑶','18940314506','41187','0','2019-07-31 06:04:19','1','','0','0','1','3','0','2','0','0','0','') [ RunTime:0.0038s ]
+
+[ 2019-07-31T06:20:55+08:00 ] 187.110.208.90 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '187.110.208.90' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+SQL: SHOW COLUMNS FROM `xb_sys_adcontent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_adcontent` WHERE `AdvertisingID` = 1 AND `Status` = 1 ORDER BY Sort ASC,ID DESC LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_contentmanagement` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Title` FROM `xb_sys_contentmanagement` WHERE `CategoriesID` = 2 ORDER BY Sort asc,ID desc LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0003s ]
+SQL: SELECT `ID`,`Name`,`Imageurl` FROM `xb_items_category` WHERE `ParentID` = 0 AND `IsDel` = 0 AND `IsRec` = 1 AND `Status` = 1 ORDER BY Sort asc,ID desc LIMIT 8   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0006s ]
+SQL: SELECT `ID`,`Name`,`Logurl`,`AppNumbs` FROM `xb_items` WHERE `Itype` = '1' AND `IsRec` = '1' AND `IsDel` = '0' AND `Status` = '1' AND `Showtype` IN ('1','3') AND `Isshow` = '1' ORDER BY Sort asc,ID desc LIMIT 4   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 45 行.
+SQL: SELECT a.ID,a.Name,a.Logurl,a.Intro,a.AppNumbs,c.Name as Jkdays,a.DayfeeRate,b.Name as eduname FROM xb_items a left join xb_items_moneytype b on a.MoneytypeID=b.ID left join xb_items_jktimes c on a.JktimesID=c.ID  WHERE a.Itype = '1' AND a.IsHot = '1' AND a.IsDel = '0' AND a.Status = '1' AND a.Showtype IN ('1','3') AND a.Isshow = '1' ORDER BY a.Sort asc,a.ID desc LIMIT 20   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: SEOTitle /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 11 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006948s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006974s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000363s ]
+
+[ 2019-07-31T06:37:34+08:00 ] 170.254.190.2 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '170.254.190.2' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+SQL: SHOW COLUMNS FROM `xb_sys_adcontent` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_adcontent` WHERE `AdvertisingID` = 1 AND `Status` = 1 ORDER BY Sort ASC,ID DESC LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_contentmanagement` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Title` FROM `xb_sys_contentmanagement` WHERE `CategoriesID` = 2 ORDER BY Sort asc,ID desc LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0003s ]
+SQL: SELECT `ID`,`Name`,`Imageurl` FROM `xb_items_category` WHERE `ParentID` = 0 AND `IsDel` = 0 AND `IsRec` = 1 AND `Status` = 1 ORDER BY Sort asc,ID desc LIMIT 8   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0006s ]
+SQL: SELECT `ID`,`Name`,`Logurl`,`AppNumbs` FROM `xb_items` WHERE `Itype` = '1' AND `IsRec` = '1' AND `IsDel` = '0' AND `Status` = '1' AND `Showtype` IN ('1','3') AND `Isshow` = '1' ORDER BY Sort asc,ID desc LIMIT 4   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 45 行.
+SQL: SELECT a.ID,a.Name,a.Logurl,a.Intro,a.AppNumbs,c.Name as Jkdays,a.DayfeeRate,b.Name as eduname FROM xb_items a left join xb_items_moneytype b on a.MoneytypeID=b.ID left join xb_items_jktimes c on a.JktimesID=c.ID  WHERE a.Itype = '1' AND a.IsHot = '1' AND a.IsDel = '0' AND a.Status = '1' AND a.Showtype IN ('1','3') AND a.Isshow = '1' ORDER BY a.Sort asc,a.ID desc LIMIT 20   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined variable: SEOTitle /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 11 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007151s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000336s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000362s ]
+
+[ 2019-07-31T08:27:02+08:00 ] 190.143.216.122 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '190.143.216.122' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+SQL: SHOW COLUMNS FROM `xb_sys_adcontent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_adcontent` WHERE `AdvertisingID` = 1 AND `Status` = 1 ORDER BY Sort ASC,ID DESC LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_contentmanagement` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Title` FROM `xb_sys_contentmanagement` WHERE `CategoriesID` = 2 ORDER BY Sort asc,ID desc LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0003s ]
+SQL: SELECT `ID`,`Name`,`Imageurl` FROM `xb_items_category` WHERE `ParentID` = 0 AND `IsDel` = 0 AND `IsRec` = 1 AND `Status` = 1 ORDER BY Sort asc,ID desc LIMIT 8   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0006s ]
+SQL: SELECT `ID`,`Name`,`Logurl`,`AppNumbs` FROM `xb_items` WHERE `Itype` = '1' AND `IsRec` = '1' AND `IsDel` = '0' AND `Status` = '1' AND `Showtype` IN ('1','3') AND `Isshow` = '1' ORDER BY Sort asc,ID desc LIMIT 4   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 45 行.
+SQL: SELECT a.ID,a.Name,a.Logurl,a.Intro,a.AppNumbs,c.Name as Jkdays,a.DayfeeRate,b.Name as eduname FROM xb_items a left join xb_items_moneytype b on a.MoneytypeID=b.ID left join xb_items_jktimes c on a.JktimesID=c.ID  WHERE a.Itype = '1' AND a.IsHot = '1' AND a.IsDel = '0' AND a.Status = '1' AND a.Showtype IN ('1','3') AND a.Isshow = '1' ORDER BY a.Sort asc,a.ID desc LIMIT 20   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined variable: SEOTitle /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 11 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007088s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007114s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000336s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000364s ]
+
+[ 2019-07-31T08:42:59+08:00 ] 218.28.59.130 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '218.28.59.130' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+SQL: SHOW COLUMNS FROM `xb_sys_adcontent` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_adcontent` WHERE `AdvertisingID` = 1 AND `Status` = 1 ORDER BY Sort ASC,ID DESC LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_contentmanagement` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Title` FROM `xb_sys_contentmanagement` WHERE `CategoriesID` = 2 ORDER BY Sort asc,ID desc LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0003s ]
+SQL: SELECT `ID`,`Name`,`Imageurl` FROM `xb_items_category` WHERE `ParentID` = 0 AND `IsDel` = 0 AND `IsRec` = 1 AND `Status` = 1 ORDER BY Sort asc,ID desc LIMIT 8   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT `ID`,`Name`,`Logurl`,`AppNumbs` FROM `xb_items` WHERE `Itype` = '1' AND `IsRec` = '1' AND `IsDel` = '0' AND `Status` = '1' AND `Showtype` IN ('1','3') AND `Isshow` = '1' ORDER BY Sort asc,ID desc LIMIT 4   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 45 行.
+SQL: SELECT a.ID,a.Name,a.Logurl,a.Intro,a.AppNumbs,c.Name as Jkdays,a.DayfeeRate,b.Name as eduname FROM xb_items a left join xb_items_moneytype b on a.MoneytypeID=b.ID left join xb_items_jktimes c on a.JktimesID=c.ID  WHERE a.Itype = '1' AND a.IsHot = '1' AND a.IsDel = '0' AND a.Status = '1' AND a.Showtype IN ('1','3') AND a.Isshow = '1' ORDER BY a.Sort asc,a.ID desc LIMIT 20   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined variable: SEOTitle /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 11 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006927s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006953s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000372s ]
+
+[ 2019-07-31T08:43:31+08:00 ] 223.87.240.64 /fsj_patch/android/check.xml?t=26075563
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-07-31T08:43:33+08:00 ] 223.87.240.64 /fsj_patch/android/check.xml?t=26075563
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-07-31T08:43:35+08:00 ] 223.87.240.64 /fsj_patch/android/check.xml?t=26075563
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-07-31T09:03:02+08:00 ] 139.224.11.233 /register/content_c?mobile=15879817087
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005061s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005091s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000381s ]
+
+[ 2019-07-31T09:59:08+08:00 ] 47.101.193.90 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '47.101.193.90' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+SQL: SHOW COLUMNS FROM `xb_sys_adcontent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_adcontent` WHERE `AdvertisingID` = 1 AND `Status` = 1 ORDER BY Sort ASC,ID DESC LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_contentmanagement` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Title` FROM `xb_sys_contentmanagement` WHERE `CategoriesID` = 2 ORDER BY Sort asc,ID desc LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0003s ]
+SQL: SELECT `ID`,`Name`,`Imageurl` FROM `xb_items_category` WHERE `ParentID` = 0 AND `IsDel` = 0 AND `IsRec` = 1 AND `Status` = 1 ORDER BY Sort asc,ID desc LIMIT 8   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0006s ]
+SQL: SELECT `ID`,`Name`,`Logurl`,`AppNumbs` FROM `xb_items` WHERE `Itype` = '1' AND `IsRec` = '1' AND `IsDel` = '0' AND `Status` = '1' AND `Showtype` IN ('1','3') AND `Isshow` = '1' ORDER BY Sort asc,ID desc LIMIT 4   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 45 行.
+SQL: SELECT a.ID,a.Name,a.Logurl,a.Intro,a.AppNumbs,c.Name as Jkdays,a.DayfeeRate,b.Name as eduname FROM xb_items a left join xb_items_moneytype b on a.MoneytypeID=b.ID left join xb_items_jktimes c on a.JktimesID=c.ID  WHERE a.Itype = '1' AND a.IsHot = '1' AND a.IsDel = '0' AND a.Status = '1' AND a.Showtype IN ('1','3') AND a.Isshow = '1' ORDER BY a.Sort asc,a.ID desc LIMIT 20   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: SEOTitle /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 11 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006881s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006907s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000396s ]
+
+[ 2019-07-31T10:55:36+08:00 ] 178.250.139.113 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '178.250.139.113' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+SQL: SHOW COLUMNS FROM `xb_sys_adcontent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_adcontent` WHERE `AdvertisingID` = 1 AND `Status` = 1 ORDER BY Sort ASC,ID DESC LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_contentmanagement` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Title` FROM `xb_sys_contentmanagement` WHERE `CategoriesID` = 2 ORDER BY Sort asc,ID desc LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Name`,`Imageurl` FROM `xb_items_category` WHERE `ParentID` = 0 AND `IsDel` = 0 AND `IsRec` = 1 AND `Status` = 1 ORDER BY Sort asc,ID desc LIMIT 8   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT `ID`,`Name`,`Logurl`,`AppNumbs` FROM `xb_items` WHERE `Itype` = '1' AND `IsRec` = '1' AND `IsDel` = '0' AND `Status` = '1' AND `Showtype` IN ('1','3') AND `Isshow` = '1' ORDER BY Sort asc,ID desc LIMIT 4   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 45 行.
+SQL: SELECT a.ID,a.Name,a.Logurl,a.Intro,a.AppNumbs,c.Name as Jkdays,a.DayfeeRate,b.Name as eduname FROM xb_items a left join xb_items_moneytype b on a.MoneytypeID=b.ID left join xb_items_jktimes c on a.JktimesID=c.ID  WHERE a.Itype = '1' AND a.IsHot = '1' AND a.IsDel = '0' AND a.Status = '1' AND a.Showtype IN ('1','3') AND a.Isshow = '1' ORDER BY a.Sort asc,a.ID desc LIMIT 20   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined variable: SEOTitle /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 11 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007459s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007488s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000382s ]
+
+[ 2019-07-31T14:03:47+08:00 ] 101.73.253.193 /register/content_c?mobile=15131986988
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005106s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005138s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000357s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000387s ]
+
+[ 2019-07-31T14:03:47+08:00 ] 101.73.253.193 /register/getdownloadurl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `xb_sys_basicinfo` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `xb_sys_basicinfo` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-07-31T14:03:47+08:00 ] 101.73.253.193 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+
+[ 2019-07-31T14:14:57+08:00 ] 58.132.205.66 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+
+[ 2019-07-31T14:14:58+08:00 ] 58.132.205.66 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+
+[ 2019-07-31T15:16:37+08:00 ] 71.6.232.4 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '71.6.232.4' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+SQL: SHOW COLUMNS FROM `xb_sys_adcontent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_adcontent` WHERE `AdvertisingID` = 1 AND `Status` = 1 ORDER BY Sort ASC,ID DESC LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_contentmanagement` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Title` FROM `xb_sys_contentmanagement` WHERE `CategoriesID` = 2 ORDER BY Sort asc,ID desc LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Name`,`Imageurl` FROM `xb_items_category` WHERE `ParentID` = 0 AND `IsDel` = 0 AND `IsRec` = 1 AND `Status` = 1 ORDER BY Sort asc,ID desc LIMIT 8   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT `ID`,`Name`,`Logurl`,`AppNumbs` FROM `xb_items` WHERE `Itype` = '1' AND `IsRec` = '1' AND `IsDel` = '0' AND `Status` = '1' AND `Showtype` IN ('1','3') AND `Isshow` = '1' ORDER BY Sort asc,ID desc LIMIT 4   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 45 行.
+SQL: SELECT a.ID,a.Name,a.Logurl,a.Intro,a.AppNumbs,c.Name as Jkdays,a.DayfeeRate,b.Name as eduname FROM xb_items a left join xb_items_moneytype b on a.MoneytypeID=b.ID left join xb_items_jktimes c on a.JktimesID=c.ID  WHERE a.Itype = '1' AND a.IsHot = '1' AND a.IsDel = '0' AND a.Status = '1' AND a.Showtype IN ('1','3') AND a.Isshow = '1' ORDER BY a.Sort asc,a.ID desc LIMIT 20   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Undefined variable: SEOTitle /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 11 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007521s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007548s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000373s ]
+
+[ 2019-07-31T15:46:17+08:00 ] 139.162.106.181 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '139.162.106.181' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+SQL: SHOW COLUMNS FROM `xb_sys_adcontent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_adcontent` WHERE `AdvertisingID` = 1 AND `Status` = 1 ORDER BY Sort ASC,ID DESC LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_contentmanagement` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Title` FROM `xb_sys_contentmanagement` WHERE `CategoriesID` = 2 ORDER BY Sort asc,ID desc LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0003s ]
+SQL: SELECT `ID`,`Name`,`Imageurl` FROM `xb_items_category` WHERE `ParentID` = 0 AND `IsDel` = 0 AND `IsRec` = 1 AND `Status` = 1 ORDER BY Sort asc,ID desc LIMIT 8   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0006s ]
+SQL: SELECT `ID`,`Name`,`Logurl`,`AppNumbs` FROM `xb_items` WHERE `Itype` = '1' AND `IsRec` = '1' AND `IsDel` = '0' AND `Status` = '1' AND `Showtype` IN ('1','3') AND `Isshow` = '1' ORDER BY Sort asc,ID desc LIMIT 4   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 45 行.
+SQL: SELECT a.ID,a.Name,a.Logurl,a.Intro,a.AppNumbs,c.Name as Jkdays,a.DayfeeRate,b.Name as eduname FROM xb_items a left join xb_items_moneytype b on a.MoneytypeID=b.ID left join xb_items_jktimes c on a.JktimesID=c.ID  WHERE a.Itype = '1' AND a.IsHot = '1' AND a.IsDel = '0' AND a.Status = '1' AND a.Showtype IN ('1','3') AND a.Isshow = '1' ORDER BY a.Sort asc,a.ID desc LIMIT 20   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined variable: SEOTitle /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 11 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007106s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007133s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000408s ]
+
+[ 2019-07-31T16:56:38+08:00 ] 191.242.246.188 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '191.242.246.188' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+SQL: SHOW COLUMNS FROM `xb_sys_adcontent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_adcontent` WHERE `AdvertisingID` = 1 AND `Status` = 1 ORDER BY Sort ASC,ID DESC LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_contentmanagement` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Title` FROM `xb_sys_contentmanagement` WHERE `CategoriesID` = 2 ORDER BY Sort asc,ID desc LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Name`,`Imageurl` FROM `xb_items_category` WHERE `ParentID` = 0 AND `IsDel` = 0 AND `IsRec` = 1 AND `Status` = 1 ORDER BY Sort asc,ID desc LIMIT 8   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT `ID`,`Name`,`Logurl`,`AppNumbs` FROM `xb_items` WHERE `Itype` = '1' AND `IsRec` = '1' AND `IsDel` = '0' AND `Status` = '1' AND `Showtype` IN ('1','3') AND `Isshow` = '1' ORDER BY Sort asc,ID desc LIMIT 4   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 45 行.
+SQL: SELECT a.ID,a.Name,a.Logurl,a.Intro,a.AppNumbs,c.Name as Jkdays,a.DayfeeRate,b.Name as eduname FROM xb_items a left join xb_items_moneytype b on a.MoneytypeID=b.ID left join xb_items_jktimes c on a.JktimesID=c.ID  WHERE a.Itype = '1' AND a.IsHot = '1' AND a.IsDel = '0' AND a.Status = '1' AND a.Showtype IN ('1','3') AND a.Isshow = '1' ORDER BY a.Sort asc,a.ID desc LIMIT 20   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined variable: SEOTitle /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 11 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007311s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007339s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000393s ]
+
+[ 2019-07-31T17:39:02+08:00 ] 60.191.38.78 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '60.191.38.78' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+SQL: SHOW COLUMNS FROM `xb_sys_adcontent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_adcontent` WHERE `AdvertisingID` = 1 AND `Status` = 1 ORDER BY Sort ASC,ID DESC LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_contentmanagement` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Title` FROM `xb_sys_contentmanagement` WHERE `CategoriesID` = 2 ORDER BY Sort asc,ID desc LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0003s ]
+SQL: SELECT `ID`,`Name`,`Imageurl` FROM `xb_items_category` WHERE `ParentID` = 0 AND `IsDel` = 0 AND `IsRec` = 1 AND `Status` = 1 ORDER BY Sort asc,ID desc LIMIT 8   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0006s ]
+SQL: SELECT `ID`,`Name`,`Logurl`,`AppNumbs` FROM `xb_items` WHERE `Itype` = '1' AND `IsRec` = '1' AND `IsDel` = '0' AND `Status` = '1' AND `Showtype` IN ('1','3') AND `Isshow` = '1' ORDER BY Sort asc,ID desc LIMIT 4   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 45 行.
+SQL: SELECT a.ID,a.Name,a.Logurl,a.Intro,a.AppNumbs,c.Name as Jkdays,a.DayfeeRate,b.Name as eduname FROM xb_items a left join xb_items_moneytype b on a.MoneytypeID=b.ID left join xb_items_jktimes c on a.JktimesID=c.ID  WHERE a.Itype = '1' AND a.IsHot = '1' AND a.IsDel = '0' AND a.Status = '1' AND a.Showtype IN ('1','3') AND a.Isshow = '1' ORDER BY a.Sort asc,a.ID desc LIMIT 20   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined variable: SEOTitle /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 11 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007287s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007313s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000375s ]
+
+[ 2019-07-31T18:53:03+08:00 ] 54.164.151.222 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '54.164.151.222' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+SQL: SHOW COLUMNS FROM `xb_sys_adcontent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_adcontent` WHERE `AdvertisingID` = 1 AND `Status` = 1 ORDER BY Sort ASC,ID DESC LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_contentmanagement` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Title` FROM `xb_sys_contentmanagement` WHERE `CategoriesID` = 2 ORDER BY Sort asc,ID desc LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0003s ]
+SQL: SELECT `ID`,`Name`,`Imageurl` FROM `xb_items_category` WHERE `ParentID` = 0 AND `IsDel` = 0 AND `IsRec` = 1 AND `Status` = 1 ORDER BY Sort asc,ID desc LIMIT 8   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0006s ]
+SQL: SELECT `ID`,`Name`,`Logurl`,`AppNumbs` FROM `xb_items` WHERE `Itype` = '1' AND `IsRec` = '1' AND `IsDel` = '0' AND `Status` = '1' AND `Showtype` IN ('1','3') AND `Isshow` = '1' ORDER BY Sort asc,ID desc LIMIT 4   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 45 行.
+SQL: SELECT a.ID,a.Name,a.Logurl,a.Intro,a.AppNumbs,c.Name as Jkdays,a.DayfeeRate,b.Name as eduname FROM xb_items a left join xb_items_moneytype b on a.MoneytypeID=b.ID left join xb_items_jktimes c on a.JktimesID=c.ID  WHERE a.Itype = '1' AND a.IsHot = '1' AND a.IsDel = '0' AND a.Status = '1' AND a.Showtype IN ('1','3') AND a.Isshow = '1' ORDER BY a.Sort asc,a.ID desc LIMIT 20   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined variable: SEOTitle /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 11 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007199s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007224s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000363s ]
+
+[ 2019-07-31T19:07:05+08:00 ] 151.235.37.136 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '151.235.37.136' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+SQL: SHOW COLUMNS FROM `xb_sys_adcontent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_adcontent` WHERE `AdvertisingID` = 1 AND `Status` = 1 ORDER BY Sort ASC,ID DESC LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_contentmanagement` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Title` FROM `xb_sys_contentmanagement` WHERE `CategoriesID` = 2 ORDER BY Sort asc,ID desc LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0003s ]
+SQL: SELECT `ID`,`Name`,`Imageurl` FROM `xb_items_category` WHERE `ParentID` = 0 AND `IsDel` = 0 AND `IsRec` = 1 AND `Status` = 1 ORDER BY Sort asc,ID desc LIMIT 8   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT `ID`,`Name`,`Logurl`,`AppNumbs` FROM `xb_items` WHERE `Itype` = '1' AND `IsRec` = '1' AND `IsDel` = '0' AND `Status` = '1' AND `Showtype` IN ('1','3') AND `Isshow` = '1' ORDER BY Sort asc,ID desc LIMIT 4   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 45 行.
+SQL: SELECT a.ID,a.Name,a.Logurl,a.Intro,a.AppNumbs,c.Name as Jkdays,a.DayfeeRate,b.Name as eduname FROM xb_items a left join xb_items_moneytype b on a.MoneytypeID=b.ID left join xb_items_jktimes c on a.JktimesID=c.ID  WHERE a.Itype = '1' AND a.IsHot = '1' AND a.IsDel = '0' AND a.Status = '1' AND a.Showtype IN ('1','3') AND a.Isshow = '1' ORDER BY a.Sort asc,a.ID desc LIMIT 20   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined variable: SEOTitle /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 11 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007928s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2019-07-31T19:39:55+08:00 ] 109.87.67.210 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '109.87.67.210' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+SQL: SHOW COLUMNS FROM `xb_sys_adcontent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_adcontent` WHERE `AdvertisingID` = 1 AND `Status` = 1 ORDER BY Sort ASC,ID DESC LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_contentmanagement` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Title` FROM `xb_sys_contentmanagement` WHERE `CategoriesID` = 2 ORDER BY Sort asc,ID desc LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0003s ]
+SQL: SELECT `ID`,`Name`,`Imageurl` FROM `xb_items_category` WHERE `ParentID` = 0 AND `IsDel` = 0 AND `IsRec` = 1 AND `Status` = 1 ORDER BY Sort asc,ID desc LIMIT 8   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0006s ]
+SQL: SELECT `ID`,`Name`,`Logurl`,`AppNumbs` FROM `xb_items` WHERE `Itype` = '1' AND `IsRec` = '1' AND `IsDel` = '0' AND `Status` = '1' AND `Showtype` IN ('1','3') AND `Isshow` = '1' ORDER BY Sort asc,ID desc LIMIT 4   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 45 行.
+SQL: SELECT a.ID,a.Name,a.Logurl,a.Intro,a.AppNumbs,c.Name as Jkdays,a.DayfeeRate,b.Name as eduname FROM xb_items a left join xb_items_moneytype b on a.MoneytypeID=b.ID left join xb_items_jktimes c on a.JktimesID=c.ID  WHERE a.Itype = '1' AND a.IsHot = '1' AND a.IsDel = '0' AND a.Status = '1' AND a.Showtype IN ('1','3') AND a.Isshow = '1' ORDER BY a.Sort asc,a.ID desc LIMIT 20   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined variable: SEOTitle /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 11 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007306s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007332s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2019-07-31T20:39:18+08:00 ] 36.79.242.187 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '36.79.242.187' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+SQL: SHOW COLUMNS FROM `xb_sys_adcontent` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_sys_adcontent` WHERE `AdvertisingID` = 1 AND `Status` = 1 ORDER BY Sort ASC,ID DESC LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_contentmanagement` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Title` FROM `xb_sys_contentmanagement` WHERE `CategoriesID` = 2 ORDER BY Sort asc,ID desc LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0003s ]
+SQL: SELECT `ID`,`Name`,`Imageurl` FROM `xb_items_category` WHERE `ParentID` = 0 AND `IsDel` = 0 AND `IsRec` = 1 AND `Status` = 1 ORDER BY Sort asc,ID desc LIMIT 8   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT `ID`,`Name`,`Logurl`,`AppNumbs` FROM `xb_items` WHERE `Itype` = '1' AND `IsRec` = '1' AND `IsDel` = '0' AND `Status` = '1' AND `Showtype` IN ('1','3') AND `Isshow` = '1' ORDER BY Sort asc,ID desc LIMIT 4   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 45 行.
+SQL: SELECT a.ID,a.Name,a.Logurl,a.Intro,a.AppNumbs,c.Name as Jkdays,a.DayfeeRate,b.Name as eduname FROM xb_items a left join xb_items_moneytype b on a.MoneytypeID=b.ID left join xb_items_jktimes c on a.JktimesID=c.ID  WHERE a.Itype = '1' AND a.IsHot = '1' AND a.IsDel = '0' AND a.Status = '1' AND a.Showtype IN ('1','3') AND a.Isshow = '1' ORDER BY a.Sort asc,a.ID desc LIMIT 20   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8] Undefined variable: SEOTitle /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 11 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007762s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000412s ]
+
+[ 2019-07-31T20:52:42+08:00 ] 119.23.107.15 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '119.23.107.15' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+SQL: SHOW COLUMNS FROM `xb_sys_adcontent` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_sys_adcontent` WHERE `AdvertisingID` = 1 AND `Status` = 1 ORDER BY Sort ASC,ID DESC LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_contentmanagement` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Title` FROM `xb_sys_contentmanagement` WHERE `CategoriesID` = 2 ORDER BY Sort asc,ID desc LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0003s ]
+SQL: SELECT `ID`,`Name`,`Imageurl` FROM `xb_items_category` WHERE `ParentID` = 0 AND `IsDel` = 0 AND `IsRec` = 1 AND `Status` = 1 ORDER BY Sort asc,ID desc LIMIT 8   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT `ID`,`Name`,`Logurl`,`AppNumbs` FROM `xb_items` WHERE `Itype` = '1' AND `IsRec` = '1' AND `IsDel` = '0' AND `Status` = '1' AND `Showtype` IN ('1','3') AND `Isshow` = '1' ORDER BY Sort asc,ID desc LIMIT 4   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 45 行.
+SQL: SELECT a.ID,a.Name,a.Logurl,a.Intro,a.AppNumbs,c.Name as Jkdays,a.DayfeeRate,b.Name as eduname FROM xb_items a left join xb_items_moneytype b on a.MoneytypeID=b.ID left join xb_items_jktimes c on a.JktimesID=c.ID  WHERE a.Itype = '1' AND a.IsHot = '1' AND a.IsDel = '0' AND a.Status = '1' AND a.Showtype IN ('1','3') AND a.Isshow = '1' ORDER BY a.Sort asc,a.ID desc LIMIT 20   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Undefined variable: SEOTitle /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 11 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+

@@ -1,0 +1,102 @@
+		<include file="Layout/header"/>
+		<style>
+			.weui-panel__bd a{
+				border: 1px solid #fff;
+			}
+			.weui-media-box:before{
+				
+			}
+			.weui-panel__bd{
+				border-bottom: none;
+			}
+		</style>
+		<header class="header" >
+			<a href="<?php echo U('Index/index');?>" class="go_left"></a> 
+			<span class="header_til">信用卡中心</span>
+		</header> 
+		<div class="" style="height: 50px;"></div> 
+	  <!----> 
+	  <div class="" style="height:175px;">
+		  <volist name="referInfo" id="vo">
+			  <if condition="$i eq 1">
+			    <a href="<?php echo U('Item/cdetail').'?id='.$vo['ID'];?>">
+				  <div class="fl" style="width: 40%; padding:20px 10px; box-sizing: border-box;">
+					  <div  style=" height: 63px;  margin:0 10px;">
+						  <h4 class="weui-media-box__title" style="color: #1d84ff;font-weight: bold">{$vo['Name']}</h4>
+						  <p class="weui-media-box__desc">{$vo['Intro']}</p>
+					  </div>
+					  <div  style="width: 101px; height: 62px; margin-right:0">
+						  <img class="weui-media-box__thumb" src="{$vo.Logurl}" style="width: 101px; height: 62px;">
+					  </div>
+				  </div>
+				</a>
+			  <else />
+				  <div class="weui-panel__bd fr" style="width:60%;<if condition="$i eq 2">border-left:2px solid #F9F9FB;border-bottom:2px solid #F9F9FB<elseif condition="$i eq 3"/>border-left:2px solid #F9F9FB;</if>">
+					  <a href="<?php echo U('Item/cdetail').'?id='.$vo['ID'];?>" class="weui-media-box weui-media-box_appmsg"  >
+						  <div class="weui-media-box__bd">
+							  <h4 class="weui-media-box__title" style="color: <if condition="$i eq 2">#FFC550<elseif condition="$i eq 3"/>#FF5050</if>;font-weight: bold">{$vo.Name}</h4>
+							  <p class="weui-media-box__desc">{$vo.Intro}</p>
+						  </div>
+						  <div class="weui-media-box__hd" style="width: 60px; height: 36px; margin-right:0">
+							  <img class="weui-media-box__thumb" src="{$vo.Logurl}" style="width: 60px; height: 36px;">
+						  </div>
+					  </a>
+				  </div>
+			  </if>
+		  </volist>
+		 <div class="clear"></div>
+	  </div>
+	    
+	  
+    <!---->
+        <section class="hd"></section>
+         <section class="comt_til comt_til1" style="padding: 10px;">
+			<span class="fl" style="border-left: 3px solid #5461eb;"> 快速办卡</span>
+			<a href="{:U('Item/clist')}" class="fr" style="color:#999;">更多</a>
+			<div class="clear"></div>
+		 </section>
+        <ul class="ul_zhineng ul_zhineng4 ul_zhan">
+			<volist name="bankInfo" id="vo">
+				<a href="<?php echo U('Item/clist').'?BankID='.$vo['ID'];?>" style="width:33.3%;">
+					<div class="benk_logo">
+						<!-- <in name="i" value="1,2,3">
+							<img src="__PUBLIC__/images/icon_miao.png" class="icon_miao">
+						</in>
+						<img src="{$vo.Logurl}" style="width: 33px; height: 33px;" class="bank_img"> -->
+						<img src="{$vo.Logurl}" style="width: 44px; height: 44px;" class="bank_img">
+		      			<div class="icon_miao">
+		      				{$vo.Desc}
+		      			</div>
+					</div>
+					<p class="p1" style="font-size: 16px; padding: 5px 0;">{$vo.BankName}</p>
+					<p class="p2">{$vo.Intro}</p>
+				</a>
+			</volist>
+	      	<div class="clear"></div>
+	      	<div class="more"></div>
+	      </ul>
+    <!--end-->
+          <section class="hd"></section>
+          <section class="comt_til comt_til1" style="padding: 10px;">
+			<span class="fl" style="border-left: 3px solid #5461eb;"> 快速办卡</span>
+			<a href="{:U('Item/clist')}" class="fr" style="color:#999;">更多</a>
+			<div class="clear"></div>
+		 </section>
+		 
+		 <section>
+			 <volist name="Info" id="vo">
+				 <dl class="dl_hot dl_hot1"  >
+					 <a href="<?php echo U('Item/cdetail').'?id='.$vo['ID'];?>" class="k_logo" style="top:18px"><img src="{$vo.Logurl}" style="width:86px; height: 52px; "></a>
+					 <a href="<?php echo U('Item/cdetail').'?id='.$vo['ID'];?>">
+						 <dt class="dt1"><?php if(mb_strlen($vo['Intro'])<15){echo $vo['Intro'];}else{echo mb_substr($vo['Intro'],0,13)."...";} ?></dt>
+						 <dt class="dt2" style="padding-top: 5px;">
+							 <label class="fl lab_1" >{$vo.BankName}</label>
+							 <label class="fl lab_2">专享</label>
+							 <span class="fr"><label  class="span_label">
+								 <if condition="$vo.AppNumbs egt 100000000">{$vo['AppNumbs']/100000000|round=###,1}亿<elseif condition="$vo.AppNumbs egt 10000"/>{$vo['AppNumbs']/10000|round=###,1}万<else />{$vo.AppNumbs}</if></label>人申请</span>
+						 </dt>
+					 </a>
+				 </dl>
+			 </volist>
+		 </section>
+		<include file="Layout/footer"/>

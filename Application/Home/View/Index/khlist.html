@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+        <link type="text/css" href="__PUBLIC__/css/jquery-weui.min.css" rel="stylesheet">
+		<link type="text/css" href="__PUBLIC__/css/weui.min.css"  rel="stylesheet"/>
+        <link type="text/css" href="__PUBLIC__/css/app.css"  rel="stylesheet"/>
+        <link rel="stylesheet" href="__PUBLIC__/css/date.css" />
+        <link rel="stylesheet" href="__PUBLIC__/css/dropload.css" />
+		<title><?php echo $SEOTitle?$SEOTitle:$GLOBALS['BasicInfo']['SEOTitle'];?></title> 
+		<style>
+			.weui-navbar:after{
+				border-bottom: none;
+			}
+			.weui-navbar__item:after{
+				
+			}
+			.weui-navbar__item{
+				margin: 10px 0;
+				padding: 0;
+			}
+		</style>
+	</head>
+	<body> 
+		<header class="header" >
+			<a href="javascript:history.go(-1)" class="go_left"></a> 
+			<span class="header_til">贷款分销</span>  
+		</header> 
+		<div  style="height: 50px;"></div>
+	    <div class="weui-tab" style="height: 42px; ">
+		  <div class="weui-navbar" style="background:#fff;">
+		    <a class="weui-navbar__item " href="<?php echo U('Index/share');?>">
+		           佣金产品
+		    </a>
+		    <a class="weui-navbar__item weui-bar__item--on" href="">
+		             客户列表
+		    </a>
+		    <a class="weui-navbar__item " href="<?php echo U('Member/wallet');?>">
+		          我的钱包
+		    </a>  
+		 </div> 
+		</div> 
+		<!---->
+		<section class="hd"></section> 
+	  <!--end-->
+	  <section style="padding: 10px;">
+	  	<!-- <section class="fl select_option">
+	  		<input type="text" id="year" placeholder="年份" /> 
+	  	</section>
+	  	<section class="fl select_option">  
+	  		<input type="text" id="yue" placeholder="月份" />
+	  	</section> -->
+	  	<section class="fl select_option" style="width:90px;"> 
+		  	<div class="demo">
+                <div class="lie">
+                    <input id="beginTime" name="beginTime" class="kbtn" style="text-align: right; border: none;width:90px;text-align: center;" value="{$dates}" />
+                </div>
+            </div>
+	    </section>
+	  	<section class="fl">
+	  		<button class="btn_ok" onclick="fnsearch()">确定</button>
+	  	</section> 
+	  	<div class="clear"></div>
+	  </section>
+	  <!---->
+	  <section class="comt_til" style="padding: 0 10px;">
+		  	<span class="span_yue">月结产品</span>
+		  	<label style="color:#818181;">{$dateArr[0]}年{$dateArr[1]}月  共<em style="color:#5461eb; font-size: 16px; font-style: normal;">{$applycount}</em>位申请</label>
+		</section>
+		<!--end-->
+		<section style="padding: 20px 0;">
+			<div class="weui-flex tab_til center">
+				  <div class="weui-flex__item" style="width: 40%;">产品 </div>
+				  <div class="weui-flex__item">申请数/位</div>
+				  <div class="weui-flex__item">放款成功</div>
+				  <div class="weui-flex__item"> 奖金/元</div> 
+			</div>
+			
+			<article class="khfxWarp" style="padding-bottom:60px;">
+				 <section class="itemlist">
+				 </section>
+			</article>
+		</section>  
+	   <!----> 
+	   <div style="height: 50px;"></div>
+<!--查询数据-->	 
+<input type="hidden" name="dates" class="dates" value="{$dates}"/>
+<!--引用底部文件 start-->
+<include file="Layout/bottom" />
+<!--引用底部文件 end-->
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/dropload.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/date.js"></script>
+<script type="text/javascript">
+	 //加载更多
+    $(function () {
+    var current_page=0;
+    var dates=$('.dates').val();
+    // dropload
+    var dropload = $('.khfxWarp').dropload({
+        scrollArea: window,
+        loadDownFn: function (me) {
+
+            $.ajax({
+                type: 'POST',
+                url: "{:U('Index/getkhdata')}",
+                data:"pages="+current_page+"&dates="+dates,
+                dataType: 'json',
+                success: function(data){
+                    var result = '';
+                    if(!data.result){
+                        me.lock();
+                        me.noData();
+                        me.resetload();
+                    }else{
+                        for(var i = 0; i < data.message.length; i++) {
+                            result+= ''  
+                            +'<div class="weui-flex center" style="padding: 10px 0;">'
+							  +'<div class="weui-flex__item" style="width: 40%;">'+data.message[i].Name+' </div>'
+							  +'<div class="weui-flex__item">'+data.message[i].applycount+'</div>'
+							  +'<div class="weui-flex__item">'+data.message[i].fksuccess+'</div>'
+							  +'<div class="weui-flex__item" style="color:#999;"> ¥'+data.message[i].BonusAll+'</div>'
+							+'</div>';
+                        }
+
+                        setTimeout(function(){
+                            $('.itemlist').append(result);
+                            current_page++;
+                            me.resetload();
+                        },0);
+                    }
+                },
+                error: function(xhr, type){
+                    XB.Tip('加载数据出错');
+                    // 即使加载出错，也得重置
+                    me.lock();
+                    me.noData();
+                }
+            });
+
+        }
+    });
+});
+$(function(){
+	//$('#beginTime').date();
+    $('#beginTime').date();
+});
+//搜索
+function fnsearch(){
+	var beginTime=$('#beginTime').val();
+	window.location.href="<?php echo U('Index/khlist');?>"+'?dates='+beginTime;
+}
+</script>
+<div id="datePlugin"></div>

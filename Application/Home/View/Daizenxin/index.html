@@ -1,0 +1,79 @@
+		<include file="Layout/header"/>
+		<header class="header">
+			<a href="{:U('Member/index')}" class="go_left"></a>
+			<span class="header_til">查征信</span>
+		</header>
+		<section style="height: 42PX;"></section>
+		<ul class="ul_navAdd">
+			<li><a href="<?php echo U('Daibeishop/platweb').'?uid='.$uid?>"  >贷款产品</a></li>
+			<li><a href="<?php echo U('Daibeishop/index').'?uid='.$uid?>" >信用卡产品</a></li>
+			<li><a href="<?php echo U('Daizenxin/index').'?uid='.$uid;?>" class="cur">查征信</a></li>
+			<div class="clear"></div>
+		</ul>
+		<section class="hd"></section>
+	<form id="txform">	
+		<div class="weui-cells"  style="margin-top:0;">
+		  <div class="weui-cell">
+		    <div class="weui-cell__bd">
+		      <p>真实姓名</p>
+		    </div>
+		    <div class="weui-cell__ft" ><input type="text" name="TrueName" id="TrueName" placeholder="真实姓名" class="weui-input" style="text-align: right;"></div>
+		  </div>
+		  <div class="weui-cell">
+		    <div class="weui-cell__bd">
+		      <p>身份证号</p>
+		    </div>
+		    <div class="weui-cell__ft" ><input type="text" name="IDCard" id="IDCard" placeholder="身份证号码" class="weui-input" style="text-align: right;"> </div>
+		  </div>
+		  <div class="weui-cell">
+		    <div class="weui-cell__bd">
+		      <p>手机号</p>
+		    </div>
+		    <div class="weui-cell__ft"><input type="text" name="Mobile" id="Mobile" placeholder="手机号码" class="weui-input" style="text-align: right;"></div>
+		  </div>
+		</div>
+		<input type="hidden" id="uid" name="uid" value="{$uid}">
+		<!---->
+		<section style="padding: 30px 0;">
+				<a href="javascript:void(0);" onclick="fnsubmit()" class="btn_want" style="width: 80%;">立即提交</a>
+		 </section>
+
+	</form>
+		<include file="Layout/footer"/>
+<script type="text/javascript">
+	//征信资料提交
+	function fnsubmit(){
+		var uid=$('#uid').val();
+		if(!$('#TrueName').val()){
+			$.alert("请输入真实姓名");return false;
+		}
+		if(!$('#IDCard').val()){
+			$.alert("请输入身份证号码");return false;
+		}
+		if(!$('#Mobile').val()){
+			$.alert("请输入手机号码");return false;
+		}
+		//校验
+		$.ajax({
+	        type:"POST",
+	        url:"<?php echo U('Daizenxin/adddata');?>",
+	        data:$('#txform').serialize(),
+	        dataType: "json",
+	        success:function(data){
+	          if(data.result==0){
+	             $.alert(data.message);return false;
+	          }
+	          if(data.result==1){
+	             //校验成功
+	             $.alert(data.message, "", function() {
+				   //点击确认后的回调函数
+				   window.location.href = "{:U('Daizenxin/zxpay')}"+'?id='+data.des+"&uid="+uid;
+				 });
+	             // XB.Success(data.message, function () {
+              //       window.location.href = "{:U('Zenxin/zxpay')}"+'?id='+data.des;
+              //    });
+	          }
+	        }
+      });
+	}
+</script>

@@ -1,0 +1,138 @@
+<include file="Shared:Header" />
+<body class="Bodybg">
+<div id="tt" class="easyui-tabs" >
+    <div title="基本信息" style="padding: 20px; background-color: #f4f4f4">
+        <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable">
+            <tbody>
+            <tr>
+                <td width="120" align="right"> 会员唯一ID：</td>
+                <td width="200">
+                    {$Info['ID']}
+                </td>
+                <td width="70" align="center">会员头像:</td>
+                <td rowspan="18" valign="top" align="center">
+                    <if condition="$Info['HeadImg'] eq null">
+                        <img src="__PUBLIC__/Admin/images/H/nohead.png" style="width: 240px;border:5px solid #fff;margin-top:10px;">
+                        <else />
+                        <img src="{$Info['HeadImg']}" style="width: 240px;border:5px solid #fff;margin-top:10px;">
+                    </if>
+                </td>
+            </tr>
+            <tr >
+                <td width="120" align="right">真实姓名：</td>
+                <td>
+                    {$Info['TrueName']}
+                </td>
+            </tr>
+            <tr >
+                <td width="120" align="right">手机号码：</td>
+                <td>
+                    {$Info['Mobile']}
+                </td>
+            </tr>
+            <tr >
+                <td width="120" align="right">会员类型：</td>
+                <td>
+                    <switch name="Info['Mtype']" >
+                        <case value="1">普通会员</case>
+                        <case value="2">{$dailiArr[1]}</case>
+                        <case value="3">{$dailiArr[2]}</case>
+                        <case value="4">{$dailiArr[3]}</case>
+                    </switch>
+                </td>
+            </tr>
+            <tr >
+                <td width="120" align="right">可用余额：</td>
+                <td>
+                    ￥{$Info['Balance']}元
+                </td>
+            </tr>
+            <tr >
+                <td width="120" align="right">会员状态：</td>
+                <td>
+                    <switch name="Info['Status']">
+                        <case value="0">禁用</case>
+                        <case value="1">正常</case>
+                    </switch>
+                </td>
+            </tr>
+            <tr >
+                <td width="120" align="right">注册时间：</td>
+                <td>
+                    {$Info['RegTime']}
+                </td>
+            </tr>
+            <tr >
+                <td width="120" align="right">上次登录时间：</td>
+                <td>
+                    {$Info['LastLoginTime']}
+                </td>
+            </tr>
+            <tr >
+                <td width="120" align="right">上次登录IP：</td>
+                <td>
+                    {$Info['LastLoginIP']}
+                </td>
+            </tr>
+            <tr >
+                <td width="120" align="right">上次登录城市：</td>
+                <td>
+                    {$Info['LastIpCity']}
+                </td>
+            </tr>
+            <tr >
+                <td width="120" align="right">最后登录时间：</td>
+                <td>
+                    {$Info['LoginTime']}
+                </td>
+            </tr>
+            <tr >
+                <td width="120" align="right">最后登录IP：</td>
+                <td>
+                    {$Info['LoginIP']}
+                </td>
+            </tr>
+            <tr >
+                <td width="120" align="right">最后登录城市：</td>
+                <td>
+                    {$Info['IpCity']}
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div title="资金明细"  style="padding: 20px; background-color: #f4f4f4">
+        <div class="TabelContent">
+            <table id="BalanceDetail"></table>
+        </div>
+    </div>
+</div>
+<div style="text-align:center;margin:20px 0px;">
+    <input name="Btn" type="button" value=" 关闭  " onclick="parent.$('#W1').window('close');" />
+</div>
+<script type="text/javascript">
+    $(function () {
+        var frozenColumns = [
+            //{ field: 'ID', checkbox: true }
+        ];
+        var columns = [
+            { field: 'Type', title: '变更类型', width: 150,sortable: true },
+            { field: 'SruType', title: '收入(支出)类型', width: 150 },
+            { field: 'Mtype', title: '推荐会员类型', width: 150 },
+            { field: 'Amount', title: '变动金额', width: 100 },
+            { field: 'CurrentBalance', title: '账户结余', width: 100 },
+            { field: 'UpdateTime', title: '变动日期', width: 150 },
+            { field: 'Description', title: '详细描述', width: 400 }
+        ];
+        $.XB.datagrid({
+            "loadsuccess": function () {
+                $(this).datagrid('resize', {
+                    height: 260
+                });
+            }, "frozenColumns": frozenColumns, "columns": columns, "url": "__APP__/Members/MemInfo/BalanceDetail", "u": "UID={$Info['ID']}", "pagesize": "10", "datalist": "#BalanceDetail"
+        });
+    });
+</script>
+
+</body>
+<include file="Shared:Footer" />

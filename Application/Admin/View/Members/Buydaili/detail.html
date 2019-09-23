@@ -1,0 +1,78 @@
+<include file="Shared:Header" />
+<body class="Bodybg">
+<div id="tt" class="easyui-tabs">
+    <div title="购买代理详情" style="padding: 20px; background-color: #f4f4f4">
+        <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable">
+            <tbody>
+            <tr >
+                <td width="120" align="right"> 真实姓名：</td>
+                <td >
+                    {$tabList['TrueName']}
+                </td>
+                <td width="120" align="right">手机号码：</td>
+                <td>
+                    {$tabList['Mobile']}
+                </td>
+            </tr>
+            <tr >
+                <td width="120" align="right">代理名称：</td>
+                <td>
+                    {$tabList['Name']}
+                </td>
+                <td width="120" align="right">订单编号：</td>
+                <td>
+                    {$tabList['OrderSn']}
+                </td>
+            </tr>
+            <tr >
+                <td width="120" align="right">订单价格：</td>
+                <td>
+                    ￥{$tabList['OrderAmount']}元
+                </td>
+                <td width="120" align="right">下单时间：</td>
+                <td>
+                    {$tabList['OrderTime']}
+                </td>
+            </tr>
+            <tr >
+                <td width="120" align="right">支付状态：</td>
+                <td>
+                    <switch name="tabList['Status']">
+                        <case value="1">待支付</case>
+                        <case value="2">已支付</case>
+                        <default/>已取消
+                    </switch>
+                </td>
+                <if condition="$tabList['Status'] eq 2">
+                    <td width="120" align="right">支付方式：</td>
+                    <td>
+                        <switch name="tabList['PayType']">
+                            <case value="1">微信</case>
+                            <case value="2">支付宝</case>
+                            <case value="3">余额</case>
+                        </switch>
+                    </td>
+               </if>
+            </tr>
+            <if condition="$tabList['Status'] eq 2">
+                <tr >
+                    <td width="120" align="right">交易流水号：</td>
+                    <td>
+                        {$tabList['Batch']}
+                    </td>
+                    <td width="120" align="right">支付时间：</td>
+                    <td>
+                        {$tabList['PayTime']}
+                    </td>
+                </tr>
+            </if>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+<div style="text-align:center;margin:20px 0px;">
+    <input name="Btn" type="button" value=" 关闭  " onclick="parent.$('#W1').window('close');" />
+</div>
+</body>
+<include file="Shared:Footer" />

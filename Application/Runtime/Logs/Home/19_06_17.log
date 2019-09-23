@@ -1,0 +1,1121 @@
+[ 2019-06-17T02:06:33+08:00 ] 222.79.171.43 /fsj_patch/android/check.xml?t=26011806
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T02:06:38+08:00 ] 222.79.171.43 /fsj_patch/android/check.xml?t=26011806
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T02:06:39+08:00 ] 222.79.171.43 /fsj_patch/android/check.xml?t=26011806
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T02:06:40+08:00 ] 222.79.171.43 /fsj_patch/android/check.xml?t=26011806
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T02:06:44+08:00 ] 222.79.171.43 /fsj_patch/android/check.xml?t=26011806
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T02:11:31+08:00 ] 117.187.37.117 /fsj_patch/android/zipsource/1.0.1/1.0.0-1.0.1.zip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T05:25:37+08:00 ] 47.110.224.174 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1397 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '237.144.149.231' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+SQL: SHOW COLUMNS FROM `xb_sys_adcontent` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_adcontent` WHERE `AdvertisingID` = 1 AND `Status` = 1 ORDER BY Sort ASC,ID DESC LIMIT 3   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xb_sys_contentmanagement` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Title` FROM `xb_sys_contentmanagement` WHERE `CategoriesID` = 2 ORDER BY Sort asc,ID desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0003s ]
+SQL: SELECT `ID`,`Name`,`Imageurl` FROM `xb_items_category` WHERE `ParentID` = 0 AND `IsDel` = 0 AND `IsRec` = 1 AND `Status` = 1 ORDER BY Sort asc,ID desc LIMIT 8   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0006s ]
+SQL: SELECT `ID`,`Name`,`Logurl`,`AppNumbs` FROM `xb_items` WHERE `Itype` = '1' AND `IsRec` = '1' AND `IsDel` = '0' AND `Status` = '1' AND `Showtype` IN ('1','3') AND `Isshow` = '1' ORDER BY Sort asc,ID desc LIMIT 4   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 45 行.
+SQL: SELECT a.ID,a.Name,a.Logurl,a.Intro,a.AppNumbs,c.Name as Jkdays,a.DayfeeRate,b.Name as eduname FROM xb_items a left join xb_items_moneytype b on a.MoneytypeID=b.ID left join xb_items_jktimes c on a.JktimesID=c.ID  WHERE a.Itype = '1' AND a.IsHot = '1' AND a.IsDel = '0' AND a.Status = '1' AND a.Showtype IN ('1','3') AND a.Isshow = '1' ORDER BY a.Sort asc,a.ID desc LIMIT 20   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8] Undefined variable: SEOTitle /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 11 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007187s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007214s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2019-06-17T07:08:08+08:00 ] 27.17.78.138 /fsj_patch/android/check.xml?t=26012108
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T07:08:10+08:00 ] 27.17.78.138 /fsj_patch/android/check.xml?t=26012108
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T07:08:11+08:00 ] 27.17.78.138 /fsj_patch/android/check.xml?t=26012108
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T08:06:18+08:00 ] 36.60.4.165 /fsj_patch/android/check.xml?t=26012166
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T08:45:50+08:00 ] 222.187.101.98 /fsj_patch/android/check.xml?t=26012205
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T08:45:51+08:00 ] 222.187.101.98 /fsj_patch/android/check.xml?t=26012205
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T08:45:52+08:00 ] 222.187.101.98 /fsj_patch/android/check.xml?t=26012205
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T09:55:18+08:00 ] 110.250.18.98 /fsj_patch/android/check.xml?t=26012275
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T10:09:41+08:00 ] 121.35.103.75 /fsj_patch/android/check.xml?t=26012289
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T10:19:02+08:00 ] 121.35.103.75 /fsj_patch/android/check.xml?t=26012299
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T10:19:04+08:00 ] 121.35.103.75 /fsj_patch/android/check.xml?t=26012299
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T10:19:05+08:00 ] 121.35.103.75 /fsj_patch/android/check.xml?t=26012299
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T10:19:08+08:00 ] 121.35.103.75 /fsj_patch/android/check.xml?t=26012299
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T10:19:09+08:00 ] 121.35.103.75 /fsj_patch/android/check.xml?t=26012299
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T12:27:07+08:00 ] 220.172.187.184 /fsj_patch/android/check.xml?t=26012427
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T12:27:08+08:00 ] 220.172.187.184 /fsj_patch/android/check.xml?t=26012427
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T12:27:09+08:00 ] 220.172.187.184 /fsj_patch/android/check.xml?t=26012427
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T12:27:12+08:00 ] 220.172.187.184 /fsj_patch/android/check.xml?t=26012427
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T12:27:13+08:00 ] 220.172.187.184 /fsj_patch/android/check.xml?t=26012427
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T12:27:14+08:00 ] 220.172.187.184 /fsj_patch/android/check.xml?t=26012427
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T12:27:14+08:00 ] 220.172.187.184 /fsj_patch/android/check.xml?t=26012427
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T12:27:15+08:00 ] 220.172.187.184 /fsj_patch/android/check.xml?t=26012427
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T12:27:16+08:00 ] 220.172.187.184 /fsj_patch/android/check.xml?t=26012427
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T12:27:21+08:00 ] 106.109.29.205 /fsj_patch/android/check.xml?t=26012427
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T12:27:36+08:00 ] 106.109.29.205 /fsj_patch/android/check.xml?t=26012427
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T13:21:20+08:00 ] 222.244.160.12 /fsj_patch/android/check.xml?t=26012481
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T13:21:21+08:00 ] 222.244.160.12 /fsj_patch/android/check.xml?t=26012481
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T13:21:22+08:00 ] 222.244.160.12 /fsj_patch/android/check.xml?t=26012481
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T13:21:23+08:00 ] 222.244.160.12 /fsj_patch/android/check.xml?t=26012481
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T14:54:20+08:00 ] 112.244.204.72 /fsj_patch/android/check.xml?t=26012574
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T14:54:22+08:00 ] 112.244.204.72 /fsj_patch/android/check.xml?t=26012574
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T14:54:24+08:00 ] 112.244.204.72 /fsj_patch/android/check.xml?t=26012574
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T14:54:25+08:00 ] 112.244.204.72 /fsj_patch/android/check.xml?t=26012574
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T14:54:29+08:00 ] 112.244.204.72 /fsj_patch/android/check.xml?t=26012574
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T14:54:32+08:00 ] 112.244.204.72 /fsj_patch/android/check.xml?t=26012574
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:12:46+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012712
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:12:55+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012712
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:12:56+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012712
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:12:57+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012712
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:12:57+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012712
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:12:59+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012712
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:13:00+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012713
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:13:01+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012713
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:13:03+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012713
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:13:03+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012713
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:13:04+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012713
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:13:12+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012713
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:13:13+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012713
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:13:14+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012713
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:13:16+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012713
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:13:16+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012713
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:13:17+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012713
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:13:18+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012713
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:13:28+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012713
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:13:29+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012713
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:13:29+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012713
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:13:43+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012713
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:13:48+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012713
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:13:49+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012713
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:13:49+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012713
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:13:50+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012713
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:13:51+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012713
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:13:52+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012713
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:13:52+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012713
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:13:53+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012713
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:13:54+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012713
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:13:55+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012713
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:13:57+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012713
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:13:58+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012713
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:13:58+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012713
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:13:59+08:00 ] 124.167.144.238 /fsj_patch/android/check.xml?t=26012714
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T17:54:01+08:00 ] 101.251.242.238 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1396 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1398 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1401 行.
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '101.251.242.238' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1423 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 1424 行.
+SQL: SHOW COLUMNS FROM `xb_sys_adcontent` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_adcontent` WHERE `AdvertisingID` = 1 AND `Status` = 1 ORDER BY Sort ASC,ID DESC LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_contentmanagement` [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Title` FROM `xb_sys_contentmanagement` WHERE `CategoriesID` = 2 ORDER BY Sort asc,ID desc LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0003s ]
+SQL: SELECT `ID`,`Name`,`Imageurl` FROM `xb_items_category` WHERE `ParentID` = 0 AND `IsDel` = 0 AND `IsRec` = 1 AND `Status` = 1 ORDER BY Sort asc,ID desc LIMIT 8   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0006s ]
+SQL: SELECT `ID`,`Name`,`Logurl`,`AppNumbs` FROM `xb_items` WHERE `Itype` = '1' AND `IsRec` = '1' AND `IsDel` = '0' AND `Status` = '1' AND `Showtype` IN ('1','3') AND `Isshow` = '1' ORDER BY Sort asc,ID desc LIMIT 4   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: areid /www/wwwroot/xbm.mashangbang.top/Application/Home/Controller/IndexController.class.php 第 45 行.
+SQL: SELECT a.ID,a.Name,a.Logurl,a.Intro,a.AppNumbs,c.Name as Jkdays,a.DayfeeRate,b.Name as eduname FROM xb_items a left join xb_items_moneytype b on a.MoneytypeID=b.ID left join xb_items_jktimes c on a.JktimesID=c.ID  WHERE a.Itype = '1' AND a.IsHot = '1' AND a.IsDel = '0' AND a.Status = '1' AND a.Showtype IN ('1','3') AND a.Isshow = '1' ORDER BY a.Sort asc,a.ID desc LIMIT 20   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+NOTIC: [8] Undefined variable: SEOTitle /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 11 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007266s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007292s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000391s ]
+
+[ 2019-06-17T20:49:30+08:00 ] 114.98.34.158 /fsj_patch/android/check.xml?t=26012929
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T20:49:32+08:00 ] 114.98.34.158 /fsj_patch/android/check.xml?t=26012929
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T20:49:33+08:00 ] 114.98.34.158 /fsj_patch/android/check.xml?t=26012929
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T20:49:34+08:00 ] 114.98.34.158 /fsj_patch/android/check.xml?t=26012929
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T20:49:35+08:00 ] 114.98.34.158 /fsj_patch/android/check.xml?t=26012929
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T20:49:38+08:00 ] 114.98.34.158 /fsj_patch/android/check.xml?t=26012929
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T20:49:39+08:00 ] 114.98.34.158 /fsj_patch/android/check.xml?t=26012929
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T20:49:40+08:00 ] 114.98.34.158 /fsj_patch/android/check.xml?t=26012929
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T20:54:15+08:00 ] 61.157.144.131 /fsj_patch/android/check.xml?t=26012934
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T20:57:06+08:00 ] 61.157.144.131 /fsj_patch/android/check.xml?t=26012937
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T20:58:21+08:00 ] 119.119.165.66 /fsj_patch/android/check.xml?t=26012938
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T20:58:23+08:00 ] 119.119.165.66 /fsj_patch/android/check.xml?t=26012938
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T20:58:33+08:00 ] 61.157.144.131 /fsj_patch/android/check.xml?t=26012938
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T20:58:40+08:00 ] 61.157.144.131 /fsj_patch/android/check.xml?t=26012938
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T20:58:52+08:00 ] 61.157.144.131 /fsj_patch/android/check.xml?t=26012938
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T21:04:09+08:00 ] 61.157.144.131 /fsj_patch/android/check.xml?t=26012944
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T22:11:10+08:00 ] 221.6.211.138 /fsj_patch/android/check.xml?t=26013011
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T22:11:13+08:00 ] 221.6.211.138 /fsj_patch/android/check.xml?t=26013011
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T22:11:15+08:00 ] 221.6.211.138 /fsj_patch/android/check.xml?t=26013011
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T22:11:16+08:00 ] 221.6.211.138 /fsj_patch/android/check.xml?t=26013011
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T22:11:17+08:00 ] 221.6.211.138 /fsj_patch/android/check.xml?t=26013011
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T22:11:18+08:00 ] 221.6.211.138 /fsj_patch/android/check.xml?t=26013011
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T22:11:19+08:00 ] 221.6.211.138 /fsj_patch/android/check.xml?t=26013011
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T22:11:21+08:00 ] 221.6.211.138 /fsj_patch/android/check.xml?t=26013011
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T22:11:30+08:00 ] 221.6.211.138 /fsj_patch/android/check.xml?t=26013011
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T22:11:34+08:00 ] 221.6.211.138 /fsj_patch/android/check.xml?t=26013011
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T22:11:35+08:00 ] 221.6.211.138 /fsj_patch/android/check.xml?t=26013011
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T22:11:36+08:00 ] 221.6.211.138 /fsj_patch/android/check.xml?t=26013011
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T22:11:39+08:00 ] 221.6.211.138 /fsj_patch/android/check.xml?t=26013011
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T22:11:41+08:00 ] 221.6.211.138 /fsj_patch/android/check.xml?t=26013011
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T22:11:42+08:00 ] 221.6.211.138 /fsj_patch/android/check.xml?t=26013011
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T22:11:44+08:00 ] 221.6.211.138 /fsj_patch/android/check.xml?t=26013011
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T22:11:45+08:00 ] 221.6.211.138 /fsj_patch/android/check.xml?t=26013011
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T22:11:54+08:00 ] 221.6.211.138 /fsj_patch/android/check.xml?t=26013011
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T22:12:06+08:00 ] 221.6.211.138 /fsj_patch/android/check.xml?t=26013012
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T22:12:09+08:00 ] 221.6.211.138 /fsj_patch/android/check.xml?t=26013012
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T22:13:54+08:00 ] 221.6.211.134 /fsj_patch/android/check.xml?t=26013013
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T23:22:22+08:00 ] 111.199.21.49 /fsj_patch/android/check.xml?t=26013082
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+ERR: 无法加载控制器:FsjPatch
+
+[ 2019-06-17T23:22:24+08:00 ] 111.199.21.49 /fsj_patch/android/check.xml?t=26013082
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+ERR: 无法加载控制器:FsjPatch
+

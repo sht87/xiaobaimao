@@ -1,0 +1,99 @@
+<include file="Shared:Header" />
+<body class="Bodybg">
+<div id="tt" class="easyui-tabs" >
+    <div title="基本信息" style="padding: 20px; background-color: #f4f4f4">
+        <fieldset style="border: 1px solid #ccc;margin:5px;">
+	        <legend>产品详情</legend>
+	        <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable">
+	            <tbody>
+	            <tr >
+	                <td width="120" align="right">产品名称：</td>
+	                <td width="200">
+	                    {$infos['Name']}
+	                </td>
+	                <td width="120" align="right">产品编码：</td>
+	                <td >{$infos.GoodsNo}</td>
+	            </tr>
+	            <tr >
+	                <td width="120" align="right">产品类型：</td>
+	                <td>
+	                    <?php
+	                       if($infos['Itype']=='1'){
+	                          echo '平台网贷';
+	                       }elseif($infos['Itype']=='2'){
+	                          echo '信用卡贷';
+	                       }
+	                    ?>
+	                </td>
+	            </tr>
+	          </tbody>
+	        </table>
+	     </fieldset>
+
+	     <fieldset style="border: 1px solid #ccc;margin:5px;">
+	        <legend>借款人详情</legend>
+	        <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable">
+	            <tbody>
+	            <tr >
+	                <td width="120" align="right">借款人姓名：</td>
+	                <td>{$infos.TrueName}</td>
+	                <td width="120" align="right">借款人身份证号：</td>
+	                <td>{$infos.IDCard}</td>
+	            </tr>
+	            <tr >
+	                <td width="120" align="right">借款人手机号码：</td>
+	                <td>{$infos.Mobile}</td>
+	            </tr>
+				<tr >
+	                <td width="120" align="right">申请时间：</td>
+	                <td>{$infos.Applytime}</td>
+	            </tr>
+				<tr >
+	                <td width="120" align="right">是否下款：</td>
+	                <td>{$infos.isDown}</td>
+	            </tr>
+	            <tr>
+	                <td width="120" align="right">放款金额：</td>
+	                <td>{$infos.Money}</td>
+	                <td width="120" align="right">放款时间：</td>
+	                <td><?php echo date('Y-m-d H:i:s',$infos['Opentime']);?></td>
+	            </tr>
+	          </tbody>
+	        </table>
+	      </fieldset>
+    </div>
+    <div title="分佣明细"  style="padding: 20px; background-color: #f4f4f4">
+        <div class="TabelContent">
+            <table id="BalanceDetail"></table>
+        </div>
+    </div>
+</div>
+<div style="text-align:center;margin:20px 0px;">
+    <input name="Btn" type="button" value=" 关闭  " onclick="parent.$('#W1').window('close');" />
+</div>
+<script type="text/javascript">
+    $(function () {
+        var frozenColumns = [
+            //{ field: 'ID', checkbox: true }
+        ];
+        var columns = [
+            { field: 'UserID', title: '会员ID', width: 50},
+            { field: 'Mobile', title: '手机号码', width: 90},
+            { field: 'SruType', title: '收入(支出)类型', width: 100 },
+            { field: 'Amount', title: '变动金额', width: 70 },
+            { field: 'CurrentBalance', title: '账户结余', width: 70 },
+            { field: 'UpdateTime', title: '变动日期', width: 130 },
+            { field: 'Description', title: '详细描述', width: 200 }
+        ];
+        $.XB.datagrid({
+            "loadsuccess": function () {
+                $(this).datagrid('resize', {
+                    height: 260
+                });
+            }, "frozenColumns": frozenColumns, "columns": columns, "url": "__APP__/Operation/Listresult/BalanceDetail", "u": "oid={$infos['ID']}", "pagesize": "10", "datalist": "#BalanceDetail"
+        });
+    });
+</script>
+
+</body>
+<include file="Shared:Footer" />

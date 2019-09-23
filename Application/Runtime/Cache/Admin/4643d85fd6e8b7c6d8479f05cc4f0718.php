@@ -1,0 +1,3 @@
+<?php if (!defined('THINK_PATH')) exit(); if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$val): $mod = ($i % 2 );++$i; if($val["EName"] != 'Separator'): ?><a href="javascript:void(0);" class="ToolBtn" onclick="OpenWin('<?php echo ($val["EName"]); ?>')"><span class="<?php echo ($val["Icon"]); ?>"></span><b><?php echo ($val["Name"]); ?></b></a>
+        <?php else: ?>
+            <div class="Separator"></div><?php endif; endforeach; endif; else: echo "" ;endif; ?>

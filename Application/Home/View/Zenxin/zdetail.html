@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>查询结果</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="__PUBLIC__/miguanh5/css/new.css" rel="stylesheet">
+        <script src="__PUBLIC__/miguanh5/js/jquery.js"></script>
+        <link type="text/css" href="__PUBLIC__/css/app.css"  rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="__PUBLIC__/miguanh5/css/style.css"/>
+        <script>
+        
+        </script>
+    </head>
+    <header class="header">
+		<a href="javascript:window.history.go(-1)" class="go_left"></a>
+		<span class="header_til">征信详情</span>
+	</header>
+	<div style="height: 45px;"></div>
+    <body>
+    <?php if($infos['Status']=='4'):?>
+        <input type="hidden" id="txtno" value="{no}"/>
+        <section class="stitle cor1">基本信息</section>
+        <section class="content" id="vue1">
+            <div class="item">姓名：{$infos['LoanInfos']['user_basic']['user_name']}</div>
+            <div class="item">年龄：{$infos['LoanInfos']['user_basic']['user_age']}</div>
+            <div class="item">身份证号：{$infos['LoanInfos']['user_basic']['user_idcard']}</div>
+        </section>
+
+        <section class="stitle cor2">注册信息</section>
+        <section class="content" id="vue2">
+            <div class="item">注册APP数量：{$infos['LoanInfos']['user_register_orgs']['register_cnt']}</div>
+            <div class="item">注册APP类型：</div>
+            <div class="item">
+              <?php if($infos['LoanInfos']['user_register_orgs']['register_orgs_statistics']['label']):?>
+                <span class="sp" v-else v-for="vv in register_orgs_statistics">{$infos['LoanInfos']['user_register_orgs']['register_orgs_statistics']['label']}{$infos['LoanInfos']['user_register_orgs']['register_orgs_statistics']['count']}个&nbsp;&nbsp;&nbsp;&nbsp;</span>
+              <?php else:?>
+              	<span class="sp" v-if="vue2if">无</span>
+              <?php endif;?>
+            </div>
+        </section>
+
+        <section class="stitle cor3">黑名单信息</section>
+        <section class="content" id="vue3">
+            <div class="item">黑中介分数：<span class="num1">{$infos['LoanInfos']['user_gray']['phone_gray_score']}</span> <span class="sp">（分数为0-100，10分以下为高危人群）</span></div>
+            <div class="item">直接联系人在黑名单数量：<span class="num1">{$infos['LoanInfos']['user_gray']['contacts_class1_blacklist_cnt']}</span></div>
+            <div class="item">直接联系人总数：<span class="num1">{$infos['LoanInfos']['user_gray']['contacts_class1_cnt']}</span></div>
+            <div class="item">间接联系人在黑名单数量：<span class="num2">{$infos['LoanInfos']['user_gray']['contacts_class2_blacklist_cnt']}</span></div>
+            <div class="item">引起黑名单的直接联系人数量：<span class="num2">{$infos['LoanInfos']['user_gray']['contacts_router_cnt']}</span></div>
+            <div class="item">引起黑名单的直接联系人占比：<?php echo round($infos['LoanInfos']['user_gray']['contacts_router_ratio']*100,1).'%';?></div>
+           <!--  <div class="item">被标记的黑名单分类：<span class="num3" v-for="vv in blacklist_category">{{ vv }}</span></div> -->
+            <div class="item">身份证和姓名是否在黑名单：
+              <?php if($infos['LoanInfos']['user_blacklist']['blacklist_name_with_idcard']):?>
+               <span v-if="blacklist_name_with_idcard" class="num3">是</span>
+              <?php else:?>
+               <span v-else class="num3">否</span>
+              <?php endif;?>
+            </div>
+            <div class="item">身份证姓名黑名单更新时间：<span class="sp">{$infos['LoanInfos']['user_blacklist']['blacklist_update_time_name_idcard']}</span></div>
+            <div class="item">手机和姓名是否在黑名单：
+            <?php if($infos['LoanInfos']['user_blacklist']['blacklist_name_with_phone']):?>
+               <span v-if="blacklist_name_with_phon" class="num3">是</span>
+            <?php else:?>
+               <span v-else class="num3">否</span>
+            <?php endif;?>
+            </div>
+            <div class="item">手机姓名黑名单更新时间：<span class="sp">{$infos['LoanInfos']['user_blacklist']['blacklist_update_time_name_phone']}</span></div>
+            <div class="item">黑名单详细信息：</div>
+            <div class="item" v-for="vv in blacklist_details">
+              <?php foreach($infos['LoanInfos']['user_blacklist']['blacklist_details'] as $k=>$v):?>
+               <span class="sp">{$v.details_key}：{$v.details_value}</span><br/>
+              <?php endforeach;?>
+            </div>
+            <div class="item">机构查询统计：<span class="num4">{$infos['LoanInfos']['user_searched_statistic']['searched_org_cnt']}</span> <span class="sp">（被多个机构查询过——已去重）</span></div>
+        </section>
+
+        <section class="stitle cor4">机构历史查询</section>
+        <section class="content" id="vue4">
+          <?php foreach($infos['LoanInfos']['user_searched_history_by_orgs'] as $k=>$v):?>
+            <div class="ditem" v-for="vv in user_searched_history_by_orgs">
+                <div class="item">查询日期：{$v.searched_date } &nbsp; &nbsp; 机构类型：{$v.searched_org}</div>
+                <div class="item">是否是本机构查询：
+                 <?php if($v['org_self']):?>
+                  <span v-if="vv.org_self" class="num5">是</span>
+                 <?php else:?>
+                  <span v-else class="num5">否</span>
+                 <?php endif;?>
+                </div>
+            </div>
+          <?php endforeach;?>
+        </section>
+
+        <section class="stitle cor5">手机存疑</section>
+        <section class="content" id="vue5">
+          <?php foreach($infos['LoanInfos']['user_phone_suspicion']['phone_with_other_names'] as $k=>$v):?>
+            <div class="ditem" v-for="vv in phone_with_other_names">
+                <div class="item"><span class="sp">使用过此手机的其他姓名：{$v.susp_name}</span></div>
+                <div class="item">最后使用时间：{$v.susp_updt}</div>
+            </div>
+          <?php endforeach;?>
+          <?php foreach($infos['LoanInfos']['user_phone_suspicion']['phone_with_other_idcards'] as $k=>$v):?>
+            <div class="ditem" v-for="vv in phone_with_other_idcards">
+                <div class="item"><span class="sp">使用过此手机的其他身份证：{$v.susp_idcard}</span></div>
+                <div class="item">最后使用时间：{$v.susp_updt}</div>
+            </div>
+          <?php endforeach;?>
+          <?php foreach($infos['LoanInfos']['user_phone_suspicion']['phone_applied_in_orgs'] as $k=>$v):?>
+            <div class="ditem" v-for="vv in phone_applied_in_orgs">
+                <div class="item"><span class="sp">提供数据的机构类型：{$v.susp_org_type}</span></div>
+                <div class="item">最后使用时间：{$v.susp_updt}</div>
+            </div>
+          <?php endforeach;?>
+        </section>
+
+        <section class="stitle cor6">身份证存疑</section>
+        <section class="content" id="vue6">
+         <?php foreach($infos['LoanInfos']['user_idcard_suspicion']['idcard_with_other_names'] as $k=>$v):?>
+            <div class="ditem" v-for="vv in idcard_with_other_names">
+                <div class="item"><span class="sp">使用过此身份证的其他姓名：{$v.susp_name}</span></div>
+                <div class="item">最后使用时间：{$v.susp_updt}</div>
+            </div>
+         <?php endforeach;?>
+         <?php foreach($infos['LoanInfos']['user_idcard_suspicion']['idcard_with_other_phones'] as $k=>$v):?>
+            <div class="ditem" v-for="vv in idcard_with_other_phones">
+                <div class="item"><span class="sp">使用过此身份证的其他手机号码：{$v.susp_phone}</span></div>
+                <div class="item">运营商名称：{$v.susp_phone_operator} &nbsp; 归属地：{$v.susp_phone_province}/{$v.susp_phone_city }</div>
+            </div>
+         <?php endforeach;?>
+         <?php foreach($infos['LoanInfos']['user_idcard_suspicion']['idcard_applied_in_orgs'] as $k=>$v):?>
+            <div class="ditem" v-for="vv in idcard_applied_in_orgs">
+                <div class="item"><span class="sp">提供数据的机构：{$v.susp_org_type}</span></div>
+                <div class="item">最后使用时间：{$v.susp_updt}</div>
+            </div>
+         <?php endforeach;?>
+        </section>
+ <style>
+            .block_box{
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+.block_box .title {
+    padding: 12px 15px;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.block_box .title h1{
+    font-size: 16px;
+	height: 16px;
+    line-height: 16px;
+	border-left:4px solid #01c3ac;
+	padding-left:5px;
+    font-weight: 400;
+}
+
+.block_box .title .more{
+    float: right;
+    color: #999;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.block_box .morebut{
+    padding: 10px 15px;
+    font-size: 1.4em;
+}
+.daikuan_list dl {
+	border-bottom: 1px solid #EFEFEF;
+	padding: 15px 10px;
+	height: 62px;
+    box-sizing: content-box;
+}
+
+/*.daikuan_list dl:last-child {
+	border-bottom: 0
+}*/
+
+.daikuan_list dl dt {
+	float: left;
+	width: 76px;
+	height: 80px
+}
+.detail_head .icon,
+.detail_head .icon img {
+	position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 10px;
+}
+
+.daikuan_list dl .icon img {
+	width: 60px;
+	height: 60px;
+	margin: 2px 10px 0 5px;
+	border-radius: 5px
+}
+
+.daikuan_list dd {
+	float: left;
+	line-height: 22px;
+	color: #999
+}
+
+.daikuan_list dd i {
+	font-size: 13px;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.daikuan_list dd p.title {
+	color: #000;
+	font-size: 16px;
+	margin-bottom: 0px;
+	padding: 0;
+	border-bottom: 0
+}
+.fr {
+    float: right;
+}
+.shuju,
+.shuju li.bb,
+.zhengxin dl {
+	border-bottom: 1px solid #EFEFEF
+}
+
+.daikuan_list dd p {
+	height: 22px;
+	line-height: 22px;
+	word-break: break-all;
+	overflow: hidden
+}
+
+.daikuan_list dd p.title span {
+	font-size: 13px;
+	color: #999
+}
+i {
+	color: #FF6600;
+	font-style: normal
+}
+
+        </style>
+<!--         <div class="block_box mtw group">
+            <div class="title">
+			<h1>
+				根据您的资质，已为您筛选以下产品
+				<a href="http://dk.zhongxinwanka.com" class="more" >更多</a>
+			</h1>
+		</div>
+            <div class="daikuan_list">
+             
+       <a href="{dr[dklink]}">
+					<dl class="clearfix" >
+						<dt class="icon">
+							<img alt="{dr[title]}" src="http://zxwkdaichao.oss-cn-hangzhou.aliyuncs.com/upload/201804/29/201804291359149918.jpg">			
+						</dt>
+						<dd>
+							<p class="title">
+								网贷名称	
+								<span class="fr">
+									最快下款：<i>2分钟</i>
+								</span>
+							</p>
+							<p>
+								额度：<i>2000-8000元</i>
+								费用：<i>1%</i>
+							</p>
+							<p>一句话描述</p>
+						</dd>
+					</dl>
+				</a>
+   
+                </div>
+
+            </div> -->
+<script type="text/javascript">
+            $(function () {
+                if ($('.daikuan_list').length > 0) {
+                    var daikuan_node_w = $('.daikuan_list dl').width();
+                    $('.daikuan_list dl dd').width(daikuan_node_w - $('.daikuan_list dt').width());
+                }
+            });
+	</script>
+
+   <?php else:?>
+  <section style="color:#4564F2;font-weight:bold;padding-bottom:5px;">查询信息</section>
+  <section style="color:#999;">
+     <span>
+       姓名:<span style="color:#2c2c2c;padding-left:5px;">{$infos['TrueName']}</span>
+     </span>
+     <span style="padding-left:15px;">
+       身份证号:<span style="color:#2c2c2c;padding-left:5px;">{$infos['IDCard']}</span>
+     </span>
+  </section>
+  <section style="color:#999;">
+     <span>
+       手机号码:<span style="color:#2c2c2c;padding-left:5px;">{$infos['Mobile']}</span>
+     </span>
+  </section>
+  <?php if($infos['Status']=='1'):?>
+    <section style="padding: 30px 0;">
+      <a href="<?php echo U('Zenxin/zxpay').'?id='.$infos['ID'];?>" class="btn_want" style="width: 80%;">立即支付</a>
+    </section>
+  <?php elseif($infos['Status']=='2' || $infos['Status']=='3'):?>
+    <section style="padding: 30px 0;">
+      <a href="javascript:void(0);" onclick="fnagaincheck(this)" id="{$infos.ID}" class="btn_want" style="width: 80%;">查询征信</a>
+    </section>
+    <link type="text/css" href="__PUBLIC__/css/jquery-weui.min.css" rel="stylesheet">
+    <link type="text/css" href="__PUBLIC__/css/weui.min.css"  rel="stylesheet"/>
+    <script src="__PUBLIC__/js/jquery-2.1.4.js"></script>
+    <script src="__PUBLIC__/js/jquery-weui.min.js"></script>
+    <script type="text/javascript">
+      //重新查询征信
+      function fnagaincheck(obj){
+        $(".btn_want").removeAttr("onclick");
+        //校验
+        $.ajax({
+              type:"POST",
+              url:"<?php echo U('Zenxin/againcheck');?>",
+              data:"id="+$(obj).attr('id'),
+              dataType: "json",
+              success:function(data){
+                if(data.result==0){
+                   $.alert(data.message);return false;
+                }
+                if(data.result==1){
+                   //校验成功
+                   $.alert(data.message, "", function() {
+               //点击确认后的回调函数
+               window.location.href = "{:U('Zenxin/zxlist')}";
+             });
+                   // XB.Success(data.message, function () {
+                  //       window.location.href = "{:U('Zenxin/zxlist')}";
+                  //    });
+                }
+              }
+          });
+      }
+    </script>
+  <?php endif;?>
+ <?php endif;?>
+    </body>
+</html>

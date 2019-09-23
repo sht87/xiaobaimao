@@ -1,0 +1,56 @@
+        <include file="Layout/header"/>
+        <header class="header">
+            <a href="javascript:window.history.go(-1);" class="go_left"></a>
+            <span class="header_til">{$title}</span>
+        </header>
+        <!---->
+        <div class="weui-panel weui-panel_access" style="margin-top:50px">
+            <div class="weui-panel__bd">
+                <a href="{:U('Member/newslist',array('Type'=>1))}" class="weui-media-box weui-media-box_appmsg">
+                    <div class="weui-media-box__hd">
+                        <img class="weui-media-box__thumb" src="__PUBLIC__/images/icon_mynews1.png">
+                    </div>
+                    <div class="weui-media-box__bd">
+                        <h4 class="weui-media-box__title">
+                            <span class="fl">通知消息</span>
+                            <empty name="notice">
+                                <span class="fr" style="color:#959595; font-size: 11px;"><?php echo date('Y-m-d'); ?></span>
+                                <else/>
+                                <span class="fr" style="color:#959595; font-size: 11px;">{$notice['SendTime']|substr=0,10}</span>
+                            </empty>
+                            <div class="clear"></div>
+                        </h4>
+                        <empty name="notice">
+                            <p class="weui-media-box__desc">暂无新消息</p>
+                            <else/>
+                            <p class="weui-media-box__desc">{$notice['Title']}</p>
+                        </empty>
+                    </div>
+                </a>
+                <a href="{:U('Member/newslist')}" class="weui-media-box weui-media-box_appmsg">
+                    <div class="weui-media-box__hd">
+                        <img class="weui-media-box__thumb" src="__PUBLIC__/images/icon_mynews2.png">
+                    </div>
+                    <div class="weui-media-box__bd">
+                        <h4 class="weui-media-box__title">
+                            <span class="fl">系统消息</span>
+                            <empty name="sysmsg">
+                                <span class="fr" style="color:#959595; font-size: 11px;"><?php echo date('Y-m-d'); ?></span>
+                                <else/>
+                                <span class="fr" style="color:#959595; font-size: 11px;">{$sysmsg['SendTime']|substr=0,10}</span>
+                            </empty>
+                            <div class="clear"></div>
+                        </h4>
+                        <empty name="sysmsg">
+                            <p class="weui-media-box__desc">暂无新消息</p>
+                            <else/>
+                            <p class="weui-media-box__desc">{$sysmsg['Title']}</p>
+                        </empty>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <include file="Layout/footer"/>
+        <!---->
+

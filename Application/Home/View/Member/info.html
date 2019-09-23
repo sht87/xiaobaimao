@@ -1,0 +1,184 @@
+		<include file="Layout/header"/>
+		<style type="text/css">
+			.weui-input{
+				color: #434343;
+			}
+		</style>
+		<header class="header"  >
+			<a href="{:U('index')}" class="go_left"></a>
+			 <span class="header_til">{$title}</span>
+		</header>
+      <!---->
+      <div class="weui-cells weui-cells_form" style="margin-top: 50px;">
+		  <form action="#" id="formf" method="post">
+              <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label" style="color:#434343;">头像</label></div>
+                <div class="weui-cell__bd">
+                  <a href="javascript:void(0);" style="display: block;width:32px;height: 32px;" class="fr">
+                      <!--<img src="__PUBLIC__/images/photo.png" style="width:32px; ">-->
+                      <if condition="$memInfo['HeadImg'] eq NULL">
+                          <img src="__PUBLIC__/images/photo.png" id="photo" style=" width:32px; display:block;   position:absolute; top:10px; right:5% ">
+                          <else/>
+                          <img src="{$memInfo.HeadImg}" id="photo" style=" width:32px; display:block;   position:absolute; top:10px; right:5%">
+                      </if>
+                      <input type="hidden" name="HeadImg" id="HeadImg" value="{$memInfo.HeadImg}">
+                      <div class="per_float" id="upload" style=" width:32px; display:block;   position:absolute; top:5px; right:5%;height:32px "></div>
+                  </a>
+                  <div class="clear"></div>
+                </div>
+              </div>
+              <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label" style="color:#434343;">  真实姓名</label></div>
+                <div class="weui-cell__bd">
+                  <input class="weui-input" id="TrueName" name="TrueName" value="{$memInfo.TrueName}" placeholder="请填写真实姓名" style="text-align: right;" />
+                </div>
+              </div>
+              <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label" style="color:#434343;">身份证号</label></div>
+                <div class="weui-cell__bd">
+                  <input class="weui-input" id="CardNo" name="CardNo" value="{$memInfo.CardNo}" placeholder="请填写身份证号码" style="text-align: right;" onkeyup="this.value=this.value.replace(/[^\w\.\/]/ig,'')" maxlength="18"/>
+                </div>
+              </div>
+              <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label" style="color:#434343;">手机号</label></div>
+                <div class="weui-cell__bd">
+                    <div class="weui-input" style="text-align: right;">{$memInfo.Mobile}</div>
+                </div>
+              </div>
+              <!-- <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label" style="color:#434343;">推荐码</label></div>
+                <div class="weui-cell__bd">
+                  <div class="weui-input" style="text-align: right;">{$memInfo.Tjcode}</div>
+                </div>
+              </div>
+              <if condition="$memInfo.Referee neq 0">
+                  <div class="weui-cell">
+                      <div class="weui-cell__hd"><label class="weui-label" style="color:#434343;">推荐人</label></div>
+                      <div class="weui-cell__bd">
+                          <div class="weui-input"  style="text-align: right;">
+                              {$memInfo.ReferName}
+                          </div>
+                      </div>
+                  </div>
+              </if> -->
+              <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label" style="color:#434343;">身份</label></div>
+                <div class="weui-cell__bd">
+                    <select name="Position" id="Position" class="weui-input" dir="rtl" style="border:1px solid transparent">
+                        <option value="0">请选择</option>
+                        <option value="1" <if condition="$memInfo.Position eq 1">selected</if>>学生党</option>
+                        <option value="2" <if condition="$memInfo.Position eq 2">selected</if>>上班族</option>
+                        <option value="3" <if condition="$memInfo.Position eq 3">selected</if>>自主创业</option>
+                        <option value="4" <if condition="$memInfo.Position eq 4">selected</if>>无业</option>
+                    </select>
+                  <!--<input class="weui-input" placeholder="上班族" style="text-align: right;">-->
+                </div>
+              </div>
+              <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label" style="color:#434343;">有无信用卡</label></div>
+                <div class="weui-cell__bd">
+                    <select name="IsCredit" id="IsCredit" class="weui-input" dir="rtl" style="border:1px solid transparent">
+                        <option value="0" <if condition="$memInfo.IsCredit eq 0">selected</if>>无</option>
+                        <option value="1" <if condition="$memInfo.IsCredit eq 1">selected</if>>有</option>
+                    </select>
+                </div>
+              </div>
+               <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label" style="color:#434343;">手机使用时长</label></div>
+                <div class="weui-cell__bd">
+                    <select name="UseTime" id="UseTime" class="weui-input" dir="rtl" style="border:1px solid transparent">
+                        <option value="1" <if condition="$memInfo.UseTime eq 1">selected</if>>一年以下</option>
+                        <option value="2" <if condition="$memInfo.UseTime eq 2">selected</if>>一年以上</option>
+                        <option value="3" <if condition="$memInfo.UseTime eq 3">selected</if>>两年以上</option>
+                        <option value="4" <if condition="$memInfo.UseTime eq 4">selected</if>>三年以上</option>
+                    </select>
+                </div>
+              </div>
+		  </form>
+	  </div>
+
+        <div style="padding: 30px 0;">
+            <a href="javascript:void(0);" class="btn_want" onclick="saveinfo()" style="width: 90%;">保存</a>
+        </div>
+	    <!---->
+      <!--页面悬浮-->
+      <div class="">
+        <?php if($GLOBALS['BasicInfo']['Ytstatus']=='3'):?>
+        <a href="{$GLOBALS['BasicInfo']['YtanUrl']}"  class="suspend_icon1"><img src="{$GLOBALS['BasicInfo']['YtanImg']}"></a>
+        <?php endif;?>
+        <a href="<?php echo U('Index/index');?>" class="suspend_icon2"><img src="__PUBLIC__/images/suspend_icon2.png"></a>
+        <a href="javascript:history.go(-1)" class="suspend_icon3"><img src="__PUBLIC__/images/suspend_icon3.png"></a>
+      </div>
+      <!--页面悬浮 end-->
+        <script src="__PUBLIC__/js/jquery-2.1.4.js"></script>
+        <script src="__PUBLIC__/js/jquery-weui.min.js"></script>
+        <script src="__PUBLIC__/js/common.js"></script>
+        <script type="text/javascript" src="__PUBLIC__/artDialog/artDialog.min.js"></script>
+        <link rel="stylesheet" href="__PUBLIC__/artDialog/skins/aero.css">
+        <script type="text/javascript" src="__PUBLIC__/artDialog/iframeTools.js"></script>
+        <script src="__PUBLIC__/js/mui.min.js"></script>
+        </body>
+        </html>
+
+		<script src="__PUBLIC__/js/jquery.Huploadify.js" type="text/javascript"></script>
+		<script type="text/javascript">
+            setTimeout
+			$('#upload').Huploadify({
+				auto:true,
+				fileTypeExts:"{$exts}",
+				multi:true,
+				showUploadedPercent:true,
+				showUploadedSize:true,
+				fileSizeLimit:"{$GLOBALS['BasicInfo']['PicSize']}",
+				buttonText:'&nbsp;&nbsp;&nbsp;&nbsp;',
+				uploader:'/Member/upload?Path=Large',
+				removeTimeout:0,
+				itemTemplate:'',
+				onUploadStart:function(){},
+				onInit:function(){},
+				onUploadComplete:function(file, data){
+					var msg = eval('(' + data + ')');
+					if (msg.result == 0) {
+            $.alert(msg.message);
+					} else {
+						$('#photo').attr('src', msg.path);
+						$('#HeadImg').val(msg.path);
+					}
+				},
+				onDelete:function(file){
+				}
+			});
+
+			function saveinfo() {
+                var TrueName=$.trim($('#TrueName').val());
+			          var CardNo=$.trim($('#CardNo').val());
+                if(!TrueName){
+                    $.alert("请填写您的真实姓名");
+                    return false;
+                }
+                if(!CardNo){
+                    $.alert("请填写您的身份证号码");
+                    return false;
+                }
+                if(!CardNo.match(/(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/)){
+                    $.alert("您的身份证号码格式不正确");
+                    return false;
+                }
+
+                $('.btn_want').removeAttr('onclick');
+                setTimeout(function(){$(".btn_want").attr("onclick", "saveinfo()")},1000);
+				$.post("{:U('Member/save')}",$('#formf').serialize(),function (data) {
+					if(data.result==1){
+					    //XB.Tip(data.message);
+              $.alert(data.message);
+                        setTimeout(function () {
+                            window.location.href="{:U('Member/index')}";
+                        },1500);
+                    }else{
+					//	XB.Tip(data.message);
+            $.alert(data.message);
+					}
+				},'json')
+			}
+
+		</script>

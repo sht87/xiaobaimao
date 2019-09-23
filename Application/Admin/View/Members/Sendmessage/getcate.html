@@ -1,0 +1,162 @@
+<include file="Shared:Header" />
+<body class="easyui-layout" >
+<div data-options="region:'center',border:true" style="width:80%">
+    <div class="easyui-layout" data-options="fit:true" >
+        <div data-options="region:'center',border:false," style="overflow:hidden;" >
+            <div id="search" class="search">
+                <table border="0" class="SearchTable" cellpadding="3">
+                    <thead>
+                        <tr>
+                            <td width="70" align="right">会员姓名：</td>
+                            <td width="180">
+                                <input id="UserName" Name="UserName" type="text" />
+                            </td>
+                            <td width="70" align="right">手机号码：</td>
+                            <td width="180">
+                                <input id="Mobile" name="Mobile" type="text" />
+                            </td>
+                            <td width="70" align="right">用户状态：</td>
+                            <td width="100">
+                                <select id="Status" name="Status">
+                                    <option value="-5" selected="selected">全部</option>
+                                    <option value="1">启用</option>
+                                    <option value="0">禁用</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input id="btnSearch" onclick="$.XB.search();" type="button" value="查 询">
+                            </td>
+                            <td>
+                                <input id="MoreSearch" onclick="$.XB.moresearch()" type="button" value="更多条件">
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody id="stbody">
+                        <tr>
+                            <td width="70" align="right">会员类型：</td>
+                            <td width="180">
+                                <select name="Mtype" id="Mtype">
+                                    <option value="-5">全部</option>
+                                    <foreach name="dailidata" item="v" key="k">
+                                        <if condition="$v neq ''">
+                                            <option value="{$k}">{$v}</option>
+                                        </if>
+                                    </foreach>
+                                </select>
+                            </td>
+                            <td width="70" align="right">登录IP：</td>
+                            <td width="180">
+                                <input id="LoginIP" name="LoginIP" type="text" />
+                            </td>
+                            <td width="70" align="right">登录城市：</td>
+                            <td width="180">
+                                <input id="IpCity" name="IpCity" type="text" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <form id="FF" method="post">
+                <div id="tabelContent" class="tabelContent">
+                    <table id="DataList"></table>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $('#DataList').datagrid({     
+            url: 'DataList',
+            frozenColumns: [[
+             { field: 'ID', checkbox: true },
+             { field: 'TrueName', title: '真实姓名', width: 70 },
+            ]],
+            columns: [[
+                { field: 'Mtype', title: '会员类型', width: 100},
+                { field: 'Mobile', title: '手机号码', width: 100 },
+                { field: 'Balance', title: '可用余额', width: 70 ,sortable: true},
+                { field: 'Status', title: '会员状态', width: 70 ,formatter: Common.StatusFormatter,sortable: true},
+                { field: 'IsSendwx', title: '微信推送消息', width: 90},
+                { field: 'ServiceOpenid', title: '微信openid', width: 120},
+                { field: 'Sort', title: '排序', width: 75 ,sortable: true},
+                { field: 'RegTime', title: '注册时间', width: 150 ,sortable: true},
+                { field: 'LoginTime', title: '最后登录时间', width: 150, sortable: true },
+                { field: 'LoginIP', title: '最后登录IP', width: 100, sortable: true },
+                { field: 'IpCity', title: '最后登录城市', width: 300, sortable: true },
+            ]],
+            rownumbers: false,
+            animate: true,
+            border: false,
+            lines: true,
+            pagination:true,
+            pageSize: 20,
+            pageList: [20, 30, 50],
+            onSelect:add,
+            onUnselect:del,
+            onSelectAll:addAll,
+            onUnselectAll:delAll,
+            onLoadSuccess: function () {
+                $(this).datagrid('resize', {
+                    height: $(window).height()-50,
+                });
+            },
+
+        }) 
+        $.XB.enter();
+    });
+</script>
+<script>
+    //添加一行
+    function add(rowIndex,rowData) {
+        var P = $.XB.findiframe().$("#myDetail");
+        var has=$.XB.findiframe().$("#MY"+rowData.ID);
+        if (has.length<=0){
+            //添加任务列表
+            var html = '<tr class="MY'+rowData.ID+'" id="MY'+rowData.ID+'">';
+            html +=     '<td>'+rowData.ID+'</td>';
+            html +=     '<td>'+rowData.TrueName+'</td>';
+            html +=     '<td>'+rowData.Mtype+'</td>';
+            html +=     '<td>'+rowData.ServiceOpenid+'</td>';
+            html +=     '<td>'+rowData.IsSendwx+'</td>';
+            html +=     '<td>'+rowData.Mobile+'</td>';
+            if(rowData.Status == 1){
+                html +=     '<td>正常</td>';
+            }else if(rowData.Status == 0){
+                html +=     '<td>禁用</td>';
+            }
+            html +=     '<td>'+rowData.RegTime+'</td>';
+            html +=     '<td><span class="icon310 ButtonSort" onclick="del(this,'+rowData.ID+');"></span></td>';
+            html +=     '<input type="hidden" name="MemIDS[]"  value="'+rowData.ID+'">';
+            html += '</tr>';
+            P.append(html);
+            //easyui 渲染
+            $.XB.findiframe().$('#Week'+rowData.ID).numberbox({min:1,required:true});
+            var check=$.XB.findiframe().$("#MY");
+            check.remove();
+        }
+    }
+    //删除一行
+    function del(rowIndex,ID) {
+        $.XB.findiframe().$("#MY"+ID).remove();
+        //添加统计
+        var P = $.XB.findiframe().$("#myDetail");
+        var check=$.XB.findiframe().$("#MY");
+        check.remove();
+    }
+    //添加全部
+    function addAll(rows) {
+        for (var i=0;i<rows.length;i++){
+            add(i,rows[i]);
+        }
+    }
+    //删除全部
+    function delAll(rows) {
+        for (var i=0;i<rows.length;i++){
+            del(i,rows[i]);
+        }
+    }
+</script>
+</body>
+
+<!--<include file="Shared:Footer" />-->

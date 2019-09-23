@@ -1,0 +1,24 @@
+[2019-02-26 15:25:18]
+>>>>>>>>>
+     test
+            {"app_id":"200002180100","api_url":"https:\/\/pay.chanpay.com\/mag-unify\/gateway\/receiveOrder.do","app_key":"","app_secret":"","return_url":"\/Member\/index","notify_url":"\/api.php\/Center\/Payzenxin\/chanpayNotify"}
+
+>>>>>>>>>
+[2019-02-26 15:25:42]
+>>>>>>>>>
+     test
+            {"app_id":"200002180100","api_url":"https:\/\/pay.chanpay.com\/mag-unify\/gateway\/receiveOrder.do","app_key":"","app_secret":"","return_url":"\/Member\/index","notify_url":"\/api.php\/Center\/Payzenxin\/chanpayNotify"}
+
+>>>>>>>>>
+[2019-02-26 15:25:55]
+>>>>>>>>>
+     test
+            {"app_id":"200002180100","api_url":"https:\/\/pay.chanpay.com\/mag-unify\/gateway\/receiveOrder.do","app_key":"","app_secret":"","return_url":"\/Member\/index","notify_url":"\/api.php\/Center\/Payzenxin\/chanpayNotify"}
+
+>>>>>>>>>
+[2019-02-26 15:29:18]
+>>>>>>>>>
+     test
+            {"app_id":"200002180100","api_url":"https:\/\/pay.chanpay.com\/mag-unify\/gateway\/receiveOrder.do","app_key":"","app_secret":"","return_url":"\/Member\/index","notify_url":"\/api.php\/Center\/Payzenxin\/chanpayNotify"}
+
+>>>>>>>>>

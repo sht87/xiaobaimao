@@ -1,0 +1,82 @@
+		<include file="Layout/header"/>
+		<style type="text/css">
+			.header {
+				background: #fff;
+			}
+			.header_til {
+				color: #000;
+			}
+			.go_left {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 40px;
+				height: 45px;
+				background: url(__PUBLIC__/images/icon_goback1.png) center no-repeat;
+				background-size: 10px auto;
+			}
+		</style>
+      <!---->
+		<header class="header"  >
+			<a href="{:U('stepOne')}" class="go_left"></a>
+			<span class="header_til">{$title}</span>
+		</header>
+        <section style=" color: #999;  margin-top: 50px;">   
+		 	<section class="weui_reg"> 
+		 		<input class="weui-input icon_regPwd" id="NewPass" name="NewPass"  type="password" placeholder="重置您的密码">
+		 	</section>
+		 	<section class="weui_reg"> 
+		 		<input class="weui-input icon_regPwd" id="SurePass" name="SurePass"  type="password" placeholder="再次重置您的密码">
+		 	</section>
+		 	   
+	        <section style="padding: 30px 10px;">
+				<a href="javascript:;" class="btn_want" style="width: 100%;" id="show-custom">完成</a> 
+			</section>  
+       </section>  
+	    <!---->
+		<include file="Layout/footer"/>
+		<script type="text/javascript">
+			$(document).on("click", "#show-custom", function () {
+				var newpass=$.trim($('#NewPass').val());
+				var surepass=$.trim($('#SurePass').val());
+				if(newpass==''){
+					$.alert("请输入新密码");
+					return false;
+				}
+				if(!newpass.match(/^[a-zA-Z]\w{5,15}$/)){
+					$.alert("密码必须是以英文字母开头，6-16位与数字的组合");
+					return false;
+				}
+				if(surepass==''){
+					$.alert("请输入确认密码");
+					return false;
+				}
+				if(newpass!=surepass){
+					$.alert("您输入的新密码与确认密码不相同");
+					return false;
+				}
+				$.post("{:U('Forgetpwd/checkTwo')}",{newpass:newpass,surepass:surepass},function (data) {
+					if(data.result==1){
+						$.modal({
+							title: " ",
+							text: "重置密码成功，请重新登录",
+							buttons: [
+								{
+									text: "返回登录", onClick: function () {
+									window.location.href = "{:U('Login/index')}";
+								}
+								}
+							]
+
+						});
+					}else{
+						XB.Tip(data.message);
+					}
+				},'json');
+
+			});
+		</script>
+			
+			
+	</body>
+</html>

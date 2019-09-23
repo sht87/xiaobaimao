@@ -1,0 +1,59 @@
+<include file="Shared:Header" />
+<body class="Bodybg">
+    <form id="FF" method="post">
+    <div id="tools" class="tools">
+        {:W('RolePerm/RolePermTop')}
+    </div>
+    <div id="search" class="search">
+        <table border="0" class="SearchTable" cellpadding="3">
+            <thead>
+                <tr>
+                    <td width="70" align="right">标题：</td>
+                    <td width="180">
+                        <input id="Title" name="Title" type="text" />
+                    </td>
+
+                    <td>
+                        <input id="btnSearch" onclick="$.XB.search();" type="button" value="查 询">
+                    </td>
+                    <td width="70" align="right">状态：</td>
+                    <td width="180">
+                        <select id="Status" name="Status" class="easyui-combobox" data-options="panelHeight:90,editable:false">
+                            <option value="-5">全部</option>
+                            <option value="0">禁用</option>
+                            <option value="1">启用</option>
+                        </select>
+                    </td>
+                </tr>
+            </thead>
+
+        </table>
+    </div>
+    <div id="tabelContent" class="tabelContent">
+        <table id="DataList"></table>
+    </div>
+</form>
+
+<script type="text/javascript">
+        var id = "{:I('get.AdvertisingID')}";
+        $(function () {
+            var frozenColumns = [
+            { field: 'ID', checkbox: true },
+            { field: 'Name', title: '广告名称', width: 350 }
+            ];
+            var columns = [
+                { field: 'CateID', title: '跳转地址', width: 300 },
+                { field: 'AdvertisingID', title: '所属广告位', width: 200 ,sortable: true},
+                { field: 'Sort', title: '排序', width: 80, sortable: true, formatter: $.XB.JSSortInt },
+                { field: 'Status', title: '状态', width: 90, sortable: true },
+                { field: 'OperatorID', title: '操作人', width: 100 },
+                { field: 'UpdateTime', title: '添加时间', width: 130, sortable: true }
+            ];
+            $.XB.enter();
+            $.XB.datagrid({ "frozenColumns": frozenColumns, "columns": columns, "url": "/admin.php/System/Adcontent/DataList?AdvertisingID="+id });
+
+        });
+</script>
+    {:W('RolePerm/RolePermBottom')}
+</body>
+<include file="Shared:Footer" />

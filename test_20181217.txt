@@ -1,0 +1,18 @@
+[2018-12-17 18:13:04]
+>>>>>>>>>
+     test
+            {"app_id":"200002180371","api_url":"https:\/\/pay.chanpay.com\/mag-unify\/gateway\/receiveOrder.do","app_key":"","app_secret":"","return_url":"\/Member\/index","notify_url":"\/api.php\/Center\/Payzenxin\/chanpayNotify"}
+
+>>>>>>>>>
+[2018-12-17 18:13:25]
+>>>>>>>>>
+     test
+            {"app_id":"200002180371","api_url":"https:\/\/pay.chanpay.com\/mag-unify\/gateway\/receiveOrder.do","app_key":"","app_secret":"","return_url":"\/Member\/index","notify_url":"\/api.php\/Center\/Payzenxin\/chanpayNotify"}
+
+>>>>>>>>>
+[2018-12-17 18:13:59]
+>>>>>>>>>
+     test
+            {"app_id":"200002180371","api_url":"https:\/\/pay.chanpay.com\/mag-unify\/gateway\/receiveOrder.do","app_key":"","app_secret":"","return_url":"\/Member\/index","notify_url":"\/api.php\/Center\/Payzenxin\/chanpayNotify"}
+
+>>>>>>>>>

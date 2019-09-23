@@ -1,0 +1,670 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+    <meta http-equiv=”X-UA-Compatible” content=”IE=edge,chrome=1″ />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="renderer" content="webkit|ie-comp|ie-stand" />
+    <link href="/Public/Admin/JS/EasyUI/easyui.css" rel="stylesheet" />
+    <link href="/Public/Admin/images/H/Main.css" rel="stylesheet" />
+    <script src="/Public/Admin/JS/jquery.min.js"></script>
+    <script src="/Public/Admin/JS/EasyUI/jquery.easyui.min.js"></script>
+    <script src="/Public/Admin/JS/XB.js"></script>
+    <link href="/Public/Admin/images/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body class="Bodybg">
+<div class="easyui-panel" data-options="fit:true,border:false,bodyCls:'Bodybg',footer:'#ft'">
+    <form id="FF" class="easyui-form" method="post" data-options="novalidate:true">
+        <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable">
+            <thead>
+                <tr>
+                    <td colspan="4">说明：带<span class="Red">*</span>必填；基本信息表中的信息已做了缓存，其他模块调用参数时可以使用缓存方法调用，禁止直接读取数据库。</td>
+                </tr>
+            </thead>
+        </table>
+        <fieldset style=" border: 1px solid #ccc;margin:5px;">
+            <legend>基本信息</legend>
+            <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable EditTableMax">
+                <tbody>
+                    <tr>
+                        <td width="200" align="right"><span class="Red">*</span> 系统名称：</td>
+                        <td>
+                            <input id="SystemName" name="SystemName" type="text" class="easyui-textbox" data-options="required:true,validType:['length[1,100]']" />
+                            <span class="Hui">系统的简短名称</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right"><span class="Red">*</span> 系统域名：</td>
+                        <td>
+                            <input id="SystemDomain" name="SystemDomain" type="text" class="easyui-textbox" data-options="required:true,validType:['length[1,100]','url'],prompt:'http://开头'" />
+                            <span class="Hui">请以Http://开头，/结尾</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right"><span class="Red">*</span> SEO标题：</td>
+                        <td>
+                            <input id="SEOTitle" name="SEOTitle" type="text" class="easyui-textbox" data-options="required:true,validType:['length[1,100]']" />
+                            <span class="Hui">请填写含有业务主营的关键字词语，并通顺连贯，不超过34个汉字</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">SEO关键字：</td>
+                        <td>
+                            <textarea id="SEOKeyWord" name="SEOKeyWord" rows="3"></textarea>
+                            <span class="Hui">请填写含有业务主营的关键词，多个请使用英文状态下逗号隔开</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">SEO描述说明：</td>
+                        <td>
+                            <textarea id="SEODes" name="SEODes" rows="3"></textarea>
+                            <span class="Hui">围绕关键字编写适用SEO的一段文字，不超过70个汉字</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">PC版LOGO：</td>
+                        <td>
+                            <input id="Logo" name="Logo" type="text" class="easyui-textbox" data-options="width:320,buttonText: '上传',buttonIcon: 'icon30',onClickButton:  function(){$.XB.window({ 'url': '<?php echo U('Attachment/File/uploadbatch',array('file'=>'Logo','Path'=>'image','ismulti'=>'false'));?>', 'title': 'PC版Logo上传', 'width': 514, 'height': 294, 'fn': function () {  } });}" />
+                            <a href="javascript:void(0)" id="Logodd" style="display:inline-block;"><span class="icon317" style="width:16px;display:block;">&nbsp;</span></a>
+                            <span class="Hui">节庆假日可更换Logo</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">移动版LOGO：</td>
+                        <td>
+                            <input id="MLogo" name="MLogo" type="text" class="easyui-textbox" data-options="width:320,buttonText: '上传',buttonIcon: 'icon30',onClickButton:  function(){$.XB.window({ 'url': '<?php echo U('Attachment/File/uploadbatch',array('file'=>'MLogo','Path'=>'image','ismulti'=>'false'));?>', 'title': '移动版Logo上传', 'width': 514, 'height': 294, 'fn': function () {  } });}" />
+                            <a href="javascript:void(0)" id="MLogodd" style="display:inline-block;"><span class="icon317" style="width:16px;display:block;">&nbsp;</span></a>
+                            <span class="Hui">节庆假日可更换Logo</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right"><span class="Red">*</span>融客店图片：</td>
+                        <td>
+                            <input id="RongkeImg" name="RongkeImg" type="text" class="easyui-textbox" data-options="width:320,required:true,editable:false,buttonText: '上传',buttonIcon: 'icon30',onClickButton:  function(){$.XB.window({ 'url': '<?php echo U('Attachment/File/uploadbatch',array('file'=>'RongkeImg','Path'=>'image','ismulti'=>'false'));?>', 'title': '融客店图片', 'width': 514, 'height': 294, 'fn': function () {  } });}" />
+                            <a href="javascript:void(0)" id="RongkeImgdd" style="display:inline-block;"><span class="icon317" style="width:16px;display:block;">&nbsp;</span></a>
+                            <span class="Hui">建议图片大小（1080x1859）,二维码位置（400, 1200）</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right"><span class="Red">*</span>分享图片：</td>
+                        <td>
+                            <input id="ShareImg" name="ShareImg" type="text" class="easyui-textbox" data-options="width:320,required:true,editable:false,buttonText: '上传',buttonIcon: 'icon30',onClickButton:  function(){$.XB.window({ 'url': '<?php echo U('Attachment/File/uploadbatch',array('file'=>'ShareImg','Path'=>'image','ismulti'=>'false'));?>', 'title': '融客店图片', 'width': 514, 'height': 294, 'fn': function () {  } });}" />
+                            <a href="javascript:void(0)" id="ShareImgdd" style="display:inline-block;"><span class="icon317" style="width:16px;display:block;">&nbsp;</span></a>
+                            <span class="Hui">建议图片大小（1080x1412）,二维码位置（220,1030）</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right"><span class="Red">*</span> 密码错误上限：</td>
+                        <td>
+                            <input id="PsdErrorCount" name="PsdErrorCount" type="text" class="easyui-numberspinner" data-options="required:true,width:150,min:0,max:100,suffix:'次',prompt:'0值则不限制密码错误次数'">
+                            <span class="Hui">密码错误次数达到上限后，禁止登录系统，填写0则表示可无限次数尝试</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right"><span class="Red">*</span> 密码错误限制时长：</td>
+                        <td>
+                            <input id="PsdErrorTime" name="PsdErrorTime" type="text" class="easyui-numberspinner" data-options="required:true,width:150,min:1,prompt:'达到错误次数，再次登录时间间隔',increment:10,suffix:'分钟'">
+                            <span class="Hui">密码输入错误，再次可登录的时间间隔，设置为0时不限制！</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right"><span class="Red">*</span> 登录有效时长：</td>
+                        <td>
+                            <input id="Session" name="Session" type="text" class="easyui-numberspinner" data-options="required:true,width:150,min:1,value:20,increment:10,suffix:'分钟'">
+                            <span class="Hui">后台超过登录有效时长，未进行任何操作，再操作需要重新登录</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">ICP备案号：</td>
+                        <td>
+                            <input id="ICP" name="ICP" type="text" class="easyui-textbox" data-options="width:150,validType:['length[1,100]']">
+                            <span class="Hui">无可暂时留空</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">统计代码：</td>
+                        <td>
+                            <textarea id="StatisticsCode" name="StatisticsCode" rows="3"></textarea>
+                            <span class="Hui">可多个统计代码放置在一起</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">客服代码：</td>
+                        <td>
+                            <textarea id="ServiceCode" name="ServiceCode" rows="3"></textarea>
+                            <span class="Hui">可多个客服代码放置在一起</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">敏感词汇：</td>
+                        <td>
+                            <textarea id="StopWord" name="StopWord" rows="3"></textarea>
+                            <span class="Hui">敏感词汇请使用英文逗号分隔开，请勿使用空格</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">公司名称：</td>
+                        <td>
+                            <input id="CompanyName" name="CompanyName" type="text" class="easyui-textbox" data-options="validType:['length[1,100]']">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">登录验证：</td>
+                        <td>
+                            <label for="IP"><input type="checkbox" id="IP" name="IP" value="1"/>IP验证</label>
+                            <label for="MAC"><input type="checkbox" id="MAC" name="MAC" value="1"/>MAC验证</label>
+                            <span class="Hui">勾选表示启用验证，请在左边验证管理菜单内维护白名单后生效</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">客服电话：</td>
+                        <td>
+                            <input id="Tel" name="Tel" type="text" class="easyui-textbox" data-options="width:150,validType:['telormobile']">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">报名热线：</td>
+                        <td>
+                            <input id="HotTel" name="HotTel" type="text" class="easyui-textbox" data-options="width:150,validType:['telormobile']">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">联系QQ/微信：</td>
+                        <td>
+                            <input id="QQa" name="QQa" type="text" class="easyui-textbox" data-options="width:150,validType:['length[1,100]']">
+                        </td>
+                    </tr>
+                    <!--<tr>-->
+                        <!--<td align="right">QQ号2：</td>-->
+                        <!--<td>-->
+                            <!--<input id="QQb" name="QQb" type="text" class="easyui-textbox" data-options="width:150,validType:['length[1,100]']">-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td align="right">QQ号3：</td>-->
+                        <!--<td>-->
+                            <!--<input id="QQc" name="QQc" type="text" class="easyui-textbox" data-options="width:150,validType:['length[1,100]']">-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td align="right">QQ号4：</td>-->
+                        <!--<td>-->
+                            <!--<input id="QQd" name="QQd" type="text" class="easyui-textbox" data-options="width:150,validType:['length[1,100]']">-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                    <!-- <tr>
+                        <td align="right">微信客服：</td>
+                        <td>
+                            <input id="WeChat" name="WeChat" type="text" class="easyui-textbox" data-options="width:150,validType:['length[1,100]']">
+                        </td>
+                    </tr>-->
+                    <tr>
+                        <td align="right">微信公众号二维码：</td>
+                        <td>
+                            <input id="WeChatQR" name="WeChatQR" type="text" class="easyui-textbox" data-options="width:320,buttonText: '上传',buttonIcon: 'icon30',onClickButton:  function(){$.XB.window({ 'url': '<?php echo U('Attachment/File/uploadbatch',array('file'=>'WeChatQR','Path'=>'image','ismulti'=>'false'));?>', 'title': '微信二维码上传', 'width': 514, 'height': 294, 'fn': function () {  } });}" />
+                            <a href="javascript:void(0)" id="WeChatQRdd" style="display:inline-block;"><span class="icon317" style="width:16px;display:block;">&nbsp;</span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">手机App二维码：</td>
+                        <td>
+                            <input id="AppUpCode" name="AppUpCode" type="text" class="easyui-textbox" data-options="width:320,buttonText: '上传',buttonIcon: 'icon30',onClickButton:  function(){$.XB.window({ 'url': '<?php echo U('Attachment/File/uploadbatch',array('file'=>'AppUpCode','Path'=>'image','ismulti'=>'false'));?>', 'title': '手机App二维码上传', 'width': 514, 'height': 294, 'fn': function () {  } });}" />
+                            <a href="javascript:void(0)" id="AppUpCodedd" style="display:inline-block;"><span class="icon317" style="width:16px;display:block;">&nbsp;</span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="200" align="right"><span class="Red">*</span>安卓app下载地址：</td>
+                        <td>
+                            <input id="Androidurl" name="Androidurl" type="text" class="easyui-textbox" data-options="required:true,validType:['length[1,255]']" />
+                            <span class="Hui">app下载地址</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="200" align="right"><span class="Red">*</span>苹果app下载地址：</td>
+                        <td>
+                            <input id="IOSurl" name="IOSurl" type="text" class="easyui-textbox" data-options="required:true,validType:['length[1,255]']" />
+                            <span class="Hui">app下载地址</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+
+
+        <fieldset style="border: 1px solid #ccc;margin:5px;">
+            <legend>上传设置</legend>
+            <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable EditTableMax">
+                <tbody>
+                    <tr>
+                        <td width="200" align="right"><span class="Red">*</span> 图片大小上限：</td>
+                        <td>
+                            <input id="PicSize" name="PicSize" type="text" class="easyui-numberspinner" data-options="required:true,width:150,min:1,suffix:'KB',increment:10,prompt:'单位为：KB'">
+                            <span class="Hui">单位为：KB</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right"><span class="Red">*</span> 图片扩展名限制：</td>
+                        <td>
+                            <input id="PicExt" name="PicExt" type="text" class="easyui-textbox" data-options="required:true,validType:['length[1,100]']">
+                            <span class="Hui">如：gif,jpg</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right"><span class="Red">*</span> 主图是否生成缩略图：</td>
+                        <td>
+                            <select id="IsThumbnail" name="IsThumbnail" style="width:50px">
+                                <option value="0">否</option>
+                                <option value="1">是</option>
+                            </select>
+                            <span class="Hui">主图生成缩略图后,在列表展示时,系统调用小图显示.可节约带宽,提示访问速度!</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right"><span class="Red">*</span> 文件大小上限：</td>
+                        <td>
+                            <input id="FileSize" name="FileSize" type="text" class="easyui-numberspinner" data-options="required:true,width:150,min:1,suffix:'KB',increment:10,prompt:'单位为：KB'">
+                            <span class="Hui">单位为：KB</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right"><span class="Red">*</span> 文件扩展名限制：</td>
+                        <td>
+                            <input id="FileExt" name="FileExt" type="text" class="easyui-textbox" data-options="required:true,validType:['length[1,100]']">
+                            <span class="Hui">如何：doc,rar</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+    <!--
+        <fieldset style="border: 1px solid #ccc;margin:5px;">
+            <legend>推荐好友收益设置</legend>
+            <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable EditTableMax">
+                <tbody>
+                <tr>
+                    <td width="200" align="right"><span class="Red">*</span>普通会员收益：</td>
+                    <td>
+                        <input id="Tfriendsy1" name="Tfriendsy1" type="text" class="easyui-numberbox" data-options="required:true,min:0,max:10,suffix:'元',precision:2,prompt:'可填范围0-10元'">
+                        <span class="Hui">最高不超过10元</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200" align="right"><span class="Red">*</span>渠道经理收益：</td>
+                    <td>
+                        <input id="Tfriendsy2" name="Tfriendsy2" type="text" class="easyui-numberbox" data-options="required:true,min:0,max:20,suffix:'元',precision:2,prompt:'可填范围0-20元'">
+                        <span class="Hui">最高不超过20元</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200" align="right"><span class="Red">*</span>团队经理收益：</td>
+                    <td>
+                        <input id="Tfriendsy3" name="Tfriendsy3" type="text" class="easyui-numberbox" data-options="required:true,min:0,max:30,suffix:'元',precision:2,prompt:'可填范围0-30元'">
+                        <span class="Hui">最高不超过30元</span>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200" align="right"><span class="Red">*</span>城市经理收益：</td>
+                    <td>
+                        <input id="Tfriendsy4" name="Tfriendsy4" type="text" class="easyui-numberbox" data-options="required:true,min:0,max:40,suffix:'元',precision:2,prompt:'可填范围0-40元'">
+                        <span class="Hui">最高不超过40元</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </fieldset>
+    -->
+        <fieldset style="border: 1px solid #ccc;margin:5px;">
+            <legend>征信查询收益设置</legend>
+            <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable EditTableMax">
+                <tbody>
+                <tr>
+                    <td width="200" align="right"><span class="Red">*</span>普通会员收益：</td>
+                    <td>
+                        <input id="Zenxinsy1" name="Zenxinsy1" type="text" class="easyui-numberspinner" data-options="required:true,width:150,min:0,max:100,suffix:'%',increment:1,precision:2"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200" align="right"><span class="Red">*</span><?php echo ($dailiArr[1]); ?>收益：</td>
+                    <td>
+                        <input id="Zenxinsy2" name="Zenxinsy2" type="text" class="easyui-numberspinner" data-options="required:true,width:150,min:0,max:100,suffix:'%',increment:1,precision:2"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200" align="right"><span class="Red">*</span><?php echo ($dailiArr[2]); ?>收益：</td>
+                    <td>
+                        <input id="Zenxinsy3" name="Zenxinsy3" type="text" class="easyui-numberspinner" data-options="required:true,width:150,min:0,max:100,suffix:'%',increment:1,precision:2"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200" align="right"><span class="Red">*</span><?php echo ($dailiArr[3]); ?>收益：</td>
+                    <td>
+                        <input id="Zenxinsy4" name="Zenxinsy4" type="text" class="easyui-numberspinner" data-options="required:true,width:150,min:0,max:100,suffix:'%',increment:1,precision:2"/>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <fieldset style="border: 1px solid #ccc;margin:5px;">
+            <legend>征信设置</legend>
+            <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable EditTableMax">
+                <tbody>
+                <tr>
+                    <td width="200" align="right"><span class="Red">*</span>机构账号：</td>
+                    <td>
+                        <input id="Mgaccount" name="Mgaccount" type="text" class="easyui-textbox" data-options="required:true,validType:['length[1,255]']" />
+                        <span class="Hui">蜜罐接口</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200" align="right"><span class="Red">*</span>机构标识码：</td>
+                    <td>
+                        <input id="Mgsecret" name="Mgsecret" type="text" class="easyui-textbox" data-options="required:true,validType:['length[1,255]']" />
+                        <span class="Hui">蜜罐接口</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200" align="right"><span class="Red">*</span> 征信查询费：</td>
+                    <td>
+                        <input id="ZxPay" name="ZxPay" type="text" class="easyui-numberbox" data-options="required:true,width:150,min:2,max:100,prefix:'￥',suffix:'元',prompt:'20-100元',precision:2">
+                        <span class="Hui">征信查询费用,2-100元，最高不超过100元</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </fieldset>
+
+        <fieldset style="border: 1px solid #ccc;margin:5px;">
+            <legend>弹窗设置</legend>
+            <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable EditTableMax">
+                <tbody>
+                <tr>
+                    <td align="right">弹窗图片：</td>
+                    <td>
+                        <input id="TanImg" name="TanImg" type="text" class="easyui-textbox" data-options="width:320,buttonText: '上传',buttonIcon: 'icon30',onClickButton:  function(){$.XB.window({ 'url': '<?php echo U('Attachment/File/uploadbatch',array('file'=>'TanImg','Path'=>'image','ismulti'=>'false'));?>', 'title': '手机App二维码上传', 'width': 514, 'height': 294, 'fn': function () {  } });}" />
+                        <a href="javascript:void(0)" id="TanImgdd" style="display:inline-block;"><span class="icon317" style="width:16px;display:block;">&nbsp;</span></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200" align="right">弹窗链接：</td>
+                    <td>
+                        <input id="TanUrl" name="TanUrl" type="text" class="easyui-textbox" data-options="required:true,validType:['length[1,255]']" />
+                        <span class="Hui">弹窗打开跳转的地址以&nbsp;http://&nbsp;开头</span>
+                    </td>
+                </tr>
+				<tr>
+                    <td width="200" align="right">产品编码：</td>
+                    <td>
+                        <input id="productNo" name="productNo" type="text" class="easyui-textbox"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200" align="right">弹窗控制：</td>
+                    <td>
+                        <select id="Tcstatus" name="Tcstatus" style="width:150px;">
+                            <option value="1">都不弹</option>
+                            <option value="2">只h5弹</option>
+                            <option value="3">只app弹</option>
+                            <option value="4">全都弹</option>
+                        </select>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </fieldset>
+
+        <fieldset style="border: 1px solid #ccc;margin:5px;">
+            <legend>右弹广告设置</legend>
+            <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable EditTableMax">
+                <tbody>
+                <tr>
+                    <td align="right">广告图片：</td>
+                    <td>
+                        <input id="YtanImg" name="YtanImg" type="text" class="easyui-textbox" data-options="width:320,buttonText: '上传',buttonIcon: 'icon30',onClickButton:  function(){$.XB.window({ 'url': '<?php echo U('Attachment/File/uploadbatch',array('file'=>'YtanImg','Path'=>'image','ismulti'=>'false'));?>', 'title': '手机App二维码上传', 'width': 514, 'height': 294, 'fn': function () {  } });}" />
+                        <a href="javascript:void(0)" id="YtanImgdd" style="display:inline-block;"><span class="icon317" style="width:16px;display:block;">&nbsp;</span></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200" align="right">广告链接：</td>
+                    <td>
+                        <input id="YtanUrl" name="YtanUrl" type="text" class="easyui-textbox" data-options="required:true,validType:['length[1,255]']" />
+                        <span class="Hui">弹窗打开跳转的地址以&nbsp;http://&nbsp;开头</span>
+                    </td>
+                </tr>
+				<tr>
+                    <td width="200" align="right">产品编码：</td>
+                    <td>
+                        <input id="productNo_r" name="productNo_r" type="text" class="easyui-textbox"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200" align="right">广告控制：</td>
+                    <td>
+                        <select id="Ytstatus" name="Ytstatus" style="width:150px;">
+                           <option value="1">不弹</option>
+                           <option value="2">仅首页弹</option>
+                           <option value="3">所有页面都弹</option>
+                        </select>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </fieldset>
+
+        <fieldset style="border: 1px solid #ccc;margin:5px;">
+            <legend>微信设置</legend>
+            <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable EditTableMax">
+                <tbody>
+                <tr>
+                    <td width="200" align="right">微信欢迎语：</td>
+                    <td>
+                        <input id="WXSpeech" name="WXSpeech" type="text" class="easyui-textbox" data-options="required:true" />
+                        <!-- <span class="Hui">弹窗打开跳转的地址以&nbsp;http://&nbsp;开头</span> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200" align="right">微信服务号appid：</td>
+                    <td>
+                        <input id="AppID" name="AppID" type="text" class="easyui-textbox" data-options="required:true" />
+                        <!-- <span class="Hui">弹窗打开跳转的地址以&nbsp;http://&nbsp;开头</span> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200" align="right">微信服务号appsecret：</td>
+                    <td>
+                        <input id="AppSecret" name="AppSecret" type="text" class="easyui-textbox" data-options="required:true" />
+                        <!-- <span class="Hui">弹窗打开跳转的地址以&nbsp;http://&nbsp;开头</span> -->
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </fieldset>
+
+
+        <fieldset style="border: 1px solid #ccc;margin:5px;">
+            <legend>邮件参数</legend>
+            <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable EditTableMax">
+                <tbody>
+                    <tr>
+                        <td width="200" align="right">SMTP服务器地址：</td>
+                        <td>
+                            <input id="SmtpServer" name="SmtpServer" type="text" class="easyui-textbox" data-options="validType:['length[2,100]']" />
+                            <span class="Hui">邮件服务商提供的SMTP服务器地址</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">SMTP端口号：</td>
+                        <td>
+                            <input id="SmtpPort" name="SmtpPort" type="text" class="easyui-textbox" data-options="width:150,validType:['length[2,100]']" />
+                            <span class="Hui">默认端口 25</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">SMTP用户名：</td>
+                        <td>
+                            <input id="SmtpUser" name="SmtpUser" type="text" class="easyui-textbox" data-options="validType:['length[2,100]']" />
+                            <span class="Hui">邮箱账号</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">SMTP密码：</td>
+                        <td>
+                            <input id="SmtpPsd" name="SmtpPsd" type="password" class="easyui-textbox" data-options="validType:['length[2,100]']" />
+                            <span class="Hui">部分邮箱需开通SMTP方式,并设置独立的SMTP密码,而非登录密码！</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">发件人昵称：</td>
+                        <td>
+                            <input id="SmtpNiceName" name="SmtpNiceName" type="text" class="easyui-textbox" data-options="validType:['length[2,100]']" />
+                            <span class="Hui">收件时显示的发件人昵称</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+
+        <fieldset style="border: 1px solid #ccc;margin:5px;">
+            <legend>其他设置</legend>
+            <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable EditTableMax">
+                <tbody>
+                <tr>
+                    <td width="200" align="right">宣传语：</td>
+                    <td>
+                        <input id="Xcfonts" name="Xcfonts" type="text" class="easyui-textbox" data-options="required:true" />
+                        <span class="Hui">"我的专属海报"海报生成宣传语</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200" align="right">分享推广权限设置：</td>
+                    <td>
+                        <select id="Isshare" name="Isshare" style="width:150px;">
+                           <option value="1">都能分享</option>
+                           <option value="2">仅代理能分享</option>
+                        </select>
+                        <span class="Hui">控制会员中心,普通会员能否有分享权限</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200" align="right"><span class="Red">*</span> 每天可推荐人数：</td>
+                    <td>
+                        <input id="ReferCount" name="ReferCount" type="text" class="easyui-numberbox" data-options="required:true,width:150,min:0,suffix:'人'">
+                        <span class="Hui">每天可推荐人数，0代表可以无限次推荐</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200" align="right"><span class="Red">*</span> 提现手续费：</td>
+                    <td>
+                        <input id="Cost" name="Cost" type="text" class="easyui-numberspinner" data-options="required:true,width:150,min:0,max:100,suffix:'%',increment:1,precision:1">
+                        <span class="Hui">会员提现时,平台按百分比提取的平台费</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200" align="right">AppCode：</td>
+                    <td>
+                        <input id="AppCode" name="AppCode" type="text" class="easyui-textbox" data-options="validType:['length[2,100]']" />
+                        <span class="Hui">用于获取IP地址所在城市的接口 [<a href="https://market.aliyun.com/products/57002003/cmapi010805.html#sku=yuncode480500000" target="_blank">查看详情</a>]</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200" align="right">存储位置：</td>
+                    <td>
+                        <select id="Store" name="Store" style="width:150px;">
+                            <option value="0">服务器本地</option>
+                            <option value="1">七牛云存储</option>
+                            <option value="2">阿里OSS云存储</option>
+                        </select>
+                        <span class="Hui">图片、视频、附件的存储位置,若选择了云存储，需要到存储接口中填写参数！如果选择云存储,需要手工在js中禁用分块上传！</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <fieldset style="border: 1px solid #ccc;margin:5px;">
+            <legend>微信分享页面设置</legend>
+            <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable EditTableMax">
+                <tbody>
+                <tr>
+                    <td width="200" align="right"><span class="Red">*</span> 推广标题：</td>
+                    <td>
+                        <input id="ExtensionTitle" name="ExtensionTitle" type="text" class="easyui-textbox" data-options="required:true" />
+                        <span class="Hui">微信分享时推广标题</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200" align="right"><span class="Red">*</span> 推广描述：</td>
+                    <td>
+                        <input id="ExtensionDesc" name="ExtensionDesc" type="text" class="easyui-textbox" data-options="required:true" />
+                        <span class="Hui">微信分享时推广描述</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200" align="right"><span class="Red">*</span> 推广图片：</td>
+                    <td>
+                        <input id="ExtensionImage" name="ExtensionImage" type="text" class="easyui-textbox" data-options="width:320,buttonText: '上传',buttonIcon: 'icon30',onClickButton:  function(){$.XB.window({ 'url': '<?php echo U('Attachment/File/uploadbatch',array('file'=>'ExtensionImage','Path'=>'image','ismulti'=>'false'));?>', 'title': '产品推广图片', 'width': 514, 'height': 294, 'fn': function () {  } });}" />
+                        <a href="javascript:void(0)" id="ExtensionImagedd" style="display:inline-block;"><span class="icon317" style="width:16px;display:block;">&nbsp;</span></a>
+                        <span class="Hui">微信分享时推广图片</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200" align="right"><span class="Red">*</span> 融客店标题：</td>
+                    <td>
+                        <input id="LoanTitle" name="LoanTitle" type="text" class="easyui-textbox" data-options="required:true">
+                        <span class="Hui">微信分享时融客店标题</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200" align="right"><span class="Red">*</span> 融客店描述：</td>
+                    <td>
+                        <input id="LoanDesc" name="LoanDesc" type="text" class="easyui-textbox" data-options="required:true" />
+                        <span class="Hui">微信分享时融客店描述</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200" align="right"><span class="Red">*</span> 融客店图片：</td>
+                    <td>
+                        <input id="LoanImage" name="LoanImage" type="text" class="easyui-textbox" data-options="width:320,buttonText: '上传',buttonIcon: 'icon30',onClickButton:  function(){$.XB.window({ 'url': '<?php echo U('Attachment/File/uploadbatch',array('file'=>'LoanImage','Path'=>'image','ismulti'=>'false'));?>', 'title': '代呗店图片', 'width': 514, 'height': 294, 'fn': function () {  } });}" />
+                        <a href="javascript:void(0)" id="LoanImagedd" style="display:inline-block;"><span class="icon317" style="width:16px;display:block;">&nbsp;</span></a>
+                        <span class="Hui">微信分享时融客店图片</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </fieldset>
+    </form>
+</div>
+<div id="ft" style="padding:4px;text-align:center;height:40px;line-height:40px;">
+    <input onclick="$.XB.pagesave({
+    'url': '/admin.php/System/Basicinfo/save/', 'fn': function (data) {
+        $.XB.success({
+            'message': data.message, 'fn': function () {
+                $.XB.topreload();
+            }
+        });
+    }
+});" type="button" id="saveb" value=" 确定保存 ">
+</div>
+<script>
+
+$(function () {
+        $('#FF').form('load', 'shows?ID=0&_=' + Math.random() + '');
+        $("#MainDiv").height($(window).height());
+        $.XB.pictips({ 'id': '#Logodd', 'path': '#Logo' });
+        $.XB.pictips({ 'id': '#MLogodd', 'path': '#MLogo' });
+        $.XB.pictips({ 'id': '#WeChatQRdd', 'path': '#WeChatQR' });
+        $.XB.pictips({ 'id': '#AppUpCodedd', 'path': '#AppUpCode' });
+        $.XB.pictips({ 'id': '#RongkeImgdd', 'path': '#RongkeImg' });
+        $.XB.pictips({ 'id': '#ShareImgdd', 'path': '#ShareImg' });
+ });
+
+//$(function () {
+//    var count=14;
+//    //根据条件判断是否需要提醒
+//    if(count>0){
+//        $.XB.CorOPUrl('/admin.php/System/Notes/index', '提醒信息', '590', '320', 'Icon83');
+//    }
+//})
+
+</script>
+</body>
+</html>

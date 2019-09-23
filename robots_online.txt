@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /Admin/
+Disallow: /Backup/
+Disallow: /ReMind/
+Disallow: /ThinkPHP/
+Disallow: /admin.php

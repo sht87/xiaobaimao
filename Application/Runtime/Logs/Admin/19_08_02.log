@@ -1,0 +1,2292 @@
+[ 2019-08-02T09:44:20+08:00 ] 58.132.205.66 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+
+[ 2019-08-02T09:44:21+08:00 ] 58.132.205.66 /admin.php/System/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `xb_sys_basicinfo` [ RunTime:0.0009s ]
+SQL: SELECT `MAC` FROM `xb_sys_basicinfo` WHERE ( ID = 1 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003953s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000412s ]
+
+[ 2019-08-02T09:44:22+08:00 ] 58.132.205.66 /admin.php/System/Login/selfverify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000400s ]
+
+[ 2019-08-02T09:44:32+08:00 ] 58.132.205.66 /admin.php/System/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+SQL: SHOW COLUMNS FROM `xb_sys_administrator` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xb_sys_administrator` WHERE `UserName` = '13716431042' AND `Status` = 1 AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-08-02T09:44:33+08:00 ] 58.132.205.66 /admin.php/System/Login/selfverify.html?0.12486497777721639
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000421s ]
+
+[ 2019-08-02T09:44:50+08:00 ] 58.132.205.66 /admin.php/System/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+SQL: SHOW COLUMNS FROM `xb_sys_administrator` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_administrator` WHERE `UserName` = 'admin' AND `Status` = 1 AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xb_sys_role` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_role` WHERE `IsDel` = 0 AND `Status` = 1 AND `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: UPDATE `xb_sys_administrator` SET `LoginIP`='58.132.205.66' WHERE `ID` = 2 [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '58.132.205.66' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 385 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 386 行.
+SQL: UPDATE `xb_sys_administrator` SET `IpCity`=NULL,`LoginCount`='2044',`ErrorCount`='0',`LoginTime`='2019-08-02 09:44:50' WHERE `ID` = 2 [ RunTime:0.0037s ]
+SQL: SELECT `Name` FROM `xb_sys_role` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-02T09:44:51+08:00 ] 58.132.205.66 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'System/Index%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'index' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_role` [ RunTime:0.0003s ]
+SQL: SELECT `ID` FROM `xb_sys_role` WHERE `Status` = 1 AND `IsDel` = 0  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_rolemenu` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 0 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 1 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 15 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 15 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 16 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 16 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 17 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 17 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 62 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 62 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 23 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 23 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 26 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 26 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 20 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 20 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 22 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 22 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 27 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 27 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 28 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 28 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 29 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 29 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 18 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 18 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 83 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 83 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 3 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 3 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 2 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 2 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 41 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 41 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 42 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 42 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 43 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 43 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 30 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 30 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 88 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 88 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 31 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 31 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 32 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 32 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 89 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 89 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 0 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 1 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 15 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 15 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 16 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 16 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 17 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 17 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 62 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 62 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 27 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 27 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 28 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 28 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 29 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 29 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 119 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 119 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 120 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 120 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 130 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 130 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 131 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 131 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 121 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 121 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 122 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 122 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 123 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 123 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 124 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 124 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 143 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 143 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 132 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 132 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 126 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 126 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 127 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 127 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 128 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 128 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 129 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 129 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 155 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 155 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 156 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 156 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 157 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 157 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 158 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 158 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 90 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 90 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 110 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 110 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 159 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 159 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 135 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 135 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 140 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 140 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 144 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 144 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 145 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 145 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 146 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 146 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 42 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 42 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 41 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 41 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 43 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 43 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 30 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 30 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 88 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 88 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 148 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 148 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 152 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 152 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 153 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 153 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 149 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 149 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 150 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 150 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 151 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 151 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 154 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 154 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 115 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 115 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 118 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 118 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 0 AND `RoleID` = 9  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 140 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 140 AND `RoleID` = 9  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 145 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 145 AND `RoleID` = 9  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007353s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000442s ]
+
+[ 2019-08-02T09:44:52+08:00 ] 58.132.205.66 /admin.php/System/Basicinfo/home.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'System/Basicinfo%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'home' LIMIT 1   [ RunTime:0.0001s ]
+SQL: select VERSION() [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003969s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000407s ]
+
+[ 2019-08-02T09:44:59+08:00 ] 58.132.205.66 /admin.php/Statistics/channel/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+SQL: SHOW COLUMNS FROM `xb_tg_admin` [ RunTime:0.0005s ]
+SQL: select * from xb_tg_admin where Status = 1 and IsDel = 0 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.003169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001393s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001431s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001783s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001431s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000342s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000365s ]
+
+[ 2019-08-02T09:44:59+08:00 ] 58.132.205.66 /admin.php/Statistics/channel/DataList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+WARN: 全部
+SQL: SHOW COLUMNS FROM `xb_tg_admin` [ RunTime:0.0005s ]
+SQL: select Name as channelName from xb_tg_admin where Status = 1 and IsDel = 0 order by UpdateTime desc [ RunTime:0.0002s ]
+SQL: select Name as channelName from xb_tg_admin where Status = 1 and IsDel = 0 order by UpdateTime desc [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_channel_statistics` [ RunTime:0.0004s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,sum(aliveNum) aliveNum,sum(applyNum) applyNum,sum(newNum) newNum,sum(SumMoney) SumMoney from xb_channel_statistics where channelName = '趣头条' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ChannelController.class.php 第 145 行.
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,sum(aliveNum) aliveNum,sum(applyNum) applyNum,sum(newNum) newNum,sum(SumMoney) SumMoney from xb_channel_statistics where channelName = '小白猫1' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ChannelController.class.php 第 145 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ChannelController.class.php 第 177 行.
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,sum(aliveNum) aliveNum,sum(applyNum) applyNum,sum(newNum) newNum,sum(SumMoney) SumMoney from xb_channel_statistics where channelName = '自然流量' [ RunTime:0.0002s ]
+
+[ 2019-08-02T09:45:13+08:00 ] 58.132.205.66 /admin.php/Operation/Tuiguangtj/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Operation/Tuiguangtj%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'index' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_administrator` [ RunTime:0.0004s ]
+SQL: SELECT `ID` FROM `xb_sys_administrator` WHERE `UserName` = 'admin' AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xb_user_channel` [ RunTime:0.0003s ]
+SQL: SELECT b.ID,b.Name FROM xb_user_channel a left join xb_tg_admin b on a.channelId=b.ID  WHERE `userId` = '2'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.001899s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000004s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000375s ]
+
+[ 2019-08-02T09:45:13+08:00 ] 58.132.205.66 /admin.php/Operation/Tuiguangtj/DataList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Operation/Tuiguangtj%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'DataList' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_administrator` [ RunTime:0.0004s ]
+SQL: SELECT `ID` FROM `xb_sys_administrator` WHERE `UserName` = 'admin' AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_user_channel` [ RunTime:0.0003s ]
+SQL: SELECT b.ID FROM xb_user_channel a left join xb_tg_admin b on a.channelId=b.ID  WHERE `userId` = '2'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xb_tg_form` [ RunTime:0.0003s ]
+SQL: SELECT distinct createDate FROM `xb_tg_form` WHERE `enable` = 1 AND `channelId` IN ('96') ORDER BY createDate desc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xb_tg_form` WHERE `enable` = 1 AND `channelId` IN ('96') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(ios) AS tp_sum FROM `xb_tg_form` WHERE `enable` = 1 AND `channelId` IN ('96') LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(android) AS tp_sum FROM `xb_tg_form` WHERE `enable` = 1 AND `channelId` IN ('96') LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(num) AS tp_sum FROM `xb_tg_form` WHERE `enable` = 1 AND `channelId` IN ('96') LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_channel_statistics` [ RunTime:0.0003s ]
+SQL: SELECT SUM(UV) AS tp_sum FROM `xb_channel_statistics` WHERE `channelId` IN ('96') LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-02T09:45:15+08:00 ] 58.132.205.66 /admin.php/Operation/Tuiguangrecord/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Operation/Tuiguangrecord%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'index' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_tg_admin` [ RunTime:0.0004s ]
+SQL: SELECT `ID` FROM `xb_tg_admin` WHERE `UserName` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `ID`,`Name` FROM `xb_tg_admin` WHERE `Status` = 1 AND `IsDel` = 0  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.001894s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001287s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001319s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001319s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000362s ]
+
+[ 2019-08-02T09:45:15+08:00 ] 58.132.205.66 /admin.php/Operation/Tuiguangrecord/DataList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Operation/Tuiguangrecord%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'DataList' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_tg_admin` [ RunTime:0.0004s ]
+SQL: SELECT `ID` FROM `xb_tg_admin` WHERE `UserName` = 'admin' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_mem_info` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_mem_info` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xb_mem_info` WHERE `IsDel` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `Name` FROM `xb_tg_admin` WHERE `ID` = 97 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-02T09:45:35+08:00 ] 58.132.205.66 /admin.php/Operation/Tuiguangrecord/DataList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Operation/Tuiguangrecord%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'DataList' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_tg_admin` [ RunTime:0.0004s ]
+SQL: SELECT `ID` FROM `xb_tg_admin` WHERE `UserName` = 'admin' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_mem_info` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_mem_info` WHERE `RegTime` BETWEEN '2019-08-01' AND '2019-08-02' AND `IsDel` = 0 ORDER BY Sort asc,ID desc LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xb_mem_info` WHERE `RegTime` BETWEEN '2019-08-01' AND '2019-08-02' AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `Name` FROM `xb_tg_admin` WHERE `ID` = 97 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-02T09:45:46+08:00 ] 58.132.205.66 /admin.php/Operation/Tuiguangrecord/DataList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Operation/Tuiguangrecord%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'DataList' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_tg_admin` [ RunTime:0.0004s ]
+SQL: SELECT `ID` FROM `xb_tg_admin` WHERE `UserName` = 'admin' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_mem_info` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_mem_info` WHERE `RegTime` BETWEEN '2019-08-01' AND '2019-08-02' AND `IsDel` = 0 ORDER BY Sort asc,ID desc LIMIT 20,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xb_mem_info` WHERE `RegTime` BETWEEN '2019-08-01' AND '2019-08-02' AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-02T09:45:51+08:00 ] 58.132.205.66 /admin.php/Operation/Tuiguangrecord/DataList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Operation/Tuiguangrecord%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'DataList' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_tg_admin` [ RunTime:0.0004s ]
+SQL: SELECT `ID` FROM `xb_tg_admin` WHERE `UserName` = 'admin' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_mem_info` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xb_mem_info` WHERE `RegTime` BETWEEN '2019-08-01' AND '2019-08-02' AND `IsDel` = 0 ORDER BY Sort asc,ID desc LIMIT 0,20   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xb_mem_info` WHERE `RegTime` BETWEEN '2019-08-01' AND '2019-08-02' AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `Name` FROM `xb_tg_admin` WHERE `ID` = 97 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-02T09:54:24+08:00 ] 58.132.205.66 /admin.php/Operation/Tuiguangtj/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Operation/Tuiguangtj%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'index' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_administrator` [ RunTime:0.0004s ]
+SQL: SELECT `ID` FROM `xb_sys_administrator` WHERE `UserName` = 'admin' AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_user_channel` [ RunTime:0.0003s ]
+SQL: SELECT b.ID,b.Name FROM xb_user_channel a left join xb_tg_admin b on a.channelId=b.ID  WHERE `userId` = '2'  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.001826s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001332s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001653s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001332s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000004s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000371s ]
+
+[ 2019-08-02T09:54:24+08:00 ] 58.132.205.66 /admin.php/Operation/Tuiguangtj/DataList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Operation/Tuiguangtj%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'DataList' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_administrator` [ RunTime:0.0004s ]
+SQL: SELECT `ID` FROM `xb_sys_administrator` WHERE `UserName` = 'admin' AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_user_channel` [ RunTime:0.0003s ]
+SQL: SELECT b.ID FROM xb_user_channel a left join xb_tg_admin b on a.channelId=b.ID  WHERE `userId` = '2'  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_tg_form` [ RunTime:0.0003s ]
+SQL: SELECT distinct createDate FROM `xb_tg_form` WHERE `enable` = 1 AND `channelId` IN ('96') ORDER BY createDate desc LIMIT 0,20   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xb_tg_form` WHERE `enable` = 1 AND `channelId` IN ('96') LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(ios) AS tp_sum FROM `xb_tg_form` WHERE `enable` = 1 AND `channelId` IN ('96') LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(android) AS tp_sum FROM `xb_tg_form` WHERE `enable` = 1 AND `channelId` IN ('96') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(num) AS tp_sum FROM `xb_tg_form` WHERE `enable` = 1 AND `channelId` IN ('96') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xb_channel_statistics` [ RunTime:0.0004s ]
+SQL: SELECT SUM(UV) AS tp_sum FROM `xb_channel_statistics` WHERE `channelId` IN ('96') LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-02T09:54:28+08:00 ] 58.132.205.66 /admin.php/Operation/Tgadmin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Operation/Tgadmin%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'index' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.001792s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001442s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001442s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000375s ]
+
+[ 2019-08-02T09:54:28+08:00 ] 58.132.205.66 /admin.php/Operation/Tgadmin/DataList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Operation/Tgadmin%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'DataList' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_tg_admin` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_tg_admin` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc LIMIT 0,20   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xb_tg_admin` WHERE `IsDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_administrator` [ RunTime:0.0004s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-02T10:21:12+08:00 ] 58.132.205.66 /admin.php/Statistics/product/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Statistics/product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'index' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.001782s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001371s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001774s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000401s ]
+
+[ 2019-08-02T10:21:13+08:00 ] 58.132.205.66 /admin.php/Statistics/product/DataList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Statistics/product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'DataList' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_product_statistics` [ RunTime:0.0003s ]
+SQL: select distinct productName from xb_product_statistics [ RunTime:0.0003s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '快钱包' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 174 and 2 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '米口袋' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 175 and 3 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '皮卡丘' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 178 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '会省钱包' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 177 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '借东风' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 176 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '钱街' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 179 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '想钱花' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 182 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '小浪花' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 181 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '欢乐借' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 183 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '手机借钱' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 184 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '花到嗨' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 186 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '抖金钱包' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 187 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '峰哥花' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 186 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '有钱借' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 188 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '有鱼贷' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 191 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '猎豹' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 190 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '优款' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 191 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '山桃街' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 193 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '瑞贷' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 194 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '反暴力催收' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 209 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '360借条' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 208 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '平安普惠' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 195 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '小赢卡' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 210 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '福贷' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 196 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '邮你贷' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 197 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '如期分期' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 199 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '橙子信用' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 211 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '诚易贷' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 212 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '龙分期' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 213 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '维信闪贷' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 198 and 0 >= num order by num desc [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 132 行.
+
+[ 2019-08-02T10:21:17+08:00 ] 58.132.205.66 /admin.php/Statistics/product/DataList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Statistics/product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'DataList' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_product_statistics` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_product_statistics` WHERE `createDate` BETWEEN '2019-08-01' AND '2019-08-01' ORDER BY createDate desc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xb_product_statistics` WHERE `createDate` BETWEEN '2019-08-01' AND '2019-08-01' LIMIT 1   [ RunTime:0.0002s ]
+SQL: select price from xb_item_price where itemId = 209 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select price from xb_item_price where itemId = 208 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select price from xb_item_price where itemId = 195 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select price from xb_item_price where itemId = 210 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select price from xb_item_price where itemId = 196 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select price from xb_item_price where itemId = 197 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select price from xb_item_price where itemId = 199 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select price from xb_item_price where itemId = 211 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select price from xb_item_price where itemId = 212 and 0 >= num order by num desc [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 201 行.
+
+[ 2019-08-02T14:26:46+08:00 ] 58.132.205.66 /admin.php/Items/Product/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'index' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_items_category` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_moneytype` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_moneytype` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_jktimes` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_jktimes` WHERE `IsDel` = 0 ORDER BY Sort asc,ID asc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.002187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001432s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001465s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001465s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000411s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000440s ]
+
+[ 2019-08-02T14:26:46+08:00 ] 58.132.205.66 /admin.php/Items/Product/DataList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'DataList' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_items` WHERE `IsDel` = 0 AND `Itype` = 1 ORDER BY Sort asc,ID desc LIMIT 0,20   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xb_items` WHERE `IsDel` = 0 AND `Itype` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_administrator` [ RunTime:0.0004s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2019-08-02T14:27:05+08:00 ] 58.132.205.66 /admin.php/Items/Product/edit/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT `ID` FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_rolemenu` [ RunTime:0.0004s ]
+SQL: SELECT `ButtonID` FROM `xb_sys_rolemenu` WHERE `RoleID` = 2 AND `MenuID` = 120 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT `EName` FROM `xb_sys_operationbutton` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `EName` FROM `xb_sys_operationbutton` WHERE `ID` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'edit' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '58.132.205.66' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 385 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 386 行.
+SQL: SHOW COLUMNS FROM `xb_sys_log` [ RunTime:0.0006s ]
+SQL: INSERT INTO `xb_sys_log` (`UserID`,`UserName`,`TrueName`,`DateTime`,`IP`,`IPCity`,`URL`,`ControllerName`,`Des`,`Type`) VALUES ('2','admin','超级管理员','2019-08-02 14:27:05','58.132.205.66',NULL,'http://xbm.mashangbang.top:80/admin.php/Items/Product','edit','管理员:超级管理员,在 [平台网贷] 的栏目中执行了 [修改] 操作！','修改') [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `xb_items_conditions` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_items_conditions` WHERE `IsDel` = 0 AND `Status` = 1 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_needs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_items_needs` WHERE `IsDel` = 0 AND `Status` = 1 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_items_category` WHERE `IsDel` = 0 AND `Status` = 1 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_moneytype` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_moneytype` WHERE `IsDel` = 0 AND `Status` = 1 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_jktimes` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_jktimes` WHERE `IsDel` = 0 AND `Status` = 1 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_items` WHERE `ID` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condArr /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 241 行.
+NOTIC: [8] Undefined variable: needArr /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 242 行.
+NOTIC: [8] Undefined variable: cateArr /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 243 行.
+NOTIC: [8] Undefined variable: moneytypeArr /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 244 行.
+NOTIC: [8] Undefined variable: jktimesArr /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 245 行.
+NOTIC: [8] Undefined variable: showflag /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 246 行.
+NOTIC: [8] Undefined variable: citidArr /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 247 行.
+NOTIC: [8] Undefined variable: tabList /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 248 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+NOTIC: [8] Undefined variable: StepIntroArr /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Admin/6021496603a52590cc0ca9e074659dc9.php 第 254 行.
+NOTIC: [8] Undefined variable: StepIntroArr /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Admin/6021496603a52590cc0ca9e074659dc9.php 第 264 行.
+NOTIC: [8] Undefined variable: StepIntroArr /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Admin/6021496603a52590cc0ca9e074659dc9.php 第 274 行.
+NOTIC: [8] Undefined variable: meminfos /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Admin/6021496603a52590cc0ca9e074659dc9.php 第 576 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014910s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014961s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000441s ]
+
+[ 2019-08-02T14:27:06+08:00 ] 58.132.205.66 /admin.php/Items/Product/getarea
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'getarea' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000601s ]
+
+[ 2019-08-02T14:27:06+08:00 ] 58.132.205.66 /admin.php/Items/Product/loadajax?ID=0&_=0.44663261549362554
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'loadajax' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000424s ]
+
+[ 2019-08-02T14:28:38+08:00 ] 58.132.205.66 /admin.php/Attachment/File/UploadBatch/file/Logurl/Path/image/ismulti/false.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Attachment/File%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'UploadBatch' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003248s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000369s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000393s ]
+
+[ 2019-08-02T14:28:48+08:00 ] 58.132.205.66 /admin.php/Attachment/File/Upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Attachment/File%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'Upload' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [2] imagepng(./Upload/large/20190802/5d43d82089261.png): failed to open stream: Permission denied /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Image/Driver/Gd.class.php 第 99 行.
+NOTIC: [2] imagepng(./Upload/small/20190802/5d43d82089261.png): failed to open stream: Permission denied /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Image/Driver/Gd.class.php 第 99 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2019-08-02T14:29:50+08:00 ] 58.132.205.66 /admin.php/Items/Product/Save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'Save' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: auto /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `xb_items` (`Name`,`GoodsNo`,`Keyeords`,`Describe`,`Showtype`,`price`,`CateID`,`MoneytypeID`,`JktimesID`,`AppNumbs`,`PassRate`,`DayfeeRate`,`Yjtype`,`Settletime`,`BonusRate1`,`BonusRate2`,`BonusRate3`,`BonusRate4`,`Ymoney1`,`Ymoney2`,`Ymoney3`,`Ymoney4`,`Smoney1`,`Smoney2`,`Smoney3`,`Smoney4`,`Logurl`,`Openurl`,`ZsUrl1`,`Sort`,`ZsUrl2`,`IsRec`,`ZsUrl3`,`IsHot`,`StepBase`,`StepIntro`,`StepInc1`,`StepInc2`,`StepUnit`,`Status`,`ConditIDs`,`NeedIDs`,`Intro`,`BaseFee`,`StepFee`,`Isshow`,`linkType`,`registerPv`,`UV`,`enableType`,`enableNum`,`Cityids`,`ID`,`Itype`,`OperatorID`,`UpdateTime`) VALUES ('小袋鼠','2-2-1','1','1','1','12.00','10,11,12,13,14','6','3','853236','63%','0.05%','1','1','0','0','0','0','0','0','0','0','0','0','0','0','/Upload/image/20190802/5d43d82089261.png','http://hhhtxfj.com:80/daishu/app/appRegister?channelId=3635','','3','','1','','1','0','a:3:{i:0;s:0:\"\";i:1;s:0:\"\";i:2;s:0:\"\";}','0','0','','1','3,2,1','4,1,3,2','极速小额分期,','1','1','1','1','0','0','0','0','','0','1','2','2019-08-02 14:29:50') [ RunTime:0.0042s ]
+
+[ 2019-08-02T14:29:51+08:00 ] 58.132.205.66 /admin.php/Items/Product/DataList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'DataList' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `xb_items` WHERE `IsDel` = 0 AND `Itype` = 1 ORDER BY Sort asc,ID desc LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xb_items` WHERE `IsDel` = 0 AND `Itype` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xb_sys_administrator` [ RunTime:0.0004s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2019-08-02T14:30:05+08:00 ] 58.132.205.66 /admin.php/Items/Product/edit/?ID=194
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT `ID` FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_rolemenu` [ RunTime:0.0004s ]
+SQL: SELECT `ButtonID` FROM `xb_sys_rolemenu` WHERE `RoleID` = 2 AND `MenuID` = 120 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT `EName` FROM `xb_sys_operationbutton` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `EName` FROM `xb_sys_operationbutton` WHERE `ID` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `EName` FROM `xb_sys_operationbutton` WHERE `ID` = 9 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'edit' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '58.132.205.66' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 385 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 386 行.
+SQL: SHOW COLUMNS FROM `xb_sys_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `xb_sys_log` (`UserID`,`UserName`,`TrueName`,`DateTime`,`IP`,`IPCity`,`URL`,`ControllerName`,`Des`,`Type`) VALUES ('2','admin','超级管理员','2019-08-02 14:30:05','58.132.205.66',NULL,'http://xbm.mashangbang.top:80/admin.php/Items/Product','edit','管理员:超级管理员,在 [平台网贷] 的栏目中执行了 [修改] 操作！','修改') [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `xb_items_conditions` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_items_conditions` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_needs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_items_needs` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_items_category` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_moneytype` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_moneytype` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_jktimes` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_jktimes` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xb_items` WHERE `ID` = 194 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items` WHERE `ID` = 194 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: citidArr /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 247 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+NOTIC: [8] Undefined variable: meminfos /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Admin/6021496603a52590cc0ca9e074659dc9.php 第 576 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014700s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014733s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000402s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000432s ]
+
+[ 2019-08-02T14:30:06+08:00 ] 58.132.205.66 /admin.php/Items/Product/getarea
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'getarea' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000602s ]
+
+[ 2019-08-02T14:30:06+08:00 ] 58.132.205.66 /admin.php/Items/Product/loadajax?ID=194&_=0.7044773764297652
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'loadajax' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_items` WHERE `ID` = 194 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-08-02T14:30:19+08:00 ] 58.132.205.66 /admin.php/Items/Product/Save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'Save' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: auto /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `xb_items` SET `Name`='瑞贷',`GoodsNo`='31-2',`Keyeords`='1',`Describe`='1',`Showtype`='1',`price`='2.50',`CateID`='10,11,12,13,14',`MoneytypeID`='5',`JktimesID`='3',`AppNumbs`='230032',`PassRate`='30%左右',`DayfeeRate`='0.05%',`Yjtype`='1',`Settletime`='1',`BonusRate1`='0.00',`BonusRate2`='0.00',`BonusRate3`='0.00',`BonusRate4`='0.00',`Ymoney1`='0',`Ymoney2`='0',`Ymoney3`='0',`Ymoney4`='0',`Smoney1`='0',`Smoney2`='0',`Smoney3`='0',`Smoney4`='0',`Logurl`='/Upload/image/20190731/5d41357e5c008.png',`Openurl`='http://www.idai88.com/finance/dkDetail?proId=133&orgId=5778&shareId=5778&type=1',`ZsUrl1`='',`Sort`='999',`ZsUrl2`='',`IsRec`='0',`ZsUrl3`='',`IsHot`='0',`StepBase`='0.00',`StepIntro`='a:3:{i:0;s:0:\"\";i:1;s:0:\"\";i:2;s:0:\"\";}',`StepInc1`='0.00',`StepInc2`='0.00',`StepUnit`='',`Status`='1',`ConditIDs`='3,2,1',`NeedIDs`='4,1,2',`Intro`='日利率低至0.05%，综合费率年化35%以内',`BaseFee`='1',`StepFee`='1',`Isshow`='1',`linkType`='1',`registerPv`='0',`UV`='0',`enableType`='0',`enableNum`='0',`Cityids`='',`ID`='194',`Itype`='1',`OperatorID`='2',`UpdateTime`='2019-08-02 14:30:19' WHERE `ID` = 194 [ RunTime:0.0041s ]
+
+[ 2019-08-02T14:30:19+08:00 ] 58.132.205.66 /admin.php/Items/Product/DataList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'DataList' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_items` WHERE `IsDel` = 0 AND `Itype` = 1 ORDER BY Sort asc,ID desc LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xb_items` WHERE `IsDel` = 0 AND `Itype` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xb_sys_administrator` [ RunTime:0.0004s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2019-08-02T14:30:36+08:00 ] 58.132.205.66 /admin.php/Items/Product/edit/?ID=214
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT `ID` FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_rolemenu` [ RunTime:0.0004s ]
+SQL: SELECT `ButtonID` FROM `xb_sys_rolemenu` WHERE `RoleID` = 2 AND `MenuID` = 120 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT `EName` FROM `xb_sys_operationbutton` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `EName` FROM `xb_sys_operationbutton` WHERE `ID` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `EName` FROM `xb_sys_operationbutton` WHERE `ID` = 9 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'edit' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '58.132.205.66' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 385 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 386 行.
+SQL: SHOW COLUMNS FROM `xb_sys_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `xb_sys_log` (`UserID`,`UserName`,`TrueName`,`DateTime`,`IP`,`IPCity`,`URL`,`ControllerName`,`Des`,`Type`) VALUES ('2','admin','超级管理员','2019-08-02 14:30:36','58.132.205.66',NULL,'http://xbm.mashangbang.top:80/admin.php/Items/Product','edit','管理员:超级管理员,在 [平台网贷] 的栏目中执行了 [修改] 操作！','修改') [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `xb_items_conditions` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_items_conditions` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_needs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_items_needs` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_category` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_moneytype` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_moneytype` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_jktimes` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_jktimes` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_items` WHERE `ID` = 214 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items` WHERE `ID` = 214 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: citidArr /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 247 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+NOTIC: [8] Undefined variable: meminfos /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Admin/6021496603a52590cc0ca9e074659dc9.php 第 576 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000435s ]
+
+[ 2019-08-02T14:30:36+08:00 ] 58.132.205.66 /admin.php/Items/Product/getarea
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'getarea' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000524s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000597s ]
+
+[ 2019-08-02T14:30:36+08:00 ] 58.132.205.66 /admin.php/Items/Product/loadajax?ID=214&_=0.7091944485748023
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'loadajax' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_items` WHERE `ID` = 214 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-02T14:30:44+08:00 ] 58.132.205.66 /admin.php/Items/Product/Save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'Save' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: auto /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `xb_items` SET `Name`='小袋鼠',`GoodsNo`='2-2-1',`Keyeords`='1',`Describe`='1',`Showtype`='1',`price`='12.00',`CateID`='10,11,12,13,14',`MoneytypeID`='6',`JktimesID`='3',`AppNumbs`='853236',`PassRate`='63%',`DayfeeRate`='0.05%',`Yjtype`='1',`Settletime`='1',`BonusRate1`='0.00',`BonusRate2`='0.00',`BonusRate3`='0.00',`BonusRate4`='0.00',`Ymoney1`='0',`Ymoney2`='0',`Ymoney3`='0',`Ymoney4`='0',`Smoney1`='0',`Smoney2`='0',`Smoney3`='0',`Smoney4`='0',`Logurl`='/Upload/image/20190802/5d43d82089261.png',`Openurl`='http://hhhtxfj.com:80/daishu/app/appRegister?channelId=3635',`ZsUrl1`='',`Sort`='2',`ZsUrl2`='',`IsRec`='1',`ZsUrl3`='',`IsHot`='1',`StepBase`='0.00',`StepIntro`='a:3:{i:0;s:0:\"\";i:1;s:0:\"\";i:2;s:0:\"\";}',`StepInc1`='0.00',`StepInc2`='0.00',`StepUnit`='',`Status`='1',`ConditIDs`='3,2,1',`NeedIDs`='4,1,3,2',`Intro`='极速小额分期,',`BaseFee`='1',`StepFee`='1',`Isshow`='1',`linkType`='1',`registerPv`='0',`UV`='0',`enableType`='0',`enableNum`='0',`Cityids`='',`ID`='214',`Itype`='1',`OperatorID`='2',`UpdateTime`='2019-08-02 14:30:44' WHERE `ID` = 214 [ RunTime:0.0045s ]
+
+[ 2019-08-02T14:30:45+08:00 ] 58.132.205.66 /admin.php/Items/Product/DataList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'DataList' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_items` WHERE `IsDel` = 0 AND `Itype` = 1 ORDER BY Sort asc,ID desc LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xb_items` WHERE `IsDel` = 0 AND `Itype` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xb_sys_administrator` [ RunTime:0.0004s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2019-08-02T14:30:56+08:00 ] 58.132.205.66 /admin.php/Items/Product/edit/?ID=214
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT `ID` FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_rolemenu` [ RunTime:0.0004s ]
+SQL: SELECT `ButtonID` FROM `xb_sys_rolemenu` WHERE `RoleID` = 2 AND `MenuID` = 120 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT `EName` FROM `xb_sys_operationbutton` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `EName` FROM `xb_sys_operationbutton` WHERE `ID` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `EName` FROM `xb_sys_operationbutton` WHERE `ID` = 9 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'edit' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '58.132.205.66' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 385 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 386 行.
+SQL: SHOW COLUMNS FROM `xb_sys_log` [ RunTime:0.0006s ]
+SQL: INSERT INTO `xb_sys_log` (`UserID`,`UserName`,`TrueName`,`DateTime`,`IP`,`IPCity`,`URL`,`ControllerName`,`Des`,`Type`) VALUES ('2','admin','超级管理员','2019-08-02 14:30:56','58.132.205.66',NULL,'http://xbm.mashangbang.top:80/admin.php/Items/Product','edit','管理员:超级管理员,在 [平台网贷] 的栏目中执行了 [修改] 操作！','修改') [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `xb_items_conditions` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_items_conditions` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_needs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_items_needs` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_category` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_moneytype` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_moneytype` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_jktimes` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_jktimes` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_items` WHERE `ID` = 214 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items` WHERE `ID` = 214 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: citidArr /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 247 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined variable: meminfos /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Admin/6021496603a52590cc0ca9e074659dc9.php 第 576 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000428s ]
+
+[ 2019-08-02T14:30:56+08:00 ] 58.132.205.66 /admin.php/Items/Product/getarea
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'getarea' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000654s ]
+
+[ 2019-08-02T14:30:56+08:00 ] 58.132.205.66 /admin.php/Items/Product/loadajax?ID=214&_=0.9836836121965291
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'loadajax' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_items` WHERE `ID` = 214 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-02T15:38:06+08:00 ] 58.132.205.66 /admin.php/Items/Product/edit/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT `ID` FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_rolemenu` [ RunTime:0.0004s ]
+SQL: SELECT `ButtonID` FROM `xb_sys_rolemenu` WHERE `RoleID` = 2 AND `MenuID` = 120 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT `EName` FROM `xb_sys_operationbutton` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `EName` FROM `xb_sys_operationbutton` WHERE `ID` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'edit' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '58.132.205.66' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 385 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 386 行.
+SQL: SHOW COLUMNS FROM `xb_sys_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `xb_sys_log` (`UserID`,`UserName`,`TrueName`,`DateTime`,`IP`,`IPCity`,`URL`,`ControllerName`,`Des`,`Type`) VALUES ('2','admin','超级管理员','2019-08-02 15:38:06','58.132.205.66',NULL,'http://xbm.mashangbang.top:80/admin.php/Items/Product','edit','管理员:超级管理员,在 [平台网贷] 的栏目中执行了 [修改] 操作！','修改') [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `xb_items_conditions` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_items_conditions` WHERE `IsDel` = 0 AND `Status` = 1 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_needs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_items_needs` WHERE `IsDel` = 0 AND `Status` = 1 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_category` WHERE `IsDel` = 0 AND `Status` = 1 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_moneytype` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_moneytype` WHERE `IsDel` = 0 AND `Status` = 1 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_jktimes` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_jktimes` WHERE `IsDel` = 0 AND `Status` = 1 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xb_items` WHERE `ID` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condArr /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 241 行.
+NOTIC: [8] Undefined variable: needArr /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 242 行.
+NOTIC: [8] Undefined variable: cateArr /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 243 行.
+NOTIC: [8] Undefined variable: moneytypeArr /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 244 行.
+NOTIC: [8] Undefined variable: jktimesArr /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 245 行.
+NOTIC: [8] Undefined variable: showflag /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 246 行.
+NOTIC: [8] Undefined variable: citidArr /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 247 行.
+NOTIC: [8] Undefined variable: tabList /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 248 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Undefined variable: StepIntroArr /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Admin/6021496603a52590cc0ca9e074659dc9.php 第 254 行.
+NOTIC: [8] Undefined variable: StepIntroArr /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Admin/6021496603a52590cc0ca9e074659dc9.php 第 264 行.
+NOTIC: [8] Undefined variable: StepIntroArr /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Admin/6021496603a52590cc0ca9e074659dc9.php 第 274 行.
+NOTIC: [8] Undefined variable: meminfos /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Admin/6021496603a52590cc0ca9e074659dc9.php 第 576 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014397s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000429s ]
+
+[ 2019-08-02T15:38:06+08:00 ] 58.132.205.66 /admin.php/Items/Product/getarea
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'getarea' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2019-08-02T15:38:06+08:00 ] 58.132.205.66 /admin.php/Items/Product/loadajax?ID=0&_=0.3285025408142772
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'loadajax' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000410s ]
+
+[ 2019-08-02T15:39:35+08:00 ] 58.132.205.66 /admin.php/Attachment/File/UploadBatch/file/Logurl/Path/image/ismulti/false.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Attachment/File%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'UploadBatch' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003249s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000357s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000382s ]
+
+[ 2019-08-02T15:40:03+08:00 ] 58.132.205.66 /admin.php/Attachment/File/Upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Attachment/File%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'Upload' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [2] imagepng(./Upload/large/20190802/5d43e8d327974.png): failed to open stream: Permission denied /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Image/Driver/Gd.class.php 第 99 行.
+NOTIC: [2] imagepng(./Upload/small/20190802/5d43e8d327974.png): failed to open stream: Permission denied /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Image/Driver/Gd.class.php 第 99 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000428s ]
+
+[ 2019-08-02T15:41:38+08:00 ] 58.132.205.66 /admin.php/Items/Product/Save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'Save' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: auto /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `xb_items` (`Name`,`GoodsNo`,`Keyeords`,`Describe`,`Showtype`,`price`,`CateID`,`MoneytypeID`,`JktimesID`,`AppNumbs`,`PassRate`,`DayfeeRate`,`Yjtype`,`Settletime`,`BonusRate1`,`BonusRate2`,`BonusRate3`,`BonusRate4`,`Ymoney1`,`Ymoney2`,`Ymoney3`,`Ymoney4`,`Smoney1`,`Smoney2`,`Smoney3`,`Smoney4`,`Logurl`,`Openurl`,`ZsUrl1`,`Sort`,`ZsUrl2`,`IsRec`,`ZsUrl3`,`IsHot`,`StepBase`,`StepIntro`,`StepInc1`,`StepInc2`,`StepUnit`,`Status`,`ConditIDs`,`NeedIDs`,`Intro`,`BaseFee`,`StepFee`,`Isshow`,`linkType`,`registerPv`,`UV`,`enableType`,`enableNum`,`Cityids`,`ID`,`Itype`,`OperatorID`,`UpdateTime`) VALUES ('新橙优品','8-2-2','1','1','1','2.00','10,11,12,13,14','10','4','269452','22%','0.04%','1','1','0','0','0','0','0','0','0','0','0','0','0','0','/Upload/image/20190802/5d43e8d327974.png','http://www.idai88.com/finance/dkDetail?proId=140&orgId=5778&shareId=5778&type=1','','3','','1','','1','0','a:3:{i:0;s:0:\"\";i:1;s:0:\"\";i:2;s:0:\"\";}','0','0','','1','3,1','4,3,2','年化利息25%','1','1','1','1','0','0','0','0','','0','1','2','2019-08-02 15:41:38') [ RunTime:0.0050s ]
+
+[ 2019-08-02T15:41:39+08:00 ] 58.132.205.66 /admin.php/Items/Product/DataList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'DataList' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_items` WHERE `IsDel` = 0 AND `Itype` = 1 ORDER BY Sort asc,ID desc LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xb_items` WHERE `IsDel` = 0 AND `Itype` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xb_sys_administrator` [ RunTime:0.0004s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2019-08-02T15:41:47+08:00 ] 58.132.205.66 /admin.php/Items/Product/edit/?ID=211
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT `ID` FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_rolemenu` [ RunTime:0.0004s ]
+SQL: SELECT `ButtonID` FROM `xb_sys_rolemenu` WHERE `RoleID` = 2 AND `MenuID` = 120 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0003s ]
+SQL: SELECT `EName` FROM `xb_sys_operationbutton` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `EName` FROM `xb_sys_operationbutton` WHERE `ID` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `EName` FROM `xb_sys_operationbutton` WHERE `ID` = 9 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'edit' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '58.132.205.66' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 385 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 386 行.
+SQL: SHOW COLUMNS FROM `xb_sys_log` [ RunTime:0.0006s ]
+SQL: INSERT INTO `xb_sys_log` (`UserID`,`UserName`,`TrueName`,`DateTime`,`IP`,`IPCity`,`URL`,`ControllerName`,`Des`,`Type`) VALUES ('2','admin','超级管理员','2019-08-02 15:41:47','58.132.205.66',NULL,'http://xbm.mashangbang.top:80/admin.php/Items/Product','edit','管理员:超级管理员,在 [平台网贷] 的栏目中执行了 [修改] 操作！','修改') [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `xb_items_conditions` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_items_conditions` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_needs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_needs` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_items_category` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_moneytype` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_moneytype` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_jktimes` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_jktimes` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_items` WHERE `ID` = 211 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items` WHERE `ID` = 211 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: citidArr /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 247 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined variable: meminfos /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Admin/6021496603a52590cc0ca9e074659dc9.php 第 576 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014814s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014848s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000429s ]
+
+[ 2019-08-02T15:41:48+08:00 ] 58.132.205.66 /admin.php/Items/Product/getarea
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'getarea' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000572s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000642s ]
+
+[ 2019-08-02T15:41:48+08:00 ] 58.132.205.66 /admin.php/Items/Product/loadajax?ID=211&_=0.13811610054841394
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'loadajax' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_items` WHERE `ID` = 211 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-08-02T15:41:57+08:00 ] 58.132.205.66 /admin.php/Items/Product/Save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'Save' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: auto /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `xb_items` SET `Name`='橙子信用',`GoodsNo`='31-19',`Keyeords`='1',`Describe`='1',`Showtype`='1',`price`='18.00',`CateID`='10,11,12,13,14',`MoneytypeID`='9',`JktimesID`='4',`AppNumbs`='897263',`PassRate`='100%',`DayfeeRate`='无',`Yjtype`='1',`Settletime`='1',`BonusRate1`='0.00',`BonusRate2`='0.00',`BonusRate3`='0.00',`BonusRate4`='0.00',`Ymoney1`='0',`Ymoney2`='0',`Ymoney3`='0',`Ymoney4`='0',`Smoney1`='0',`Smoney2`='0',`Smoney3`='0',`Smoney4`='0',`Logurl`='/Upload/image/20190731/5d4154293b585.png',`Openurl`='http://www.idai88.com/finance/yykDetail?proId=137&orgId=5778&shareId=5778&type=2',`ZsUrl1`='',`Sort`='5',`ZsUrl2`='',`IsRec`='1',`ZsUrl3`='',`IsHot`='1',`StepBase`='0.00',`StepIntro`='a:3:{i:0;s:0:\"\";i:1;s:0:\"\";i:2;s:0:\"\";}',`StepInc1`='0.00',`StepInc2`='0.00',`StepUnit`='',`Status`='1',`ConditIDs`='3,2,1',`NeedIDs`='4,1,3,2',`Intro`='正规信用查询',`BaseFee`='1',`StepFee`='1',`Isshow`='1',`linkType`='1',`registerPv`='0',`UV`='0',`enableType`='0',`enableNum`='0',`Cityids`='',`ID`='211',`Itype`='1',`OperatorID`='2',`UpdateTime`='2019-08-02 15:41:57' WHERE `ID` = 211 [ RunTime:0.0041s ]
+
+[ 2019-08-02T15:41:58+08:00 ] 58.132.205.66 /admin.php/Items/Product/DataList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'DataList' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_items` WHERE `IsDel` = 0 AND `Itype` = 1 ORDER BY Sort asc,ID desc LIMIT 0,20   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xb_items` WHERE `IsDel` = 0 AND `Itype` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xb_sys_administrator` [ RunTime:0.0004s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2019-08-02T15:42:11+08:00 ] 58.132.205.66 /admin.php/Items/Product/edit/?ID=215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT `ID` FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_rolemenu` [ RunTime:0.0003s ]
+SQL: SELECT `ButtonID` FROM `xb_sys_rolemenu` WHERE `RoleID` = 2 AND `MenuID` = 120 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT `EName` FROM `xb_sys_operationbutton` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `EName` FROM `xb_sys_operationbutton` WHERE `ID` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `EName` FROM `xb_sys_operationbutton` WHERE `ID` = 9 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'edit' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '58.132.205.66' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 385 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 386 行.
+SQL: SHOW COLUMNS FROM `xb_sys_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `xb_sys_log` (`UserID`,`UserName`,`TrueName`,`DateTime`,`IP`,`IPCity`,`URL`,`ControllerName`,`Des`,`Type`) VALUES ('2','admin','超级管理员','2019-08-02 15:42:11','58.132.205.66',NULL,'http://xbm.mashangbang.top:80/admin.php/Items/Product','edit','管理员:超级管理员,在 [平台网贷] 的栏目中执行了 [修改] 操作！','修改') [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `xb_items_conditions` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_items_conditions` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_needs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_needs` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_category` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_moneytype` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_moneytype` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_jktimes` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_jktimes` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xb_items` WHERE `ID` = 215 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items` WHERE `ID` = 215 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: citidArr /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 247 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+NOTIC: [8] Undefined variable: meminfos /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Admin/6021496603a52590cc0ca9e074659dc9.php 第 576 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014481s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014510s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2019-08-02T15:42:11+08:00 ] 58.132.205.66 /admin.php/Items/Product/getarea
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'getarea' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000614s ]
+
+[ 2019-08-02T15:42:11+08:00 ] 58.132.205.66 /admin.php/Items/Product/loadajax?ID=215&_=0.4897596791506158
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'loadajax' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_items` WHERE `ID` = 215 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-02T15:42:28+08:00 ] 58.132.205.66 /admin.php/Items/Product/Save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'Save' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: auto /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `xb_items` SET `Name`='新橙优品',`GoodsNo`='8-2-2',`Keyeords`='1',`Describe`='1',`Showtype`='1',`price`='2.00',`CateID`='10,11,12,13,14',`MoneytypeID`='10',`JktimesID`='4',`AppNumbs`='269452',`PassRate`='22%',`DayfeeRate`='0.04%',`Yjtype`='1',`Settletime`='1',`BonusRate1`='0.00',`BonusRate2`='0.00',`BonusRate3`='0.00',`BonusRate4`='0.00',`Ymoney1`='0',`Ymoney2`='0',`Ymoney3`='0',`Ymoney4`='0',`Smoney1`='0',`Smoney2`='0',`Smoney3`='0',`Smoney4`='0',`Logurl`='/Upload/image/20190802/5d43e8d327974.png',`Openurl`='http://www.idai88.com/finance/dkDetail?proId=140&orgId=5778&shareId=5778&type=1',`ZsUrl1`='',`Sort`='1',`ZsUrl2`='',`IsRec`='1',`ZsUrl3`='',`IsHot`='1',`StepBase`='0.00',`StepIntro`='a:3:{i:0;s:0:\"\";i:1;s:0:\"\";i:2;s:0:\"\";}',`StepInc1`='0.00',`StepInc2`='0.00',`StepUnit`='',`Status`='1',`ConditIDs`='3,1',`NeedIDs`='4,3,2',`Intro`='年化利息25%',`BaseFee`='1',`StepFee`='1',`Isshow`='1',`linkType`='1',`registerPv`='0',`UV`='0',`enableType`='0',`enableNum`='0',`Cityids`='',`ID`='215',`Itype`='1',`OperatorID`='2',`UpdateTime`='2019-08-02 15:42:28' WHERE `ID` = 215 [ RunTime:0.0045s ]
+
+[ 2019-08-02T15:42:29+08:00 ] 58.132.205.66 /admin.php/Items/Product/DataList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'DataList' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_items` WHERE `IsDel` = 0 AND `Itype` = 1 ORDER BY Sort asc,ID desc LIMIT 0,20   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xb_items` WHERE `IsDel` = 0 AND `Itype` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xb_sys_administrator` [ RunTime:0.0004s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2019-08-02T15:42:34+08:00 ] 58.132.205.66 /admin.php/Items/Product/edit/?ID=209
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT `ID` FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_rolemenu` [ RunTime:0.0004s ]
+SQL: SELECT `ButtonID` FROM `xb_sys_rolemenu` WHERE `RoleID` = 2 AND `MenuID` = 120 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT `EName` FROM `xb_sys_operationbutton` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `EName` FROM `xb_sys_operationbutton` WHERE `ID` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `EName` FROM `xb_sys_operationbutton` WHERE `ID` = 9 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'edit' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '58.132.205.66' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 385 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 386 行.
+SQL: SHOW COLUMNS FROM `xb_sys_log` [ RunTime:0.0006s ]
+SQL: INSERT INTO `xb_sys_log` (`UserID`,`UserName`,`TrueName`,`DateTime`,`IP`,`IPCity`,`URL`,`ControllerName`,`Des`,`Type`) VALUES ('2','admin','超级管理员','2019-08-02 15:42:34','58.132.205.66',NULL,'http://xbm.mashangbang.top:80/admin.php/Items/Product','edit','管理员:超级管理员,在 [平台网贷] 的栏目中执行了 [修改] 操作！','修改') [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `xb_items_conditions` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_items_conditions` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_needs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_needs` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_category` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_moneytype` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_moneytype` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_jktimes` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_jktimes` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xb_items` WHERE `ID` = 209 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items` WHERE `ID` = 209 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: citidArr /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 247 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+NOTIC: [8] Undefined variable: meminfos /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Admin/6021496603a52590cc0ca9e074659dc9.php 第 576 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014460s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2019-08-02T15:42:35+08:00 ] 58.132.205.66 /admin.php/Items/Product/getarea
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'getarea' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000611s ]
+
+[ 2019-08-02T15:42:35+08:00 ] 58.132.205.66 /admin.php/Items/Product/loadajax?ID=209&_=0.9368635088173984
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'loadajax' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_items` WHERE `ID` = 209 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-02T15:42:40+08:00 ] 58.132.205.66 /admin.php/Items/Product/Save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'Save' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: auto /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `xb_items` SET `Name`='反暴力催收',`GoodsNo`='31-17',`Keyeords`='1',`Describe`='1',`Showtype`='1',`price`='14.00',`CateID`='10,11,12,13,14',`MoneytypeID`='8',`JktimesID`='4',`AppNumbs`='521489',`PassRate`='100%',`DayfeeRate`='无',`Yjtype`='1',`Settletime`='1',`BonusRate1`='0.00',`BonusRate2`='0.00',`BonusRate3`='0.00',`BonusRate4`='0.00',`Ymoney1`='0',`Ymoney2`='0',`Ymoney3`='0',`Ymoney4`='0',`Smoney1`='0',`Smoney2`='0',`Smoney3`='0',`Smoney4`='0',`Logurl`='/Upload/image/20190731/5d41523985889.png',`Openurl`='http://www.idai88.com/finance/yykDetail?proId=138&orgId=5778&shareId=5778&type=2',`ZsUrl1`='',`Sort`='5',`ZsUrl2`='',`IsRec`='1',`ZsUrl3`='',`IsHot`='1',`StepBase`='0.00',`StepIntro`='a:3:{i:0;s:0:\"\";i:1;s:0:\"\";i:2;s:0:\"\";}',`StepInc1`='0.00',`StepInc2`='0.00',`StepUnit`='',`Status`='1',`ConditIDs`='3,2,1',`NeedIDs`='4,1,3,2',`Intro`='ai自动接电话',`BaseFee`='1',`StepFee`='1',`Isshow`='1',`linkType`='1',`registerPv`='0',`UV`='0',`enableType`='0',`enableNum`='0',`Cityids`='',`ID`='209',`Itype`='1',`OperatorID`='2',`UpdateTime`='2019-08-02 15:42:40' WHERE `ID` = 209 [ RunTime:0.0044s ]
+
+[ 2019-08-02T15:42:40+08:00 ] 58.132.205.66 /admin.php/Items/Product/DataList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'DataList' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_items` WHERE `IsDel` = 0 AND `Itype` = 1 ORDER BY Sort asc,ID desc LIMIT 0,20   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xb_items` WHERE `IsDel` = 0 AND `Itype` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xb_sys_administrator` [ RunTime:0.0004s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2019-08-02T15:42:54+08:00 ] 58.132.205.66 /admin.php/Items/Product/edit/?ID=211
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT `ID` FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_rolemenu` [ RunTime:0.0003s ]
+SQL: SELECT `ButtonID` FROM `xb_sys_rolemenu` WHERE `RoleID` = 2 AND `MenuID` = 120 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT `EName` FROM `xb_sys_operationbutton` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `EName` FROM `xb_sys_operationbutton` WHERE `ID` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `EName` FROM `xb_sys_operationbutton` WHERE `ID` = 9 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'edit' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '58.132.205.66' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 385 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 386 行.
+SQL: SHOW COLUMNS FROM `xb_sys_log` [ RunTime:0.0006s ]
+SQL: INSERT INTO `xb_sys_log` (`UserID`,`UserName`,`TrueName`,`DateTime`,`IP`,`IPCity`,`URL`,`ControllerName`,`Des`,`Type`) VALUES ('2','admin','超级管理员','2019-08-02 15:42:54','58.132.205.66',NULL,'http://xbm.mashangbang.top:80/admin.php/Items/Product','edit','管理员:超级管理员,在 [平台网贷] 的栏目中执行了 [修改] 操作！','修改') [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `xb_items_conditions` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_items_conditions` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_needs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_needs` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_items_category` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_moneytype` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_moneytype` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_jktimes` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_jktimes` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_items` WHERE `ID` = 211 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items` WHERE `ID` = 211 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: citidArr /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 247 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+NOTIC: [8] Undefined variable: meminfos /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Admin/6021496603a52590cc0ca9e074659dc9.php 第 576 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014096s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014126s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000434s ]
+
+[ 2019-08-02T15:42:54+08:00 ] 58.132.205.66 /admin.php/Items/Product/getarea
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'getarea' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000616s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000695s ]
+
+[ 2019-08-02T15:42:54+08:00 ] 58.132.205.66 /admin.php/Items/Product/loadajax?ID=211&_=0.6974294974293269
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'loadajax' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_items` WHERE `ID` = 211 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-08-02T15:43:03+08:00 ] 58.132.205.66 /admin.php/Items/Product/Save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'Save' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: auto /www/wwwroot/xbm.mashangbang.top/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `xb_items` SET `Name`='橙子信用',`GoodsNo`='31-19',`Keyeords`='1',`Describe`='1',`Showtype`='1',`price`='18.00',`CateID`='10,11,12,13,14',`MoneytypeID`='9',`JktimesID`='4',`AppNumbs`='897263',`PassRate`='100%',`DayfeeRate`='无',`Yjtype`='1',`Settletime`='1',`BonusRate1`='0.00',`BonusRate2`='0.00',`BonusRate3`='0.00',`BonusRate4`='0.00',`Ymoney1`='0',`Ymoney2`='0',`Ymoney3`='0',`Ymoney4`='0',`Smoney1`='0',`Smoney2`='0',`Smoney3`='0',`Smoney4`='0',`Logurl`='/Upload/image/20190731/5d4154293b585.png',`Openurl`='http://www.idai88.com/finance/yykDetail?proId=137&orgId=5778&shareId=5778&type=2',`ZsUrl1`='',`Sort`='4',`ZsUrl2`='',`IsRec`='1',`ZsUrl3`='',`IsHot`='1',`StepBase`='0.00',`StepIntro`='a:3:{i:0;s:0:\"\";i:1;s:0:\"\";i:2;s:0:\"\";}',`StepInc1`='0.00',`StepInc2`='0.00',`StepUnit`='',`Status`='1',`ConditIDs`='3,2,1',`NeedIDs`='4,1,3,2',`Intro`='正规信用查询',`BaseFee`='1',`StepFee`='1',`Isshow`='1',`linkType`='1',`registerPv`='0',`UV`='0',`enableType`='0',`enableNum`='0',`Cityids`='',`ID`='211',`Itype`='1',`OperatorID`='2',`UpdateTime`='2019-08-02 15:43:03' WHERE `ID` = 211 [ RunTime:0.0081s ]
+
+[ 2019-08-02T15:43:05+08:00 ] 58.132.205.66 /admin.php/Items/Product/DataList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'DataList' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_items` WHERE `IsDel` = 0 AND `Itype` = 1 ORDER BY Sort asc,ID desc LIMIT 0,20   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xb_items` WHERE `IsDel` = 0 AND `Itype` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xb_sys_administrator` [ RunTime:0.0004s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserName` FROM `xb_sys_administrator` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2019-08-02T15:43:09+08:00 ] 58.132.205.66 /admin.php/Items/Product/edit/?ID=212
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT `ID` FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_rolemenu` [ RunTime:0.0004s ]
+SQL: SELECT `ButtonID` FROM `xb_sys_rolemenu` WHERE `RoleID` = 2 AND `MenuID` = 120 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT `EName` FROM `xb_sys_operationbutton` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `EName` FROM `xb_sys_operationbutton` WHERE `ID` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `EName` FROM `xb_sys_operationbutton` WHERE `ID` = 9 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'edit' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '58.132.205.66' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 385 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 386 行.
+SQL: SHOW COLUMNS FROM `xb_sys_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `xb_sys_log` (`UserID`,`UserName`,`TrueName`,`DateTime`,`IP`,`IPCity`,`URL`,`ControllerName`,`Des`,`Type`) VALUES ('2','admin','超级管理员','2019-08-02 15:43:09','58.132.205.66',NULL,'http://xbm.mashangbang.top:80/admin.php/Items/Product','edit','管理员:超级管理员,在 [平台网贷] 的栏目中执行了 [修改] 操作！','修改') [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `xb_items_conditions` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_items_conditions` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_needs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_needs` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_items_category` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_moneytype` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_moneytype` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items_jktimes` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items_jktimes` WHERE `IsDel` = 0 ORDER BY Sort asc,ID desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_items` WHERE `ID` = 212 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_items` WHERE `ID` = 212 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: citidArr /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 247 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+NOTIC: [8] Undefined variable: meminfos /www/wwwroot/xbm.mashangbang.top/Application/Runtime/Cache/Admin/6021496603a52590cc0ca9e074659dc9.php 第 576 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014745s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000383s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000412s ]
+
+[ 2019-08-02T15:43:09+08:00 ] 58.132.205.66 /admin.php/Items/Product/getarea
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'getarea' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 679 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [8] Undefined index: children /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Items/ProductController.class.php 第 674 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000569s ]
+
+[ 2019-08-02T15:43:09+08:00 ] 58.132.205.66 /admin.php/Items/Product/loadajax?ID=212&_=0.44453775689984143
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Items/Product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'loadajax' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_items` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xb_items` WHERE `ID` = 212 LIMIT 1   [ RunTime:0.0002s ]
+

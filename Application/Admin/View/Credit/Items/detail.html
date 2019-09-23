@@ -1,0 +1,224 @@
+<include file="Shared:Header" />
+<body class="Bodybg">
+<div id="tt" class="easyui-tabs" >
+    <div title="卡贷详情" style="padding: 20px; background-color: #f4f4f4">
+        <fieldset style="border: 1px solid #ccc;margin:5px; ">
+            <legend  style="color: #0092DC">卡信息</legend>
+            <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable EditTableMax">
+                <tbody>
+                <tr>
+                    <td width="120" align="right">卡名称：</td>
+                    <td width="200">
+                        {$Info['Name']}
+                    </td>
+                    <td width="120" align="right">卡编码：</td>
+                    <td width="200">
+                        {$Info['GoodsNo']}
+                    </td>
+                </tr>
+                <tr>
+                    <td width="120" align="right">所属银行：</td>
+                    <td>
+                        {$Info['BankName']}
+                    </td>
+                    <td width="120" align="right">卡类型：</td>
+                    <td>
+                        {$Info['KatypeName']}
+                    </td>
+                </tr>
+                <tr>
+                    <td width="120" align="right">币种类型：</td>
+                    <td>
+                        {$Info['BitypeName']}
+                    </td>
+                    <td width="120" align="right">年费用：</td>
+                    <td>
+                        {$Info['FeeName']}
+                    </td>
+                </tr>
+                <tr>
+                    <td width="120" align="right">结算周期：</td>
+                    <td>
+                        {$Info['Settletime']}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </fieldset>
+        <fieldset style="border: 1px solid #ccc;margin:5px; ">
+        <legend style="color: #0092DC" >卡贷信息</legend>
+        <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable">
+            <tbody>
+            <tr >
+                <td width="120" align="right">申请人数：</td>
+                <td width="200">
+                    {$Info['AppNumbs']}
+                </td >
+                <td width="120" align="right">通过率：</td>
+                <td>
+                    {$Info['PassRate']}
+                </td>
+            </tr>
+
+            <tr >
+                <td width="120" align="right">RMB积分描述：</td>
+                <td width="200">
+                    {$Info['Jifen1']}
+                </td>
+                <td width="120" align="right">USD积分描述：</td>
+                <td>
+                    {$Info['Jifen2']}
+                </td>
+            </tr>
+            <tr >
+                <td width="120" align="right">免息期：</td>
+                <td width="200">
+                    {$Info['Freetime']}
+                </td>
+                <td width="120" align="right">免息期描述：</td>
+                <td>
+                    {$Info['Freedesc']}
+                </td>
+            </tr>
+            <tr >
+                <td width="120" align="right">简单描述：</td>
+                <td>
+                    {$Info['Intro']}
+                </td>
+                <td width="120" align="right">年费备注：</td>
+                <td width="200">
+                    {$Info['Yeardesc']}
+                </td>
+            </tr>
+            <tr >
+                <td width="120" align="right">等级名称：</td>
+                <td width="200">
+                    {$Info['Levelname']}
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+        </fieldset>
+        <fieldset style="border: 1px solid #ccc;margin:5px; ">
+        <legend style="color: #0092DC" >奖金返点</legend>
+        <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable">
+            <tbody>
+            <tr >
+                <td width="120" align="right">普通会员返点：</td>
+                <td width="200">
+                    {$Info['BonusRate1']|number_format=2}%
+                </td>
+                <td width="120" align="right">初级代理返点：</td>
+                <td>
+                    {$Info['BonusRate1']|number_format=2}%
+                </td>
+            </tr>
+            <tr >
+                <td width="120" align="right">中级代理返点：</td>
+                <td width="200">
+                    {$Info['BonusRate3']|number_format=2}%
+                </td>
+                <td width="120" align="right">高级代理返点：</td>
+                <td>
+                    {$Info['BonusRate4']|number_format=2}%
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        </fieldset>
+        <fieldset style="border: 1px solid #ccc;margin:5px; ">
+        <legend style="color: #0092DC" >其他信息</legend>
+        <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable">
+            <tbody>
+                <tr >
+                    <td width="120" align="right">信用卡logo图：</td>
+                    <td>
+                        <div onclick="bigView(this)" style="width:100px;height:100px;background: url({$Info['Logurl']}) center no-repeat;background-size:auto 100px;display: inline-block;margin-left: 5px;cursor: pointer"></div>
+                    </td>
+                    <td width="120" align="right">发卡组织logo：</td>
+                    <td>
+                        <div onclick="bigView(this)" style="width:100px;height:100px;background: url({$Info['Fakaurl']}) center no-repeat;background-size:auto 100px;display: inline-block;margin-left: 5px;cursor: pointer"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="120" align="right">主题图：</td>
+                    <td >
+                        <div onclick="bigView(this)" style="width:100px;height:100px;background: url({$Info['MainPic']}) center no-repeat;background-size:auto 100px;display: inline-block;margin-left: 5px;cursor: pointer"></div>
+                    </td>
+                    <td width="120" align="right">专属海报1：</td>
+                    <td >
+                        <div onclick="bigView(this)" style="width:100px;height:100px;background: url({$Info['ZsUrl1']}) center no-repeat;background-size:auto 100px;display: inline-block;margin-left: 5px;cursor: pointer"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="120" align="right">专属海报2：</td>
+                    <td >
+                        <div onclick="bigView(this)" style="width:100px;height:100px;background: url({$Info['ZsUrl2']}) center no-repeat;background-size:auto 100px;display: inline-block;margin-left: 5px;cursor: pointer"></div>
+                    </td>
+                    <td width="120" align="right">专属海报3：</td>
+                    <td >
+                        <div onclick="bigView(this)" style="width:100px;height:100px;background: url({$Info['ZsUrl3']}) center no-repeat;background-size:auto 100px;display: inline-block;margin-left: 5px;cursor: pointer"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="120" align="right">权益描述：</td>
+                    <td width="200" colspan="3">
+                        <empty name="QuanycontsArr">
+                            暂无描述
+                            <else/>
+                            <table cellspacing="0">
+                                <volist name="QuanycontsArr" id="vo">
+                                    <tr>
+                                        <td width="500" colspan="3" style="padding: 5px 5px 0;font-size:12px;color: #555;border:1px solid transparent; <?php if($i!=count($QuanycontsArr)){echo 'border-bottom:1px solid #fff;';}  ?>">{$i}、{$vo}</td>
+                                    </tr>
+                                </volist>
+                            </table>
+                        </empty>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="120" align="right">是否推荐：</td>
+                    <td width="200">
+                        <switch name="Info['IsRec']">
+                            <case value="0">不推荐</case>
+                            <case value="1">推荐</case>
+                        </switch>
+                    </td>
+                    <td width="120" align="right">是否热门：</td>
+                    <td width="200">
+                        <switch name="Info['IsHot']">
+                            <case value="0">不热门</case>
+                            <case value="1">热门</case>
+                        </switch>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="120" align="right">添加人：</td>
+                    <td width="200">
+                       {$Info['OperatorID']}
+                    </td>
+                    <td width="120" align="right">添加时间：</td>
+                    <td width="200">
+                        {$Info['UpdateTime']}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </fieldset>
+    </div>
+</div>
+<div style="text-align:center;margin:20px 0px;">
+    <input name="Btn" type="button" value=" 关闭  " onclick="parent.$('#W1').window('close');" />
+</div>
+</body>
+
+<script type="text/javascript">
+    function bigView(obj) {
+        window.top.$('#tan').show();
+        var back=$(obj).css('background-image');
+        window.top.$('.tan_content').attr('style','background:'+back+'center no-repeat;background-size:auto 100%;');
+    }
+</script>
+<include file="Shared:Footer" />

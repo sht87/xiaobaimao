@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+        <link type="text/css" href="__PUBLIC__/css/jquery-weui.min.css" rel="stylesheet">
+		<link type="text/css" href="__PUBLIC__/css/weui.min.css"  rel="stylesheet"/>
+        <link type="text/css" href="__PUBLIC__/css/app.css"  rel="stylesheet"/>
+		<title></title> 
+		 
+	</head>
+	<body> 
+		<header class="header" >
+			<a href="<?php echo U('Member/wallet');?>" class="go_left"></a> 
+			<span class="header_til">提现</span>  
+		</header> 
+		<div class="" style="height: 50px;"></div>
+	    <div class="weui-msg">
+		  <div class="weui-msg__icon-area"><i class="weui-icon-success weui-icon_msg"></i></div>
+		  <div class="weui-msg__text-area">
+		    <h2 class="weui-msg__title">提现申请已提交</h2> 
+		  </div> 
+		</div>
+		<!---->  
+	     <div class="weui-cells weui-cells_form" style="margin-top: 50px;">
+		      <div class="weui-cell">
+		        <div class="weui-cell__hd"><label class="weui-label" style="color:#434343;">{$info.CardID}</label></div>
+		        <div class="weui-cell__bd" style="text-align: right;">
+		                 {$info.CardNo} 
+		        </div>
+		      </div>
+		       <div class="weui-cell">
+		        <div class="weui-cell__hd"><label class="weui-label" style="color:#434343;">金额</label></div>
+		        <div class="weui-cell__bd" style="text-align: right;">
+		                 {$info.Money}元 
+		        </div>
+		      </div>
+		  </div>
+		 <!--5.00元-->
+
+         <section style="padding: 30px 0;">
+				<a href="<?php echo U('Member/wallet');?>" class="btn_want" style="width: 90%;">完成</a>
+		 </section>
+
+	    </section>
+	   <script src="__PUBLIC__/js/jquery-2.1.4.js"></script>
+		<script src="__PUBLIC__/js/jquery-weui.min.js"></script> 
+		<script src="__PUBLIC__/js/common.js"></script> 
+		    
+	</body>
+</html>

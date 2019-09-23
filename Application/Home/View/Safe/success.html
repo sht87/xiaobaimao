@@ -1,0 +1,51 @@
+<layout name="layout/nav"/>
+<div class="clear"></div>
+<style type="text/css">
+    .ul_perfl .cur{
+        color: #3a7dff;
+        border-left: 2px solid #3a7dff
+    }
+</style>
+<!--menu end-->
+
+<div class="" style="padding: 40px 0 60px 0;">
+    <div class="w1200 per_box">
+        <div class="fl perflbar">
+            <p class="per_fltil">个人中心</p>
+            <ul class="ul_perfl">
+                <if condition="session('loginfo')['Mtype'] eq 1">
+                    <include file="Layout/genneral_nav" />
+                </if>
+                <if condition="session('loginfo')['Mtype'] eq 2">
+                    <include file="Layout/personnel_nav" />
+                </if>
+                <if condition="session('loginfo')['Mtype'] eq 3">
+                    <include file="Layout/company_nav" />
+                </if>
+            </ul>
+        </div>
+        <div class="fr perrgcon">
+            <div class="rg_til">
+                <span>账户安全</span>
+            </div>
+            <div class="rgcon">
+                <div class="" style="background:#fef9f1; margin-top: 50px; height:50px; line-height: 50px; text-align: center">绑定手机可以有效的保护您帐号和资金安全。更换手机后，订单状态提醒、安全校验等服务将默认为新绑定的手机号</div>
+
+                <div class="pwdcon" style="width:540px; ">
+                    <div class="" style="text-align: center; ">
+                        <p><img src="__PUBLIC__/images/ture.png"></p>
+                        <p style="font-size:24px; color:#3a7dff; padding:20px 0">恭喜您已成功更换绑定手机 !</p>
+                        <p>
+                            <a href="{:U('Safe/center')}" class="ahover" style="text-decoration: underline; color:#838383; ">返回安全验证</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<!--end-->
+          

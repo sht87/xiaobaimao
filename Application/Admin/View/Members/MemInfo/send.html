@@ -1,0 +1,38 @@
+<include file="Shared:Header" />
+<body class="Bodybg">
+<?php if($meminfos['ServiceOpenid']):?>
+	<form id="FF" class="easyui-form" method="post" data-options="novalidate:true">
+	    <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable">
+	        <thead>
+	        <tr>
+	            <td colspan="2">说明：发送微信消息功能！</td>
+	        </tr>
+	        </thead>
+	        <tbody>
+	        <tr >
+	            <td width="120" align="right">真实姓名：</td>
+	            <td>{$meminfos.TrueName}</td>
+	        </tr>
+	        <tr >
+	            <td width="120" align="right">手机号码：</td>
+	            <td>{$meminfos.Mobile}</td>
+	        </tr>
+	        <tr >
+	            <td width="120" align="right">服务号openid：</td>
+	            <td>{$meminfos.ServiceOpenid}</td>
+	        </tr>
+	        <tr >
+	            <td width="120" align="right">发送的内容：</td>
+	            <td><textarea name="Contents" style="width:320px;height:120px;"></textarea></td>
+	        </tr>
+	        </tbody>
+	    </table>
+	    <input type="hidden" id="ID" name="ID" value="{$ID}"/>
+	</form>
+<?php else:?>
+	<div style="height:200px;text-align: center;line-height: 200px;">
+		<span style="font-size: 18px;color:orange;">没获取到此会员的'服务号openid',不能发送微信消息!</span>
+	</div>
+<?php endif;?>
+</body>
+<include file="Shared:Footer" />

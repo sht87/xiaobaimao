@@ -1,0 +1,34 @@
+[2018-12-25 16:23:38]
+>>>>>>>>>
+     requset-1
+            https://pay.chanpay.com/mag-unify/gateway/receiveOrder.do?Service=nmg_zft_api_quick_payment&Version=1.0&PartnerId=200002160391&InputCharset=UTF-8&TradeDate=20181225&TradeTime=162336&SignType=RSA&Memo=H5%E7%9B%B4%E6%8E%A5%E6%94%AF%E4%BB%98&ReturnUrl=http%3A%2F%2Fdc.yaofabank.com%2FMember%2Findex&TrxId=1be8e266f6deb7d86b1aeea2ceee6d1a&SellerId=200002160391&SubMerchantNo=200002160391&ExpiredTime=15m&MerUserId=63&BkAcctTp=01&BkAcctNo=hmvRCxy1sHpc9aOXxn%2BJrRWTeuCRMsEgsrMSQd%2BkOIn5KOpy7%2Bw8ZmFcxzpDl%2Bxf5E2KDyoVJbRnVicCo%2BnHqetVjxDVuIVBq78zZEnAlcz77xpl80LHplLEVrtNLLLn67BqXGC9DwUTQrqrEe04yecZciGImD8VUXjpNrD%2BCw8%3D&IDTp=01&IDNo=CbhtndRnECmXjJlJb3YwBtfhqg3X%2B3UFiZYWmjJfJda2gfx%2FondwzMjYqqlGPyO%2BzOmlhyg42GpGdMTu%2FqAp2lh5bgjN6BmxKgnpFDdiHaazU9UJs5NiaL1SEoOSA21GXlkFW9TRzBXFmTypyVr%2BrEICj9iHOmV8Eu344lKsjm8%3D&CstmrNm=BHLxRWeNhSXagVHAkTTaNTncQN1RR%2B4lRuMrt3FpkZgLqqwG0mX6yfpv1VfOI3IQZz5woisQCd3%2BOzkVqf%2FT98CkooLqvdbk6vmQCZD5cbFQpfq7t2m6fZ0Er3iVD7W8zmecsyW42iX5ynlj8tCHa%2B7Cztn%2Bxx2snAHI9EPQTC8%3D&MobNo=W9QUCIa3PLnOVFXh7p2%2B%2Fea2Mryv6iQxuugqIlIiihRML%2BPBraKh9Ainf3d9Tq16MvV0mUGJ0xtqqtSmvX1V5x9puCB0AZJ1qFTpEidgMrUS4x5xCPFd5zxtTOWRPowqmlHN7vHyTuyI07T0kuurcsNZGTgAZx6Of9bz8J6h%2BmI%3D&CardCvn2=&CardExprDt=&TradeType=11&TrxAmt=399.00&EnsureAmount=&OrdrName=%E4%BB%A3%E7%90%86%E8%B4%B9%E7%94%A8%E6%94%AF%E4%BB%98&OrdrDesc=&RoyaltyParameters=&NotifyUrl=http%3A%2F%2Fdc.yaofabank.com%2Fapi.php%2FCenter%2FPayment%2FchanpayNotify&Extension=%5B%7B%22order_no%22%3A%221812258162309171%22%7D%5D&Sign=T9aRs4k32p95gC0vyOhXiBLpNl%2BmUfmXaa2biyyUPWLcz38joMUkVX6qX36kDadK54Rlxgd2P97%2B0hJxZGTmky6SUhKrHnsTyxe73nsOTUBwh2psWe5P5pfmCOdHAoMGzeHW54Mezd03%2Fzrk4FaZneuVMksBe0%2FtYrGbRGy%2FIOo%3D
+     requset-2
+            {"AcceptStatus":"S","AppRetMsg":"交易受理成功","AppRetcode":"QT000001","InputCharset":"UTF-8","OrderTrxid":"101154572621608596415","PartnerId":"200002160391","RetCode":"P0002","RetMsg":"受理成功","Sign":"nfAbe9D2nWFcPuD2bU0ZakYmKG+vK/bCBF0zZ2BZWw+V8D6BX4FPWCXDqepr+iH4TVjXXMmkGuS8AuJNFd6X1ClH62/BhJ1k861v/UP0HxF4wKk7feft7yWl8+fqmNa0E05EkU8eTlYvXRzS2IO0GTZPMD/3TOCO15BZLEUGVSY=","SignType":"RSA","Status":"P","TradeDate":"20181225","TradeTime":"162338","TrxId":"1be8e266f6deb7d86b1aeea2ceee6d1a"}
+
+>>>>>>>>>
+[2018-12-25 16:42:07]
+>>>>>>>>>
+     1.0Notify
+            notify_time=20181225164207&sign_type=RSA&notify_type=trade_status_sync&trade_status=TRADE_CLOSED&version=1.0&extension=%7B%22subMerchantNo%22%3A%22200002160391%22%7D&sign=RkjhHpuEHuyPfBkZFOylibuX3C9MxwgOe4t7pK8d9SXEKJByqKsQFBFI2F%2B29kQ3F95bB3mmuhK6mzs2t%2FH06kFHKAH%2BIL5OqNQPnam2HMo%2BsPavAiZPZ9Hl8ud%2BPpb1YOu5Owr%2F9AvGpu1PADlv8vu%2F8kmdwtLvn3oXlgHV2dk%3D&gmt_create=20181225164207&_input_charset=UTF-8&outer_trade_no=1be8e266f6deb7d86b1aeea2ceee6d1a&trade_amount=399.00&notify_id=914247adf92342bbb32dd29026bf8f3a&inner_trade_no=101154572621608596415
+
+>>>>>>>>>
+[2018-12-25 19:01:18]
+>>>>>>>>>
+     requset-1
+            https://pay.chanpay.com/mag-unify/gateway/receiveOrder.do?Service=nmg_zft_api_quick_payment&Version=1.0&PartnerId=200002160391&InputCharset=UTF-8&TradeDate=20181225&TradeTime=190117&SignType=RSA&Memo=H5%E7%9B%B4%E6%8E%A5%E6%94%AF%E4%BB%98&ReturnUrl=http%3A%2F%2Fdc.yaofabank.com%2FMember%2Findex&TrxId=851faa9e800936945d1abf440d0ee6ea&SellerId=200002160391&SubMerchantNo=200002160391&ExpiredTime=15m&MerUserId=67&BkAcctTp=01&BkAcctNo=F%2F%2BoQkpsRyQFenQhcbxLzMF9qOZ1V42U35PuMDRC6w28USsR1M09wi7QQ7787FHEtyrM3CMV4QCrED59fdry1mQcAbM3JzIvJbnmOCMz8Ujl5GkWPZxqZoaFlFPOzJnZC79j%2B%2FLqP9NSvkbgQI62XEuKupw8jOvP9%2BEdHghV6V0%3D&IDTp=01&IDNo=xX2jWDemT65vZguNGt%2BnDtaPtZmq95dD8X8%2BIxSM6zdzAF5c3XhYBltBFf5o8a57R%2BaL79IMVNWYab2EtD60QzqoiphDipLdah3x9hr0Pqk8Ffx23A9xF1Fvkc%2BlptOnyQQa%2FfcKdvmL8weESwccvuvsjSLFq85bYArxvWRcD6A%3D&CstmrNm=aFSr5NZLVJVKO%2FIRBameRTET8X6l6TyYEejTa%2BTMugImRvm9ZlRSAteD3ZQ9nyk4%2BYc7LU1dOUyRh5psSLi6Tk4gBud5CDrUuQ3VgIwB9Vo4oIyBoBuIYycN6VY9aRY7iaX%2Fi4P3XjPr6%2FQ9gurqwlx86kDSblL%2BM4mgpzzKK9Y%3D&MobNo=YV3duxPHkr3lN8IWf9K7IcRPBrXMeukLntOctNv%2B1Lo3%2FxbzqCJJZUAeODBcGBOCSt4ipej7B2ZQUw0jHU407m1eJbyvENlvb6dmMQg9758ix%2BjO9Fg1v7a%2Fm0b1K6hBnPIZEQNMTTkQwDsicRUTOU%2FQt8z5MJPteuHbTdc9j%2Bg%3D&CardCvn2=&CardExprDt=&TradeType=11&TrxAmt=0.01&EnsureAmount=&OrdrName=%E4%BB%A3%E7%90%86%E8%B4%B9%E7%94%A8%E6%94%AF%E4%BB%98&OrdrDesc=&RoyaltyParameters=&NotifyUrl=http%3A%2F%2Fdc.yaofabank.com%2Fapi.php%2FCenter%2FPayment%2FchanpayNotify&Extension=%5B%7B%22order_no%22%3A%221812259190037634%22%7D%5D&Sign=kXtxLv9EL%2FYXFkrRNuoFEJ1nqUfiSwLRchDfBUOC9b2jMaAdL1kFdSrWTpTxjfJD2wio12pR4CRpNT38Q1tIUDLp6MsIvppY%2B1t7a%2Bi%2BXJJUvxodQuA13aemTmuFx6PRI8oOA92ojvQsv77wWZoOpvZKpogGI3ZnE5d1mN3Ohuw%3D
+     requset-2
+            {"AcceptStatus":"S","AppRetMsg":"交易受理成功","AppRetcode":"QT000001","InputCharset":"UTF-8","OrderTrxid":"101154573567720653463","PartnerId":"200002160391","RetCode":"P0002","RetMsg":"受理成功","Sign":"bUT+dJxprKxM0JNZJloEyyU5RoVtRn9WnzJZ1ukQ+AwM5D3zHusCsz9IxYWOrQJFqBCG5BFE7QmmrDREr7XW6hjeI1O4JxpvB5JMy9sKK1R//t8vZaA7knv0W0Cl86vw8lcTSoonLkM46aIF84hUIFBTEDxfbw05BfF1BKlgjdI=","SignType":"RSA","Status":"P","TradeDate":"20181225","TradeTime":"190118","TrxId":"851faa9e800936945d1abf440d0ee6ea"}
+
+>>>>>>>>>
+[2018-12-25 19:01:27]
+>>>>>>>>>
+     支付确认接口
+            {"AcceptStatus":"S","AppRetMsg":"交易处理中","AppRetcode":"QT100000","InputCharset":"UTF-8","OrderTrxid":"101154573567720653463","PartnerId":"200002160391","PayTrxId":"301154573567719870727","RetCode":"P0001","RetMsg":"交易处理中","Sign":"vYtzT\/e\/ZhQ5BNNX\/G9KkK9qu8A6ZCElm6B3q8DhWn4j7+NaHKdKOxbSYI2bf1yuPTtiWv7SqP0koLyhqGG+WOqNRjBD20WDW2lWc2PFexYsiOHEbOKuF1K7uBhy4gsYkadsa4XJjmWURLbKJP0oth3WhFp5SU3jT\/3Kac7m3BM=","SignType":"RSA","Status":"P","TradeDate":"20181225","TradeTime":"190127","TrxId":"00d9a14b9e2739b61a58606a0f2e07b3"}
+
+>>>>>>>>>
+[2018-12-25 19:01:28]
+>>>>>>>>>
+     1.0Notify
+            notify_time=20181225190128&sign_type=RSA&notify_type=trade_status_sync&trade_status=TRADE_SUCCESS&gmt_payment=20181225190128&version=1.0&sign=XiFvkEQyRvyZ31EkNr0b9Q%2BfsFQynw9R1SQkHBcgfKc2y3g6w%2FXiJGdUcsvQsOgjkvn9Xr%2BxfUWkkaHmscinXf3lAaHW7QYY%2BDN0U3Try9sXpXfuceSOwcuLRt68M%2FvAN23fC469Pzc5m%2FPjz6CZwerU12YqJwEKKx4qJc%2FUxyY%3D&extension=%7B%22apiResultcode%22%3A%22S%22%2C%22bankCode%22%3A%2200001%22%2C%22bankMessage%22%3A%22%E6%88%90%E5%8A%9F%22%2C%22chnlNo%22%3A%220400100014%22%2C%22instPayNo%22%3A%22NI101364501122521282641%22%2C%22sendBankReq%22%3A%222018122510000020570889791102700%22%2C%22settlementId%22%3A%2220181225190117PP59833673%22%2C%22unityResultMessage%22%3A%22%E4%BA%A4%E6%98%93%E6%88%90%E5%8A%9F%22%2C%22wjReq%22%3A%22NI101364501122521282652%22%7D&gmt_create=20181225190128&_input_charset=UTF-8&outer_trade_no=851faa9e800936945d1abf440d0ee6ea&trade_amount=0.01&notify_id=739cd9c1178c4d11b66696742d75348d&inner_trade_no=101154573567720653463
+
+>>>>>>>>>

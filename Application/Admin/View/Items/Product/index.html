@@ -1,0 +1,138 @@
+<include file="Shared:Header" />
+<body class="Bodybg">
+        <form id="FF" method="post">
+        <div id="tools" class="tools">
+
+            {:W('RolePerm/RolePermTop')}
+
+        </div>
+        <div id="search" class="search">
+            <table border="0" class="SearchTable" cellpadding="3">
+                <thead>
+                    <tr>
+                        <td width="70" align="right">网贷平台：</td>
+                        <td width="180">
+                            <input id="Title" name="Title" type="text" />
+                        </td>
+                        <td width="70" align="right">借款类型：</td>
+                        <td width="180">
+                            <select name="CateID" id="CateID">
+                                <option value="-5">全部</option>
+                                <volist name="cateList" id="vo">
+                                    <option value="{$vo.ID}">{$vo.Name}</option>
+                                </volist>
+                            </select>
+                        </td>
+                        <td width="70" align="right">金额类型：</td>
+                        <td width="180">
+                            <select name="MoneytypeID" id="MoneytypeID">
+                                <option value="-5">全部</option>
+                                <volist name="mtypeList" id="vo">
+                                    <option value="{$vo.ID}">{$vo.Name}</option>
+                                </volist>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="btnSearch" onclick="$.XB.search();" type="button" value="查 询">
+                        </td>
+                        <td>
+                            <input id="MoreSearch" onclick="$.XB.moresearch()" type="button" value="更多条件">
+                        </td>
+                    </tr>
+                </thead>
+                <tbody id="stbody">
+                    <tr>
+                        <td width="70" align="right">显示位置：</td>
+                        <td width="180">
+                            <select name="Showtype" id="Showtype">
+                                <option value="-5">全部</option>
+                                <option value="1">找借贷</option>
+                                <option value="2">贷款分销</option>
+                                <option value="3">全部出现</option>
+                            </select>
+                        </td>
+                        <td width="70" align="right">出现高级：</td>
+                        <td width="180">
+                            <select name="Isshow" id="Isshow">
+                                <option value="-5">全部</option>
+                                <option value="1">全国</option>
+                                <option value="2">部分高级</option>
+                            </select>
+                        </td>
+                        <td width="70" align="right">佣金模式：</td>
+                        <td width="180">
+                            <select name="Yjtype" id="Yjtype">
+                                <option value="-5">全部</option>
+                                <option value="1">按比例</option>
+                                <option value="2">按金额</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="70" align="right">借款期限：</td>
+                        <td width="180">
+                            <select name="JktimesID" id="JktimesID">
+                                <option value="-5">全部</option>
+                                <volist name="jklist" id="vo">
+                                    <option value="{$vo.ID}">{$vo.Name}</option>
+                                </volist>
+                            </select>
+                        </td>
+                        <td width="70" align="right">状态：</td>
+                        <td width="180">
+                            <select name="Status" id="Status">
+                                <option value="-5">全部</option>
+                                <option value="1">启用</option>
+                                <option value="0">禁用</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+            <div id="tabelContent" class="tabelContent">
+                <table id="DataList"></table>
+            </div>
+    </form>
+    <script type="text/javascript">
+
+        $(function () {
+                var frozenColumns=[
+                 { field: 'ID', checkbox: true },
+                 { field: 'Name', title: '平台名称', width: 100 }
+                ];
+                var columns= [
+                    { field: 'Showtype', title: '显示位置', width: 90},
+                    { field: 'Isshow', title: '出现的高级', width: 80},
+                    { field: 'GoodsNo', title: '平台编码', width: 100 ,sortable: true},
+                    { field: 'AppNumbs', title: '申请人数', width: 80 ,sortable: true},
+                    { field: 'PassRate', title: '通过率', width: 70,sortable: true },
+                    { field: 'DayfeeRate', title: '日费率', width: 70 ,sortable: true},
+                    { field: 'Settletime', title: '结算周期', width:90},
+                    { field: 'Yjtype', title: '佣金模式', width: 70},
+                    { field: 'BonusRate1', title: '普通会员奖金点', width: 110 ,sortable: true},
+                    { field: 'BonusRate2', title: '初级代理奖金点', width: 110 ,sortable: true},
+                    { field: 'BonusRate3', title: '中级代理奖金点', width: 110 ,sortable: true},
+                    { field: 'BonusRate4', title: '高级代理奖金点', width: 110 ,sortable: true},
+
+                    { field: 'Ymoney1', title: '普通会员佣金', width: 110 ,sortable: true},
+                    { field: 'Ymoney2', title: '初级代理佣金', width: 110 ,sortable: true},
+                    { field: 'Ymoney3', title: '中级代理佣金', width: 110 ,sortable: true},
+                    { field: 'Ymoney4', title: '高级代理佣金', width: 110 ,sortable: true},
+                    { field: 'Status', title: '状态', width: 70,sortable:true,},
+                    { field: 'IsRec', title: '是否推荐', width: 80,sortable:true,formatter:Common.DoFormatter },
+                    { field: 'IsHot', title: '是否热门', width: 80 ,sortable:true,formatter:Common.DoFormatter},
+                    { field: 'Sort', title: '排序', width: 70 ,sortable:true},
+                    { field: 'OperatorID', title: '添加人', width: 100 },
+                    { field: 'UpdateTime', title: '添加时间', width: 150, sortable: true },
+                ];
+            $.XB.datagrid({'frozenColumns':frozenColumns,'columns':columns});
+            $.XB.enter();
+        });
+    </script>
+        {:W('RolePerm/RolePermBottom')}
+	</body>
+<include file="Shared:Footer" />
+
+
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+        <link type="text/css" href="__PUBLIC__/css/jquery-weui.min.css" rel="stylesheet">
+		<link type="text/css" href="__PUBLIC__/css/weui.min.css"  rel="stylesheet"/>
+        <link type="text/css" href="__PUBLIC__/css/app.css"  rel="stylesheet"/>
+        <link rel="stylesheet" href="__PUBLIC__/css/dropload.css" />
+		<title><?php echo $SEOTitle?$SEOTitle:$GLOBALS['BasicInfo']['SEOTitle'];?></title> 
+		<style>
+			.weui-panel__bd a{
+				border: 1px solid #fff;
+			}
+			.weui-media-box:before{
+				
+			}
+			.weui-panel__bd{
+				border-bottom: none;
+			}
+		 
+			.weui-navbar:after{
+				border-bottom: none;
+			}
+			.weui-navbar__item:after{
+
+			}
+			.weui-navbar__item{
+				margin: 10px 0;
+				padding: 0;
+			}
+			.weui-navbar__item.weui-bar__item--on{
+				color: #5461eb;
+				background:#fff;
+			}
+			 .weui-agree__checkbox:checked:before{
+			 	color: #5461eb;
+			 }
+			 .selected{border-color:#5461eb;color:#5461eb;}
+			 .noselect{border-color:#eee;color:#000;}
+		</style>
+	</head>
+	<body> 
+		<header class="header" >
+			<a href="javascript:history.go(-1)" class="go_left"></a> 
+			<span class="header_til">征信列表</span>  
+		</header> 
+		<div class="" style="height: 50px;"></div> 
+	  <!---->  
+	<!--   <section class="hd"></section>  -->
+	  <!---->
+
+		<article class="khfxWarp" style="padding-bottom:60px;margin-top:25px;">
+			 <section style="margin-top: -20px;" class="itemlist">
+			 </section>
+		</article>
+
+<!--引用底部文件 start-->
+<include file="Layout/bottom" />
+<!--引用底部文件 end-->
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/dropload.js"></script>
+<script type="text/javascript">
+    //加载更多
+    $(function () {
+    var current_page=0;
+    // dropload
+    var dropload = $('.khfxWarp').dropload({
+        scrollArea: window,
+        loadDownFn: function (me) {
+
+            $.ajax({
+                type: 'POST',
+                url: "{:U('Zenxin/getdata')}",
+                data:"pages="+current_page+"&uid="+"{$uid}",
+                dataType: 'json',
+                success: function(data){
+                    var result = '';
+                    if(!data.result){
+                        me.lock();
+                        me.noData();
+                        me.resetload();
+                    }else{
+                        for(var i = 0; i < data.message.length; i++) {
+                            result+= ''  
+                            +'<section>'
+							 	+'<dl class="dl_hot" style="padding-left:0px;">'
+							 		+'<dd>'+data.message[i].TrueName+'</dd>';
+							 		if(data.message[i].Status=='1'){
+							 			result+= '<dt class="dt1">状态:&nbsp;<span style="color:#ff4646;">待付款</span></dt>';
+							 		}else if(data.message[i].Status=='2'){
+							 			result+= '<dt class="dt1">状态:&nbsp;<span style="color:#ff4646;">待查询</span></dt>';
+							 		}else if(data.message[i].Status=='3'){
+							 			result+= '<dt class="dt1">状态:&nbsp;<span style="color:#ff4646;">查询失败</span></dt>';
+							 		}else if(data.message[i].Status=='4'){
+							 			result+= '<dt class="dt1">状态:&nbsp;<span style="color:#30ac64;">已查询</span></dt>';
+							 		}else{
+							 			result+= '<dt class="dt1">状态:&nbsp;<span style="color:#ff4646;">已取消</span></dt>';
+							 		}
+							 		result+= '<a href=\"{:U("Daizenxin/zdetail")}?id='+data.message[i].ID+'&uid={$uid}\" class="btn_shenqing">详情</a>'
+							 	+'</dl>'
+							 +'</section>';
+                        }
+
+                        setTimeout(function(){
+                            $('.itemlist').append(result);
+                            current_page++;
+                            me.resetload();
+                        },0);
+                    }
+                },
+                error: function(xhr, type){
+                    $.alert("加载数据出错");
+                    // 即使加载出错，也得重置
+                    me.lock();
+                    me.noData();
+                }
+            });
+
+        }
+    });
+});
+</script>

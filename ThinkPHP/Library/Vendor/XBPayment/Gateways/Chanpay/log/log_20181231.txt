@@ -1,0 +1,20 @@
+[2018-12-31 14:58:41]
+>>>>>>>>>
+     requset-1
+            https://pay.chanpay.com/mag-unify/gateway/receiveOrder.do?Service=nmg_zft_api_quick_payment&Version=1.0&PartnerId=200002160391&InputCharset=UTF-8&TradeDate=20181231&TradeTime=145840&SignType=RSA&Memo=H5%E7%9B%B4%E6%8E%A5%E6%94%AF%E4%BB%98&ReturnUrl=http%3A%2F%2Fdc.yaofabank.com%2FMember%2Findex&TrxId=0c8ce16ded28e4a629a27ab0ccfa0d79&SellerId=200002160391&SubMerchantNo=200002160391&ExpiredTime=15m&MerUserId=98&BkAcctTp=01&BkAcctNo=V9eecqZtMctQpdd1MbZAtKR3NIJj1lEgJX4XOjrxUYqbQ0wI%2BUMnXUj0d6zFRhyiU34ckbJQO8%2BYKKiDZcvJTNmWcxZrL5LF9XklwSgyR9sTQqE8j%2BPB%2BRtxzBTjv2s7jqn%2Bxh%2F%2BrnjcWYBGws0JV33YjafLg7UxF0SJcwW4ows%3D&IDTp=01&IDNo=J5Q0BJ6QeP4F0Y1hZ5Wwpu5qTMxUiUwnsdWVt1ZzkSLd%2B6j540rm397nHK0j%2BS8Hku2l5MsDRiaZEbvhEVcbkHLt%2FnHHNP9giGVnN6Vgb8ulKA3OBlzBJwwCHu9SZTWTGVWDeZXoBBpe%2FkpvLx0CbklNv4gP1pBOGMKZHHZD1Og%3D&CstmrNm=FHB8QA6hNUGSv5kE2H8PxpbBsBjE9muqm8cK2sJsb%2FUglYmLQSFs2UlxUv3huO7pznug50lA0sbWiP%2BXegakChs2bTAE4BHVCB9iGKKufXNxPuayrK9few5NccADnWZauEewJJU7PgSQLw1VunX%2BtTuyVqQavsBxBEVCL9FSB60%3D&MobNo=sk41De8h1h1UjvVRGRnJkerc2pH0UcUsGsO%2B9JmsKjbYeQMUU8F61kksGnI9phx5SFET1Aa1vRxHZwvdVe74Pv%2FiaHflcT2%2BcJYJK3C38PPycWLrLuDtmMGPN7EvzzsiKKIe%2FgL2iB9vIxoLwDQAMH%2FnhZNcI9ozTirT%2FGlKlm0%3D&CardCvn2=&CardExprDt=&TradeType=11&TrxAmt=0.01&EnsureAmount=&OrdrName=%E4%BB%A3%E7%90%86%E8%B4%B9%E7%94%A8%E6%94%AF%E4%BB%98&OrdrDesc=&RoyaltyParameters=&NotifyUrl=http%3A%2F%2Fdc.yaofabank.com%2Fapi.php%2FCenter%2FPayment%2FchanpayNotify&Extension=%5B%7B%22order_no%22%3A%221812311145812722%22%7D%5D&Sign=VWo29PrM%2FdwK26exnk5HGbBrUqW77%2BjKcNymx1YVbx%2BKJML39D%2Fj9S614hEO3ViuJgjtfWlcm9VGsHHfKXpHPmlEXL1N6yztdwDQeHEK6XW5Q1vyClRe5jjEAFRDGHANC7doaPlxrB6FaKfIV4FPVeL7vNnfqqrguwsAMC1hpPA%3D
+     requset-2
+            {"AcceptStatus":"S","AppRetMsg":"交易受理成功","AppRetcode":"QT000001","InputCharset":"UTF-8","OrderTrxid":"101154623952054746835","PartnerId":"200002160391","RetCode":"P0002","RetMsg":"受理成功","Sign":"tB2Nw5xGIpTEdjJOaF8Xt5UnqTGPR/sWFqFQ3/3sfY/JxmTwtQNcUkF26/UadEcpX2k7FLQm9mm+VZoen+LigBrKCozZtLn9qsUYfgEPlo81KZ88zMlwVuzPdk5hC3zCHOTP1HyDRbwg2OjhAeLYJ80ottw6SROL8AQl5hKwqkE=","SignType":"RSA","Status":"P","TradeDate":"20181231","TradeTime":"145841","TrxId":"0c8ce16ded28e4a629a27ab0ccfa0d79"}
+
+>>>>>>>>>
+[2018-12-31 14:58:54]
+>>>>>>>>>
+     支付确认接口
+            {"AcceptStatus":"S","AppRetMsg":"交易处理中","AppRetcode":"QT100000","InputCharset":"UTF-8","OrderTrxid":"101154623952054746835","PartnerId":"200002160391","PayTrxId":"301154623952053846834","RetCode":"P0001","RetMsg":"交易处理中","Sign":"QDIpfXMn7kH0DnecCeQjcH4+TIxmORVtaM5oXf7I4zixTvXykwOnAoYmul3GVpfcLV2\/OLuFiZMQXfIbssZSGszher70mLx14Revr6\/VN7z5EtQItcLAj16lufXpj\/rVw1ZOqKHMkzMmmlYN6OCnxi42J4f+yNdGCDl4huK2Z74=","SignType":"RSA","Status":"P","TradeDate":"20181231","TradeTime":"145854","TrxId":"0f5d822e0bba72dd9d2c9cfbfa766a4d"}
+
+>>>>>>>>>
+[2018-12-31 14:58:54]
+>>>>>>>>>
+     1.0Notify
+            notify_time=20181231145854&sign_type=RSA&notify_type=trade_status_sync&trade_status=TRADE_SUCCESS&gmt_payment=20181231145854&version=1.0&sign=t%2FwAfY5SyOIvWT6pK0Wwe3n6UBoRTPjDnzFeaT7PSomOYNYlAtz0Jmv%2FpvbwWubs7YT8Nsc1D38sDVCEXdQQoFke3BaYKTbUCkAoFh3NjdzJ6v5aA9zGyWXvTXcMk3pGYtya1wpUT4URnkJ%2BF6ge%2FI8weV0Jvx0kwyXfiodQR%2BU%3D&extension=%7B%22apiResultcode%22%3A%22S%22%2C%22bankCode%22%3A%2200001%22%2C%22bankMessage%22%3A%22%E6%88%90%E5%8A%9F%22%2C%22chnlNo%22%3A%220400100014%22%2C%22instPayNo%22%3A%22NI101364501123122805244%22%2C%22sendBankReq%22%3A%222018123110000020591179931100907%22%2C%22settlementId%22%3A%2220181231145840PP66591040%22%2C%22unityResultMessage%22%3A%22%E4%BA%A4%E6%98%93%E6%88%90%E5%8A%9F%22%2C%22wjReq%22%3A%22NI101364501123122805275%22%7D&gmt_create=20181231145854&_input_charset=UTF-8&outer_trade_no=0c8ce16ded28e4a629a27ab0ccfa0d79&trade_amount=0.01&notify_id=3bdfafae0a2d426ba84c9517f2f53ba0&inner_trade_no=101154623952054746835
+
+>>>>>>>>>

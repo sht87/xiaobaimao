@@ -1,0 +1,102 @@
+<include file="Shared:Header" />
+<body class="Bodybg">
+    
+<form id="form1">
+    <div class="tools" id="tools">
+        {:W('RolePerm/RolePermTop')}
+    </div>
+    <div class="search" id="search">
+        <table border="0" id="SearchTable" class="SearchTable" cellpadding="3">
+            <thead>
+                <tr>
+                    <td width="70" align="right">产品编码：</td>
+                    <td width="180">
+                        <input id="GoodsNo" name="GoodsNo" type="text" />
+                    </td>
+                    <td width="70" align="right">匹配结果：</td>
+                    <td width="180">
+                        <select id="Status" name="Status">
+                            <option value="-5">全部</option>
+                            <option value="0">未匹配</option>
+                            <option value="1">匹配上了</option>
+                            <option value="2">没有匹配数据</option>
+                            <option value="3">重复数据</option>
+                        </select>
+                    </td>
+                    <td width="70" align="right">记录id：</td>
+                    <td width="180">
+                        <input id="Recordid" name="Recordid" type="text" />
+                    </td>
+                    <td>
+                        <input id="btnSearch" onclick="$.XB.search();" type="button" value="查 看">
+                    </td>
+                    <td>
+                        <input id="MoreSearch" onclick="$.XB.moresearch()" type="button" value="更多条件">
+                    </td>
+                </tr>
+            </thead>
+            <tbody id="stbody">
+                <tr>
+                    <td width="70" align="right">推荐奖金：</td>
+                    <td width="180">
+                        <select id="Isfan" name="Isfan">
+                            <option value="-5">全部</option>
+                            <option value="0">未返</option>
+                            <option value="1">已返</option>
+                        </select>
+                    </td>
+                    <td width="70" align="right">借款人姓名：</td>
+                    <td width="100">
+                        <input id="TrueName" name="TrueName" type="text" />
+                    </td>
+                    <td width="70" align="right">借款人身份证号：</td>
+                    <td width="100">
+                        <input id="IDCard" name="IDCard" type="text" />
+                    </td>
+                    <td width="70" align="right">借款人手机号码：</td>
+                    <td width="100">
+                        <input id="Mobile" name="Mobile" type="text" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="TabelContent" class="TabelContent">
+        <table id="DataList"></table>
+    </div>
+</form>
+
+<script type="text/javascript">
+    var frozenColumns = [
+        { field: 'ID', checkbox: true },
+        { field: 'Recordid', title: '记录id', width: 40  },
+        { field: 'Name', title: '产品名称', width: 120  },
+        { field: 'GoodsNo', title: '产品编码', width: 120  },
+        { field: 'Itype', title: '产品类型', width: 60},
+    ];
+    var columns = [
+        { field: 'TrueName', title: '借款人姓名', width: 70  },
+        { field: 'Mobile', title: '借款人手机号码', width: 90 },
+		{ field: 'isDown', title: '是否下款', width: 70 },
+        
+        { field: 'Opentime', title: '放款时间', width: 120 },
+		{ field: 'Status', title: '与放款记录匹配结果', width: 120 },
+		{ field: 'Money', title: '放款金额', width: 70  },
+		{ field: 'isTfan', title: '是否返推荐金额', width: 120 },
+		{ field: 'Ymoney', title: '推荐金额', width: 70 },
+
+		{ field: 'Applytime', title: '申请时间', width: 120 },
+		{ field: 'applyStatus', title: '与申请记录匹配结果', width: 120 },
+		{ field: 'IsApplyfan', title: '是否返推荐金额', width: 120 },
+		{ field: 'applyBonus', title: '推荐金额', width: 70 },
+
+
+        { field: 'Addtime', title: '添加时间', width: 120 },
+    ];
+    $.XB.datagrid({ "frozenColumns": frozenColumns, "columns": columns});
+    $.XB.enter();
+</script>
+    {:W('RolePerm/RolePermBottom')}
+</body>
+<include file="Shared:Footer" />
+

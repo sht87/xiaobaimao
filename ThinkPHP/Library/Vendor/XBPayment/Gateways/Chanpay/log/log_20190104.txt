@@ -1,0 +1,14 @@
+[2019-01-04 15:55:09]
+>>>>>>>>>
+     requset-1
+            https://pay.chanpay.com/mag-unify/gateway/receiveOrder.do?Service=nmg_zft_api_quick_payment&Version=1.0&PartnerId=200002180100&InputCharset=UTF-8&TradeDate=20190104&TradeTime=155507&SignType=RSA&Memo=H5%E7%9B%B4%E6%8E%A5%E6%94%AF%E4%BB%98&ReturnUrl=http%3A%2F%2Fryj.yunhushuju.com%2FMember%2Findex&TrxId=7e864d5c6e54144f3fa78d33983eebb6&SellerId=200002180100&SubMerchantNo=200002180100&ExpiredTime=15m&MerUserId=102&BkAcctTp=01&BkAcctNo=FgyJCSgdGPHwRVukjh6k03j%2B7TOedq%2B4k0Uo4EMPrB6%2B9Eni6ZWOsSPlzi1anVe2otyNF9mCIBokHX65TibfFAFKTJo2uRbiKCGFXK1XdXgWqCSE2px1dAY8v8xOO4mEzLmAZ8B2ccZHwejpBJlLjdIsq7PkJNC%2FbTBJexv6wuI%3D&IDTp=01&IDNo=ExVX4K9osgUWJZv7vveoGl3vmtGnWfy2wSa44A2NhmR7pEbwGFOIGK4EbuQL9EFDVX0KHtWUtZnWrXrRc1PZs%2Fx0Br0YYav9OkqjaZiWESgRhdJ5rr%2FSSxoQp8%2FKNn0vFn0wbQqRSoMNnTiWiu%2BMtWQk%2BQuRqx%2FoA6KTuitFi0Y%3D&CstmrNm=hxPiYkOn70D1ATLT%2BJ%2BNmwg8I2V0YSxX9iDMMlBgM1eYptGHSTPNcicXI%2FM%2Bh%2FxO4IKrePfgL3YdJfW21Ywe8IsbU1Oqwq491g9LQCWwkwwOM1evechQUtFm6zgOl8G3PkItqsrhPKDe2%2FDrYW0i5jV1T7zXr7LS3MirJYgZIAo%3D&MobNo=MECAluS3BTxPDNlrndqcMMrECvLMLEoKB6Om%2Bm6gAeVVJA4GdTpH9YlvgjKn0PdCX8bdLd7UD7JbIN0nJITXr8hY2sQYoNEKq%2FofChrqFWZP9F879Xp%2Bm8S1mAF21%2BiwppI5wSnzTjzuM92OPdTmplMOVgO2XwuVd3mlKKBPL7E%3D&CardCvn2=&CardExprDt=&TradeType=11&TrxAmt=399.00&EnsureAmount=&OrdrName=%E4%BB%A3%E7%90%86%E8%B4%B9%E7%94%A8%E6%94%AF%E4%BB%98&OrdrDesc=&RoyaltyParameters=&NotifyUrl=http%3A%2F%2Fryj.yunhushuju.com%2Fapi.php%2FCenter%2FPayment%2FchanpayNotify&Extension=%5B%7B%22order_no%22%3A%221901048155442345%22%7D%5D&Sign=v6swmOit83zNYca0JinZYbX8agys7%2B132%2BgeV0y00vQWjgt01pD8VTeIIp7O3HP%2FGFhzxQGAdJ9svf3cRZEIbuVh2vGOXLDS0Q90KP7nnnpfXK%2FYvV7l%2B7zUscjexBt4%2FESX9yhePEkAr6kwnPuaAcoGbL3AVhVDS3TSSposD5k%3D
+     requset-2
+            {"AcceptStatus":"S","AppRetMsg":"交易受理成功","AppRetcode":"QT000001","InputCharset":"UTF-8","OrderTrxid":"101154658850796738403","PartnerId":"200002180100","RetCode":"P0002","RetMsg":"受理成功","Sign":"jh4jx+hGO7+q0/T9GBlAle4cEUCqU6KzEx3yk+izb42zzFxFr/+ucni8DJR7ZOZtoH/nHBewHaVaWiYkSlylA3oO9WJy++3KJbuMVxBH/kpNtCxULC9DozoSPmAUtMQIeNbV39ISs4LSlminDIBOD4zas75zx1Wp5nHsTj7OhjQ=","SignType":"RSA","Status":"P","TradeDate":"20190104","TradeTime":"155509","TrxId":"7e864d5c6e54144f3fa78d33983eebb6"}
+
+>>>>>>>>>
+[2019-01-04 16:12:49]
+>>>>>>>>>
+     1.0Notify
+            notify_time=20190104161249&sign_type=RSA&notify_type=trade_status_sync&trade_status=TRADE_CLOSED&version=1.0&extension=%7B%22subMerchantNo%22%3A%22200002180100%22%7D&sign=CF1mdvT1tTqtnEINRiVh2higt6FUfUYQDZ4yNvYI6NTJbjW4XnQrhORDlU2nTOvTviu5DPXM0wQ0AnE5GmXcg9SUmGG%2F4l4TJ%2BGzvXzjO0Nur%2F2PHB4JcaUgzxgYB4c7QgSani5PQWqGW47lmeq981L9MhVKX%2Ba3jB46vgPmVL4%3D&gmt_create=20190104161249&_input_charset=UTF-8&outer_trade_no=7e864d5c6e54144f3fa78d33983eebb6&trade_amount=399.00&notify_id=f69ac1ae2f254f4da30079a375f1dcf1&inner_trade_no=101154658850796738403
+
+>>>>>>>>>

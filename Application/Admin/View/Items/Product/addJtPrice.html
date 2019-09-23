@@ -1,0 +1,68 @@
+<include file="Shared:Header" />
+<style type="text/css">
+    .btn{
+        padding: 5px 10px ;
+        border-radius: 4px;
+        color: #eee;
+    }
+    .add{
+        background-color: #0092DC;
+    }
+    .rem{
+        background-color: #ffa8a8;
+    }
+</style>
+<body class="Bodybg">
+<form id="FF" class="easyui-form" method="post" data-options="novalidate:true">
+	
+    <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable">
+		 
+        <tbody>
+		<volist name="itemPriceArr" id="vo">
+			<tr>
+				<td align="right">
+					{$i}
+				</td>
+				<td>
+					申请人数{$vo.num}以内，CPA价格为{$vo.price}
+				</td>
+				<td>
+					<a href="javascript:void(0)" class="rem btn" data-id="{$vo.ID}" onclick="rem(this)">移除</a>
+				</td>
+			</tr>
+		</volist>
+        <tr >
+            <td width="120" align="right"><span class="Red">*</span>申请人数：</td>
+            <td>
+                <input id="num" name="num" type="text" class="easyui-textbox" data-options="required:true"/>
+            </td>
+            
+        </tr>
+		<tr>
+		<td width="120" align="right"><span class="Red">*</span>CPA价格：</td>
+            <td>
+                <input id="price" name="price" type="text" class="easyui-textbox" data-options="required:true"/>
+            </td>
+		</tr>
+        </tbody>
+    </table>
+    <input type="hidden" id="ID" name="ID" value="{$ID}"/>
+</form>
+<script>
+    $(function () {
+       
+    });
+	// 移除行
+    function rem(obj) {
+		var id = obj.dataset.id;
+		$.get("http://xinedai.xyz/admin.php/items/product/ddJtPrice?ID="+id,function(data){
+			var ss = JSON.parse(data);
+			if(ss.result){
+				$(obj).parent().parent().remove();
+			}
+		});
+    }
+   
+</script>
+</body>
+<include file="Shared:Footer" />

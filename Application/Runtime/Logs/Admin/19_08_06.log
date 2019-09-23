@@ -1,0 +1,765 @@
+[ 2019-08-06T22:44:35+08:00 ] 119.165.120.19 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+
+[ 2019-08-06T22:44:35+08:00 ] 119.165.120.19 /admin.php/System/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `xb_sys_basicinfo` [ RunTime:0.0008s ]
+SQL: SELECT `MAC` FROM `xb_sys_basicinfo` WHERE ( ID = 1 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003735s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003763s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+
+[ 2019-08-06T22:44:35+08:00 ] 119.165.120.19 /admin.php/System/Login/selfverify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000401s ]
+
+[ 2019-08-06T22:44:43+08:00 ] 119.165.120.19 /admin.php/System/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `xb_sys_administrator` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_administrator` WHERE `UserName` = 'admin' AND `Status` = 1 AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `xb_sys_administrator` SET `ErrorCount`='1',`ErrorTime`='2019-08-06 22:44:43' WHERE `ID` = 2 [ RunTime:0.0039s ]
+
+[ 2019-08-06T22:44:43+08:00 ] 119.165.120.19 /admin.php/System/Login/selfverify.html?0.3128028584420717
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2019-08-06T22:45:04+08:00 ] 119.165.120.19 /admin.php/System/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+SQL: SHOW COLUMNS FROM `xb_sys_administrator` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_administrator` WHERE `UserName` = 'admin' AND `Status` = 1 AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xb_sys_role` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_role` WHERE `IsDel` = 0 AND `Status` = 1 AND `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-06T22:45:04+08:00 ] 119.165.120.19 /admin.php/System/Login/selfverify.html?0.7154355500356908
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2019-08-06T22:45:36+08:00 ] 119.165.120.19 /admin.php/System/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `xb_sys_administrator` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_administrator` WHERE `UserName` = 'admin' AND `Status` = 1 AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_role` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_sys_role` WHERE `IsDel` = 0 AND `Status` = 1 AND `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-06T22:45:36+08:00 ] 119.165.120.19 /admin.php/System/Login/selfverify.html?0.08322379486194764
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000391s ]
+
+[ 2019-08-06T22:45:50+08:00 ] 119.165.120.19 /admin.php/System/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `xb_sys_administrator` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_administrator` WHERE `UserName` = 'admin' AND `Status` = 1 AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_role` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_role` WHERE `IsDel` = 0 AND `Status` = 1 AND `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: UPDATE `xb_sys_administrator` SET `LoginIP`='119.165.120.19' WHERE `ID` = 2 [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `xb_sys_ipaddress` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_ipaddress` WHERE `IpAddress` = '119.165.120.19' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 385 行.
+NOTIC: [8] Undefined index: data /www/wwwroot/xbm.mashangbang.top/Application/Common/Common/function.php 第 386 行.
+SQL: UPDATE `xb_sys_administrator` SET `IpCity`=NULL,`LoginCount`='2049',`ErrorCount`='0',`LoginTime`='2019-08-06 22:45:50' WHERE `ID` = 2 [ RunTime:0.0038s ]
+SQL: SELECT `Name` FROM `xb_sys_role` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-06T22:45:50+08:00 ] 119.165.120.19 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'System/Index%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'index' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_role` [ RunTime:0.0003s ]
+SQL: SELECT `ID` FROM `xb_sys_role` WHERE `Status` = 1 AND `IsDel` = 0  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_rolemenu` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 0 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 1 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 15 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 15 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 16 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 16 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 17 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 17 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 62 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 62 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 23 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 23 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 26 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 26 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 20 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 20 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 22 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 22 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 27 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 27 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 28 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 28 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 29 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 29 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 18 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 18 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 83 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 83 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 3 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 3 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 2 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 2 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 41 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 41 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 42 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 42 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 43 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 43 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 30 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 30 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 88 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 88 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 31 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 31 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 32 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 32 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 89 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 89 AND `RoleID` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 0 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 1 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 15 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 15 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 16 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 16 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 17 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 17 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 62 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 62 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 27 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 27 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 28 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 28 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 29 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 29 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 119 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 119 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 120 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 120 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 130 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 130 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 131 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 131 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 121 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 121 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 122 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 122 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 123 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 123 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 124 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 124 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 143 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 143 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 132 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 132 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 126 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 126 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 127 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 127 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 128 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 128 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 129 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 129 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 155 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 155 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 156 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 156 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 157 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 157 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 158 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 158 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 90 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 90 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 110 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 110 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 159 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 159 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 135 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 135 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 140 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 140 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 144 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 144 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 145 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 145 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 146 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 146 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 42 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 42 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 41 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 41 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 43 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 43 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 30 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 30 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 88 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 88 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 148 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 148 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 152 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 152 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 153 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 153 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 149 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 149 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 150 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 150 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 151 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 151 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 154 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 154 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 115 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 115 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 118 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 118 AND `RoleID` = 2  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 0 AND `RoleID` = 9  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 140 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 140 AND `RoleID` = 9  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `ID` = 145 AND `Status` = 1 AND `IsDel` = 0 ORDER BY Sort asc,ID asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `xb_sys_rolemenu` WHERE `ParentID` = 145 AND `RoleID` = 9  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006847s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000434s ]
+
+[ 2019-08-06T22:45:50+08:00 ] 119.165.120.19 /admin.php/System/Basicinfo/home.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'System/Basicinfo%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'home' LIMIT 1   [ RunTime:0.0001s ]
+SQL: select VERSION() [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000337s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000360s ]
+
+[ 2019-08-06T22:45:54+08:00 ] 119.165.120.19 /admin.php/Statistics/product/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Statistics/product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'index' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.001680s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001297s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2019-08-06T22:45:54+08:00 ] 119.165.120.19 /admin.php/Statistics/product/DataList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Statistics/product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'DataList' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_product_statistics` [ RunTime:0.0004s ]
+SQL: select distinct productName from xb_product_statistics [ RunTime:0.0003s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '快钱包' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 174 and 2 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '米口袋' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 175 and 3 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '皮卡丘' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 178 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '会省钱包' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 177 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '借东风' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 176 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '钱街' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 179 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '想钱花' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 182 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '小浪花' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 181 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '欢乐借' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 183 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '手机借钱' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 184 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '花到嗨' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 186 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '抖金钱包' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 187 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '峰哥花' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 186 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '有钱借' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 188 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '有鱼贷' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 191 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '猎豹' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 190 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '优款' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 191 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '山桃街' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 193 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '瑞贷' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 194 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '反暴力催收' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 209 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '360借条' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 208 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '平安普惠' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 195 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '小赢卡' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 210 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '福贷' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 196 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '邮你贷' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 197 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '如期分期' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 199 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '橙子信用' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 211 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '诚易贷' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 212 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '龙分期' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 213 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '维信闪贷' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 198 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '小袋鼠' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 214 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '新橙优品' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 215 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '旋风速贷' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 216 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '宜人贷' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 207 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '还呗' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 200 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '维信卡卡贷' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 206 and 0 >= num order by num desc [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 132 行.
+
+[ 2019-08-06T22:45:55+08:00 ] 119.165.120.19 /admin.php/Statistics/channel/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `xb_tg_admin` [ RunTime:0.0005s ]
+SQL: select * from xb_tg_admin where Status = 1 and IsDel = 0 [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.002996s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001264s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001293s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001293s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000343s ]
+
+[ 2019-08-06T22:45:55+08:00 ] 119.165.120.19 /admin.php/Statistics/channel/DataList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+WARN: 全部
+SQL: SHOW COLUMNS FROM `xb_tg_admin` [ RunTime:0.0005s ]
+SQL: select Name as channelName from xb_tg_admin where Status = 1 and IsDel = 0 order by UpdateTime desc [ RunTime:0.0001s ]
+SQL: select Name as channelName from xb_tg_admin where Status = 1 and IsDel = 0 order by UpdateTime desc [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_channel_statistics` [ RunTime:0.0004s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,sum(aliveNum) aliveNum,sum(applyNum) applyNum,sum(newNum) newNum,sum(SumMoney) SumMoney from xb_channel_statistics where channelName = '趣头条' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ChannelController.class.php 第 145 行.
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,sum(aliveNum) aliveNum,sum(applyNum) applyNum,sum(newNum) newNum,sum(SumMoney) SumMoney from xb_channel_statistics where channelName = '小白猫1' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ChannelController.class.php 第 145 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ChannelController.class.php 第 177 行.
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,sum(aliveNum) aliveNum,sum(applyNum) applyNum,sum(newNum) newNum,sum(SumMoney) SumMoney from xb_channel_statistics where channelName = '自然流量' [ RunTime:0.0002s ]
+
+[ 2019-08-06T22:46:35+08:00 ] 119.165.120.19 /admin.php/Statistics/product/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Statistics/product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'index' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.001751s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001366s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001397s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001719s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001397s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000336s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000357s ]
+
+[ 2019-08-06T22:46:35+08:00 ] 119.165.120.19 /admin.php/Statistics/product/DataList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+SQL: SHOW COLUMNS FROM `xb_sys_menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_menu` WHERE `Url` LIKE 'Statistics/product%' AND `IsDel` = 0 AND `Status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_sys_operationbutton` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_sys_operationbutton` WHERE `IsDel` = 0 AND `Status` = 1 AND `EName` = 'DataList' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xb_product_statistics` [ RunTime:0.0003s ]
+SQL: select distinct productName from xb_product_statistics [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '快钱包' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 174 and 2 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '米口袋' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 175 and 3 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '皮卡丘' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 178 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '会省钱包' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 177 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '借东风' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 176 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '钱街' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 179 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '想钱花' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 182 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '小浪花' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 181 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '欢乐借' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 183 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '手机借钱' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 184 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '花到嗨' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 186 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '抖金钱包' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 187 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '峰哥花' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 186 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '有钱借' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 188 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '有鱼贷' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 191 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '猎豹' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 190 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '优款' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 191 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '山桃街' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 193 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '瑞贷' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 194 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '反暴力催收' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 209 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '360借条' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 208 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '平安普惠' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 195 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '小赢卡' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 210 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '福贷' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 196 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '邮你贷' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 197 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '如期分期' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 199 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '橙子信用' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 211 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '诚易贷' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 212 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '龙分期' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 213 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '维信闪贷' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 198 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '小袋鼠' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 214 and 0 >= num order by num desc [ RunTime:0.0001s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '新橙优品' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 215 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '旋风速贷' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 216 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '宜人贷' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 207 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '还呗' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 200 and 0 >= num order by num desc [ RunTime:0.0000s ]
+SQL: select sum(PV) PV,sum(UV) UV,sum(registerNum) registerNum,productId from xb_product_statistics where productName = '维信卡卡贷' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 109 行.
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 111 行.
+SQL: select price from xb_item_price where itemId = 206 and 0 >= num order by num desc [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: CPA /www/wwwroot/xbm.mashangbang.top/Application/Admin/Controller/Statistics/ProductController.class.php 第 132 行.
+

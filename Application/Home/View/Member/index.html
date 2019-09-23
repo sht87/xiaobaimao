@@ -1,0 +1,161 @@
+		<include file="Layout/header"/>
+		<style>
+			#havenoread{
+				background: url(__PUBLIC__/images/icon_smnews1.png) center no-repeat;
+			    background-size: 18px auto;
+			    display: block;
+			    width: 30px;
+			    height: 40px;
+			    position: absolute;
+			    right: 10px;
+			    top: 0;
+			}
+		</style>
+		<header class="header" style="background:none; position: fixed; left: 0; top:0; z-index: 999;">
+			<a href="javascript:window.history.go(-1);" class="go_left"></a>
+			<a href="{:U('Member/news')}" class="newss" id="<?php if($noread){echo 'havenoread';}?>"></a>
+		</header>
+		<div class="per_indextop">
+          	    <div class="" style="padding:40px 10px 0 10px;">
+          	    	<a href="{:U('Member/info')}" class="per_bg fl">
+						<if condition="$memInfo.HeadImg eq null">
+							<img src="__PUBLIC__/images/photo.png">
+						<else />
+							<img src="{$memInfo.HeadImg}">
+						</if>
+
+          	    	</a>
+          	    	<p style="padding: 20px 0 0 80px; color:#ffffff;">{$memInfo['TrueName']}&nbsp;({$levelname})<br>{$memInfo['Mobile']|substr_replace=###,'****',3,4}&nbsp;(&nbsp;工号&nbsp;:&nbsp;<?php echo session('loginfo')['UserID'];?>&nbsp;)</p>
+          	    </div> 
+          </div>
+          <!---->
+         <!--  <ul class="ul_pertop center">
+          		<li style="border-right: 1px solid #eee;">
+          		  <a href="<?php echo U('Member/income');?>">
+          			<span>¥
+          						<if condition="$earnMoney eq 0">
+          							0.00
+          						<else />
+          							{$earnMoney}
+          						</if>元
+          					</span>
+          			<p> 总收入  </p>
+          		   </a>
+          		</li>
+          		<li style="border-right: 1px solid #eee;">
+          		  <a href="<?php echo U('Member/wallet');?>">
+          			<span>¥
+          						<if condition="$Money eq 0">
+          							0.00
+          						<else />
+          							{$Money}
+          						</if>元
+          					</span>
+          			<p>已结算</p>
+          		  </a>
+          		</li>
+          		<li>
+          		  <a href="<?php echo U('Member/wallet');?>">
+          			<span>¥
+          						<if condition="$memInfo['Balance'] eq 0">
+          							0.00
+          						<else />
+          							{$memInfo['Balance']}
+          						</if>元
+          					</span>
+          			<p>可结算</p>
+          		  </a>
+          		</li>
+          		<div class="clear"></div>
+          </ul>                   -->            
+		<!----> 
+		 <!-- <section class="hd"></section> 
+		 中间四个板块 start
+		 <section>
+		 	<ul class="ul_perlist">
+		 		<li> 
+		 			 <a href="<?php echo U('Member/rongke');?>" style="background: url({$bankinfos[1][0]['Backurl']}) center no-repeat;background-size: 100% 100%;"> 
+		 	 					<dl class="dl_perlist">
+		 	 						<dd>{$bankinfos[1][0]['Name']}</dd>
+		 	 						<dt>{$bankinfos[1][0]['Intro']}</dt>
+		 	 					</dl>
+		 			 </a> 
+		 		</li>
+		 		<li> 
+		 			 <a href="{:U('Member/buyagent')}" class="a2" style="background: url({$bankinfos[2][0]['Backurl']}) center no-repeat;background-size: 100% 100%;"> 
+		 	 					<dl class="dl_perlist dl_perlist2">
+		 	 						<dd>{$bankinfos[2][0]['Name']}</dd>
+		 	 						<dt>{$bankinfos[2][0]['Intro']} </dt>
+		 	 					</dl>
+		 			 </a> 
+		 		</li>
+		 		<li> 
+		 			 <a href="javascript:void(0);" onclick="fnshares();" style="background: url({$bankinfos[3][0]['Backurl']}) center no-repeat;background-size: 100% 100%;"> 
+		 	 					<dl class="dl_perlist dl_perlist3">
+		 	 						<dd>{$bankinfos[3][0]['Name']}</dd>
+		 	 						<dt>{$bankinfos[3][0]['Intro']}</dt>
+		 	 					</dl>
+		 			 </a> 
+		 		</li>
+		 		<li> 
+		 			 <a href="{:U('Zenxin/index')}" class="a2" style="background: url({$bankinfos[4][0]['Backurl']}) center no-repeat;background-size: 100% 100%;">
+		 	 					<dl class="dl_perlist dl_perlist4">
+		 	 						<dd>{$bankinfos[4][0]['Name']}</dd>
+		 	 						<dt>{$bankinfos[4][0]['Intro']}</dt>
+		 	 					</dl>
+		 			 </a>
+		 				</li>
+		 		<div class="clear"></div>
+		 	</ul> 
+		 	
+		 </section> -->
+		 <!--中间四个板块 end-->
+		 <!--<div class="list_nav" style="padding-bottom: 0;">
+           <a href="{:U('info')}" class="per_menu1"><span></span>基本信息</a>
+           <a href="<?php echo U('News/pricelist');?>" class="per_menu2"><span></span>价格表</a>   
+        </div>-->
+        <section class="hd"></section> 
+
+        <div class="list_nav" style="padding-bottom: 0;">
+           <a href="<?php echo U('News/helps');?>" class="per_menu3"><span></span>新手帮助</a>  
+            <!--<a href="{:U('Member/share')}" class="per_menu5"><span></span>分享推广</a>-->
+            <a href="javascript:void(0);" onclick="fnshares();" class="per_menu4"><span></span>分享推广</a>
+           <a href="javascript:void(0);" class="per_menu6" id="show-alert"><span></span>联系我们</a>
+           <a href="{:U('Member/setting')}" class="per_menu7"><span></span>系统设置</a>
+        </div>
+		<div style="height: 60px"></div>
+		<input type="hidden" id="Tel" name="Tel"  value="<?php echo $GLOBALS['BasicInfo']['QQa']; ?>"/>
+        <!---->
+		<include file="Layout/bottom"/>
+		<script type="text/javascript">
+			$(document).on("click", "#show-alert", function () {
+				$.modal({
+					title: "     ",
+					text: "<p style=color:#5461eb>"+$('#Tel').val()+"</p>",
+					buttons: [
+						{text: "取消", className: "default"},
+						{text: "确定", className: "default"},
+
+					]
+				});
+			});
+			//分享推广,先判断是否有权限
+			function fnshares(){
+				//校验
+				$.ajax({
+			        type:"POST",
+			        url:"<?php echo U('Member/checkshares');?>",
+			        dataType: "json",
+			        success:function(data){
+			          if(data.result==0){
+			             $.alert(data.message);return false;
+			          }
+			          if(data.result==1){
+			             //校验成功
+			             window.location.href = data.des;
+			          }
+			        }
+		      });
+			}
+		</script>
+

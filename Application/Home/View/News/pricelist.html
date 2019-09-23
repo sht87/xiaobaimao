@@ -1,0 +1,15 @@
+        <include file="Layout/header"/>
+        <header class="header">
+            <a href="javascript:window.history.go(-1)" class="go_left"></a>
+            <span class="header_til">价格表</span>
+        </header>
+
+        <!---->
+        <section style="color: #999;  margin-top: 45px;">
+            <?php foreach($priceimgs as $k=>$v):?>
+            	<img src="{$v.Pic}" style="width:100%;"/>
+            <?php endforeach;?>
+        </section>
+
+        <!---->
+        <include file="Layout/footer"/>

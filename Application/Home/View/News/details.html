@@ -1,0 +1,29 @@
+		<include file="Layout/header"/>
+		<style type="text/css">
+			img{
+				width:100%;
+			}
+		</style>
+		<header class="header">
+			<a href="javascript:window.history.go(-1)" class="go_left"></a>
+			<span class="header_til">{$SEOTitle}</span>
+		</header>
+
+		<!---->
+		<section style="padding: 10px 20px; color: #2c2c2c;  margin-top: 50px;text-align: center">
+			<section>{$pages['Title']}</section>
+			<section>{$pages['AddTime']|substr=###,0,16}</section>
+		</section>
+
+		<section style="padding: 10px; color: #999;">
+			{$pages['Contents']|htmlspecialchars_decode}
+		</section>
+		<!--页面悬浮-->
+		<div class="">
+			<a href="#"  class="suspend_icon1"><img src="__PUBLIC__/images/suspend_icon1.png"></a>
+			<a href="#" class="suspend_icon2"><img src="__PUBLIC__/images/suspend_icon2.png"></a>
+			<a href="#" class="suspend_icon3"><img src="__PUBLIC__/images/suspend_icon3.png"></a>
+		</div>
+		<!--页面悬浮 end-->
+		<!---->
+		<include file="Layout/footer"/>

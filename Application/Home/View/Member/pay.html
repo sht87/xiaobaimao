@@ -1,0 +1,144 @@
+<include file="Layout/header"/>
+<header class="header"  >
+	<a href="javascript:history.go(-1)" class="go_left"></a> 
+	 <span class="header_til">支付方式</span> 
+</header> 
+<!---->
+<div class="weui-cells" style="margin-top:50px;"> 
+  <div class="weui-cell">
+    <div class="weui-cell__bd">
+      <p> 订单金额</p>
+    </div>
+    <div class="weui-cell__ft"><span style="color:#ff9600;">¥<label style="font-size: 18px;">{$paymoney}</label></span> </div>
+  </div> 
+</div>
+
+<form id="txform">
+	<div class="weui-panel weui-panel_access weui-cells_radio" style="margin-top:0"> 
+		<div class="weui-panel__bd">
+			<label class="weui-media-box weui-media-box_appmsg weui-cell weui-check__label" for="xchanpay">
+				<div class="weui-media-box__hd">
+					<img class="weui-media-box__thumb" src="__PUBLIC__/images/icon_pay_chanpay.png">
+				</div>
+				<div class="weui-media-box__bd">
+					<h4 class="weui-media-box__title">
+						<span class="fl">银行卡支付</span>
+						<div class="clear"></div>
+					</h4>
+					<p class="weui-media-box__desc">畅捷支付</p>
+				</div>
+				<div class="weui-cell__ft">
+					<input type="radio" class="weui-check" value="chanpay" name="PayType" id="xchanpay">
+					<span class="weui-icon-checked"></span>
+				</div>
+			</label>
+		 <?php if($is_wx=='1'):?>
+		 	<!--<label class="weui-media-box weui-media-box_appmsg weui-cell weui-check__label" for="x11">-->
+		      <!--<div class="weui-media-box__hd">-->
+		        <!--<img class="weui-media-box__thumb" src="__PUBLIC__/images/cion_payfor2.png">-->
+		      <!--</div>-->
+		      <!--<div class="weui-media-box__bd">-->
+		        <!--<h4 class="weui-media-box__title">-->
+		             <!--<span class="fl">微信支付</span>-->
+		        	 <!--<div class="clear"></div>-->
+		        <!--</h4>-->
+		        <!--<p class="weui-media-box__desc">  微信第三方快速支付</p>-->
+		      <!--</div>-->
+		      <!--<div class="weui-cell__ft">-->
+	              <!--<input type="radio" class="weui-check" value="1" name="PayType" id="x11">-->
+	              <!--<span class="weui-icon-checked"></span>-->
+	          <!--</div>-->
+		    <!--</label>-->
+         <?php else:?>
+         	<!--<label class="weui-media-box weui-media-box_appmsg weui-cell weui-check__label" for="x11">-->
+		      <!--<div class="weui-media-box__hd">-->
+		        <!--<img class="weui-media-box__thumb" src="__PUBLIC__/images/cion_payfor2.png">-->
+		      <!--</div>-->
+		      <!--<div class="weui-media-box__bd">-->
+		        <!--<h4 class="weui-media-box__title">-->
+		             <!--<span class="fl">微信支付</span>-->
+		        	 <!--<div class="clear"></div>-->
+		        <!--</h4>-->
+		        <!--<p class="weui-media-box__desc">  微信第三方快速支付</p>-->
+		      <!--</div>-->
+		      <!--<div class="weui-cell__ft">-->
+	              <!--<input type="radio" class="weui-check" value="4" name="PayType" id="x11">-->
+	              <!--<span class="weui-icon-checked"></span>-->
+	          <!--</div>-->
+		    <!--</label>-->
+
+		    <!--<label class="weui-media-box weui-media-box_appmsg weui-cell weui-check__label" for="x12">-->
+		      <!--<div class="weui-media-box__hd">-->
+		        <!--<img class="weui-media-box__thumb" src="__PUBLIC__/images/cion_payfor1.png">-->
+		      <!--</div>-->
+		      <!--<div class="weui-media-box__bd">-->
+		        <!--<h4 class="weui-media-box__title">-->
+		        	<!--<span class="fl">支付宝支付</span> -->
+		        	<!--<div class="clear"></div>-->
+		        <!--</h4>-->
+		        <!--<p class="weui-media-box__desc">支付宝快速支付</p>-->
+		      <!--</div>-->
+		      <!--<div class="weui-cell__ft">-->
+	              <!--<input type="radio" class="weui-check" value="2" name="PayType" id="x12">-->
+	              <!--<span class="weui-icon-checked"></span>-->
+	          <!--</div>-->
+		    <!--</label>-->
+         <?php endif;?>
+		    <label class="weui-media-box weui-media-box_appmsg weui-cell weui-check__label" for="x13">
+		      <div class="weui-media-box__hd">
+		        <img class="weui-media-box__thumb" src="__PUBLIC__/images/icon_pay3.png">
+		      </div>
+		      <div class="weui-media-box__bd">
+		        <h4 class="weui-media-box__title">
+		             <span class="fl">余额支付</span> 
+		        	 <div class="clear"></div>
+		        </h4>
+		        <p class="weui-media-box__desc">账户余额支付</p>
+		      </div>
+		       <div class="weui-cell__ft">
+	              <input type="radio" class="weui-check" value="3" name="PayType" id="x13">
+	              <span class="weui-icon-checked"></span>
+	            </div>
+		    </label>
+	    </div> 
+	</div>
+	<input type="hidden" name="id" value="{$AgentInfo.ID}"/>
+	<section style="padding: 30px 0;">
+		<a href="javascript:void(0);" onclick="fnsubmit()" class="btn_want" style="width: 90%;">确认支付 </a>
+	</section> 
+</form>
+<!---->
+<include file="Layout/footer"/>
+<script type="text/javascript">
+	//提交支付申请
+	function fnsubmit(){
+		$(".btn_want").removeAttr("onclick");
+		//添加事件
+		//$(".btn_want").attr("onclick", "fnsubmit()");
+		//校验
+		$.ajax({
+	        type:"POST",
+	        url:"<?php echo U('Member/paylevel');?>",
+	        data:$('#txform').serialize(),
+	        dataType: "json",
+	        success:function(data){
+	          if(data.result==0){
+	             $.alert(data.message,"",function () {
+					 $(".btn_want").attr("onclick", "fnsubmit()");
+				 });
+	             return false;
+	          }
+	          if(data.result==1){
+	             //校验成功
+	             $.alert(data.message, "", function() {
+				   //点击确认后的回调函数
+				   window.location.href = data.des;
+				 });
+	             // XB.Success(data.message, function () {
+              //       window.location.href = data.des;
+              //    });
+	          }
+	        }
+      });
+	}
+</script>

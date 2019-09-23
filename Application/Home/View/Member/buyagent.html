@@ -1,0 +1,235 @@
+        <include file="Layout/header"/>
+        <style>
+            .weui-navbar:after {
+                border-bottom: none;
+            }
+
+            .weui-navbar__item:after {
+
+            }
+
+            .weui-navbar__item {
+                margin: 10px 0;
+                padding: 0;
+            }
+
+            .weui-navbar__item.weui-bar__item--on {
+                color: #5461eb;
+                background: #fff;
+            }
+
+            .weui-agree__checkbox:checked:before {
+                color: #5461eb;
+            }
+
+            .share img {
+                width: 100%;
+            }
+        </style>
+        <header class="header">
+            <a href="{:U('Member/index')}" class="go_left"></a>
+            <span class="header_til">购买代理</span>
+            <a href="{:U('News/helps')}" class="newss newssgou"></a>
+        </header>
+        <div style="height: 45px;"></div>
+        <div class="weui-tab">
+            <div class="weui-navbar">
+                <a class="weui-navbar__item weui-bar__item--on" href="#tab1">
+                    产品介绍
+                </a>
+                <a class="weui-navbar__item" href="#tab2">
+                    购买须知
+                </a>
+                <a class="weui-navbar__item" href="#tab3">
+                    成为代理
+                </a>
+            </div>
+
+            <div class="weui-tab__bd">
+                <!--产品介绍-->
+                <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+                    <section class="share">{$ProIntro['Contents']|htmlspecialchars_decode}</section>
+                </div>
+                <!--产品介绍 END-->
+
+                <!--购买须知-->
+                <div id="tab2" class="weui-tab__bd-item">
+
+                    {$Known['Contents']|htmlspecialchars_decode}
+
+                </div>
+                <!--购买须知 END-->
+
+                <!--成为代理-->
+                <div id="tab3" class="weui-tab__bd-item">
+                  <?php if(session('loginfo')['Mtype']=='1'):?>
+                    <div class="weui-cells" style="margin-top:0;">
+                        <div class="weui-cell">
+                            <div class="weui-cell__bd" style="width:20%">
+                                <p>级别</p>
+                            </div>
+                            <div class="weui-cell__ft radio_btn" style="width:80%;padding-bottom: 5px;line-height: 30px">
+                                <volist name="AgentInfo" id="vo">
+                                    <span style="font-size:14px" onclick="selected({$i-1})" data-val="{$vo['ID']}" <if condition="$i eq 1"> class="cur"</if>>
+                                    {$vo['Name']}
+                                    </span>
+                                </volist>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__bd">
+                                <p> 价格</p>
+                            </div>
+                            <div class="weui-cell__ft">
+                                <volist name="AgentInfo" id="vo">
+                                    <span class="Price" <if condition="$i eq 1">style="color:#ff9600;display:block;"<else />style="color:#ff9600;display:none;"</if>>¥<label style="font-size: 18px;">{$vo['Price']}</label></span>
+                                </volist>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weui-agree">
+                        <label for="weuiAgree" class="select_refuse" id="agreen" style="padding-left: 35px">
+                            <!--<input id="weuiAgree" type="checkbox" class="weui-agree__checkbox"/>-->
+                            <span id="weuiAgree" class="weui-agree__text">
+                            我已阅读并同意
+                          </span>
+                        </label>
+                        <a href="{:U('News/pages',array('ID'=>7))}" style="color: #5461eb;">{$Title}</a>
+                    </div>
+
+
+                    <section style="padding: 30px 0;">
+                        <a href="javascript:void(0);" onclick="purchase()" class="btn_want" style="width: 90%;">立即购买</a>
+                    </section>
+                    <!--成为代理 END-->
+                  <?php elseif(session('loginfo')['Mtype']=='2'):?>
+                    <div style="text-align:center;color:#4564f2;font-size:17px;">您好&nbsp;,&nbsp;{$levelname}</div>
+                    <div style="text-align:center;color:#9a9a9a;font-size:14px;">(补差价可升级为高级会员)</div>
+                    <!--升级高级会员 start-->
+                    <div class="weui-cells" style="margin-top:0;">
+                        <div class="weui-cell">
+                            <div class="weui-cell__bd" style="width:20%">
+                                <p>级别</p>
+                            </div>
+                            <div class="weui-cell__ft radio_btn" style="width:80%;padding-bottom: 5px;line-height: 30px">
+                                <volist name="AgentInfo" id="vo">
+                                  <?php if($vo['ID']>(session('loginfo')['Mtype']-1)):?>
+                                    <span style="font-size:14px" onclick="selected({$i-1})" data-val="{$vo['ID']}" <if condition="$i eq 1"> class="cur"</if>>
+                                    {$vo['Name']}
+                                    </span>
+                                  <?php endif;?>
+                                </volist>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__bd">
+                                <p> 差价</p>
+                            </div>
+                            <div class="weui-cell__ft">
+                                <volist name="AgentInfo" id="vo">
+                                    <span class="Price" <if condition="$i eq 1">style="color:#ff9600;display:block;"<else />style="color:#ff9600;display:none;"</if>>¥<label style="font-size: 18px;">{$vo['Price']-$curr_price}</label></span>
+                                </volist>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weui-agree">
+                        <label for="weuiAgree" class="select_refuse" id="agreen" style="padding-left: 35px">
+                            <!--<input id="weuiAgree" type="checkbox" class="weui-agree__checkbox"/>-->
+                            <span id="weuiAgree" class="weui-agree__text">
+                            我已阅读并同意
+                          </span>
+                        </label>
+                        <a href="{:U('News/pages',array('ID'=>7))}" style="color: #5461eb;">{$Title}</a>
+                    </div>
+
+
+                    <section style="padding: 30px 0;">
+                        <a href="javascript:void(0);" onclick="purchase()" class="btn_want" style="width: 90%;">立即升级</a>
+                    </section>
+                    <!--升级高级会员 end-->
+                  <?php elseif(session('loginfo')['Mtype']=='3'):?>
+                    <div style="text-align:center;color:#4564f2;font-size:17px;">您好&nbsp;,&nbsp;{$levelname}</div>
+                    <div style="text-align:center;color:#9a9a9a;font-size:14px;">(补差价可升级为高级会员)</div>
+                    <!--升级高级会员 start-->
+                    <div class="weui-cells" style="margin-top:0;">
+                        <div class="weui-cell">
+                            <div class="weui-cell__bd" style="width:20%">
+                                <p>级别</p>
+                            </div>
+                            <div class="weui-cell__ft radio_btn" style="width:80%;padding-bottom: 5px;line-height: 30px">
+                                <volist name="AgentInfo" id="vo">
+                                  <?php if($vo['ID']>(session('loginfo')['Mtype']-1)):?>
+                                    <span style="font-size:14px" onclick="selected({$i-1})" data-val="{$vo['ID']}" <if condition="$i eq 1"> class="cur"</if>>
+                                    {$vo['Name']}
+                                    </span>
+                                  <?php endif;?>
+                                </volist>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__bd">
+                                <p> 差价</p>
+                            </div>
+                            <div class="weui-cell__ft">
+                                <volist name="AgentInfo" id="vo">
+                                    <span class="Price" <if condition="$i eq 1">style="color:#ff9600;display:block;"<else />style="color:#ff9600;display:none;"</if>>¥<label style="font-size: 18px;">{$vo['Price']-$curr_price}</label></span>
+                                </volist>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weui-agree">
+                        <label for="weuiAgree" class="select_refuse" id="agreen" style="padding-left: 35px">
+                            <!--<input id="weuiAgree" type="checkbox" class="weui-agree__checkbox"/>-->
+                            <span id="weuiAgree" class="weui-agree__text">
+                            我已阅读并同意
+                          </span>
+                        </label>
+                        <a href="{:U('News/pages',array('ID'=>7))}" style="color: #5461eb;">{$Title}</a>
+                    </div>
+
+
+                    <section style="padding: 30px 0;">
+                        <a href="javascript:void(0);" onclick="purchase()" class="btn_want" style="width: 90%;">立即升级</a>
+                    </section>
+                    <!--升级高级会员 end-->
+                  <?php elseif(session('loginfo')['Mtype']=='4'):?>
+                    <div style="text-align:center;color:#4564f2;font-size:17px;">{$levelname}</div>
+                  <?php endif;?>
+                </div>
+                
+            </div>
+        </div>
+        <!---->
+        <include file="Layout/footer"/>
+        <script type="text/javascript">
+            $(function () {
+                $("#agreen").on("click",function () {
+                    if($(this).hasClass("select_refuse")){
+                        $(this).attr("class","select_agree");
+                    }else{
+                        $(this).attr("class","select_refuse");
+                    }
+                });
+            });
+            function selected(id) {
+                $('.Price').eq(id).css('display','').siblings().css('display','none');
+            }
+            function purchase() {
+                $('.radio_btn span').each(function () {
+                    if($(this).attr('class')=='cur'){
+                         ID=$(this).attr('data-val');
+                    }
+                });
+                if(!$("#agreen").hasClass("select_agree")){
+                    $.alert("请阅读并同意{$Title}");
+                    return false;
+                }
+                $.post("{:U('Member/ajaxPay')}",{ID:ID},function (data) {
+                    if(data.result==1){
+                        window.location.href="{:U('Member/pay')}?ID="+ID;
+                    }else{
+                        $.alert(data.message);
+                    }
+                },'json');
+            }
+        </script>

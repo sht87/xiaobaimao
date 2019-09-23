@@ -1,0 +1,87 @@
+<include file="Shared:Header" />
+
+<body class="Bodybg">
+    <div class="easyui-panel" data-options="fit:true,border:false,bodyCls:'Bodybg',footer:'#ft'">
+    <form id="FF" class="easyui-form" method="post" data-options="novalidate:true">
+        <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable EditTableMax">
+            <thead>
+                <tr>
+                    <td colspan="2">说明：带<span class="Red">*</span>必填；</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="right" width="200"><span class="Red">*</span> 标题：</td>
+                    <td>
+                        <input id="Title" name="Title" type="text" class="easyui-textbox" data-options="required:true,validType:['length[1,100]']" />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" width="200"><span class="Red">*</span> 选择适用会员：</td>
+                    <td>
+                        <select name="Mtype" id="Mtype" >
+                            <option value="0">所有会员共用</option>
+                            <option value="1">我要考试会员</option>
+                            <option value="2">我是人才会员</option>
+                            <option value="3">我是企业会员</option>
+                        </select>
+                        <!--<input id="Mtype" name="Title" type="text" class="easyui-textbox" data-options="required:true,validType:['length[1,100]']" />-->
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">文章内容：</td>
+                    <td>
+                        <textarea id="Contents" name="Contents"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">SEO标题：</td>
+                    <td>
+                        <textarea id="SEOTitle" name="SEOTitle" rows="2"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">SEO关键字：</td>
+                    <td>
+                        <textarea id="SEOKeyWords" name="SEOKeyWords" rows="2"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">SEO描述：</td>
+                    <td>
+                        <textarea id="SEODescription" name="SEODescription" rows="3"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">排序：</td>
+                    <td>
+                        <input id="Sort" name="Sort" type="text" class="easyui-numberbox" data-options="min:1,formatter: $.XB.JSSortInt,prompt:'越小越靠前'">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <input type="hidden" id="ID" name="ID" value="{$id}"/>
+    </form>
+</div>
+<div id="ft" style="padding:4px;text-align:center;">
+    <input onclick="$.XB.pagesave({'isClose':true});" type="button" value=" 确 定 ">
+    <input onclick="$.XB.easyuireset();" type="button" style="margin-left:20px;" value=" 重 置 ">
+</div>
+    {:load_editor_js('kindeditor')}
+    <script>
+     $(function () {
+         var id=$("#ID").val();
+         if(id>0){
+             $('#FF').form('load', '__URL__/shows?ID={$id}&_=' + Math.random() + '').form({
+                 onLoadSuccess: function () {
+                     {:editor('kindeditor',0,'Contents')}
+                 }
+             });
+         }else{
+             {:editor('kindeditor',0,'Contents')}
+         }
+     });
+     $.XB.pictips({ 'id': '#CoverImage', 'path': '#CoverImage' });
+    </script>
+</body>
+<include file="Shared:Footer" />

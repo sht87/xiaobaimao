@@ -1,0 +1,88 @@
+[2018-11-13 14:08:01]
+>>>>>>>>>
+     requset-1
+            https://pay.chanpay.com/mag-unify/gateway/receiveOrder.do?Service=nmg_zft_api_quick_payment&Version=1.0&PartnerId=200002180100&InputCharset=UTF-8&TradeDate=20181113&TradeTime=140800&SignType=RSA&Memo=H5%E7%9B%B4%E6%8E%A5%E6%94%AF%E4%BB%98&ReturnUrl=http%3A%2F%2Fwww.91jinguanjia.com%2FMember%2Findex&TrxId=eb4b1d50743b6bb53bd195d85345ae31&SellerId=200002180100&SubMerchantNo=200002180100&ExpiredTime=15m&MerUserId=65&BkAcctTp=01&BkAcctNo=&IDTp=01&IDNo=&CstmrNm=&MobNo=&CardCvn2=&CardExprDt=&TradeType=11&TrxAmt=0.01&EnsureAmount=&OrdrName=%E4%BB%A3%E7%90%86%E8%B4%B9%E7%94%A8%E6%94%AF%E4%BB%98&OrdrDesc=&RoyaltyParameters=&NotifyUrl=http%3A%2F%2Fwww.91jinguanjia.com%2Fapi.php%2FCenter%2FPayment%2FchanpayNotify&AccessChannel=wap&Extension=%5B%7B%22order_no%22%3A%221811136134729726%22%7D%5D&Sign=CjEq8yTjakHcLbWdbQo23hnYgKYVzuNDsv8%2FSaLpWtwEvMnEXmOFf3OhsQz1%2B%2B6BQ4lVXd75N%2F32UDq9jyIrTl0yErOJVpUj4S%2FgxKh8sVbaXjP%2B5mA2V4WwrvPHBZSz9%2BhuG%2BofgOoEfeiBaRLz1eTPXSv5D1znouJc1np93yY%3D
+     requset-2
+            {"AcceptStatus":"F","InputCharset":"UTF-8","PartnerId":"200002180100","RetCode":"ILLEGAL_SIGN","RetMsg":"验签未通过","Sign":"wXLQ99UELxI9pAf3yUg8EHI4ZvQnYahPuFsyKl3n54omLcUMp6I6sAmMaDIVNhHz3yMm+RFAbG3rIQr5Jq2Sc2H4qDBM8SijxvOqO1an2sid8ERczpQZpe/fAOYPRc97rp4UChyqqFCDQhv7S9YSgi3oJ/hURg9X+YLnbdTTkS0=","SignType":"RSA","Status":"F","TradeDate":"20181113","TradeTime":"140801","TrxId":"eb4b1d50743b6bb53bd195d85345ae31"}
+
+>>>>>>>>>
+[2018-11-13 14:12:50]
+>>>>>>>>>
+     requset-1
+            https://pay.chanpay.com/mag-unify/gateway/receiveOrder.do?Service=nmg_zft_api_quick_payment&Version=1.0&PartnerId=200002180291&InputCharset=UTF-8&TradeDate=20181113&TradeTime=141250&SignType=RSA&Memo=H5%E7%9B%B4%E6%8E%A5%E6%94%AF%E4%BB%98&ReturnUrl=http%3A%2F%2Fwww.91jinguanjia.com%2FMember%2Findex&TrxId=ceb7d8820f41d6ccb4b6d9b631b87639&SellerId=200002180291&SubMerchantNo=200002180291&ExpiredTime=15m&MerUserId=65&BkAcctTp=01&BkAcctNo=&IDTp=01&IDNo=&CstmrNm=&MobNo=&CardCvn2=&CardExprDt=&TradeType=11&TrxAmt=0.01&EnsureAmount=&OrdrName=%E4%BB%A3%E7%90%86%E8%B4%B9%E7%94%A8%E6%94%AF%E4%BB%98&OrdrDesc=&RoyaltyParameters=&NotifyUrl=http%3A%2F%2Fwww.91jinguanjia.com%2Fapi.php%2FCenter%2FPayment%2FchanpayNotify&AccessChannel=wap&Extension=%5B%7B%22order_no%22%3A%221811136134729726%22%7D%5D&Sign=WaeEr9x35fc4dXPLs3k6gAEk%2FzfynciK1w0kI%2BF1rZNnx61ra1mZlFXrRM2BJXrSjY9tPSMV7C7WBWRPlhTlae%2Boo7YSTG1uo6O0gMk4EZnKmWMNwShLKelq5txHtOtblS3eSfunIk9TMag3uDyaJL5QDrhykr0YWbuR%2F210xzs%3D
+     requset-2
+            {"AcceptStatus":"F","InputCharset":"UTF-8","PartnerId":"200002180291","RetCode":"ILLEGAL_SIGN","RetMsg":"验签未通过","Sign":"wlN9ALFGATeqHgqCmiwiDh/ysm5pEkNES3/04AuG74zhX45+dG0jT01Mdi7WvMHnYJmGDQsi8QAva5scsvX1W4UOpBuojRxirpiu41R1eljFjQI5FFPJBH9pYQXYBMdWxMjwMmGkF4DF7K3y9RrDdV/fYRFwbgqmDU0KNzTpwAc=","SignType":"RSA","Status":"F","TradeDate":"20181113","TradeTime":"141250","TrxId":"ceb7d8820f41d6ccb4b6d9b631b87639"}
+
+>>>>>>>>>
+[2018-11-13 14:25:37]
+>>>>>>>>>
+     requset-1
+            https://pay.chanpay.com/mag-unify/gateway/receiveOrder.do?Service=nmg_zft_api_quick_payment&Version=1.0&PartnerId=200002180291&InputCharset=UTF-8&TradeDate=20181113&TradeTime=142537&SignType=RSA&Memo=H5%E7%9B%B4%E6%8E%A5%E6%94%AF%E4%BB%98&ReturnUrl=http%3A%2F%2Fwww.91jinguanjia.com%2FMember%2Findex&TrxId=219582ba728c1de713ebd6884f203b35&SellerId=200002180291&SubMerchantNo=200002180291&ExpiredTime=15m&MerUserId=65&BkAcctTp=01&BkAcctNo=&IDTp=01&IDNo=&CstmrNm=&MobNo=&CardCvn2=&CardExprDt=&TradeType=11&TrxAmt=0.01&EnsureAmount=&OrdrName=%E4%BB%A3%E7%90%86%E8%B4%B9%E7%94%A8%E6%94%AF%E4%BB%98&OrdrDesc=&RoyaltyParameters=&NotifyUrl=http%3A%2F%2Fwww.91jinguanjia.com%2Fapi.php%2FCenter%2FPayment%2FchanpayNotify&AccessChannel=wap&Extension=%5B%7B%22order_no%22%3A%221811136134729726%22%7D%5D&Sign=uUis5uVITg%2FvCeFnBw1ySBahnT6D4G2sKCr3A2fo5N5GVYa1dajvC8zBkVowekfEcXGqmnNX%2FNC%2FGujV3R%2F9libk9dOIZUX9yOKlK7rvHuJufHH9OBxfCUDZcr%2BunaVu8J%2FBYUQrxAk4R7rvBy%2B9yn2aQVYudqOv77CbraxHobw%3D
+     requset-2
+            {"AcceptStatus":"F","InputCharset":"UTF-8","PartnerId":"200002180291","RetCode":"ILLEGAL_SIGN","RetMsg":"验签未通过","Sign":"av3/RqVmwy2CKTm6DzPBhyudRa8rOJ0EYTAMprbMct2bj7rN6FbMvtKVet5axJwc1ztuttRTY7CZvAq+k3SO5sfZ3SSET2DxMo7c8/R/XGQBU8/AYY7jreTUujuATnuodEB/4RvCB8651XkRcu8wwlLDP/gPgIRIroO9NTo76Cs=","SignType":"RSA","Status":"F","TradeDate":"20181113","TradeTime":"142537","TrxId":"219582ba728c1de713ebd6884f203b35"}
+
+>>>>>>>>>
+[2018-11-13 14:31:30]
+>>>>>>>>>
+     requset-1
+            https://pay.chanpay.com/mag-unify/gateway/receiveOrder.do?Service=nmg_zft_api_quick_payment&Version=1.0&PartnerId=200002180291&InputCharset=UTF-8&TradeDate=20181113&TradeTime=143130&SignType=RSA&Memo=H5%E7%9B%B4%E6%8E%A5%E6%94%AF%E4%BB%98&ReturnUrl=http%3A%2F%2Fwww.91jinguanjia.com%2FMember%2Findex&TrxId=21760785a19ad80fc92078e28437da7f&SellerId=200002180291&SubMerchantNo=200002180291&ExpiredTime=15m&MerUserId=65&BkAcctTp=01&BkAcctNo=&IDTp=01&IDNo=&CstmrNm=&MobNo=&CardCvn2=&CardExprDt=&TradeType=11&TrxAmt=0.01&EnsureAmount=&OrdrName=%E4%BB%A3%E7%90%86%E8%B4%B9%E7%94%A8%E6%94%AF%E4%BB%98&OrdrDesc=&RoyaltyParameters=&NotifyUrl=http%3A%2F%2Fwww.91jinguanjia.com%2Fapi.php%2FCenter%2FPayment%2FchanpayNotify&AccessChannel=wap&Extension=%5B%7B%22order_no%22%3A%221811136134729726%22%7D%5D&Sign=IB%2FiyY1lc71gdIrkdz64LszXKftjAzIVzmJZc%2FQlsCKgU0nFsRNCPv7W0IjE5jzDyxOnoFiw3AWUG%2Fi5ZXWwX%2FuwbOX666MuF2q2RRmh2PCpg3cRMsPwgE9hz6G1XzJknY5xxQOgEM9cmT1etaUrkjI%2BbUL3p1jvOfb%2F5Blso9w%3D
+     requset-2
+            {"AcceptStatus":"F","InputCharset":"UTF-8","PartnerId":"200002180291","RetCode":"ILLEGAL_SIGN","RetMsg":"验签未通过","Sign":"bwTs6gHKFbcqaRb17MPVVDKsDb1HXT98EBkIe3jUMKxSd+y0cOs8YUUi2MXgBvdPdvibj6gp9Ww9e+897ZAGGNJQe22P4igVq4LKAneNmof8Z+9+pOXx5cwnx1CZvjOxNNohmgEZ/sVAbVb9PbYjalULjhkeRqkogg1Cdo/jdO8=","SignType":"RSA","Status":"F","TradeDate":"20181113","TradeTime":"143130","TrxId":"21760785a19ad80fc92078e28437da7f"}
+
+>>>>>>>>>
+[2018-11-13 14:32:28]
+>>>>>>>>>
+     requset-1
+            https://pay.chanpay.com/mag-unify/gateway/receiveOrder.do?Service=nmg_zft_api_quick_payment&Version=1.0&PartnerId=200002180291&InputCharset=UTF-8&TradeDate=20181113&TradeTime=143227&SignType=RSA&Memo=H5%E7%9B%B4%E6%8E%A5%E6%94%AF%E4%BB%98&ReturnUrl=http%3A%2F%2Fwww.91jinguanjia.com%2FMember%2Findex&TrxId=0a8f1a6ceb96e80cb58a8cec39cce334&SellerId=200002180291&SubMerchantNo=200002180291&ExpiredTime=15m&MerUserId=65&BkAcctTp=01&BkAcctNo=&IDTp=01&IDNo=&CstmrNm=&MobNo=&CardCvn2=&CardExprDt=&TradeType=11&TrxAmt=0.01&EnsureAmount=&OrdrName=%E4%BB%A3%E7%90%86%E8%B4%B9%E7%94%A8%E6%94%AF%E4%BB%98&OrdrDesc=&RoyaltyParameters=&NotifyUrl=http%3A%2F%2Fwww.91jinguanjia.com%2Fapi.php%2FCenter%2FPayment%2FchanpayNotify&AccessChannel=wap&Extension=%5B%7B%22order_no%22%3A%221811136134729726%22%7D%5D&Sign=kwtrTKka5W6gS%2BR8aO6QdfXVGGcFM1X3DtzT0jls%2F3xak%2FrYqvHvYeE%2FGxewbzq6QYf1mK%2Ft2pyVCimlHcdFiu%2BtaZsCs6HDTUFQZfVS42vpwXVNHaS%2Blt8t%2Fs1hGAJWEupn5hFAtNV3RzioScDIcVRCUMcnccw0CgxWsU%2BxJCA%3D
+     requset-2
+            {"AcceptStatus":"F","InputCharset":"UTF-8","PartnerId":"200002180291","RetCode":"ILLEGAL_SIGN","RetMsg":"验签未通过","Sign":"lSHwTZfqwX1xj176q3mEdKjmheX0AAAQq7+HJsFzj1iIhprA2jl6X9A54/BjoRegovEFIztqONq2qPVo00tBP3QJ9zv4LjBBgbNKnTrCgKmJPI+XCQQ+DqQ0w3I3fTOXmBrHbRI38KoEM26G29goPM54Mo+e3D0fLFctvkkiJJ0=","SignType":"RSA","Status":"F","TradeDate":"20181113","TradeTime":"143228","TrxId":"0a8f1a6ceb96e80cb58a8cec39cce334"}
+
+>>>>>>>>>
+[2018-11-13 14:32:52]
+>>>>>>>>>
+     requset-1
+            https://pay.chanpay.com/mag-unify/gateway/receiveOrder.do?Service=nmg_zft_api_quick_payment&Version=1.0&PartnerId=200002180291&InputCharset=UTF-8&TradeDate=20181113&TradeTime=143252&SignType=RSA&Memo=H5%E7%9B%B4%E6%8E%A5%E6%94%AF%E4%BB%98&ReturnUrl=http%3A%2F%2Fwww.91jinguanjia.com%2FMember%2Findex&TrxId=8a972f3e2b3cbe242f6683d747629f80&SellerId=200002180291&SubMerchantNo=200002180291&ExpiredTime=15m&MerUserId=65&BkAcctTp=01&BkAcctNo=&IDTp=01&IDNo=&CstmrNm=&MobNo=&CardCvn2=&CardExprDt=&TradeType=11&TrxAmt=0.01&EnsureAmount=&OrdrName=%E4%BB%A3%E7%90%86%E8%B4%B9%E7%94%A8%E6%94%AF%E4%BB%98&OrdrDesc=&RoyaltyParameters=&NotifyUrl=http%3A%2F%2Fwww.91jinguanjia.com%2Fapi.php%2FCenter%2FPayment%2FchanpayNotify&AccessChannel=wap&Extension=%5B%7B%22order_no%22%3A%221811136134729726%22%7D%5D&Sign=r1NxxuWeCQZYnNx1NP3n3oAgoSzxrNvSKK57dYwdEoPmb2ixETUk54vYJA66V2wq6ispHuDSjjkEYVemyu6I67g6ZIVioXNS6I0Li6e%2Bk1U%2BNN4b8NvtoFF1%2BeGQ8lgivFpYha6JPjz%2FUAAOWNvE1gMTaZU%2BQAQ1eImqtAu58RA%3D
+     requset-2
+            {"AcceptStatus":"F","InputCharset":"UTF-8","PartnerId":"200002180291","RetCode":"ILLEGAL_SIGN","RetMsg":"验签未通过","Sign":"F74fU7b2pBQ8+TJjwQqx/5+Vh3nz5LiHjoruCQUKcxG5obNeHHujGH4mEFPGQjAb9k+W0tZkhDt78IyWLrsRQg2GcDK3jg3a9i68fpmc1acZ735vXGGfYuu61qNIbCVqOlhrECaWbGpac5mdbR5VOWPeZz4yedwAmH3iKnPtTW8=","SignType":"RSA","Status":"F","TradeDate":"20181113","TradeTime":"143252","TrxId":"8a972f3e2b3cbe242f6683d747629f80"}
+
+>>>>>>>>>
+[2018-11-13 14:35:54]
+>>>>>>>>>
+     requset-1
+            https://pay.chanpay.com/mag-unify/gateway/receiveOrder.do?Service=nmg_zft_api_quick_payment&Version=1.0&PartnerId=200002180291&InputCharset=UTF-8&TradeDate=20181113&TradeTime=143554&SignType=RSA&Memo=H5%E7%9B%B4%E6%8E%A5%E6%94%AF%E4%BB%98&ReturnUrl=http%3A%2F%2Fwww.91jinguanjia.com%2FMember%2Findex&TrxId=8767937d1180e7030a07270ffb755b55&SellerId=200002180291&SubMerchantNo=200002180291&ExpiredTime=15m&MerUserId=65&BkAcctTp=01&BkAcctNo=&IDTp=01&IDNo=&CstmrNm=&MobNo=&CardCvn2=&CardExprDt=&TradeType=11&TrxAmt=0.01&EnsureAmount=&OrdrName=%E4%BB%A3%E7%90%86%E8%B4%B9%E7%94%A8%E6%94%AF%E4%BB%98&OrdrDesc=&RoyaltyParameters=&NotifyUrl=http%3A%2F%2Fwww.91jinguanjia.com%2Fapi.php%2FCenter%2FPayment%2FchanpayNotify&AccessChannel=wap&Extension=%5B%7B%22order_no%22%3A%221811136134729726%22%7D%5D&Sign=pyCHSrmlcijHq0xA529aqvrO475t1ctl3jpWrUfHIrf3bRQwx7kNJlN6ptfhFkJM9tcuiCGycvs0LSRrc8Wo9y91DvDVQRN51Udfv8XCaoQcDYQFvD2weD5p8wSzLVTAwBkSJyNtUeHnM7FTO4hQc6N9TwTRhmEyllX5cPN0tLI%3D
+     requset-2
+            {"AcceptStatus":"F","InputCharset":"UTF-8","PartnerId":"200002180291","RetCode":"ILLEGAL_SIGN","RetMsg":"验签未通过","Sign":"c7/fbCwPEHMrgE6LCKNd8/FahZlaaO/+QEkWBDkwLo8wRPtW8A9yZ3J8/Qkb7eJ9Bmdcz33Vi/parCNa8PqxHupoz3UtfWQj7iOvuXo2wad6vwEMJ8TkFYnXEkFiYhNUVS4u/xfpfRO+BHb6Ql1gV2StntWnFdaso54cpY7GLKA=","SignType":"RSA","Status":"F","TradeDate":"20181113","TradeTime":"143554","TrxId":"8767937d1180e7030a07270ffb755b55"}
+
+>>>>>>>>>
+[2018-11-13 14:49:15]
+>>>>>>>>>
+     requset-1
+            https://pay.chanpay.com/mag-unify/gateway/receiveOrder.do?Service=nmg_zft_api_quick_payment&Version=1.0&PartnerId=200002180291&InputCharset=UTF-8&TradeDate=20181113&TradeTime=144914&SignType=RSA&Memo=H5%E7%9B%B4%E6%8E%A5%E6%94%AF%E4%BB%98&ReturnUrl=http%3A%2F%2Fwww.91jinguanjia.com%2FMember%2Findex&TrxId=f154c40726f7d638db15fb45a72ec0b0&SellerId=200002180291&SubMerchantNo=200002180291&ExpiredTime=15m&MerUserId=65&BkAcctTp=01&BkAcctNo=&IDTp=01&IDNo=&CstmrNm=&MobNo=&CardCvn2=&CardExprDt=&TradeType=11&TrxAmt=0.01&EnsureAmount=&OrdrName=%E4%BB%A3%E7%90%86%E8%B4%B9%E7%94%A8%E6%94%AF%E4%BB%98&OrdrDesc=&RoyaltyParameters=&NotifyUrl=http%3A%2F%2Fwww.91jinguanjia.com%2Fapi.php%2FCenter%2FPayment%2FchanpayNotify&AccessChannel=wap&Extension=%5B%7B%22order_no%22%3A%221811136134729726%22%7D%5D&Sign=
+     requset-2
+            {"AcceptStatus":"F","InputCharset":"UTF-8","PartnerId":"200002180291","RetCode":"REQUIRED_FIELD_NOT_EXIST","RetMsg":"Sign必填字段未填写","Sign":"CoCwYM55E8UCMpblLmoMz0STcADbZ9tUkYEmdtRHvpDvoA28hGpADfZJAjQ4hFfxxhP0gr6oxRVgDFz7BWXm/KWZjOVcfOGLrkJmh9SrKuInMNAJCcj/xzmNGTxmLHPMjn6ItNaebIpxX3BUCzQgW21QJfmE89kp7wbYSIYup44=","SignType":"RSA","Status":"F","TradeDate":"20181113","TradeTime":"144915","TrxId":"f154c40726f7d638db15fb45a72ec0b0"}
+
+>>>>>>>>>
+[2018-11-13 14:50:39]
+>>>>>>>>>
+     requset-1
+            https://pay.chanpay.com/mag-unify/gateway/receiveOrder.do?Service=nmg_zft_api_quick_payment&Version=1.0&PartnerId=200002180291&InputCharset=UTF-8&TradeDate=20181113&TradeTime=145039&SignType=RSA&Memo=H5%E7%9B%B4%E6%8E%A5%E6%94%AF%E4%BB%98&ReturnUrl=http%3A%2F%2Fwww.91jinguanjia.com%2FMember%2Findex&TrxId=e1ae5e9d5016ebb06f19f33bbbaf6637&SellerId=200002180291&SubMerchantNo=200002180291&ExpiredTime=15m&MerUserId=65&BkAcctTp=01&BkAcctNo=&IDTp=01&IDNo=&CstmrNm=&MobNo=&CardCvn2=&CardExprDt=&TradeType=11&TrxAmt=0.01&EnsureAmount=&OrdrName=%E4%BB%A3%E7%90%86%E8%B4%B9%E7%94%A8%E6%94%AF%E4%BB%98&OrdrDesc=&RoyaltyParameters=&NotifyUrl=http%3A%2F%2Fwww.91jinguanjia.com%2Fapi.php%2FCenter%2FPayment%2FchanpayNotify&AccessChannel=wap&Extension=%5B%7B%22order_no%22%3A%221811136134729726%22%7D%5D&Sign=
+     requset-2
+            {"AcceptStatus":"F","InputCharset":"UTF-8","PartnerId":"200002180291","RetCode":"REQUIRED_FIELD_NOT_EXIST","RetMsg":"Sign必填字段未填写","Sign":"ngakePDtRWTctO/lU23rKRlsp1P0b+lUsYQscQcRaZMRUkqGDhu1lW82HRWCHYsRhvCjbBo/mCFRkaFbAVbvVADkVawFdPlaqKsm3hSNUghWKmyMyOHHILjSyUX4tELtKQjzv8vgXEZ5wTqgJ6YwkDFoOCJGuYlJzmWVHP1y0DQ=","SignType":"RSA","Status":"F","TradeDate":"20181113","TradeTime":"145039","TrxId":"e1ae5e9d5016ebb06f19f33bbbaf6637"}
+
+>>>>>>>>>
+[2018-11-13 14:51:13]
+>>>>>>>>>
+     requset-1
+            https://pay.chanpay.com/mag-unify/gateway/receiveOrder.do?Service=nmg_zft_api_quick_payment&Version=1.0&PartnerId=200002180291&InputCharset=UTF-8&TradeDate=20181113&TradeTime=145113&SignType=RSA&Memo=H5%E7%9B%B4%E6%8E%A5%E6%94%AF%E4%BB%98&ReturnUrl=http%3A%2F%2Fwww.91jinguanjia.com%2FMember%2Findex&TrxId=e6ace69594a15e068c124e2582a784c0&SellerId=200002180291&SubMerchantNo=200002180291&ExpiredTime=15m&MerUserId=65&BkAcctTp=01&BkAcctNo=&IDTp=01&IDNo=&CstmrNm=&MobNo=&CardCvn2=&CardExprDt=&TradeType=11&TrxAmt=0.01&EnsureAmount=&OrdrName=%E4%BB%A3%E7%90%86%E8%B4%B9%E7%94%A8%E6%94%AF%E4%BB%98&OrdrDesc=&RoyaltyParameters=&NotifyUrl=http%3A%2F%2Fwww.91jinguanjia.com%2Fapi.php%2FCenter%2FPayment%2FchanpayNotify&AccessChannel=wap&Extension=%5B%7B%22order_no%22%3A%221811136134729726%22%7D%5D&Sign=
+     requset-2
+            {"AcceptStatus":"F","InputCharset":"UTF-8","PartnerId":"200002180291","RetCode":"REQUIRED_FIELD_NOT_EXIST","RetMsg":"Sign必填字段未填写","Sign":"qiuBPB2yoPX8IaXE/N6+wmtoH+7rcT7+q7/RvbvMLSWfkSeo8Vxwu3rorCxm0MDAws0yfXKWkDE08ur0jc662TMSoAO//utVrS6YLJ05uwHm2UqO2IJ6541kQluHLOt11/oak5wPvzpn2t/Ruu4ytl1ZGrJ1Dcgtuw7B6icHXro=","SignType":"RSA","Status":"F","TradeDate":"20181113","TradeTime":"145113","TrxId":"e6ace69594a15e068c124e2582a784c0"}
+
+>>>>>>>>>
+[2018-11-13 19:16:04]
+>>>>>>>>>
+     requset-1
+            https://pay.chanpay.com/mag-unify/gateway/receiveOrder.do?Service=nmg_zft_api_quick_payment&Version=1.0&PartnerId=200002180291&InputCharset=UTF-8&TradeDate=20181113&TradeTime=191604&SignType=RSA&Memo=H5%E7%9B%B4%E6%8E%A5%E6%94%AF%E4%BB%98&ReturnUrl=http%3A%2F%2Fwww.91jinguanjia.com%2FMember%2Findex&TrxId=ca4724c9e9ecbc1ae7524ffa5fe155ad&SellerId=200002180291&SubMerchantNo=200002180291&ExpiredTime=15m&MerUserId=65&BkAcctTp=01&BkAcctNo=&IDTp=01&IDNo=&CstmrNm=&MobNo=&CardCvn2=&CardExprDt=&TradeType=11&TrxAmt=0.01&EnsureAmount=&OrdrName=%E4%BB%A3%E7%90%86%E8%B4%B9%E7%94%A8%E6%94%AF%E4%BB%98&OrdrDesc=&RoyaltyParameters=&NotifyUrl=http%3A%2F%2Fwww.91jinguanjia.com%2Fapi.php%2FCenter%2FPayment%2FchanpayNotify&AccessChannel=wap&Extension=%5B%7B%22order_no%22%3A%221811136134729726%22%7D%5D&Sign=
+     requset-2
+            {"AcceptStatus":"F","InputCharset":"UTF-8","PartnerId":"200002180291","RetCode":"REQUIRED_FIELD_NOT_EXIST","RetMsg":"Sign必填字段未填写","Sign":"s5KeoKWi4lrSufmJLgDj13+JbsI/ZALwZN/gtXnaeSKw15Xo/oV/FMTY2xsIOdZ/Gl28YoopGa35cPpn9EWfsVu3DXoa7O/VXZV+LzqV8SGkZ2osLUJd1FvjYIz7ZSNxF8s7/wycBj0lBZ/TMPIvdVsMeZmKb4nB8FKsu1e/kHw=","SignType":"RSA","Status":"F","TradeDate":"20181113","TradeTime":"191604","TrxId":"ca4724c9e9ecbc1ae7524ffa5fe155ad"}
+
+>>>>>>>>>

@@ -1,0 +1,87 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+    <meta http-equiv=”X-UA-Compatible” content=”IE=edge,chrome=1″ />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="renderer" content="webkit|ie-comp|ie-stand" />
+    <link href="/Public/Admin/JS/EasyUI/easyui.css" rel="stylesheet" />
+    <link href="/Public/Admin/images/H/Main.css" rel="stylesheet" />
+    <script src="/Public/Admin/JS/jquery.min.js"></script>
+    <script src="/Public/Admin/JS/EasyUI/jquery.easyui.min.js"></script>
+    <script src="/Public/Admin/JS/XB.js"></script>
+    <link href="/Public/Admin/images/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body class="Bodybg">
+        <form id="FF" method="post">
+        <div id="tools" class="tools">
+
+            <?php echo W('RolePerm/RolePermTop');?>
+
+        </div>
+        <div id="search" class="search">
+            <table border="0" class="SearchTable" cellpadding="3">
+                <thead>
+                    <tr>
+                        <td width="70" align="right">会员姓名：</td>
+                        <td width="180">
+                            <input id="name" Name="name" type="text" />
+                        </td>
+                       <td>
+                            <input id="btnSearch" onclick="$.XB.searchtree();" type="button" value="查 询">
+                        </td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div id="tabelContent" class="tabelContent">
+            <table id="DataList"></table>
+        </div>
+    </form>
+    <script type="text/javascript">
+
+        $(function () {
+            $('#DataList').treegrid({
+                rownumbers: false,
+                animate: true,
+                border: false,
+                lines: true,
+                url: 'DataList',
+                idField: 'ID',
+                treeField: 'ID',
+                pagination:true,
+                pageSize: 10,
+                pageList: [10, 20, 50],
+                columns: [[
+                    { field: 'name', title: '会员名称', width: 100 },
+                    { field: 'mobile', title: '手机号码', width: 100 },
+                    { field: 'sex', title: '性别', width: 70},
+					{ field: 'money', title: '期望借款金额', width: 100 },
+					{ field: 'card', title: '身份证号', width: 100 },
+					//{ field: 'houseType', title: '房产状态', width: 100 },
+					//{ field: 'carType', title: '车辆状态', width: 100 },
+					{ field: 'zy', title: '职业', width: 100 },
+					{ field: 'work', title: '工作年限', width: 100 },
+					//{ field: 'gjj', title: '公积金情况', width: 100 },
+					{ field: 'ysr', title: '月收入', width: 100 },
+					//{ field: 'sb', title: '社保情况', width: 100 },
+					//{ field: 'xyk', title: '信用卡情况', width: 100 },
+					//{ field: 'bd', title: '保单情况', width: 100 },
+					//{ field: 'city', title: '城市', width: 100 },
+
+                ]],
+                
+                onLoadSuccess: function () {
+                    $(this).treegrid('resize', {
+                        height: $(window).height() - $('#tools').height() - $('#search').height() - 15
+                    });
+                }
+               
+            }) 
+            $.XB.datagrid({"columns": columns});
+			$.XB.enter();
+        });
+    </script>
+        <?php echo W('RolePerm/RolePermBottom');?>
+	</body>
+</html>

@@ -1,0 +1,74 @@
+<include file="Shared:Header" />
+
+<body class="Bodybg">
+    <div class="easyui-panel" data-options="fit:true,border:false,bodyCls:'Bodybg',footer:'#ft'">
+    <form id="FF" class="easyui-form" method="post" data-options="novalidate:true">
+        <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable EditTableMax">
+            <thead>
+                <tr>
+                    <td colspan="5">说明：带<span class="Red">*</span>必填；</td>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td align="right" width="100"><span class="Red">*</span> 公司类型：</td>
+                <td width="200">
+                    <input id="CompType" name="CompType" type="text" class="easyui-textbox" data-options="width:200,required:true,validType:['length[1,100]']" />
+                </td>
+                <td align="right" width="100"><span class="Red">*</span>公司所在地：</td>
+                <td width="200">
+                    <input id="CompAddr" name="CompAddr" type="text" class="easyui-textbox" data-options="width:200,required:true">
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td align="right" width="100"><span class="Red">*</span>联 系 人：</td>
+                <td width="200">
+                    <input id="MemName" name="MemName" type="text" class="easyui-textbox" data-options="width:200,required:true">
+                </td>
+                <td align="right" width="100"><span class="Red">*</span>联系方式：</td>
+                <td width="200">
+                    <input id="Tel" name="Tel" type="text" class="easyui-textbox" data-options="width:200,required:true">
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td align="right" width="100"><span class="Red">*</span> 资质名称及级别：</td>
+                <td width="200">
+                    <input id="ZiziName" name="ZiziName" type="text" class="easyui-textbox" data-options="width:200,required:true,validType:['length[1,100]']" />
+                </td>
+                <td align="right" width="100"><span class="Red">*</span> 收购价格：</td>
+                <td width="200">
+                    <input id="PriceMin" name="Price" type="text" class="easyui-numberbox" data-options="width:200,required:true,prompt:'价格（万元）'" />
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td align="right" width="100"><span class="Red">*</span> 备注信息：</td>
+                <td colspan="3">
+                    <input type="text" name="Contents" id="Contents" class="easyui-textbox" data-options="width:515,height:100,multiline:true">
+                </td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+        <input type="hidden" id="ID" name="ID" value="{$id}"/>
+    </form>
+</div>
+    {:load_editor_js('kindeditor')}
+    <script>
+     $(function () {
+         var id=$("#ID").val();
+         if(id>0){
+             $('#FF').form('load', '__URL__/shows?ID={$id}&_=' + Math.random() + '').form({
+                 onLoadSuccess: function () {
+                     {:editor('kindeditor',0,'Contents')}
+                 }
+             });
+         }else{
+             {:editor('kindeditor',0,'Contents')}
+         }
+     });
+    </script>
+</body>
+<include file="Shared:Footer" />

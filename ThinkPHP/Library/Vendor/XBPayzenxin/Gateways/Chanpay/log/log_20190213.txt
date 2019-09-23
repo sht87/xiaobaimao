@@ -1,0 +1,22 @@
+[2019-02-13 13:24:14]
+>>>>>>>>>
+     test
+            {"app_id":"200002180100","api_url":"https:\/\/pay.chanpay.com\/mag-unify\/gateway\/receiveOrder.do","app_key":"","app_secret":"","return_url":"\/Member\/index","notify_url":"\/api.php\/Center\/Payzenxin\/chanpayNotify"}
+     requset-1
+            https://pay.chanpay.com/mag-unify/gateway/receiveOrder.do?Service=nmg_zft_api_quick_payment&Version=1.0&PartnerId=200002180100&InputCharset=UTF-8&TradeDate=20190213&TradeTime=132413&SignType=RSA&Memo=H5%E7%9B%B4%E6%8E%A5%E6%94%AF%E4%BB%98&ReturnUrl=http%3A%2F%2Fryj.yunhushuju.com%2FMember%2Findex&TrxId=3378769689e76622fdd7e51dd1d65c93&SellerId=200002180100&SubMerchantNo=200002180100&ExpiredTime=15m&MerUserId=102&BkAcctTp=01&BkAcctNo=PJ78REZGo72TqNrdHuERWSXgd6xOC0QaNhfDLzZcwZJ6JnSMwSe%2Bx84X6zJIsQVlvYL5VdIBkG4XRPgRehcj3f2XrpjW6ygCoKz8JOeD3tcEL96j2EsPl%2FU0x9XSMllj4xHqScykLXatd3q3PrG3zWn2m%2BeUnzAoMc2LUEejC2w%3D&IDTp=01&IDNo=O8f46TeWgoHh%2FDZFPsRiaMnr46j3tt2ooiyLxpIlFs8Na0AaA3T%2F4y04e7kujxQyeiL5P1%2BrRm9ZcVEk3AL9qhsbCzhaUldFKXDEN1z0s2FwOclUYCQx7VYQFiat6c0HvtAadFE2a9NAkGkzsFSoj1OPNuFkLHWe0nHETogKeg0%3D&CstmrNm=rcTWsOQEw6siWiUKrLKHCg6GQkSv%2B4HeFjKj%2FqQP%2FYGS%2FnIiO9i%2FKL9aG60QixKM%2Fc21Z4fePsmWYuh%2FpodPgDxu0mVl6Ni9kVBDWS3mX2VIdskPZEtRMOKLH2ZRY%2B18CJnrXHxHKHAG8NJeHp4hyKsagbsDL9H4wlaGNVcUR%2Fk%3D&MobNo=eq3sq6S5hg%2FLoxf6nG1hunmGScLmxzvIwwsrkMLpMcvqcoybfiwAdbl9ESz0uI98J453qN4qBKLnvgKjeT9GNqYc3qZntuj%2BET2mXevrXYWfxzngRkP3%2B0PAZAe36OFSEERe5%2BCPlUF1wop2Q%2FaYskimFVJTvuYgjURZPVPXIT0%3D&CardCvn2=&CardExprDt=&TradeType=11&TrxAmt=2.00&EnsureAmount=&OrdrName=%E5%BE%81%E4%BF%A1%E6%9F%A5%E8%AF%A2%E8%B4%B9%E7%94%A8%E6%94%AF%E4%BB%98&OrdrDesc=&RoyaltyParameters=&NotifyUrl=http%3A%2F%2Fryj.yunhushuju.com%2Fapi.php%2FCenter%2FPayzenxin%2FchanpayNotify&AccessChannel=wap&Extension=%5B%7B%22order_no%22%3A%221902138132345704%22%7D%5D&Sign=K4J1JuSsM6Y%2Fzotw5gfsaQdv381oZqf55zA3Yo570Ovk%2BgM1aM2ygaCsVmE0mP3PebcUVzeYYVgV%2F6FJFjx5ftlcgkYKnc%2FdokLFStlbHPVUaYRJZwWgxOtch9jgX8ITjDM4g30nNG2%2Bi8SunrXHG5%2FbhkSuEiOcXyqOdFhv6kE%3D
+     requset-2
+            {"AcceptStatus":"S","AppRetMsg":"交易受理成功","AppRetcode":"QT000001","InputCharset":"UTF-8","OrderTrxid":"101155003545385303997","PartnerId":"200002180100","RetCode":"P0002","RetMsg":"受理成功","Sign":"t5PC+hhIf9qaHdWrUfqTFweh2KfESrx567gX/KdntNHLOFmpoCQzEFVUmGtEpFnct0bLFFoU0gGNcvIYkcrDejK7fnclrHcLpOV+YaI+cchnJiEVUxOMLHA+9cAqXgvCrmQmi03FqkyHaaD9AHRooq7VVl/v9y0SbTBKMrTr95o=","SignType":"RSA","Status":"P","TradeDate":"20190213","TradeTime":"132414","TrxId":"3378769689e76622fdd7e51dd1d65c93"}
+
+>>>>>>>>>
+[2019-02-13 13:24:28]
+>>>>>>>>>
+     支付确认接口
+            {"AcceptStatus":"S","AppRetMsg":"交易处理中","AppRetcode":"QT100000","InputCharset":"UTF-8","OrderTrxid":"101155003545385303997","PartnerId":"200002180100","PayTrxId":"301155003545384325512","RetCode":"P0001","RetMsg":"交易处理中","Sign":"BP4bk76tkYzAOEd2o\/Wzv2KcPDTJnXItZA1qU\/zjd2O2q18P3RLovYzS+UvivZPDSBbDuSgLQpl6Jpscxbg53C1q3icvFgjIHK6aPPps57aHxFZhRBWGBtiCE1GvjWnt1\/3qIqBdo6Yzhlo78zXdkaYbW\/l0YiUXu\/RCcqqwTe4=","SignType":"RSA","Status":"P","TradeDate":"20190213","TradeTime":"132428","TrxId":"24f115a20cd7a243902185d5ee9963d1"}
+
+>>>>>>>>>
+[2019-02-13 13:24:29]
+>>>>>>>>>
+     1.0Notify
+            notify_time=20190213132429&sign_type=RSA&notify_type=trade_status_sync&trade_status=TRADE_SUCCESS&gmt_payment=20190213132429&version=1.0&sign=oS%2FHkvNZieftlteJSe67FQxe0QoR3Vrhg50QqytCKBy3FErYr87JhDZ5KVe%2FxdbWPMdXho5ubqarR0FV0G56G1rhwiU1E3J%2BIP4AX90yuJEyghjtzjllVZMNxVOgcOZV2E1EIcNI3ZlKDRLpv5oOGJqonDBFkfpMqFCQgPJ%2BUfA%3D&extension=%7B%22apiResultcode%22%3A%22S%22%2C%22bankCode%22%3A%2200001%22%2C%22bankMessage%22%3A%22%E6%88%90%E5%8A%9F%22%2C%22chnlNo%22%3A%220400100014%22%2C%22instPayNo%22%3A%22NI101364501021333886198%22%2C%22sendBankReq%22%3A%222019021310000010733938191100806%22%2C%22settlementId%22%3A%2220190213132414PP04211116%22%2C%22unityResultMessage%22%3A%22%E4%BA%A4%E6%98%93%E6%88%90%E5%8A%9F%22%2C%22wjReq%22%3A%22NI101364501021333886203%22%7D&gmt_create=20190213132429&_input_charset=UTF-8&outer_trade_no=3378769689e76622fdd7e51dd1d65c93&trade_amount=2.00&notify_id=df2b2f2342344f49bc339e28c7768b42&inner_trade_no=101155003545385303997
+
+>>>>>>>>>

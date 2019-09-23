@@ -1,0 +1,36 @@
+        <include file="Layout/header"/>
+        <header class="header">
+            <a href="javascript:history.go(-1)" class="go_left"></a>
+            <span class="header_til">我的消息</span>
+        </header>
+        <!---->
+        <div style="margin-top:50px">
+            <volist name="msgList" id="vo">
+                <section class="section_mynews" onclick="readmsg(this,{$vo['ID']},{$vo['UserID']},{$vo['IsRead']})">
+                    <p class="center">
+                        <span class="time_til ">{$vo['SendTime']|substr=0,10}</span>
+                    </p>
+                    <section class="section_mynews1">
+                        <dl>
+                            <dd>{$vo['Title']}</dd>
+                            <dt>{$vo['Contents']}</dt>
+                        </dl>
+                    </section>
+                </section>
+            </volist>
+        </div>
+
+        <!---->
+         <include file="Layout/footer"/>
+        <script type="text/javascript">
+            function readmsg(obj,MID,UID,IsRead) {
+                if(IsRead==1){
+                    return;
+                }
+                $.get("{:U('Member/readmsg')}",{MID:MID,UID:UID},function (data) {
+                    if(data.result==1){
+                        location.reload();
+                    }
+                },'json');
+            }
+        </script>

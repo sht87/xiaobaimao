@@ -1,0 +1,184 @@
+<include file="Layout/header"/>
+<style>
+	.weui-toast{margin-left: 0!important;}
+</style>
+{/*
+#本页面需要配置的参数值
+@页面标题  $pageName
+@订单金额  $orderAmount
+@订单流水  $orderNo
+@提交地址  $actionUrl
+@同步回调  $returnUrl
+*/}
+<header class="header"  >
+	<a href="javascript:history.go(-1)" class="go_left"></a>
+	 <span class="header_til">{$pageName}</span>
+</header>
+<!---->
+<div class="weui-cells" style="margin-top:50px;">
+  <div class="weui-cell">
+    <div class="weui-cell__bd">
+      <p> 订单金额</p>
+    </div>
+    <div class="weui-cell__ft"><span style="color:#F84C58;">¥<label style="font-size: 18px;">{$orderAmount}</label></span> </div>
+  </div>
+</div>
+
+<form id="txform">
+	<div class="weui-cells"  style="margin-top:0;">
+	  <div class="weui-cell">
+	    <div style="width: 40%;">
+	      <p>卡号</p>
+	    </div>
+	    <div class="weui-cell__ft" style="padding-left:10%;"><input type="number" name="BankNo" id="BankCode" placeholder="必填" class="weui-input" style="text-align: left;"></div>
+	  </div>
+	  <div class="weui-cell">
+	    <div style="width: 40%;">
+	      <p>证件号</p>
+	    </div>
+	    <div class="weui-cell__ft" style="padding-left:10%;"><input type="text" name="CertNo" id="CardID" placeholder="必填" class="weui-input" style="text-align: left;"></div>
+	  </div>
+	<div class="weui-cell">
+		<div style="width: 40%;">
+			<p>持卡人姓名</p>
+		</div>
+		<div class="weui-cell__ft" style="padding-left:10%;"><input type="text" name="CertName" id="RealName" placeholder="必填" class="weui-input" style="text-align: left;"> </div>
+	</div>
+	  <div class="weui-cell">
+	    <div style="width: 40%;">
+	      <p>银行预留手机号</p>
+	    </div>
+	    <div class="weui-cell__ft" style="padding-left:10%;"><input type="number" name="CertPhone" id="phone" placeholder="必填" class="weui-input" style="text-align: left;"></div>
+	  </div>
+		<section class="weui-cell">
+			<input class="weui-input icon_regUser" id="Smscode" name="Smscode" value="" type="text" placeholder="请输入短信验证码">
+			<a href="javascript:void(0);" class="huo_btnqu" id="show-custom">获取验证码</a>
+		</section>
+	</div>
+	<input type="hidden" name="OrderNo" value="{$orderNo}"/>
+	<!--<input type="hidden" name="return_url" value="{$returnUrl}"/>-->
+	<section style="padding: 30px 0;">
+		<a id="paysure" href="javascript:void(0);" onclick="paysure()" class="btn_want" style="width: 90%;">确认支付 </a>
+	</section>
+</form>
+
+<include file="Layout/footer"/>
+
+<script type="text/javascript">
+    function fnsubmit(callback){
+        if(!$('#BankCode').val()){
+            XB.Tip("请输入卡号");$('#BankCode').focus();return false;
+        }
+        if(!$('#RealName').val()){
+            XB.Tip("请输入持卡人姓名");$('#RealName').focus();return false;
+        }
+        if(!$('#CardID').val()){
+            XB.Tip("请输入证件号");$('#CardID').focus();return false;
+        }
+        if(!$('#phone').val()){
+            XB.Tip("请输入银行预留手机号");$('#phone').focus();return false;
+        }
+        //校验
+        $.ajax({
+            type:"POST",
+            url:"{$SendSmsActionUrl}",
+            data:$('#txform').serialize(),
+            dataType: "json",
+            success:function(data){
+                if(data.result==0){
+                    $.alert(data.message);return false;
+                } else if(data.result==1){
+                    $.toast(data.message);
+                    callback();
+                    //校验成功
+                    //$.alert("请求支付中...")
+                    /*setTimeout(function(){
+                        $('body').append('<div style="display:none">'+data.des.html+'</div>');
+                    }, 500)*/
+                    // window.location.href = data.des.payurl;
+                } else if(data.result == 80) {
+                    $("#Smscode").hide();
+                    $.alert(data.message, function(){
+                        window.location.href = "/Login/index?back=<?=$_SERVER['REQUEST_URI']?>";
+                    });return false;
+                }
+            },
+			error:function(){
+                $.alert("网络不畅");
+            }
+        });
+    }
+
+    function paysure()
+	{
+        if(!$('#BankCode').val()){
+            XB.Tip("请输入卡号");$('#BankCode').focus();return false;
+        }
+        if(!$('#RealName').val()){
+            XB.Tip("请输入持卡人姓名");$('#RealName').focus();return false;
+        }
+        if(!$('#CardID').val()){
+            XB.Tip("请输入证件号");$('#CardID').focus();return false;
+        }
+        if(!$('#phone').val()){
+            XB.Tip("请输入银行预留手机号");$('#phone').focus();return false;
+        }
+
+        if(!$('#Smscode').val()){
+            XB.Tip("请输入验证码");$('#Smscode').focus();return false;
+        }
+
+        //校验
+        $.ajax({
+            type:"POST",
+            url:"{$NowPayActionUrl}",
+            data:$('#txform').serialize(),
+            dataType: "json",
+            success:function(data){
+                if(data.result==0){
+                    $.alert(data.message);return false;
+                } else if(data.result==1){
+                    $.toast(data.message);
+                    //校验成功
+                    // $("#SmscodeWrap").show();
+                    window.location.href = '/member/index';
+                } else if(data.result==80) {
+                    $("#Smscode").hide();
+                    $.alert(data.message, function(){
+                        window.location.href = "/Login/index?back=<?=$_SERVER['REQUEST_URI']?>";
+                    });return false;
+                }
+            },
+            error:function(){
+                $.alert("网络不畅");
+            }
+        });
+	}
+
+    $(document).on("click", "#show-custom", function() {
+
+        fnsubmit(function(){
+            times();
+		});
+    });
+
+    //倒计时
+    function times() {
+        var setTime;
+        var time = 60;
+        $("#show-custom").css("pointer-events", "none");
+        setTime = setInterval(function () {
+            if (time <= 0) {
+                clearInterval(setTime);
+                //添加事件
+                $("#show-custom").text('获取验证码');
+                $("#show-custom").css("pointer-events", "auto");
+                return;
+            }
+            time--;
+            msgs = time + "s后重发";
+            $("#show-custom").text(msgs);
+        }, 1000);
+    }
+
+</script>

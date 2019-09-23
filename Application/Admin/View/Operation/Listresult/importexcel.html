@@ -1,0 +1,185 @@
+
+<include file="Shared:Header" /><body class="Bodybg">
+    <style>
+    .Icon211 {
+        background: url('/Public/Admin/images/H/del.png') no-repeat scroll center center transparent;
+    }
+    /**/
+    .BactchPic {
+        width: 665px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        border: 1px solid #ddd;
+        margin-top: 7px;
+        height: 89px;
+        display: none;
+    }
+
+        .BactchPic div {
+            width: 83px;
+            height: 85px;
+            margin: 2px;
+            float: left;
+            position: relative;
+        }
+
+    .Bactchdel {
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        position: absolute;
+        right: 2px;
+        top: 2px;
+        display: none;
+    }
+
+    .Bactchimg {
+        width: 82px;
+        height: 60px;
+        border: 1px solid #ccc;
+    }
+
+    .selected {
+        color: gray;
+        border: 1px solid gray;
+        width: 30px;
+        cursor: pointer;
+        padding: 3px 11px 3px 11px;
+    }
+
+    .selected2 {
+        color: red;
+        border: 1px solid red;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .div_contentlist ul {
+        float: left;
+    }
+
+    .div_contentlist li {
+        float: left;
+    }
+</style>
+<div class="easyui-panel" data-options="fit:true,border:false,bodyCls:'Bodybg',footer:'#ft'">
+    <form id="questform" class="easyui-form" method="post" data-options="novalidate:true">
+        <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable">
+            <thead>
+                <tr>
+                    <td colspan="4">说明：放款记录批量导入功能</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                    	<span style="padding-left:50px;"><a href="__PUBLIC__/Admin/xlsData/applylist.xls" target="_blank">模板下载</a></span>
+                    	<span style="padding-left:50px;"><a href="__PUBLIC__/Admin/xlsData/lists_details.docx" target="_blank">模板说明</a></span>
+                    </td>
+                </tr>
+                 <tr>
+                    <td align="right"><span class="Red">*</span>放款记录文件：</td>
+                    <td>
+                        <input type="file" name="datalist" id="datalist"/>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <input name="__RequestVerificationToken" type="hidden" value="SKVwYsArY4n2Z5ntwhQwAl3AbZ5n2-aUN_MQgkAoWytl_VQXh451MiBCd4auiUsEWzq9V03kYZkuTP-kSdciKe79zMEtqcMiruqCf5w3H1c1" />
+    </form>
+
+    <div id="ajaxloading" style=" padding-top:30px; padding-left:300px; padding-bottom:15px; display:none;">
+	   <img src="__PUBLIC__/Admin/images/H/loadingsmall.gif">数据导入中，请稍候...
+	</div>
+</div>
+<div id="ft" style="padding:4px;text-align:center;">
+    <input onClick="fnsave()" type="button" value=" 确 定 " />
+    <input onClick="$.XB.easyuireset();" type="button" style="margin-left:20px;" value=" 重 置 " />
+</div>
+<script>
+    //商品的保存
+    function fnsave(){
+    	if(confirm("确定要导入放款记录吗?")){
+    		$('#ajaxloading').show();
+			var formData= new FormData($("#questform")[0]);
+			$.ajax({
+				type:"POST",
+				url:"../data_import",
+				data:formData ,
+				dataType: 'json',
+				contentType: false, 
+	            processData: false, 
+				success:function(data){
+    				if(data.result=='0'){
+	    		        //alert(data.message);
+                        $.XB.warning({ "message": data.message});
+	    		        $('#ajaxloading').css('display','none');
+		                return false;
+	    		    }
+		            if(data.result=='1'){
+		                //alert(data.message);
+                        $.XB.success({ "message": data.message});
+		                $('#ajaxloading').css('display','none');
+		                $("#questform")[0].reset();
+		                //window.location.reload();
+		            }
+				}
+			});
+		}
+        //$.XB.pagesave();
+    } 
+</script>
+<style>
+    .EditTable tr {
+        border: 1px solid #ffffff;
+        height: 25px;
+    }
+
+    .EditTable2 {
+        margin: 5px;
+    }
+
+        .EditTable2 td {
+            border: none;
+            word-break: keep-all;
+            white-space: nowrap;
+            padding: 2px;
+        }
+
+            .EditTable2 td span {
+                padding: 4px;
+                text-align: center;
+                float: left;
+                margin-right: 10px;
+                margin-bottom: 5px;
+                border: 1px solid #aaa;
+                color: #666;
+                cursor: pointer;
+                min-width: 20px;
+            }
+
+            .EditTable2 td .selectval {
+                border: 1px solid red;
+                color: red;
+            }
+
+    .Title {
+        text-align: right;
+        font-size: 12px;
+    }
+
+    .inputs {
+        height: 25px;
+        font-size: 12px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 0;
+        width: 200px;
+    }
+</style>
+</body>
+<include file="Shared:Footer" />
+

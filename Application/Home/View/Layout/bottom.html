@@ -1,0 +1,77 @@
+<div class="weui-tabbar" style="position: fixed; bottom: 0; left: 0; width: 100%;">
+    <a href="{:U('Index/index')}" class="weui-tabbar__item <?php if(CONTROLLER_NAME=='Index' && ACTION_NAME=='index') echo 'weui-bar__item--on';?>">
+        <div class="weui-tabbar__icon">
+         <?php if(CONTROLLER_NAME=='Index' && ACTION_NAME=='index'):?>
+            <img src="__PUBLIC__/images/ic_home_selected.png" alt=""/>
+         <?php else:?>
+            <img src="__PUBLIC__/images/ic_home_normal.png" alt=""/>
+         <?php endif;?>
+        </div>
+        <p class="weui-tabbar__label">首页</p>
+    </a>
+    <a href="<?php echo U('Item/index');?>" class="weui-tabbar__item <?php if(CONTROLLER_NAME=='Item' && ACTION_NAME=='index') echo 'weui-bar__item--on';?>">
+        <div class="weui-tabbar__icon">
+            <?php if(CONTROLLER_NAME=='Item' && ACTION_NAME=='index'):?>
+                <img src="__PUBLIC__/images/ic_loan_selected.png" alt=""/>
+             <?php else:?>
+                <img src="__PUBLIC__/images/ic_loan_normal.png" alt=""/>
+             <?php endif;?>
+        </div>
+        <p class="weui-tabbar__label">找借贷</p>
+    </a>
+
+    <!--<a href="http://www.jinrirong.com/forum.php?mod=forumdisplay&fid=38&mobile=2" class="weui-tabbar__item">-->
+        <!--<div class="weui-tabbar__icon">-->
+            <!--<img src="__PUBLIC__/images/forumlt.png" alt=""/>-->
+        <!--</div>-->
+        <!--<p class="weui-tabbar__label">论坛</p>-->
+    <!--</a>-->
+
+    <!-- <a href="<?php echo U('Item/creditv');?>" class="weui-tabbar__item <?php if(CONTROLLER_NAME=='Item' && (ACTION_NAME=='creditv' || ACTION_NAME=='khlist')) echo 'weui-bar__item--on';?>">
+        <div class="weui-tabbar__icon">
+            <?php if(CONTROLLER_NAME=='Item' && (ACTION_NAME=='creditv' || ACTION_NAME=='khlist')):?>
+                <img src="__PUBLIC__/images/ic_promote_selected.png" alt=""/>
+             <?php else:?>
+                <img src="__PUBLIC__/images/ic_promote_normal.png" alt=""/>
+             <?php endif;?>
+        </div>
+        <p class="weui-tabbar__label">找信用卡</p>
+    </a> -->
+    <a href="{:U('Member/index')}" class="weui-tabbar__item <?php if(CONTROLLER_NAME=='Member' && ACTION_NAME=='index') echo 'weui-bar__item--on';?>">
+        <div class="weui-tabbar__icon">
+         <?php if(CONTROLLER_NAME=='Member' && ACTION_NAME=='index'):?>
+            <img src="__PUBLIC__/images/ic_mine_selected.png" alt=""/>
+         <?php else:?>
+            <img src="__PUBLIC__/images/ic_mine_normal.png" alt=""/>
+         <?php endif;?>
+        </div>
+        <p class="weui-tabbar__label">我的</p>
+    </a>
+</div>
+
+<!--页面悬浮-->
+<div class="">
+  <?php if($GLOBALS['BasicInfo']['Ytstatus']=='3'):?>
+    <a href="{$GLOBALS['BasicInfo']['YtanUrl']}"  class="suspend_icon1"><img src="{$GLOBALS['BasicInfo']['YtanImg']}"></a>
+  <?php elseif((CONTROLLER_NAME=='Index' && ACTION_NAME=='index') && $GLOBALS['BasicInfo']['Ytstatus']=='2'):?>
+    <a href="{$GLOBALS['BasicInfo']['YtanUrl']}"  class="suspend_icon1"><img src="{$GLOBALS['BasicInfo']['YtanImg']}"></a>
+  <?php endif;?>
+    <a href="<?php echo U('Index/index');?>" class="suspend_icon2"><img src="__PUBLIC__/images/suspend_icon2.png"></a>
+    <a href="javascript:history.go(-1)" class="suspend_icon3"><img src="__PUBLIC__/images/suspend_icon3.png"></a>
+</div>
+<!--页面悬浮 end-->
+<script src="__PUBLIC__/js/jquery-2.1.4.js"></script>
+<!-- <script src="__PUBLIC__/js/fastclick.js"></script> -->
+<script src="__PUBLIC__/js/jquery-weui.min.js"></script>
+<script src="__PUBLIC__/js/common.js"></script>
+<script type="text/javascript" src="__PUBLIC__/artDialog/artDialog.min.js"></script>
+<link rel="stylesheet" href="__PUBLIC__/artDialog/skins/aero.css">
+<script type="text/javascript" src="__PUBLIC__/artDialog/iframeTools.js"></script>
+
+<!-- <script type="text/javascript">
+    $(function () {
+        FastClick.attach(document.body);
+    });
+</script> -->
+</body>
+</html>

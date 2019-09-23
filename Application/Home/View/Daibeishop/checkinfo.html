@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+        <link type="text/css" href="__PUBLIC__/css/jquery-weui.min.css" rel="stylesheet">
+		<link type="text/css" href="__PUBLIC__/css/weui.min.css"  rel="stylesheet"/>
+        <link type="text/css" href="__PUBLIC__/css/app.css"  rel="stylesheet"/>
+		<title><?php echo $SEOTitle?$SEOTitle:$GLOBALS['BasicInfo']['SEOTitle'];?></title> 
+	</head>
+	<body> 
+		<header class="header" >
+			<a href="<?php 
+				   if($infos['Itype']=='2'){
+				      echo U('Daibeishop/cdetail').'?uid='.$uid.'&id='.$id;
+				   }else{
+				      echo U('Daibeishop/detail').'?uid='.$uid.'&id='.$id;
+				   }
+				?>" class="go_left"></a> 
+			<span class="header_til">
+				<?php 
+				   if($infos['Itype']=='2'){
+				      echo '申请信用卡';
+				   }else{
+				      echo '申请'.$infos['Name'];
+				   }
+				?>
+			</span>  
+		</header> 
+		<div class="" style="height: 42px;"></div> 
+	  <!----> 
+	  <form id="checkform">
+	     <section style="margin:10px 0;">
+		  	   <section class="weui_reg"> 
+			 		<input class="weui-input  icon_regUser2 " type="text" name="TrueName" id="TrueName" placeholder="姓名" style="padding-left:40;  ">
+			 	</section>
+			 	
+			 	<section class="weui_reg"> 
+			 		<input class="weui-input  icon_regUser " type="text" name="Mobile" id="Mobile" placeholder="手机号" style="padding-left:40;  ">
+			 	</section>
+			 	
+			 	<section class="weui_reg"> 
+			 		<input class="weui-input  icon_zhenfen " type="text" name="IDCard" id="IDCard" placeholder="身份证号" style="padding-left:40;  ">
+			 	</section> 
+			  
+			  <input type="checkbox" checked name="agreeid" id="agreeid" value="1" style="margin-left:5%;"/>
+		      <span class="weui-agree__text">
+		        我已阅读并同意
+		      </span>
+		      <a href="<?php echo U('Daibeishop/agreeinfo').'?uid='.$uid.'&id='.$id;?>" style="color: #5461eb;"> 《用户协议》</a>
+		 </section>
+		 <input type="hidden" name="uid" value="{$uid}"/>
+		 <input type="hidden" name="id" value="{$id}"/>
+		 <!--end、-->
+		 <section style="padding: 30px 0;">
+				<a href="javascript:void(0);" onclick="fnsubmit();" class="btn_want" style="width: 90%;">提交申请</a>
+		 </section>
+	  </form> 
+		 <script src="__PUBLIC__/js/jquery-2.1.4.js"></script>
+		 <script src="__PUBLIC__/js/jquery-weui.min.js"></script> 
+		 <script src="__PUBLIC__/js/common.js"></script>  
+	</body>
+</html>
+<script type="text/javascript" src="__PUBLIC__/artDialog/artDialog.min.js"></script>
+<link rel="stylesheet" href="__PUBLIC__/artDialog/skins/aero.css">
+<script type="text/javascript" src="__PUBLIC__/artDialog/iframeTools.js"></script>
+<script type="text/javascript">
+	function fnsubmit(){
+		if(!$('#TrueName').val()){
+			$.alert("请输入姓名");return false;
+		}
+		if(!$('#Mobile').val()){
+			$.alert("请输入手机号码");return false;
+		}
+		if(!$('#IDCard').val()){
+			$.alert("请输入身份证号");return false;
+		}
+		if(!$('#agreeid').is(':checked')) {
+		    $.alert("必须同意用户协议");return false;
+		}
+		//校验
+		$.ajax({
+	        type:"POST",
+	        url:"<?php echo U('Daibeishop/ajaxcheckinfo');?>",
+	        data:$('#checkform').serialize(),
+	        dataType: "json",
+	        success:function(data){
+	          if(data.result==0){
+	             $.alert(data.message);return false;
+	          }
+	          if(data.result==1){
+	             //校验成功
+	             $.alert(data.message, "", function() {
+				   //点击确认后的回调函数
+				   window.location.href = data.des;
+				 });
+	             // XB.Success(data.message, function () {
+              //       window.location.href = data.des;
+              //    });
+	          }
+	        }
+      });
+	}
+</script>

@@ -1,0 +1,60 @@
+<include file="Shared:Header" />
+<style>
+    .BactchPic {
+        margin-top: 7px;
+        display: none;
+    }
+    .BactchPic div {
+        width: 83px;
+        margin: 2px;
+        float: left;
+        position: relative;
+    }
+    .Bactchimg {
+        width: 82px;
+        height: 60px;
+        border: 1px solid #ccc;
+    }
+</style>
+<body class="Bodybg">
+<form id="FF" class="easyui-form" method="post" data-options="novalidate:true">
+    <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable">
+        <thead>
+        <tr>
+            <td colspan="2">说明：带<span class="Red">*</span>必填；</td>
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr>
+            <td align="right"><span class="Red">*</span>留言人姓名：</td>
+            <td>{$reinfo.Name}</td>
+        </tr>
+        <tr>
+            <td width="120" align="right"><span class="Red">*</span>联系方式：</td>
+            <td>{$reinfo.Tel}</td>
+        </tr>
+        <tr >
+            <td width="120" align="right"><span class="Red">*</span>中意的转让公司：</td>
+            <td>{$reinfo.CompName}</td>
+        </tr>
+        <tr>
+            <td width='100' align="right"><span class="Red">*</span>审核结果：</td>
+            <td>
+                <select id="IsAudit" name="IsAudit" style="width:150px" class="easyui-combobox" >
+                    <option value="">请选择</option>
+                    <option value="1" <if condition="$reinfo['IsAudit'] eq 1">selected</if>>通过</option>
+                    <option value="2" <if condition="$reinfo['IsAudit'] eq 2">selected</if>>未通过</option>
+                    <option value="0" <if condition="$reinfo['IsAudit'] eq 0">selected</if>>提交审核中</option>
+
+                </select>
+                <div class="Hui"></div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <!-- @Html.AntiForgeryToken() -->
+    <input type="hidden" id="ID" name="ID" value="{$reinfo.ID}"/>
+</form>
+</body>
+<include file="Shared:Footer" />

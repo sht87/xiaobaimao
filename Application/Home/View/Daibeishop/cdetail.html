@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+        <link type="text/css" href="__PUBLIC__/css/jquery-weui.min.css" rel="stylesheet">
+		<link type="text/css" href="__PUBLIC__/css/weui.min.css"  rel="stylesheet"/>
+        <link type="text/css" href="__PUBLIC__/css/app.css"  rel="stylesheet"/>
+		<title><?php echo $SEOTitle?$SEOTitle:$GLOBALS['BasicInfo']['SEOTitle'];?></title> 
+		 
+	</head>
+	<body> 
+		<header class="header" >
+			<a href="<?php echo U('Daibeishop/index').'?uid='.$uid;?>" class="go_left"></a> 
+			<span class="header_til">申请信用卡</span>  
+		</header> 
+		<div class="" style="height: 42px;"></div> 
+	  <!----> 
+	 
+	     <img src="{$info.MainPic}" style="width: 100%;"> 
+	     
+	  <?php if($info['Quanyconts']):?>
+	     <section class="comt_til comt_til1" style="padding: 10px 0;">
+			<span> 权益</span>
+		 </section>
+	     <ul class="jie_ul jie_ul1">
+	      <?php foreach($info['Quanyconts'] as $k=>$v):?>
+		 	<li><a href="javascript:void(0);">{$v}</a></li>   
+		  <?php endforeach;?>
+		 </ul>
+	  <?php endif;?>
+		 
+		 <!--基本信息-->
+          <section class="comt_til comt_til1" style="padding: 10px 0;">
+			<span> 基本信息</span>
+		 </section>
+         <section style="padding:10px; line-height:28px"> 
+           <p>年费:  {$info.yarfeename}<label style="color:#999"> ({$info.Yeardesc})</label></p>
+           <p>积分:  {$info.Jifen1}<label style="color:#999">({$info.Jifen2})</label></p>
+           <p>免息期:  {$info.Freetime}<label style="color:#999">({$info.Freedesc})</label></p>
+           <p>等级:  {$info.Levelname} </p>
+			 <div style="line-height: 30px">
+				 <p style="float: left;">发卡组织:</p>
+				 <p style="float: left;padding-left: 10px"><img src="{$info.Fakaurl}" style="max-width: 60px;height: 30px;"/></p>
+				 <p style="clear: both"></p>
+			 </div>
+         </section> 
+  
+		 
+		 <!--基本信息 end-->
+		 <!-- <section style="padding: 30px 0;">
+			<a href="<?php echo U('Daibeishop/checkinfo').'?uid='.$uid.'&id='.$info['ID'];?>" class="btn_want" style="width: 90%;">身份验证</a>
+		</section> -->
+		<section style="padding: 30px 0;">
+			<a href="javascript:void(0);" class="btn_want btn_tanyan" style="width: 90%;">身份验证</a>
+		</section>
+		<!--申请弹窗 start-->
+		 <div class="tan_alap"></div>
+		 <div class="tan_chuang" style="border-radius: 20px">
+			 <form id="checkform">
+			 	<section style="margin:10px 0;"> 
+			 	   <div class="btn_close">
+				 	 <img src="__PUBLIC__/images/btn_close.png"  />
+				   </div>
+			 	   <div class="more_chan"><a href="<?php echo U('Daibeishop/index').'?uid='.$uid;?>" style="color:#fff;">更多借款产品</a></div>
+			  	   <section class="weui_reg" style="margin-top: 40px;"> 
+				 		<input class="weui-input  icon_regUser2 " type="text" name="TrueName" id="TrueName" placeholder="姓名" style="padding-left:40;  ">
+				 	</section>
+				 	
+				 	<section class="weui_reg"> 
+				 		<input class="weui-input  icon_regUser " type="text" name="Mobile" id="Mobile" placeholder="手机号" style="padding-left:40;  ">
+				 	</section>
+
+				 	<section class="weui_reg"> 
+				 		<input class="weui-input  icon_zhenfen " type="text" name="IDCard" id="IDCard" placeholder="身份证号" style="padding-left:40;  ">
+				 	</section> 
+				 	
+				 	<input type="hidden" name="uid" value="{$uid}"/>
+		            <input type="hidden" name="id" value="{$info['ID']}"/>
+		            <input type="hidden" name="agreeid" value="1"/>
+				 	<section style="padding: 20px 0;">
+						<a href="javascript:void(0);" onclick="fnsubmit();" class="btn_want btn_tiji" style="width: 90%;">提交申请</a>
+					 </section>
+				 	
+				 </section> 
+			  </form> 
+		 </div>
+		 <!--申请弹窗 end-->
+		 
+		 <script src="__PUBLIC__/js/jquery-2.1.4.js"></script>
+		 <script src="__PUBLIC__/js/jquery-weui.min.js"></script> 
+		 <script src="__PUBLIC__/js/common.js"></script>  
+		    
+	</body>
+</html>
+<script type="text/javascript" src="__PUBLIC__/artDialog/artDialog.min.js"></script>
+<link rel="stylesheet" href="__PUBLIC__/artDialog/skins/aero.css">
+<script type="text/javascript" src="__PUBLIC__/artDialog/iframeTools.js"></script>
+<script type="text/javascript">
+	$('.btn_tanyan').click(function(){
+		 $('.tan_alap').show();
+		 $('.tan_chuang').show(); 
+	  })
+	
+	$('.btn_tiji').click(function(){
+		 $('.tan_alap').hide();
+		 $('.tan_chuang').hide();
+						 
+	  })
+	$('.btn_close').click(function(){
+		 $('.tan_alap').hide();
+		 $('.tan_chuang').hide();			 
+	 })
+
+	function fnsubmit(){
+		if(!$('#TrueName').val()){
+			$.alert("请输入姓名");return false;
+		}
+		if(!$('#Mobile').val()){
+			$.alert("请输入手机号码");return false;
+		}
+		if(!$('#IDCard').val()){
+			$.alert("请输入身份证号");return false;
+		}
+		//校验
+		$.ajax({
+	        type:"POST",
+	        url:"<?php echo U('Daibeishop/ajaxcheckinfo');?>",
+	        data:$('#checkform').serialize(),
+	        dataType: "json",
+	        success:function(data){
+	          if(data.result==0){
+	             $.alert(data.message);return false;
+	          }
+	          if(data.result==1){
+	             //校验成功
+	             $.alert(data.message, "", function() {
+				   //点击确认后的回调函数
+				   window.location.href = data.des;
+				 });
+	             // XB.Success(data.message, function () {
+              //       window.location.href = data.des;
+              //    });
+	          }
+	        }
+      });
+	}
+</script>

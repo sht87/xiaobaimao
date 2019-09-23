@@ -1,0 +1,69 @@
+
+<include file="Shared:Header" /><body class="Bodybg">
+<form id="FF" method="post">
+    <div id="tools" class="tools">
+        {:W('RolePerm/RolePermTop')}
+    </div>
+    <div id="search" class="search">
+        <table border="0" class="SearchTable" cellpadding="3">
+            <thead>
+            <tr>
+                <td width="80" align="right">真实姓名：</td>
+                <td width="180">
+                    <input id="TrueName" Name="TrueName" type="text" />
+                </td>
+
+                <td width="80" align="right">会员手机：</td>
+                <td width="180">
+                    <input id="Mobile" Name="Mobile" type="text" />
+                </td>
+
+                <td width="100" align="right">充值提现账号：</td>
+                <td width="180">
+                    <input id="CardNo" Name="CardNo" type="text" />
+                </td>
+                <td>
+                    <input id="btnSearch" onClick="$.XB.search();" type="button" value="查 询">
+                </td>
+            </tr>
+            </thead>
+        </table>
+    </div>
+    <div id="tabelContent" class="tabelContent">
+        <table id="DataList"></table>
+    </div>
+
+</form>
+
+<script type="text/javascript">
+    $(function () {
+        var frozenColumns = [
+            { field: 'ID', checkbox: true },
+            { field: 'TrueName', title: '真实姓名', width: 70 },
+        ];
+        var columns = [
+            { field: 'Mobile', title: '会员手机号', width: 100 },
+            { field: 'Money', title: '提现金额', width: 90 ,sortable: true},
+            { field: 'Charge', title: '提现手续费', width: 90 ,sortable: true},
+            { field: 'Type', title: '操作类型', width: 80 ,sortable: true},
+            { field: 'CardID', title: '账号类型', width: 100 },
+            { field: 'CardNo', title: '账号(银行卡号)', width: 150 },
+            { field: 'HolderName', title: '持卡人姓名', width: 90 },
+            { field: 'BankName', title: '开户行', width: 100 },
+            { field: 'AddTime', title: '提现时间', width: 130 ,sortable: true},
+            { field: 'IsAduit', title: '审核状态', width: 90,sortable: true,formatter:Common.AuditFormatter},
+            { field: 'OperatorID', title: '审核人', width: 80 },
+            { field: 'UpdateTime', title: '审核时间', width: 130 },
+            { field: 'Batch', title: '交易单号', width: 230 },
+            // { field: 'PayTime', title: '支付时间', width: 150,sortable: true},
+            // { field: 'PayType', title: '支付方式', width: 150,sortable: true},
+            { field: 'Remark', title: '审核备注', width: 250 }
+        ];
+
+        $.XB.datagrid({ "frozenColumns": frozenColumns, "columns": columns });
+        $.XB.enter();
+    });
+</script>
+{:W('RolePerm/RolePermBottom')}
+</body>
+<include file="Shared:Footer" />

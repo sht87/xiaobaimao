@@ -1,0 +1,95 @@
+<include file="Shared:Header" />
+<body class="Bodybg">
+    
+<form id="FF" class="easyui-form" method="post" data-options="novalidate:true" name='FF'>
+    <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable">
+        <thead>
+            <tr>
+                <td colspan="4">说明：带<span class="Red">*</span>必填；</td>
+            </tr>
+        </thead>
+        <tbody>
+			<!-- <tr>
+                <td width="120" align="right"><span class="Red">*</span> <label for="GoodID">产品选择</label></td>
+                <td>
+                    <select id="GoodID" name="GoodID" class="easyui-combotree" data-options="required:true,editable:true,url:'{:U('Operation/Listresult/getLastCate')}',onChange:function(nval,oval){fnlingyanact(nval);}"></select>
+                </td>
+            </tr> -->
+            <tr>
+                <td width="120" align="right"><span class="Red">*</span><label for="Name">产品名称</label></td>
+                <td>
+                    <input id="Name" name="Name" type="text" class="easyui-textbox" data-options="required:true"/>
+                </td>
+            </tr>
+            <tr>
+                <td width="120" align="right"><span class="Red">*</span><label for="GoodsNo">产品编码</label></td>
+                <td>
+                    <input id="GoodsNo" name="GoodsNo" type="text" class="easyui-textbox" data-options="required:true"/>
+                </td>
+            </tr>
+            <tr>
+                <td width="120" align="right"><span class="Red">*</span><label for="Itype">产品类型</label></td>
+                <td>
+                    <select name="Itype" id="Itype">
+                        <option value="0">--请选择--</option>
+                        <option value="1">平台网贷</option>
+                        <option value="2">信用卡贷</option>
+                    </select>
+                </td>
+            </tr>
+			<tr>
+                <td width="120" align="right"><span class="Red">*</span><label for="TrueName">借款人姓名</label></td>
+                <td>
+                    <input id="TrueName" name="TrueName" type="text" class="easyui-textbox" data-options="required:true"/>
+                </td>
+            </tr>
+            <tr>
+                <td width="120" align="right"><span class="Red">*</span><label for="Mobile">借款人手机号码</label></td>
+                <td>
+                    <input id="Mobile" name="Mobile" type="text" class="easyui-textbox" data-options="required:true"/>
+                </td>
+            </tr>
+			<tr>
+                <td width="120" align="right"><span class="Red">*</span><label for="Applytime">申请时间</label></td>
+                <td>
+                    <input type="text" id="Applytime" value=""  name="Applytime" class="easyui-datebox" data-options="min:0,editable:false" />
+                </td>
+            </tr>
+			<tr>
+                <td width="120" align="right"><span class="Red">*</span><label for="isDown">是否下款</label></td>
+                <td>
+                    <select name="isDown" id="isDown">
+                        <option value="1">是</option>
+                        <option value="2">否</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td width="120" align="right"><span class="Red">*</span><label for="Money">放款金额</label></td>
+                <td>
+                    <input id="Money" name="Money" type="text" class="easyui-textbox" data-options="required:true"/>
+                </td>
+            </tr>
+            <tr>
+                <td width="120" align="right"><span class="Red">*</span><label for="Opentime">放款时间</label></td>
+                <td>
+                    <input type="text" id="Opentime" value=""  name="Opentime" class="easyui-datebox" data-options="min:0,editable:false" />
+                </td>
+            </tr>
+    </table>
+    <input name="__RequestVerificationToken" type="hidden" value="4hUL6XfsKdWft2VZCn8h5NquUotOSQym-UebEsDn4wP-lrJXKjmpzjC5tIqYZKc7y-zgvhZfYCjrr9lusfiU6jfIqCsXruHSjK5qDdiaoYM1" />
+    <input type="hidden" id="ID" name="ID" value="{$id}"/>
+</form>
+
+<script>
+	var ID ="{$id}";
+	if(ID>0){
+		 $(function () {
+			$('#FF').form('load', '../Shows?ID='+ID+'&_=' + Math.random() + '');
+		 });
+	}
+
+</script>
+</body>
+<include file="Shared:Footer" />
+

@@ -1,0 +1,44 @@
+[2018-12-23 15:08:05]
+>>>>>>>>>
+     test
+            {"app_id":"200002180371","api_url":"https:\/\/pay.chanpay.com\/mag-unify\/gateway\/receiveOrder.do","app_key":"","app_secret":"","return_url":"\/Member\/index","notify_url":"\/api.php\/Center\/Payzenxin\/chanpayNotify"}
+     requset-1
+            https://pay.chanpay.com/mag-unify/gateway/receiveOrder.do?Service=nmg_zft_api_quick_payment&Version=1.0&PartnerId=200002180371&InputCharset=UTF-8&TradeDate=20181223&TradeTime=150804&SignType=RSA&Memo=H5%E7%9B%B4%E6%8E%A5%E6%94%AF%E4%BB%98&ReturnUrl=http%3A%2F%2Fshandianrp.mingqianjinfu.com%2FMember%2Findex&TrxId=3bbdb20e5ffe52be98c7954de2f99e43&SellerId=200002180371&SubMerchantNo=200002180371&ExpiredTime=15m&MerUserId=76&BkAcctTp=01&BkAcctNo=RNV4VY0IF2C3CiYlyPSgqcU2oSAHQwfAhSokPnfe%2FTYg5b9136D%2BL4YunoawwNJVmZDWLwhJz9HVzFZ2XmbAZWabQChPSSS%2Fh8nibPgYvzZKFC%2FOxEzLbqVvZLIsSjwcP2ioC17emH4BhVdyV3wAiIfNZbCRhnI3oguwnqESueg%3D&IDTp=01&IDNo=dBuN5EpJqKO9hACwKxaYdTbUDrA3zPwEDWBo1p6lLGX91gbcNa3lOatCAN1SijOA7UwsfZ%2BhireIHGfxRb5179ZOrRB2H6uX4uYeGwWEbB7%2BfU3iPnleYYDiiQvplmplYl6F6R%2FJFWgtGE09l9DurEBvjQLFlLsNdgpVySCOQ1Q%3D&CstmrNm=kpg%2Fc1ivCByXdI9yo5YVfAq5mm99zC2d5vumwLJNcUAII%2BW2nAfCcmnuX1BYnSGWbyrq6QjQZgjykFJY8bnkagwjIyg3XJ2jzfMCr9EWAQJdEza2I6c07v9Nn9ElLThOT4MzCb8Hq%2F0mOZsxSdhz9svbkiVfFpBo0M0LixQgoUM%3D&MobNo=zrpN5P5vXkqdg2xAghSwf3eEvILqMe6geNhiKqB6dCpEX6H%2FiK4SrnSPfD6zx6dFKVM2epXjKwuCRxSWDtX0BrmxP80M%2BqKsAL811NGPyrJmhETvPcZXIdxQ3L9pAaElJzdv4aPul4136%2BDIC%2Bp3obSM0bhvTrQ8%2FL%2F%2BFc8XyIY%3D&CardCvn2=&CardExprDt=&TradeType=11&TrxAmt=2.00&EnsureAmount=&OrdrName=%E5%BE%81%E4%BF%A1%E6%9F%A5%E8%AF%A2%E8%B4%B9%E7%94%A8%E6%94%AF%E4%BB%98&OrdrDesc=&RoyaltyParameters=&NotifyUrl=http%3A%2F%2Fshandianrp.mingqianjinfu.com%2Fapi.php%2FCenter%2FPayzenxin%2FchanpayNotify&AccessChannel=wap&Extension=%5B%7B%22order_no%22%3A%221812239150736265%22%7D%5D&Sign=efH8KiXU1sy67IDS09dnID%2F9OKPQzwDrhdC3VL1MSfVLTtRYf%2BVPrEjyrHvaGPzJn8C22IP%2Fc4RpONqfUfE9O5f7RlgCgUjbXcZlZnGZsdN3XqRepM%2Fq1Qt%2FaO1fYTtURkPhHIhiCQ02GRX46qqkQ2ssFKHx1AAb5I5L2wfMZdg%3D
+     requset-2
+            {"AcceptStatus":"S","AppRetMsg":"交易受理成功","AppRetcode":"QT000001","InputCharset":"UTF-8","OrderTrxid":"101154554888461902363","PartnerId":"200002180371","RetCode":"P0002","RetMsg":"受理成功","Sign":"Ktm0rsTYgPumsIeCWzasCVlqQM1jY7jk7me6z3qr9LspodkMUWrHihTR4KPztOb6mLCgp1e7vwbvSODM8rl/eW+Jh6C8M4wz7b5Dq3gFfOUCgaRAn/nilYw+qMjySH0reXvugDmLSn59UXzFaIaGwmLwMZjvWCsbmi19dyz18Sg=","SignType":"RSA","Status":"P","TradeDate":"20181223","TradeTime":"150805","TrxId":"3bbdb20e5ffe52be98c7954de2f99e43"}
+
+>>>>>>>>>
+[2018-12-23 15:08:14]
+>>>>>>>>>
+     支付确认接口
+            {"AcceptStatus":"S","AppRetMsg":"交易处理中","AppRetcode":"QT100000","InputCharset":"UTF-8","OrderTrxid":"101154554888461902363","PartnerId":"200002180371","PayTrxId":"301154554888461014478","RetCode":"P0001","RetMsg":"交易处理中","Sign":"e8rRTt09gn+dAcqSXaZntGismLaHwj4fC\/dvis\/dlpZ79LXE77\/8PSPd+zZz6AowFcFque5T7QmLkyeXmpVvuD1lFWpJRl9Q\/ZYzZ22zc9AuFfRdICqEA\/\/jdY3MD3BZOmnA4JnMlG7QhVL9w4LM9GcCdhuywGqAKYAGq3DN7Ks=","SignType":"RSA","Status":"P","TradeDate":"20181223","TradeTime":"150814","TrxId":"05204995cff584cbaaa8a96118636df5"}
+
+>>>>>>>>>
+[2018-12-23 15:08:19]
+>>>>>>>>>
+     1.0Notify
+            notify_time=20181223150819&sign_type=RSA&notify_type=trade_status_sync&trade_status=TRADE_SUCCESS&gmt_payment=20181223150818&version=1.0&sign=AZpGLF5BdRAn06LzGt0DhBi4P66Wegh4Gfl0XgBWTlWafHsC4ZuqPT1e47k3s%2FgzCCl0ihPWJF6J0%2F6P9rjLMXJORFRakzJs0Xv9Se5Rsh3zBBNKbN3YBaH5pGN1NMVC1NKi9HZ9xODQ8%2BRe4wve5ymJFfqPcn%2FLBy2Xod64AwA%3D&extension=%7B%22apiResultMsg%22%3A%22%E4%BA%A4%E6%98%93%E6%88%90%E5%8A%9F%22%2C%22apiResultcode%22%3A%22S%22%2C%22channelTransTime%22%3A%222436310410203%22%2C%22instPayNo%22%3A%22NI101364501122320752207%22%2C%22settlementId%22%3A%2220181223150804PP57284457%22%2C%22unityResultMessage%22%3A%22%E4%BA%A4%E6%98%93%E6%88%90%E5%8A%9F%22%7D&gmt_create=20181223150819&_input_charset=UTF-8&outer_trade_no=3bbdb20e5ffe52be98c7954de2f99e43&trade_amount=2.00&notify_id=ec87cbb17f004e02bb3f83156cc0d81a&inner_trade_no=101154554888461902363
+
+>>>>>>>>>
+[2018-12-23 15:19:20]
+>>>>>>>>>
+     test
+            {"app_id":"200002180371","api_url":"https:\/\/pay.chanpay.com\/mag-unify\/gateway\/receiveOrder.do","app_key":"","app_secret":"","return_url":"\/Member\/index","notify_url":"\/api.php\/Center\/Payzenxin\/chanpayNotify"}
+     requset-1
+            https://pay.chanpay.com/mag-unify/gateway/receiveOrder.do?Service=nmg_zft_api_quick_payment&Version=1.0&PartnerId=200002180371&InputCharset=UTF-8&TradeDate=20181223&TradeTime=151919&SignType=RSA&Memo=H5%E7%9B%B4%E6%8E%A5%E6%94%AF%E4%BB%98&ReturnUrl=http%3A%2F%2Fshandianrp.mingqianjinfu.com%2FMember%2Findex&TrxId=399d5673209d2c51ca0cb7547c153a99&SellerId=200002180371&SubMerchantNo=200002180371&ExpiredTime=15m&MerUserId=74&BkAcctTp=01&BkAcctNo=py%2FfiqHGKYAw7VxFglxL8yGgIHjeE4%2FD8G9Wvh24VBJhbh%2BHlW19G%2FQdylbfybgKKTCa1xnloOkchgGJH5pMiqRtLM7vB2WzuaHlW7mBY4JsUx0xI6tctWgATcXuVwOBTRhVoqtM7c1keT2pCbm2TEUsAsZ8eVHDxWeddr1ihXk%3D&IDTp=01&IDNo=Xnd0RGsg7UHtvLDcJ3bDaC65bTNhHZO2x3alHVq%2FGKW%2FpVihYKJURAmHe5gGWcZ7vRCFmhIQTlJqTIM%2FvuxX0zkT50OD7Mqq3R74ew%2FXgOaBNn6Qn4ItnGJjv59IJCGGSRT3OVMW%2BPdpzK5X0bco7YolAAfQz6xwn6Yzt6pK%2Bds%3D&CstmrNm=fJyJsmmGeFI%2Frxj%2FoscstfRX9gXKdG3Gx5NqhWgzq9u0wi3NIX%2Bk35AEQ6wFJxTFITZ7JU%2F1WZuJoLokfbJuk%2FQp4XqmpvCZ1KDukhsHA6GsTUXEdEl27NRHIOS4GZv1o9qyptbCTEpa8is0zXZo3iZpmnCasj4%2FsvpXryJqc8g%3D&MobNo=pgkEQ98KYFyVkwi6m4M91QXSI8Atl2YHFirOZBDipQkleSk8M3JQhkSeZxzzH9Yw2KQoJMsLuYJpWsCb5Vh3vF3Ue6tr8faPX9%2Bew5UkrKsfnFXKQJt3YThuKpSYmZGjCBedgHxN7kZCD1T1r4oIP0GBXI4kpV4JjdRHYxXgtLk%3D&CardCvn2=&CardExprDt=&TradeType=11&TrxAmt=2.00&EnsureAmount=&OrdrName=%E5%BE%81%E4%BF%A1%E6%9F%A5%E8%AF%A2%E8%B4%B9%E7%94%A8%E6%94%AF%E4%BB%98&OrdrDesc=&RoyaltyParameters=&NotifyUrl=http%3A%2F%2Fshandianrp.mingqianjinfu.com%2Fapi.php%2FCenter%2FPayzenxin%2FchanpayNotify&AccessChannel=wap&Extension=%5B%7B%22order_no%22%3A%221812234151856379%22%7D%5D&Sign=ZAIHqcHy7YPcoLjszsskHaiOF6Jys2BYt%2BTGS22NxXv4%2BCpBHE%2BFXJs0IaJOMA3Opme%2BRloIoO2SOXuR5fT1TAXESeiBLT8L6MvJ2C%2By7AjiZDWL7DHZwNzpen%2FD1yKEidSnpLiG2mReC4ng5iuvZmZcSLTIXqZAjwNPUIZRFng%3D
+     requset-2
+            {"AcceptStatus":"S","AppRetMsg":"交易受理成功","AppRetcode":"QT000001","InputCharset":"UTF-8","OrderTrxid":"101154554955921541818","PartnerId":"200002180371","RetCode":"P0002","RetMsg":"受理成功","Sign":"jzrEAb5GV+MB0XFPjqPmc0CpF4ntOuR3cTuiBAzN5y64SrlbliQGQ0xulOrUiSLJdNoGwFShEcGv0iaSp9eTb93/Fb3hvVjfo6tTgym7PNwCEURMuNlZS4cWGjWkkdcsVQ3kGBZm1VeMyTDvX5wMkxFo6PrhM94t6Oz+evJYcMI=","SignType":"RSA","Status":"P","TradeDate":"20181223","TradeTime":"151920","TrxId":"399d5673209d2c51ca0cb7547c153a99"}
+
+>>>>>>>>>
+[2018-12-23 15:19:44]
+>>>>>>>>>
+     支付确认接口
+            {"AcceptStatus":"S","AppRetMsg":"交易处理中","AppRetcode":"QT100000","InputCharset":"UTF-8","OrderTrxid":"101154554955921541818","PartnerId":"200002180371","PayTrxId":"301154554955920518959","RetCode":"P0001","RetMsg":"交易处理中","Sign":"WjXA\/apLRlQaNzj9\/zGI4V8Gqo4l2q1MYw71LrqdDhiG7ZIvswaunsYEheOPlG30MC\/8P4Ys1ir+gJkPHZsqmCMMFXBBModOvIAyoIX532Io\/CVLEOV07i1Wo9f5OsAvvqq+nRrGu7z7HKyr3WdSZnBZVSZMkhSgeEcYWZ7sNZ4=","SignType":"RSA","Status":"P","TradeDate":"20181223","TradeTime":"151944","TrxId":"a727d134889633ca897bc859abbc0b96"}
+
+>>>>>>>>>
+[2018-12-23 15:19:45]
+>>>>>>>>>
+     1.0Notify
+            notify_time=20181223151945&sign_type=RSA&notify_type=trade_status_sync&trade_status=TRADE_SUCCESS&gmt_payment=20181223151945&version=1.0&sign=ljN7cq4%2BMpN6NPqMoHg03evYvDpkWmCwhmsx51lSbZGo9cooVxlPseaAWJKBNTv02SZ7ok%2FDxL%2Fv7NKwI2WAO8WmXNdjHsmW%2BHvvQHcHRyIuy0QP8Gl%2B%2B19PBG1l3w6g44NygggpMJVcjClzvwON8o2Y8zeorz2kD9fN6paFLtc%3D&extension=%7B%22apiResultcode%22%3A%22S%22%2C%22bankCode%22%3A%2200001%22%2C%22bankMessage%22%3A%22%E6%88%90%E5%8A%9F%22%2C%22chnlNo%22%3A%220400100014%22%2C%22instPayNo%22%3A%22NI101364501122320769266%22%2C%22sendBankReq%22%3A%222018122310000010577048521101800%22%2C%22settlementId%22%3A%2220181223151919PP57306454%22%2C%22unityResultMessage%22%3A%22%E4%BA%A4%E6%98%93%E6%88%90%E5%8A%9F%22%2C%22wjReq%22%3A%22NI101364501122320769281%22%7D&gmt_create=20181223151945&_input_charset=UTF-8&outer_trade_no=399d5673209d2c51ca0cb7547c153a99&trade_amount=2.00&notify_id=780272851a5b444c822207d306d05f12&inner_trade_no=101154554955921541818
+
+>>>>>>>>>

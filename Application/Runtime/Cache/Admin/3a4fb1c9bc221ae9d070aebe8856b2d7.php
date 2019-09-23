@@ -1,0 +1,149 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+    <meta http-equiv=”X-UA-Compatible” content=”IE=edge,chrome=1″ />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="renderer" content="webkit|ie-comp|ie-stand" />
+    <link href="/Public/Admin/JS/EasyUI/easyui.css" rel="stylesheet" />
+    <link href="/Public/Admin/images/H/Main.css" rel="stylesheet" />
+    <script src="/Public/Admin/JS/jquery.min.js"></script>
+    <script src="/Public/Admin/JS/EasyUI/jquery.easyui.min.js"></script>
+    <script src="/Public/Admin/JS/XB.js"></script>
+    <link href="/Public/Admin/images/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body class="Bodybg">
+        <form id="FF" method="post">
+        <div id="tools" class="tools">
+
+            <?php echo W('RolePerm/RolePermTop');?>
+
+        </div>
+        <div id="search" class="search">
+            <table border="0" class="SearchTable" cellpadding="3">
+                <thead>
+                    <tr>
+                        <td width="70" align="right">会员姓名：</td>
+                        <td width="180">
+                            <input id="UserName" Name="UserName" type="text" />
+                        </td>
+                        <td width="70" align="right">手机号码：</td>
+                        <td width="180">
+                            <input id="Mobile" name="Mobile" type="text" />
+                        </td>
+                        <td width="70" align="right">用户状态：</td>
+                        <td width="100">
+                            <select id="Status" name="Status">
+                                <option value="-5" selected="selected">全部</option>
+                                <option value="1">启用</option>
+                                <option value="0">禁用</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="btnSearch" onclick="$.XB.searchtree();" type="button" value="查 询">
+                        </td>
+                        <td>
+                            <input id="MoreSearch" onclick="$.XB.moresearch()" type="button" value="更多条件">
+                        </td>
+                    </tr>
+                </thead>
+                <tbody id="stbody">
+                    <tr>
+                        <td width="70" align="right">会员类型：</td>
+                        <td width="180">
+                            <select name="Mtype" id="Mtype">
+                                <option value="-5">全部</option>
+                                <?php if(is_array($dailidata)): foreach($dailidata as $k=>$v): if($v != ''): ?><option value="<?php echo ($k); ?>"><?php echo ($v); ?></option><?php endif; endforeach; endif; ?>
+                            </select>
+                        </td>
+                        <!--<td width="70" align="right">邮箱账号：</td>-->
+                        <!--<td width="180">-->
+                            <!--<input id="Email" name="Email" type="text" />-->
+                        <!--</td>-->
+                        <td width="70" align="right">登录IP：</td>
+                        <td width="180">
+                            <input id="LoginIP" name="LoginIP" type="text" />
+                        </td>
+                        <td width="70" align="right">登录城市：</td>
+                        <td width="180">
+                            <input id="IpCity" name="IpCity" type="text" />
+                        </td>
+                        <td width="70" align="right">手机型号：</td>
+                        <td width="180">
+                            <select name="PhoneType" id="PhoneType">
+                                <option value="-5">全部</option>
+                                <option value="1">Android</option>
+                                <option value="2">Ios</option>
+                                <option value="3">其他</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="tabelContent" class="tabelContent">
+            <table id="DataList"></table>
+        </div>
+    </form>
+    <script type="text/javascript">
+
+        $(function () {
+            $('#DataList').treegrid({
+                rownumbers: false,
+                animate: true,
+                border: false,
+                lines: true,
+                url: 'DataList',
+                idField: 'ID',
+                treeField: 'ID',
+                pagination:true,
+                pageSize: 10,
+                pageList: [10, 20, 50],
+                frozenColumns: [[
+                 { field: 'ID', title: '唯一ID', width: 80 ,align:'center',sortable: true},
+                 { field: 'TrueName', title: '真实姓名', width: 70 },
+                ]],
+                columns: [[
+                    { field: 'Mtype', title: '会员类型', width: 100 },
+                    { field: 'Mobile', title: '手机号码', width: 100 },
+//                    { field: 'Sex', title: '性别', width: 50 ,formatter:Common.SexFormatter},
+//
+//                    { field: 'BorthDate', title: '出生日期', width: 100,sortable: true },
+                    { field: 'Balance', title: '可用余额', width: 70 ,sortable: true},
+                    //{ field: 'Integral', title: '可用积分', width: 70 ,sortable: true},
+
+                    { field: 'Status', title: '会员状态', width: 70 ,formatter: Common.StatusFormatter,sortable: true},
+                    { field: 'IsSendwx', title: '微信推送消息', width: 90},
+                    { field: 'Sort', title: '排序', width: 75 ,sortable: true},
+                    { field: 'ServiceOpenid', title: '微信openid', width: 120},
+
+                    { field: 'RegTime', title: '注册时间', width: 150 ,sortable: true},
+                    { field: 'LoginTime', title: '最后登录时间', width: 150, sortable: true },
+                    { field: 'LoginIP', title: '最后登录IP', width: 100, sortable: true },
+                    { field: 'IpCity', title: '最后登录城市', width: 300, sortable: true },
+                    { field: 'PhoneType', title: '手机型号', width: 100, sortable: true },
+
+                ]],
+                onClickRow:function(row){
+                    if(row.state=='closed') {
+                        $('#DataList').treegrid('reload', row.ID);
+                    }else{
+                        $('#DataList').treegrid('toggle', row.ID);
+                    }
+                },
+
+                onLoadSuccess: function () {
+                    $(this).treegrid('resize', {
+                        height: $(window).height() - $('#tools').height() - $('#search').height() - 15
+                    });
+                },
+                onDblClickCell: function (field, row) {
+                    OpenWin('edit');
+                }
+            }) 
+            $.XB.entertree();   
+        });
+    </script>
+        <?php echo W('RolePerm/RolePermBottom');?>
+	</body>
+</html>

@@ -1,0 +1,66 @@
+<include file="Shared:Header" />
+<form id="FF" method="post">
+    <div id="tools" class="tools">
+        {:W('RolePerm/RolePermTop')}
+    </div>
+    <div id="search" class="search">
+        <table border="0" class="SearchTable" cellpadding="3">
+            <thead>
+            <tr>
+                <td>留言人姓名：</td>
+                <td>
+                    <input id="Name" name="Name" type="text" />
+                </td>
+                <td>联系电话：</td>
+                <td>
+                    <input id="Tel" name="Tel" type="text" />
+                </td>
+                <td >公司类型：</td>
+                <td>
+                    <input id="CompType" name="CompType" type="text" />
+                </td>
+                <td >审核状态：</td>
+                <td >
+                    <select id="IsAudit" name="IsAudit" >
+                        <option value="-5">全部</option>
+                        <option value="0">提交审核中</option>
+                        <option value="1">通过</option>
+                        <option value="2">未通过</option>
+                    </select>
+                </td>
+                <td>
+                    <input id="btnSearch" onclick="$.XB.search();" type="button" value="查 询">
+                </td>
+
+            </tr>
+            </thead>
+        </table>
+    </div>
+    <div id="tabelContent" class="tabelContent">
+        <table id="DataList"></table>
+    </div>
+</form>
+<script type="text/javascript">
+    $(function () {
+        var frozenColumns = [
+            { field: 'ID', checkbox: true },
+            { field: 'Name', title: '留言人姓名', width: 90 },
+            { field: 'Tel', title: '联系电话', width: 120 },
+            { field: 'CompType', title: '需求的公司类型', width: 160 },
+        ];
+        var columns = [
+            { field: 'Price', title: '价格（万元）', width: 100, sortable: true },
+			{ field: 'Ip', title: 'IP地址', width:100,sortable: true},
+			{ field: 'IpCity', title: '留言城市', width:100,sortable: true},
+			{ field: 'AddTime', title: '提交时间', width: 130, sortable: true },
+            { field: 'IsAudit', title: '审核状态', width: 70, sortable: true },
+            { field: 'OperatorName', title: '审核人', width: 70, sortable: true },
+            { field: 'UpdateTime', title: '审核时间', width: 130, sortable: true },
+        ];
+        $.XB.datagrid({ "frozenColumns": frozenColumns, "columns": columns });
+        $.XB.enter();
+    });
+</script>
+{:W('RolePerm/RolePermBottom')}
+
+<include file="Shared:Footer" />

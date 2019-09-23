@@ -1,0 +1,75 @@
+<include file="Shared:Header" />
+<body class="Bodybg">
+        <form id="FF" method="post">
+        <div id="tools" class="tools">
+            {:W('RolePerm/RolePermTop')}
+        </div>
+        <div id="search" class="search">
+            <table border="0" class="SearchTable" cellpadding="3">
+                <thead>
+                    <tr>
+                        <td width="80" align="right">会员账号：</td>
+                        <td width="180">
+                            <input id="UserName" Name="UserName" type="text" />
+                        </td>
+                        <td width="70" align="right">手机号码：</td>
+                        <td width="300">
+                            <input id="Mobile" name="Mobile" type="text" />
+                        </td>
+                        <td>
+                            <input id="btnSearch" onclick="$.XB.search();" type="button" value="查 询">
+                        </td>
+                        <td>
+                            <input id="MoreSearch" onclick="$.XB.moresearch()" type="button" value="更多条件">
+                        </td>
+                    </tr>
+                </thead>
+                <tbody id="stbody">
+                    <tr>
+                        <td width="80" align="right">会员唯一ID：</td>
+                        <td width="180">
+                            <input id="UserID" Name="UserID" type="text" />
+                        </td>
+                        <td width="70" align="right">变更日期：</td>
+                        <td width="300">
+                            <input id="StartTime" name="StartTime" type="text" class="easyui-datebox" data-options="width:93,editable:false" />
+                            -
+                            <input id="EndTime" name="EndTime" type="text" class="easyui-datebox" data-options="width:93,editable:false" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="tabelContent" class="tabelContent">
+            <table id="DataList"></table>
+        </div>
+    </form>
+    <script type="text/javascript">
+
+        $(function () {
+
+            var frozenColumns = [
+                 { field: 'ID', checkbox: true },
+                 { field: 'UserID', title: '会员ID', width: 100 },
+                 { field: 'UserName', title: '会员账号', width: 100 }
+            ];
+            var columns = [
+                { field: 'Mobile', title: '手机号码', width: 100 },
+                { field: 'Email', title: 'Email', width: 150 },
+                { field: 'TrueName', title: '真实姓名', width: 70 },
+                { field: 'Type', title: '变更类型', width: 100,sortable: true },
+                { field: 'Score', title: '变动积分', width: 100,sortable: true },
+                { field: 'CurrentScore', title: '积分结余', width: 70 ,sortable: true},
+                { field: 'UpdateTime', title: '变更日期', width: 150 ,sortable: true},
+                { field: 'Description', title: '描述详情', width: 300}
+            ];
+            $.XB.datagrid({ "frozenColumns": frozenColumns, "columns": columns });
+            $.XB.enter();
+        });
+    </script>
+        {:W('RolePerm/RolePermBottom')}
+	</body>
+<include file="Shared:Footer" />
+
+
+

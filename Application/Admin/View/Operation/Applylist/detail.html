@@ -1,0 +1,77 @@
+<include file="Shared:Header" />
+<body class="Bodybg">
+<div id="tt" class="easyui-tabs">
+    <div title="申请详情" style="padding: 20px; background-color: #f4f4f4">
+      <fieldset style="border: 1px solid #ccc;margin:5px;">
+        <legend>产品详情</legend>
+        <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable">
+            <tbody>
+            <tr >
+                <td width="120" align="right">产品名称：</td>
+                <td width="200">
+                    {$infos['ItemName']}
+                </td>
+                <td width="120" align="right">产品编码：</td>
+                <td >{$infos.GoodsNo}</td>
+            </tr>
+            <tr >
+                <td width="120" align="right">产品类型：</td>
+                <td>
+                    <?php
+                       if($infos['Itype']=='1'){
+                          echo '平台网贷';
+                       }elseif($infos['Itype']=='2'){
+                          echo '信用卡贷';
+                       }
+                    ?>
+                </td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+
+      <fieldset style="border: 1px solid #ccc;margin:5px;">
+        <legend>申请人详情</legend>
+        <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable">
+            <tbody>
+            <tr >
+                <td width="120" align="right">姓名：</td>
+                <td>{$infos.TrueName}</td>
+                <td width="120" align="right">身份证号：</td>
+                <td>{$infos.IDCard}</td>
+            </tr>
+            <tr >
+                <td width="120" align="right">手机号码：</td>
+                <td>{$infos.Mobile}</td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+      
+      <fieldset style="border: 1px solid #ccc;margin:5px;">
+        <legend>推荐人详情</legend>
+        <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable">
+            <tbody>
+            <tr >
+                <td width="120" align="right">推荐会员ID：</td>
+                <td>{$infos.UserID}</td>
+                <td width="120" align="right">推荐会员名字：</td>
+                <td>{$infos.UserName}</td>
+            </tr>
+            <tr >
+                <td width="120" align="right">奖金点数：</td>
+                <td>{$infos.BonusRate}</td>
+                <td width="120" align="right">添加时间：</td>
+                <td>{$infos.Addtime}</td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+    </div>
+
+</div>
+<div style="text-align:center;margin:20px 0px;">
+    <input name="Btn" type="button" value=" 关闭  " onclick="parent.$('#W1').window('close');" />
+</div>
+</body>
+<include file="Shared:Footer" />

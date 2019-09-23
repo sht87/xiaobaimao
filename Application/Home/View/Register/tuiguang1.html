@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+        <link type="text/css" href="__PUBLIC__/css/jquery-weui.min.css" rel="stylesheet">
+        <link type="text/css" href="__PUBLIC__/css/app.css"  rel="stylesheet"/>
+		<title><?php echo $SEOTitle?$SEOTitle:$GLOBALS['BasicInfo']['SEOTitle'];?></title>
+	</head>
+	<body style="background:#5e7ce9;"> 
+		<div>
+			<img src="__PUBLIC__/images/tui_img.png" style="width: 100%;">
+			<section class="tui_span">
+				<!--<span>微投入轻创业</span>
+				<span>个人专属贷款超市</span>
+				<span>信贷中介必备</span> -->
+			</section>
+		<form action="#" method="post" id="formf">
+			<section class="input_block">
+				<input type="text" name="Mobile" id="Mobile" placeholder="请输入手机号" />
+			</section>
+			
+			<section class="input_block">
+			   <input name="ImgCode" id="ImgCode" type="text" value="" style="width: 60%;" placeholder="图形验证码">
+			   <img style="width:36%;display: inline-block;vertical-align: middle" src="<?php echo U('Common/selfverify');?>" id="imgValidateCode" onclick="this.src='<?php echo U('Common/selfverify');?>#'+Math.random();" height="38" width="100px">
+			   <div class="clear"></div>
+		    </section>
+
+			<section class="input_block">
+				<input id="MsgCode" name="MsgCode" type="text" placeholder="请输入短信验证码">
+				<div id="getcode" onclick= 'getcode()' class="huo_yan"> 获取验证码</div>
+			</section>
+
+			<!--<section class="input_block">-->
+				<!--<input name="Email" id="Email" value="" type="text" placeholder="邮箱">-->
+			<!--</section>-->
+
+			<section class="input_block">
+				<input id="Password" name="Password" type="password" placeholder="密码">
+			</section>
+			<input type="hidden" name="puser" id="puser" value="{$puser}">
+			<input type="hidden" name="client" id="client" value="pc">
+		</form>	
+			<div class="input_block input_block1" onclick="fnRegister()">马上申请</div>
+			
+			<p class="center" style="color:#a27001;">
+				点击按钮则视为同意<a href="{:U('News/pages',array('ID'=>5))}" style="color:#f02f2d;">{$Title}</a>
+			</p> 
+		</div> 
+		
+		<script src="__PUBLIC__/js/jquery-2.1.4.js"></script>
+		<script src="__PUBLIC__/js/layer.js"></script>  
+	</body>
+</html>
+<style>
+	html, body { scroll-behavior:smooth; }
+</style>
+<script type="text/javascript">
+//失去焦点
+    $(":input").blur(function(){
+       //$('body,html').animate({scrollTop:0},500);
+	   var h = $(document).height()-$(window).height();
+        $(document).scrollTop(h); 
+	});
+	$(":input").focus(function(){
+	  var h = $(window).height();
+       $(document).scrollTop(h); 
+	});
+	var u = navigator.userAgent;
+	var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+	var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端 
+	if(isiOS){
+		$('#client').val('ios');
+	}
+	if(isAndroid){
+		$('#client').val('android');
+	}
+	var url = '';
+	$(document).ready(function(){
+		$.ajax({
+			type: 'get',
+			url: '{:U("Register/getdownloadurl")}',
+			dataType: 'json',
+			success: function (res) {
+				if(isiOS){
+					url = res.des.ios;
+				}
+				else{
+					url = res.des.android;
+				}
+			}
+		});
+	});
+
+		//启用倒计时
+		function times() {
+			var setTime;
+			var time = 60;
+			setTime = setInterval(function () {
+				if (time <= 0) {
+					clearInterval(setTime);
+					//添加事件
+					$("#getcode").attr("onclick", "getcode()");
+					$("#getcode").text('发送验证码');
+					return;
+				}
+				time--;
+				msgs = time + "s后重发";
+				$("#getcode").text(msgs);
+			}, 1000);
+		}
+
+		//获取验证码
+		function getcode() {
+			var mobile = $.trim($("#Mobile").val());
+			var code = $.trim($("#ImgCode").val());
+
+			if (mobile == '') {
+				//$.alert("手机号码不能为空！");
+						  layer.open({
+							content: '手机号码不能为空！'
+							,btn: '确定'
+						  });
+
+				return;
+			}
+			if (!mobile.match(/^((1[3-9][0-9]{1})+\d{8})$/)) {
+				//$.alert("手机号码格式不正确！");
+				layer.open({content:'手机号码格式不正确！'
+							,btn: '确定'
+						  });
+				return;
+			}
+			if (code == '') {
+				//$.alert("请输入图形验证码！");
+				layer.open({content:'请输入图形验证码！'
+							,btn: '确定'
+						  });
+				return;
+			}
+			$.ajax({
+				type: 'post',
+				url: '{:U("Common/getcode")}',
+				data: {mobile: mobile,code:code,check: 1},
+				dataType: 'json',
+				success: function (res) {
+					if (res.result==1) {
+						times();
+						$("#getcode").removeAttr("onclick");
+						//信息框
+						  layer.open({
+							content: res.message
+							,btn: '确定'
+						  });
+
+					} else if(res.result==2){
+						layer.open({
+						   content: res.message
+						  ,btn: ['下载APP', '取消']
+						  ,yes: function(index){
+							window.location.href = url;
+							layer.close(index);
+						  }
+						 });
+					}else{
+						layer.open({
+							content: res.message
+							,btn: '确定'
+						  });
+						  $('#imgValidateCode').attr('src', "{:U('Common/selfverify')}?" + Math.random());
+					}
+				}
+			});
+		}
+
+		//注册
+		function fnRegister() {
+			var Mobile = $.trim($('#Mobile').val());
+			var Email = $.trim($('#Email').val());
+			var Password = $.trim($("#Password").val());
+			var MsgCode = $.trim($('#MsgCode').val());
+
+			if (Mobile == '') {
+				layer.open({
+							content:'请输入手机号码'
+							,btn: '确定'
+						  });
+				return;
+			}
+			if (!Mobile.match(/^((1[3-9][0-9]{1})+\d{8})$/)) {
+				//$.alert("手机号码格式不正确！");
+				layer.open({
+							content:'手机号码格式不正确！'
+							,btn: '确定'
+						  });
+				return;
+			}
+			if (MsgCode == '') {
+				layer.open({
+							content:'短信验证码不能为空！'
+							,btn: '确定'
+						  });
+				return;
+			}
+			if (Password == '') {
+				//$.alert("请输入您的密码，以英文字母开头，6-16位与数字的组合");
+				layer.open({
+							content:'请输入您的密码，以英文字母开头，6-16位与数字的组合'
+							,btn: '确定'
+						  });
+				return;
+			}
+			if (!Password.match(/^[a-zA-Z]\w{5,15}$/)) {
+				//$.alert("密码必须是以英文字母开头，6-16位与数字的组合");
+				layer.open({
+							content:'密码必须是以英文字母开头，6-16位与数字的组合'
+							,btn: '确定'
+						  });
+				return;
+			}
+
+
+			$.ajax({
+				type: "POST",
+				url: "<?php echo U('Register/ajaxRegister');?>",
+				data: $('#formf').serialize(),
+				dataType: "json",
+				success: function (data) {
+					if (data.result == 1) {
+						layer.open({
+							content: data.message
+							,btn: '确定',yes: function(){
+								window.location.href = url;
+							}
+						  });
+					} else {
+						layer.open({
+							content: data.message
+							,btn: '确定'
+						  });
+					}
+				}
+			});
+		}
+	</script>

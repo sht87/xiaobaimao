@@ -1,0 +1,25 @@
+<!--页面悬浮-->
+		<div class="">
+		  <?php if($GLOBALS['BasicInfo']['Ytstatus']=='3'):?>
+			<a href="{$GLOBALS['BasicInfo']['YtanUrl']}"  class="suspend_icon1"><img src="{$GLOBALS['BasicInfo']['YtanImg']}"></a>
+		  <?php endif;?>
+			<a href="<?php echo U('Index/index');?>" class="suspend_icon2"><img src="__PUBLIC__/images/suspend_icon2.png"></a>
+			<a href="javascript:history.go(-1)" class="suspend_icon3"><img src="__PUBLIC__/images/suspend_icon3.png"></a>
+		</div>
+		<!--页面悬浮 end-->
+<script src="__PUBLIC__/js/jquery-2.1.4.js"></script>
+<script src="__PUBLIC__/js/jquery-weui.min.js"></script>
+<script src="__PUBLIC__/js/common.js"></script>
+<script src="__PUBLIC__/js/fastclick.js"></script>
+<script type="text/javascript" src="__PUBLIC__/artDialog/artDialog.min.js"></script>
+<link rel="stylesheet" href="__PUBLIC__/artDialog/skins/aero.css">
+<script type="text/javascript" src="__PUBLIC__/artDialog/iframeTools.js"></script>
+<script src="__PUBLIC__/js/mui.min.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        FastClick.attach(document.body);
+    });
+</script>
+</body>
+</html>

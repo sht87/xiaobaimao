@@ -1,0 +1,72 @@
+<include file="Shared:Header" />
+<body class="Bodybg">
+        <form id="FF" method="post">
+        <div id="tools" class="tools">
+
+            {:W('RolePerm/RolePermTop')}
+
+        </div>
+        <div id="search" class="search">
+            <table border="0" class="SearchTable" cellpadding="3">
+                <thead>
+                    <tr>
+                        <td width="70" align="right">渠道名称：</td>
+                        <td width="180">
+							<select name="Title" id="Title">
+								<option value="全部">全部</option>
+								<volist name="tgName" id="vo">
+									<option value="{$vo.Name}">{$vo.Name}</option>
+								</volist>
+							</select>
+                        </td>
+						<td width="70" align="right">日期：</td>
+						<td width="200">
+							<input id="StartTime" name="StartTime" type="text" class="easyui-datebox" data-options="width:93,editable:false" />
+							-
+							<input id="EndTime" name="EndTime" type="text" class="easyui-datebox" data-options="width:93,editable:false" />
+						</td>
+                        <td>
+                            <input id="btnSearch" onclick="$.XB.search();" type="button" value="查 询">
+                        </td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+            <div id="tabelContent" class="tabelContent">
+                <table id="DataList"></table>
+            </div>
+    </form>
+    <script type="text/javascript">
+
+        $(function () {
+                var columns= [
+					{ field: 'ID', checkbox: true},
+                    { field: 'channelName', title: '渠道名称', width: 80},
+                    { field: 'PV', title: '浏览数(PV)', width: 80,sortable:true},
+                    { field: 'UV', title: '申请数(UV)', width: 80,sortable:true},
+                    { field: 'PVUV', title: '申请转化率', width: 80},
+                    { field: 'registerNum', title: '注册数', width: 80},
+                    { field: 'registerNumPV', title: '浏览转化率', width:80},
+					{ field: 'registerNumUV', title: '用户转化率', width:80},
+					{ field: 'aliveNum', title: '激活数', width:80},
+					{ field: 'aliveNumregisterNum', title: '激活率', width:80},
+                    { field: 'CPA', title: 'CPA', width: 80,sortable:true},
+                    { field: 'priceregisterNum', title: '结算费用', width: 80},
+                    { field: 'newNum', title: '申请数新', width: 80 },
+					{ field: 'applyNum', title: '申请数总', width: 80 },
+					{ field: 'registernewNum', title: '申请转化率', width: 80 },
+					{ field: 'registerapplyNum', title: '总申请转化率', width: 80 },
+					{ field: 'prUV', title: 'UV新单价', width: 80 },
+					{ field: 'prAll', title: 'UV总单价', width: 80 },
+                    { field: 'createDate', title: '日期', width: 80},
+                ];
+            $.XB.datagrid({'columns':columns,'singleSelect':true,'freezeRow':0});
+            $.XB.enter();
+        });
+    </script>
+        {:W('RolePerm/RolePermBottom')}
+	</body>
+<include file="Shared:Footer" />
+
+
+

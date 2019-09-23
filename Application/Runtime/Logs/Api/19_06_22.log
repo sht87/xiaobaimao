@@ -1,0 +1,19 @@
+[ 2019-06-22T10:13:13+08:00 ] 223.104.102.49 /api.php/center/member/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+
+[ 2019-06-22T10:13:14+08:00 ] 223.104.102.49 /api.php/Home/home/version?client=ios&package=com.xbm.app&upload=upload&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `xb_version` [ RunTime:0.0005s ]
+SQL: SELECT `ID`,`Ver`,`isForced`,`Url`,`Updates` FROM `xb_version` WHERE `Client` = 'ios' AND `IsDefault` = 1 LIMIT 1   [ RunTime:0.0001s ]
+

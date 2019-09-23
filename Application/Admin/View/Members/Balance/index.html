@@ -1,0 +1,90 @@
+<include file="Shared:Header" />
+<body class="Bodybg">
+        <form id="FF" method="post">
+        <div id="tools" class="tools">
+            {:W('RolePerm/RolePermTop')}
+        </div>
+        <div id="search" class="search">
+            <table border="0" class="SearchTable" cellpadding="3">
+                <thead>
+                    <tr>
+                        <td width="80" align="right">会员姓名：</td>
+                        <td width="200">
+                            <input id="TrueName" Name="TrueName" type="text" />
+                        </td>
+                        <td width="70" align="right">手机号码：</td>
+                        <td width="200">
+                            <input id="Mobile" name="Mobile" type="text" />
+                        </td>
+                        <td width="70" align="right">变更类型：</td>
+                        <td width="200">
+                            <select name="Type" id="Type">
+                                <option value="-5">全部</option>
+                                <option value="0">收入</option>
+                                <option value="1">支出</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="btnSearch" onclick="$.XB.search();" type="button" value="查 询">
+                        </td>
+                        <td>
+                            <input id="MoreSearch" onclick="$.XB.moresearch()" type="button" value="更多条件">
+                        </td>
+                    </tr>
+                </thead>
+                <tbody id="stbody">
+                    <tr>
+                        <td width="70" align="right">收入类型：</td>
+                        <td width="200">
+                            <select name="SruType" id="SruType">
+                                <option value="-5">全部</option>
+                                <option value="1">推荐会员</option>
+                                <option value="2">网贷</option>
+                                <option value="3">信用卡</option>
+                                <option value="4">查征信</option>
+                                <option value="5">资金退还</option>
+                            </select>
+                        </td>
+                        <td width="70" align="right">变更日期：</td>
+                        <td width="200">
+                            <input id="StartTime" name="StartTime" type="text" class="easyui-datebox" data-options="width:93,editable:false" />
+                            -
+                            <input id="EndTime" name="EndTime" type="text" class="easyui-datebox" data-options="width:93,editable:false" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="tabelContent" class="tabelContent">
+            <table id="DataList"></table>
+        </div>
+    </form>
+    <script type="text/javascript">
+
+        $(function () {
+
+            var frozenColumns = [
+                 { field: 'ID', checkbox: true },
+                 { field: 'UserID', title: '会员ID', width: 50 },
+                 { field: 'TrueName', title: '真实姓名', width: 100 }
+            ];
+            var columns = [
+                { field: 'Mobile', title: '手机号码', width: 100 ,sortable: true},
+                { field: 'Type', title: '变更类型', width: 100,sortable: true },
+                { field: 'SruType', title: '收入类型', width: 100 },
+                { field: 'MemType', title: '推荐会员类型', width: 100 },
+                { field: 'Amount', title: '变动金额', width: 100,sortable: true },
+                { field: 'CurrentBalance', title: '账户结余', width: 150 ,sortable: true},
+                { field: 'UpdateTime', title: '变更日期', width: 150 ,sortable: true},
+                { field: 'Description', title: '描述详情', width: 600}
+            ];
+            $.XB.datagrid({ "frozenColumns": frozenColumns, "columns": columns });
+            $.XB.enter();
+        });
+    </script>
+        {:W('RolePerm/RolePermBottom')}
+	</body>
+<include file="Shared:Footer" />
+
+
+

@@ -1,0 +1,109 @@
+<include file="Shared:Header" />
+<body class="Bodybg">
+<div id="tt">
+    <div title="" style="padding: 20px; background-color: #f4f4f4">
+        <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable">
+            <tbody>
+            <tr >
+                <td width="120" align="right"> 提现会员：</td>
+                <td >
+                    {$tabList['UserName']}
+                </td>
+
+            </tr>
+            <tr >
+                <td width="120" align="right">手机号码：</td>
+                <td>
+                    {$tabList['Mobile']}
+                </td>
+            </tr>
+            <tr>
+                <td width="120" align="right">真实姓名：</td>
+                <td>
+                    {$tabList['TrueName']}
+                </td>
+            </tr>
+            <tr >
+                <td width="120" align="right">操作类型：</td>
+                <td>
+                    提现
+                </td>
+            </tr>
+            <tr >
+                <td width="120" align="right">提现金额(元)：</td>
+                <td>
+                    ￥{$tabList['Money']|number_format=2}元
+                </td>
+            </tr>
+            <tr >
+                <td width="120" align="right">提现金币额：</td>
+                <td>
+                    {$tabList['Gold']|number_format=2}金币
+                </td>
+            </tr>
+            <tr >
+                <td width="120" align="right">提现账号类型：</td>
+                <td>
+                    {$tabList['CardID']}
+                </td>
+            </tr>
+            <tr >
+                <td width="120" align="right">提现账号：</td>
+                <td>
+                    {$tabList['CardNo']}
+                </td>
+            </tr>
+            <tr >
+                <td width="120" align="right">提现日期：</td>
+                <td>
+                    {$tabList['AddTime']}
+                </td>
+            </tr>
+            <if condition="($tabList['IsAduit'] eq 2)">
+                <tr >
+                    <td width="120" align="right">提现交易号：</td>
+                    <td>
+                        {$tabList.Batch}
+                    </td>
+                </tr>
+            </if>
+            <tr >
+                <td width="120" align="right">审核状态：</td>
+                <td>
+                    <switch name="tabList['IsAduit']">
+                        <case value="2">审核通过</case>
+                        <case value="3">审核未通过</case>
+                        <default/>提交审核中
+                    </switch>
+                </td>
+            </tr>
+            <if condition="($tabList['IsAduit'] eq 2) or ($tabList['IsAduit'] eq 3)">
+                <tr >
+                    <td width="120" align="right">处理人员：</td>
+                    <td>
+                        {$tabList['admin']}
+                    </td>
+                </tr>
+                <tr >
+                    <td width="120" align="right">处理时间：</td>
+                    <td>
+                        {$tabList['UpdateTime']}
+                    </td>
+                </tr>
+            </if>
+            <tr >
+                <td width="120" align="right">审核备注：</td>
+                <td>
+                    {$tabList.Remark}
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+<div style="text-align:center;margin:20px 0px;">
+    <input name="Btn" type="button" value=" 关闭  " onclick="parent.$('#W1').window('close');" />
+</div>
+</body>
+<include file="Shared:Footer" />

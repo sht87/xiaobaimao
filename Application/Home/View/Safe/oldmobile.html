@@ -1,0 +1,163 @@
+<layout name="layout/nav"/>
+<div class="clear"></div>
+<style type="text/css">
+    .ul_perfl .cur{
+        color: #3a7dff;
+        border-left: 2px solid #3a7dff
+    }
+</style>
+<!--menu end-->
+
+<div class="" style="padding: 40px 0 60px 0;">
+    <div class="w1200 per_box">
+        <div class="fl perflbar">
+            <p class="per_fltil">个人中心</p>
+            <ul class="ul_perfl">
+                <if condition="session('loginfo')['Mtype'] eq 1">
+                    <include file="Layout/genneral_nav" />
+                </if>
+                <if condition="session('loginfo')['Mtype'] eq 2">
+                    <include file="Layout/personnel_nav" />
+                </if>
+                <if condition="session('loginfo')['Mtype'] eq 3">
+                    <include file="Layout/company_nav" />
+                </if>
+            </ul>
+        </div>
+        <div class="fr perrgcon">
+            <div class="rg_til">
+                <span>账户安全</span>
+            </div>
+            <div class="rgcon">
+                <ul class="repwd_ul" style="width:492px;">
+                    <li class="frist_li current_li">
+                        <em class="frist_em"></em>
+                        <a href="javascript:void(0)" class="ahover"><em>1</em><br><span>验证身份</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="ahover"><em>2</em><br><span>修改已验证手机</span></a>
+                    </li>
+                    <li class="last_li">
+                        <a href="javascript:void(0)" class="ahover"><em>3</em><br><span>完成</span></a>
+                        <em class="last_em"></em>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+
+                <div class="pwdcon" style="width:540px;  padding-top: 20px;">
+                    <dl>
+                        <dd class="fl"> 已验证手机号：</dd>
+                        <dt class="fl"><a href="javascript:void(0)" style="font-weight: bold;line-height: 62px">{$mobile|substr_replace='****',3,4} </a>
+                            通过已验证手机号验证
+                        </dt>
+                        <div class="clear"></div>
+                    </dl>
+
+                    <dl class="">
+                        <dd class="fl"> 手机验证码：</dd>
+                        <dt class="fl">
+                            <input type="text" class="fl login_input_txt" id="mcode" style="width:140px;">
+                            <a href="javascript:void(0)" class="fl yan_huo" id="getcode" onclick="send()" style="margin-left: 10px; background:#f5f5f5; border:1px solid #eee; color:#999">获取短信验证码</a>
+                        </dt>
+                        <div class="clear"></div>
+                    </dl>
+
+                    <dl>
+                        <dd class="fl"> 验证码：</dd>
+                        <dt class="fl">
+                            <div>
+                                <input type="text" class="fl login_input_txt" id="code"  style="width:140px;">
+                                <div class="code fl"><img id="CodeImg" src="<?php echo U('common/selfverify')?>" height="50" width="116"></div>
+                                <a href="javascript:void(0)" onclick="clickcode()" class="fl clickcode" style="line-height: 62px"><lable style="color:#919191">看不清，</lable>换一张</a>
+                                <div class="clear"></div>
+                            </div>
+                        </dt>
+                        <div class="clear"></div>
+                    </dl>
+
+                    <dl style="padding-top:30px;">
+                        <dd class="fl">&nbsp;</dd>
+                        <dt class="fl">
+                            <a href="javascript:void(0)" onclick="check()" style="height:38px; padding:10px 30px; cursor:pointer; color:#fff; background:#3a7dff;  ">下一步</a>
+                        </dt>
+                        <div class="clear"></div>
+                    </dl>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<!--end-->
+<script type="text/javascript" src="__PUBLIC__/artDialog/artDialog.min.js"></script>
+<link rel="stylesheet" href="__PUBLIC__/artDialog/skins/aero.css">
+<script type="text/javascript" src="__PUBLIC__/artDialog/iframeTools.js"></script>
+<script type="text/javascript">
+    function clickcode() {
+        $('#CodeImg').attr('src',"{:U('Common/selfverify')}?"+ Math.random())
+    }
+    function countDown() {
+        //启用倒计时
+        var setTime;
+        var time=60;
+        setTime=setInterval(function(){
+            if(time<=0){
+                clearInterval(setTime);
+                //添加事件
+                $("#getcode").attr("onclick","javascript:check()");
+                $("#getcode").text('获取短信验证码');
+                return;
+            }
+            time--;
+            msgs=time+"s后重新发送";
+            $("#getcode").text(msgs);
+            $("#getcode").attr("onclick","");
+        },1000);
+    }
+    function send() {
+        $.ajax({
+            url     : "{:U('common/getcode')}",
+            type    : 'post',
+            dataType: 'json',
+            data    : {mobile:"{$mobile}"},
+            success : function (data) {
+                if(data.result==1){
+                    countDown();
+                    $("#getcode").removeAttr("href");
+                    XB.msg(data.message)
+                }else {
+                    XB.Tip(data.message)
+                }
+            }
+        })
+    }
+    function check() {
+        var mcode  = $.trim($('#mcode').val());
+        var code    = $.trim($('#code').val());
+        if (mcode == '') {
+            XB.Tip('请输入手机验证码');
+            return false
+        }
+        if(code==''){
+            XB.Tip('请输入验证码');
+            return false
+        }
+
+        $.ajax({
+            url: "<?php echo U('Safe/checkold')?>",
+            type: 'post',
+            dataType: 'json',
+            data: {mcode: mcode,m: "{$mobile}",code:code},
+            success: function (data) {
+                if (data.result == 0) {
+                    XB.Tip(data.message)
+                }
+                if (data.result == 2) {
+                    window.location.href = "<?php echo U('Safe/newmobile')?>"
+                }
+            }
+        })
+    }
+</script>

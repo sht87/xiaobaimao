@@ -1,0 +1,18 @@
+        <include file="Layout/header"/>
+        <style type="text/css">
+            img{
+                width:100%;
+            }
+        </style>
+        <header class="header">
+            <a href="javascript:window.history.go(-1)" class="go_left"></a>
+            <span class="header_til">{$pages['Title']}</span>
+        </header>
+
+        <!---->
+        <section style="padding: 10px; color: #999;  margin-top: 50px;">
+            {$pages['Contents']|htmlspecialchars_decode}
+        </section>
+
+        <!---->
+        <include file="Layout/footer"/>

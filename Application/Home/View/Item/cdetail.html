@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+        <link type="text/css" href="__PUBLIC__/css/jquery-weui.min.css" rel="stylesheet">
+		<link type="text/css" href="__PUBLIC__/css/weui.min.css"  rel="stylesheet"/>
+        <link type="text/css" href="__PUBLIC__/css/app.css"  rel="stylesheet"/>
+		<title><?php echo $SEOTitle?$SEOTitle:$GLOBALS['BasicInfo']['SEOTitle'];?></title> 
+		 
+	</head>
+	<body> 
+		<header class="header" >
+			<a href="javascript:history.go(-1)" class="go_left"></a> 
+			<span class="header_til">信用卡中心</span>  
+		</header> 
+		<div class="" style="height: 42px;"></div> 
+	  <!----> 
+	 
+	     <img src="{$info.MainPic}" style="width: 100%;"> 
+	     
+	  <?php if($info['Quanyconts']):?>
+	     <section class="comt_til comt_til1" style="padding: 10px 0;">
+			<span> 权益</span>
+		 </section>
+	     <ul class="jie_ul jie_ul1">
+	      <?php foreach($info['Quanyconts'] as $k=>$v):?>
+		 	<li><a href="javascript:void(0);">{$v}</a></li>   
+		  <?php endforeach;?>
+		 </ul>
+	  <?php endif;?>
+		 
+		 <!--基本信息-->
+          <section class="comt_til comt_til1" style="padding: 10px 0;">
+			<span> 基本信息</span>
+		 </section>
+         <section style="padding:10px; line-height:28px"> 
+           <p>年费:  {$info.yarfeename}<label style="color:#999"> ({$info.Yeardesc})</label></p>
+           <p>积分:  {$info.Jifen1}<label style="color:#999">({$info.Jifen2})</label></p>
+           <p>免息期:  {$info.Freetime}<label style="color:#999">({$info.Freedesc})</label></p>
+           <p>等级:  {$info.Levelname} </p>
+           <div style="line-height: 30px">
+			   <p style="float: left;">发卡组织:</p>
+              <p style="float: left;padding-left: 10px"><img src="{$info.Fakaurl}" style="max-width: 60px;height: 30px;"/></p>
+			   <p style="clear: both"></p>
+           </div>
+         </section> 
+  
+		 
+		 <!--基本信息 end-->
+		 <section style="padding: 30px 0;">
+				<a href="<?php
+				   if(session('loginfo')['UserID']){
+				     echo $info['Openurl'];
+				   }else{
+				     echo U('Login/index').'?back='.$_SERVER['REQUEST_URI'];
+				   }
+				?>" class="btn_want" style="width: 90%;">身份验证</a>
+			</section>
+		<!--页面悬浮-->
+		<div class="">
+		  <?php if($GLOBALS['BasicInfo']['Ytstatus']=='3'):?>
+			<a href="{$GLOBALS['BasicInfo']['YtanUrl']}"  class="suspend_icon1"><img src="{$GLOBALS['BasicInfo']['YtanImg']}"></a>
+		  <?php endif;?>
+			<a href="<?php echo U('Index/index');?>" class="suspend_icon2"><img src="__PUBLIC__/images/suspend_icon2.png"></a>
+			<a href="javascript:history.go(-1)" class="suspend_icon3"><img src="__PUBLIC__/images/suspend_icon3.png"></a>
+		</div>
+		<!--页面悬浮 end--> 
+		 <script src="__PUBLIC__/js/jquery-2.1.4.js"></script>
+		 <script src="__PUBLIC__/js/jquery-weui.min.js"></script> 
+		 <script src="__PUBLIC__/js/common.js"></script>  
+		    
+	</body>
+</html>

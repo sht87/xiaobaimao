@@ -1,0 +1,54 @@
+<include file="Shared:Header" />
+<body class="Bodybg">
+<div id="tt" class="easyui-tabs">
+    <div title="消息详情" style="padding: 20px; background-color: #f4f4f4">
+        <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable">
+            <tbody>
+            <tr >
+                <td width="120" align="right"> 真实姓名：</td>
+                <td >
+                    {$tabList['TrueName']}
+                </td>
+                <td width="120" align="right">手机号码：</td>
+                <td>
+                    {$tabList['Mobile']}
+                </td>
+            </tr>
+            <tr >
+                <td width="120" align="right">消息内容：</td>
+                <td>
+                    {$tabList['Contents']}
+                </td>
+            </tr>
+            <tr >
+                <td width="120" align="right">发送状态：</td>
+                <td>
+                    <?php
+                        if($tabList['Status']=='1'){
+                          echo '<span style="color:green;">成功</span>';
+                        }elseif($tabList['Status']=='0'){
+                          echo '<span style="color:red;">失败</span>';
+                        }
+                    ?>
+                </td>
+                <td width="120" align="right">错误信息：</td>
+                <td>
+                    {$tabList['Errmsg']}
+                </td>
+            </tr>
+            <tr >
+                <td width="120" align="right">发送时间：</td>
+                <td>
+                    {$tabList['UpdateTime']}
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+<div style="text-align:center;margin:20px 0px;">
+    <input name="Btn" type="button" value=" 关闭  " onclick="parent.$('#W1').window('close');" />
+</div>
+</body>
+<include file="Shared:Footer" />

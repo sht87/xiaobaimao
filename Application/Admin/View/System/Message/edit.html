@@ -1,0 +1,82 @@
+<include file="Shared:Header" />
+<body class="Bodybg">
+        <form id="FF" class="easyui-form" method="post" data-options="novalidate:true">
+        <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable">
+            <thead>
+                <tr>
+                    <td colspan="2">说明：带<span class="Red">*</span>必填；默认展开菜单指角色登录系统后，左边导航默认展开的菜单 不设置则全部折叠</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr >
+                    <td width="120" align="right"><span class="Red">*</span> 发送的对象：</td>
+                    <td>
+                        <select  name="Obj" id="Obj">
+                            <option value="1">所有</option>
+                            <option value="2">单独</option>
+                        </select>
+                       <!-- <input id="ObjectID" name="ObjectID" type="text" class="required:true,easyui-validatebox" />-->
+                    </td>
+                </tr>
+                <tr id="objec"></tr>
+                <tr>
+                    <td width="120" align="right"><span class="Red">*</span> 消息接收模式：</td>
+                    <td width="100">
+                        <select id="Mode" name="Mode">
+                            <option value="-5">选择接收模式</option>
+                            <option value="0">内部消息</option>
+                            <option value="1">手机短信</option>
+                            <option value="2">短信&消息</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">模板替换</td>
+                    <td valign="top" class="Hui">
+                        <a onclick="Insert('{SMS_验证码}')" class="Pointer">验证码</a> |
+                        <a onclick="Insert('{SMS_密码}')" class="Pointer">密码</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="120" align="right"><span class="Red">*</span> 发送的内容：</td>
+                    <td>
+                        <textarea id="SendMess" name="SendMess" style="width:400px;height:100px;"></textarea>
+                    </td>
+            </tbody>
+        </table>
+        <input type="hidden" id="ID" name="ID" value="{$ID}"/>
+    </form>
+
+
+    <script>
+        function Insert(str) {
+            var obj = document.getElementById('SendMess');
+            if (document.selection) {
+                obj.focus();
+                var sel = document.selection.createRange();
+                document.selection.empty();
+                sel.text = str;
+            } else {
+                var prefix, main, suffix;
+                prefix = obj.value.substring(0, obj.selectionStart);
+                main = obj.value.substring(obj.selectionStart, obj.selectionEnd);
+                suffix = obj.value.substring(obj.selectionEnd);
+                obj.value = prefix + str + suffix;
+            }
+            obj.focus();
+        }
+        $(function(){
+            $("#Obj").change(function(){
+                var objs=$(this).val();
+                    if(objs==2){
+                        var html='<td width="120" align="right"><span class="Red">*</span>用户名称</td><td><input id="ObjectID" name="ObjectID" type="text" class="required:true,easyui-validatebox" /></td>';
+                        $("#objec").prepend(html);
+                    }else{
+                        $("#bojec").remove();
+                    }
+            })
+        });
+    </script>
+
+</body>
+<include file="Shared:Footer" />

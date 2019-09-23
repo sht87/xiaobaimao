@@ -1,0 +1,1 @@
+a:2:{s:7:"android";a:1:{s:5:"1.0.0";s:11:"com.xbm.app";}s:3:"ios";a:1:{s:5:"1.0.0";s:11:"com.xbm.app";}}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link type="text/css" href="__PUBLIC__/css/jquery-weui.min.css" rel="stylesheet">
+		<link type="text/css" href="__PUBLIC__/css/weui.min.css"  rel="stylesheet"/>
+        <link type="text/css" href="__PUBLIC__/css/app.css"  rel="stylesheet"/>
+		<title><?php echo $SEOTitle?$SEOTitle:$GLOBALS['BasicInfo']['SEOTitle'];?></title>
+		<style>
+			.swiper-container {
+				width: 100%;
+			}
+
+			.swiper-container img {
+				display: block;
+				width: 100%;
+			}
+			.swiper-pagination-bullet-active{
+				background: #000;
+			}
+			/**/
+			.weui-media-box{
+				box-sizing: border-box;
+			}
+			.weui-media-box:before{
+
+			}
+			.weui-navbar:after{
+				border-bottom: none;
+			}
+			.weui-navbar__item:after{
+
+			}
+			.weui-navbar__item{
+				margin: 10px 0;
+				padding: 0;
+			}
+			 .weui-media-box{
+	     	box-sizing: border-box;
+				 padding:10px 15px;
+				 border-bottom: 1px solid #f7f7f7;
+	     }
+	     .dropload-down{text-align: center;}
+		.weui-navbar__item.weui-bar__item--on {
+			color: #5461eb;
+			background-color: #fff;
+		}
+		</style>
+
+	</head>
+	<body>
+		<header class="header" style="background:none; position: absolute; left: 0; top:0; z-index: 999;">
+			<a href="javascript:history.go(-1)" class="go_left"></a>
+			<span class="header_til"></span>
+		</header>
+		<div class="swiper-container"  >
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<?php foreach($adds as $k=>$v):?>
+				<div class="swiper-slide">
+					<a href="{$v.Url}">
+						<img src="{$v.Pic}" style="max-height: 135px;"/>
+					</a>
+				</div>
+				<?php endforeach;?>
+			</div>
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
+	    <div class="weui-tab" style="height: 45px;">
+		  <div class="weui-navbar" style="background:#fff;">
+		    <a class="weui-navbar__item" href="<?php echo U('Index/share');?>">
+		           贷款产品
+		    </a>
+		    <a class="weui-navbar__item weui-bar__item--on" href="<?php echo U('Index/sharexy');?>">
+		             信用卡产品
+		    </a>
+		    <a class="weui-navbar__item" href="<?php echo U('Member/rongke');?>">
+		          一键代理
+		    </a>
+		 </div>
+		</div>
+		<!---->
+		<section class="hd"></section>
+		<section class="comt_til comt_til1">
+		  	<span>新品推荐</span>
+		</section>
+	    <div class="weui-panel__bd">
+	     <?php foreach($tjlist as $k=>$v):?>
+		    <a href="<?php echo U('Member/tgdetail').'?id='.$v['ID'];?>" class="weui-media-box weui-media-box_appmsg fl" style="width: 50%; border-top:none">
+		      <div class="weui-media-box__hd" style="width: 45px; height: 30px;">
+		        <img class="weui-media-box__thumb" src="{$v.Logurl}" style="width: 45px; height: 45px;">
+		      </div>
+		      <div class="weui-media-box__bd">
+		        <h4 class="weui-media-box__title" style="font-size: 14px;">{$v.Name}</h4>
+		         <p class="p3 weui-media-box__desc" style="color: #4a4a4a;font-size: 12px"><span>奖金<label style="color:#ff4646;">
+		         	<?php
+		      			   if($v['Yjtype']=='1'){
+		      			      switch($Mtypes){
+			      			       case 1:
+								        echo $v['BonusRate1'].'%';
+								        break;
+								    case 2:
+								        echo $v['BonusRate2'].'%';
+								        break;
+								    case 3:
+								        echo $v['BonusRate3'].'%';
+								        break;
+								    case 4:
+								        echo $v['BonusRate4'].'%';
+								        break;
+								    default:
+	        							echo $v['BonusRate1'].'%';
+			      			   }
+		      			   }elseif($v['Yjtype']=='2'){
+		      			   	   switch($Mtypes){
+			      			       case 1:
+								        echo $v['Ymoney1'].'元';
+								        break;
+								    case 2:
+								        echo $v['Ymoney2'].'元';
+								        break;
+								    case 3:
+								        echo $v['Ymoney3'].'元';
+								        break;
+								    case 4:
+								        echo $v['Ymoney4'].'元';
+								        break;
+								    default:
+	        							echo $v['Ymoney1'].'元';
+			      			   }
+		      			   }
+		      			?>
+		         </label></span></p>
+		         <p class="pHtml" style="font-size: 10px; color:#606060;">{$v.Intro}</p>
+		      </div>
+		    </a>
+		  <?php endforeach;?>
+		    <div class="clear"></div>
+	      </div>
+		<section class="hd"></section>
+	 <!---->
+
+	  <section class="comt_til comt_til1" >
+		  	<span>产品列表</span>
+	  </section>
+	  <section class="khfxWarp" style="padding-bottom:60px;">
+	  		<div class="itemlist">
+			</div>
+	  </section>
+	  <div style="height: 50px;"></div>
+<!--引用底部文件 start-->
+<include file="Layout/bottom" />
+<!--引用底部文件 end-->
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/dropload.js"></script>
+<script src="__PUBLIC__/js/swiper.min.js"></script>
+<script type="text/javascript">
+	$(function () {
+		$(".swiper-container").swiper({
+			loop: true,
+			autoplay: 3000
+		});
+	});
+
+			//加载更多
+$(function () {
+    var current_page=0;
+    var mtype="<?php echo $Mtypes;?>";
+    // dropload
+    var dropload = $('.khfxWarp').dropload({
+        scrollArea: window,
+        loadDownFn: function (me) {
+
+            $.ajax({
+                type: 'POST',
+                url: "{:U('Index/getsharedata')}",
+                data:"pages="+current_page+'&Itype=2',
+                dataType: 'json',
+                success: function(data){
+                    var result = '';
+                    if(!data.result){
+                        me.lock();
+                        me.noData();
+                        me.resetload();
+                    }else{
+                        for(var i = 0; i < data.message.length; i++) {
+                            result+= ''
+                                +'<a href=\"{:U("Member/tgdetail")}?id='+data.message[i].ID+'\" class="weui-media-box weui-media-box_appmsg fl" style="width: 100%; border-bottom:1px solid #eee">'
+							      +'<div class="weui-media-box__hd" style="width: 45px; height: 30px;">'
+							        +'<img class="weui-media-box__thumb" src="'+data.message[i].Logurl+'" style="width: 45px; height: 45px;">'
+							      +'</div>'
+							      +'<div class="weui-media-box__bd">'
+							      	+'<div>'
+							      		+'<h4 class="weui-media-box__title fl" style="font-size: 14px;">'+data.message[i].Name+'</h4>'
+							      		+'<span class="fr" style="color:#434343;"><label class="span_label">'+data.message[i].AppNumbs+'</label>人已申请</span>'
+							      		+'<div class="clear"></div>'
+							      	+'</div>'
+							         +'<p class="p3 weui-media-box__desc" style="color: #4a4a4a;font-size: 12px"><span>奖金';
+
+							         if(data.message[i].Yjtype=='1'){
+							 			if(mtype=='1'){
+								 			result+= '<label style="color:#ff4646;">'+data.message[i].BonusRate1+'%</label>';
+								 		}else if(mtype=='2'){
+								 			result+= '<label style="color:#ff4646;">'+data.message[i].BonusRate2+'%</label>';
+								 		}else if(mtype=='3'){
+								 			result+= '<label style="color:#ff4646;">'+data.message[i].BonusRate3+'%</label>';
+								 		}else if(mtype=='4'){
+								 			result+= '<label style="color:#ff4646;">'+data.message[i].BonusRate4+'%</label>';
+								 		}else{
+								 			result+= '<label style="color:#ff4646;">'+data.message[i].BonusRate1+'%</label>';
+								 		}
+							 		}else if(data.message[i].Yjtype=='2'){
+							 			if(mtype=='1'){
+								 			result+= '<label style="color:#ff4646;">'+data.message[i].Ymoney1+'元</label>';
+								 		}else if(mtype=='2'){
+								 			result+= '<label style="color:#ff4646;">'+data.message[i].Ymoney2+'元</label>';
+								 		}else if(mtype=='3'){
+								 			result+= '<label style="color:#ff4646;">'+data.message[i].Ymoney3+'元</label>';
+								 		}else if(mtype=='4'){
+								 			result+= '<label style="color:#ff4646;">'+data.message[i].Ymoney4+'元</label>';
+								 		}else{
+								 			result+= '<label style="color:#ff4646;">'+data.message[i].Ymoney1+'元</label>';
+								 		}
+							 		}
+
+							         result+='</span></p>'
+							         +'<p class="p1Html" style="font-size: 13px; color:#606060;">'+data.message[i].Intro+'</p>'
+							      +'</div>'
+							    +'</a>';
+                        }
+                        setTimeout(function(){
+                            $('.itemlist').append(result);
+                            current_page++;
+                            me.resetload();
+                        },0);
+                    }
+                },
+                error: function(xhr, type){
+                    //XB.Tip('加载数据出错');
+                    $.alert('加载数据出错');
+                    // 即使加载出错，也得重置
+                    me.lock();
+                    me.noData();
+                }
+            });
+
+        }
+    });
+});
+</script>

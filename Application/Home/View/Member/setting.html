@@ -1,0 +1,87 @@
+		<include file="Layout/header"/>
+		<header class="header"  >
+			<a href="javascript:window.history.go(-1);" class="go_left"></a>
+			 <span class="header_til">{$title}</span>
+		</header> 
+	 
+      <!---->
+        <section> 
+         	<div class="weui-cells" style="margin-top:50px;">
+	          <a class="weui-cell weui-cell_access" href="{:U('Member/newpwd')}">
+	            <div class="weui-cell__bd">
+	              <p>修改登录密码</p>
+	            </div>
+	            <div class="weui-cell__ft">
+	            </div>
+	          </a>
+	          <a class="weui-cell weui-cell_access" href="{:U('News/pages',array('ID'=>1))}">
+	            <div class="weui-cell__bd">
+	              <p>关于我们</p>
+	            </div>
+	            <div class="weui-cell__ft">
+	            </div>
+	          </a>  
+	          
+	          <a class="weui-cell weui-cell_access" href="{:U('News/pages',array('ID'=>4))}">
+	            <div class="weui-cell__bd">
+	              <p>版本介绍</p>
+	            </div>
+	            <div class="weui-cell__ft">
+	            </div>
+	          </a>
+	        </div>
+	        
+     
+	         
+          <section class="hd"></section>
+          <section class="center" style="padding: 10px 0;">
+          	 <a href="javascript:void(0);" onclick="backoff()" style="color:#444444; font-size: 17px;">退出登录</a>
+          </section>  
+         </section>
+     
+	    <!---->
+		<include file="Layout/footer"/>
+		<div id="ucloginout"></div>
+		<script>
+			//退出
+			// function backoff() {
+			// 	$.modal({
+			// 		title: "",
+			// 		text: "确定要退出吗？",
+			// 		buttons: [
+			// 			{
+			// 				text: "确定", onClick: function () {
+			// 					window.location.href="{:U('Login/logout')}";
+			// 			}
+			// 			},
+			// 			{text: "取消", className: "default"},
+			// 		]
+			// 	});
+			// }
+			function backoff() {
+				$.modal({
+					title: "",
+					text: "确定要退出吗？",
+					buttons: [
+						{
+							text: "确定", onClick: function () {
+								  $.ajax({
+									  type: "POST",
+									  url: "<?php echo U('Login/logout');?>",
+									  dataType: "json",
+									  success: function (data) {
+										  if (data.result == 1) {
+//											  $('#ucloginout').html(data.des);//输出同步登录
+											  window.location.href="<?php echo U('Login/index');?>";
+										  } else {
+											  XB.Tip(data.message);
+										  }
+									  }
+								  });
+						}
+						},
+						{text: "取消", className: "default"},
+					]
+				});
+			}
+		</script>

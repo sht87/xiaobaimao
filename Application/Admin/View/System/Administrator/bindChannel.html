@@ -1,0 +1,24 @@
+<include file="Shared:Header" />
+<body class="Bodybg">
+    
+<form id="FF" class="easyui-form" method="post" data-options="novalidate:true">
+    <div id="aa" class="easyui-accordion" data-options="border:false">
+			<volist name="tgList" id="vo">
+				<tr>
+					<td width="120" align="right">
+						<label for="C{$vo.ID}">
+							<input type="checkbox" id="C{$vo.ID}" name="MBID[]" <if condition="$vo.Select eq 1"> checked="checked"</if> value="{$vo.ID}" /> {$vo.Name}
+						</label>
+					</td>
+
+				</tr>
+			</volist>
+    </div>
+    <input type="hidden" id="ID" name="ID" value="{$ID}" />
+</form>
+
+<script>
+    
+</script>
+</body>
+<include file="Shared:Footer" />

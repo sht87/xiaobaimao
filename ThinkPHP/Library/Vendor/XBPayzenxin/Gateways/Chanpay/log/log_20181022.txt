@@ -1,0 +1,116 @@
+[2018-10-22 10:37:48]
+>>>>>>>>>
+     test
+            {"app_id":"200002180100","api_url":"https:\/\/pay.chanpay.com\/mag-unify\/gateway\/receiveOrder.do","app_key":"","app_secret":"","return_url":"\/Member\/index","notify_url":"\/api.php\/Center\/Payzenxin\/chanpayNotify"}
+     requset-1
+            https://pay.chanpay.com/mag-unify/gateway/receiveOrder.do?Service=nmg_zft_api_quick_payment&Version=1.0&PartnerId=200002180100&InputCharset=UTF-8&TradeDate=20181022&TradeTime=103746&SignType=RSA&Memo=H5%E7%9B%B4%E6%8E%A5%E6%94%AF%E4%BB%98&ReturnUrl=http%3A%2F%2F112.74.32.120%2FMember%2Findex&TrxId=acd8bf16daef1011f8432e2e7ab1ef68&SellerId=200002180100&SubMerchantNo=200002180100&ExpiredTime=15m&MerUserId=58&BkAcctTp=01&BkAcctNo=qM2sEEpK%2B27zsydAELJeI3t3oT%2BiQ7jiD56GGg7w38MsLNpzOfCnEW2f9oChnphOiSXisnggW2DKFNbn6x%2FFRjipWhVDBAIBYq7okYgjRgCwUMF0tJDrTUe7vTupRFjJWLp0I1ynH5IZPfS2GctHVv36%2FaOchY7t%2FdMtuoR6b9s%3D&IDTp=01&IDNo=OqrvOkCib8OTc40TTVkSMeQXIG9fApKNRfIg6285o7r8m%2BNMTsJW0aqeptpMvO2riYhvVWchFSa%2BA9DZdEMwOPUR63zO3xYqysP4DGU3op3aa3R2vMzeh50iRSRdyt%2FpCFwUlAgxwBGIDfd9lbBp5Iw90s%2BaMGlJyG1PGgbRW%2BQ%3D&CstmrNm=I7dfWiSFFkvcSduom9x6Ed0zP3E749oKVRIzAwSEqcUg5pnYffz16XzFDJ%2B347OcVCACroT1PkSQIY5DPkt%2F1n%2B41yOT4Q2e2hSeuRphX%2BfsrUsQzzxDEdXVWn5anGiKrHvFhOfyn%2FNccBLAJU22s7wtEeU%2FMHqebpmmECf%2BUf0%3D&MobNo=Ui0jSPguClSMQ8j67LYTakjHz2StsYcLmgxljE2yrzZ2%2FErjNrXluX5DgCGmDspMR2s7CqpCq41RGCRTp%2Be4LW2kdSpdsPd6DB%2B8irB%2BfsBupBlX3fYGnpMxVMQpz1IprQr6aQ2MZ%2BXEqnG1IRcNXiKs7%2F36dRUPc2e%2B0vSSihc%3D&CardCvn2=&CardExprDt=&TradeType=11&TrxAmt=0.01&EnsureAmount=&OrdrName=%E5%BE%81%E4%BF%A1%E6%9F%A5%E8%AF%A2%E8%B4%B9%E7%94%A8%E6%94%AF%E4%BB%98&OrdrDesc=&RoyaltyParameters=&NotifyUrl=http%3A%2F%2F112.74.32.120%2Fapi.php%2FCenter%2FPayzenxin%2FchanpayNotify&AccessChannel=wap&Extension=%5B%7B%22order_no%22%3A%221810223103712602%22%7D%5D&Sign=q3p5Mvcu8cMutb77gWvurarGBhCTsN0HpLyExstWX0ZVcVw2OrHhFC%2FiJgelPClPbi4sLkjn0C7b1bv68jZwoz%2FxaUawT1fR2P%2FGFvm0PAukiMjQ5bVMx0UMGhDH2YNEdXpb17vWMaWV0amLXgGmMNpiVjSlDxW6bhYUtd87iRE%3D
+     requset-2
+            {"AcceptStatus":"S","AppRetMsg":"交易受理成功","AppRetcode":"QT000001","InputCharset":"UTF-8","OrderTrxid":"101154017586688109234","PartnerId":"200002180100","RetCode":"P0002","RetMsg":"受理成功","Sign":"D1W1Ld5VJ/LfoONmmUyHhVXKw4NPn/ugIeQi36wZqymk66Z8JEPC73nGC7aEbjBaLlgccykUtp3b+fJQOxOa16CAmmjB5E9xCP3c51FX9O7FlO7CW48kB60N0tE8UB9KSq3CjcTtStFoHdxxaUd89Y6zxYu/5PcWuXdGcABuJDU=","SignType":"RSA","Status":"P","TradeDate":"20181022","TradeTime":"103748","TrxId":"acd8bf16daef1011f8432e2e7ab1ef68"}
+
+>>>>>>>>>
+[2018-10-22 10:38:07]
+>>>>>>>>>
+     支付确认接口
+            {"AcceptStatus":"F","AppRetMsg":"卡号手机号不一致","AppRetcode":"QT100032","InputCharset":"UTF-8","OrderTrxid":"101154017586688109234","PartnerId":"200002180100","PayTrxId":"acd8bf16daef1011f8432e2e7ab1ef68","RetCode":"P0001","RetMsg":"卡号手机号不一致","Sign":"ZaMGcEs8GmNRkE3WjZHIPtsXq88Q2yOWuCdpfpn1b01PAiURerF1HoEz7AU0kfptS\/pyyXoZXHWFFdUaIeb668GCsJ\/A5BE9M9L8uDXq9jip9WjFYbCoMSAjPdHf6kJ6z7hovVnBjYmY7hesBre6wwUshfevYVtaHKhdOPCUjyc=","SignType":"RSA","Status":"F","TradeDate":"20181022","TradeTime":"103807","TrxId":"726cc3605178562757fd245642fdb6a5"}
+
+>>>>>>>>>
+[2018-10-22 10:39:14]
+>>>>>>>>>
+     test
+            {"app_id":"200002180100","api_url":"https:\/\/pay.chanpay.com\/mag-unify\/gateway\/receiveOrder.do","app_key":"","app_secret":"","return_url":"\/Member\/index","notify_url":"\/api.php\/Center\/Payzenxin\/chanpayNotify"}
+     requset-1
+            https://pay.chanpay.com/mag-unify/gateway/receiveOrder.do?Service=nmg_zft_api_quick_payment&Version=1.0&PartnerId=200002180100&InputCharset=UTF-8&TradeDate=20181022&TradeTime=103913&SignType=RSA&Memo=H5%E7%9B%B4%E6%8E%A5%E6%94%AF%E4%BB%98&ReturnUrl=http%3A%2F%2F112.74.32.120%2FMember%2Findex&TrxId=290fb6c1ea12b18a440878eb2e3c8fa4&SellerId=200002180100&SubMerchantNo=200002180100&ExpiredTime=15m&MerUserId=58&BkAcctTp=01&BkAcctNo=hKXpWnoAwApopJ%2BTPaizk9flUm%2F2K9zhxkhhTNTbU9Qw%2Biww97fvbZxz%2FpJ4PHdCY85K%2BgC1iuOGGFNagaxJTQFnzqkXx4yZeWP2JGNVu%2FlHqqD%2FOlKsx%2B%2Fk5MUTCeOan%2Bz5JBNXRVnBqI%2FvKSFTPXxanATfMoJlEWY3MsFoQBA%3D&IDTp=01&IDNo=g9cFUO6T0q4Xcgs3FfuH%2FY5nnmhZzZprkurqQrunV2DB1P2G7BuO%2Bqy0yvU3yoBSms4VqzGY54QhTTRl%2FiXSJ0601ZXlSVHUfKJAg6%2FgBGYt0wBJ8ZdIzhMvSNPLC7sbUOecJDr4ZVs5CMku%2BKeBCJEEN3X6hMor%2F4LHQyuUlH8%3D&CstmrNm=JgPNzBEd7bh2TEK1umDi82DgGU%2Bg2%2F0PVGq4CQBuUiDgSArv%2FAFvSG%2BmkFcFVW9s08MygIE0H7YShcp336gmcwheZvDqBcebrZmbp8KET0fvdGu0WkgmiU6Qb4Q1D5oYKYdcd4Spes4tI22TvReTV0f6EIbRfChpyp0P68tpiVs%3D&MobNo=gMZ5dIo5rBI%2BZKgVLQXBIGrN8MH%2BB58VJAyJH3wReknHGAYjoBOr7gsoRLU5Ddj4odP3SBDUcMoB%2F5be%2FGmUaVn7iniIihV0Leolo9tWKswpgjq8HANx6EGAHH3GTSgRP6%2FqhqQTpMR9sPqYgocTQxnnMrKgT0%2BvJtMetlmqO4Q%3D&CardCvn2=&CardExprDt=&TradeType=11&TrxAmt=0.01&EnsureAmount=&OrdrName=%E5%BE%81%E4%BF%A1%E6%9F%A5%E8%AF%A2%E8%B4%B9%E7%94%A8%E6%94%AF%E4%BB%98&OrdrDesc=&RoyaltyParameters=&NotifyUrl=http%3A%2F%2F112.74.32.120%2Fapi.php%2FCenter%2FPayzenxin%2FchanpayNotify&AccessChannel=wap&Extension=%5B%7B%22order_no%22%3A%221810227103835545%22%7D%5D&Sign=NTCr%2BOMZ5PZjdW5m6CrOKj7KeGtezASvYKvL3Yd9L8GVDPagBlLRK5VS9BRZ0SANIhRE82qpGic4ecnGL1lpJeYkyYkbwESZtaCfw3qktMy1Rkux99uAY5kx6SvVBMifhwZ49xCkxLT1X9zTOjcgBhxpvAwgdxqPexVVZ75bUHs%3D
+     requset-2
+            {"AcceptStatus":"S","AppRetMsg":"交易受理成功","AppRetcode":"QT000001","InputCharset":"UTF-8","OrderTrxid":"101154017595371632120","PartnerId":"200002180100","RetCode":"P0002","RetMsg":"受理成功","Sign":"bIGxzBlXpQ2gsf1euyXPfUkCGn/iI0/SjgQfluscwHLnFqsP4BnOHaSRF3Zffj4AMykdpimMmpjjUn45i38djJJIk78xHgbf6nX7veX9yeiVBCEYRSQao/vNyV+/kF5ukd+kQlC52HiDuGmRUgcCAreOPmqn2YmZuDAjNgxwciU=","SignType":"RSA","Status":"P","TradeDate":"20181022","TradeTime":"103914","TrxId":"290fb6c1ea12b18a440878eb2e3c8fa4"}
+
+>>>>>>>>>
+[2018-10-22 10:39:28]
+>>>>>>>>>
+     支付确认接口
+            {"AcceptStatus":"S","AppRetMsg":"交易处理中","AppRetcode":"QT100000","InputCharset":"UTF-8","OrderTrxid":"101154017595371632120","PartnerId":"200002180100","PayTrxId":"301154017595370709891","RetCode":"P0001","RetMsg":"交易处理中","Sign":"MjWkz+mgFJnojAV3eBk0IRNvK\/IWfs7EESBXQ3igvYGldsfh8qETd8JEJjxFsGKiRPX95QVglntp7bmfG6k+P6K8zcUeKH7lf0G7dWxsYfXof+\/C+Dz2beKFnLYhw2V514HLmMDOgn\/Nudvr2dIDWXY9s8whjqMJqb\/QGfBgZoE=","SignType":"RSA","Status":"P","TradeDate":"20181022","TradeTime":"103928","TrxId":"f9c7f3a9dad1d50264b22e605c919ab5"}
+
+>>>>>>>>>
+[2018-10-22 10:39:30]
+>>>>>>>>>
+     1.0Notify
+            notify_time=20181022103930&sign_type=RSA&notify_type=trade_status_sync&trade_status=TRADE_SUCCESS&gmt_payment=20181022103930&version=1.0&sign=I3Mfc6zUgEYohBrnujwGMMkNJbt4XKUdkvuoecE0L1nQ4llM%2BTo%2FgFG6UUouYiZarzdL8%2BSdR%2BgN%2Fc3uKZmL40lh4umMWB2PuBUqdfdJ8e9SsVxaZnN%2BgCsbpQjf3Tcn9rlwEaYc61f2popCi17DW9Yn4ghO7qRVFHr1jNYzt6o%3D&extension=%7B%22apiResultMsg%22%3A%22%E4%BA%A4%E6%98%93%E6%88%90%E5%8A%9F%22%2C%22apiResultcode%22%3A%22S%22%2C%22channelTransTime%22%3A%221398669900310%22%2C%22instPayNo%22%3A%22NI101364501102213090729%22%2C%22settlementId%22%3A%2220181022103914PP90494402%22%2C%22unityResultMessage%22%3A%22%E4%BA%A4%E6%98%93%E6%88%90%E5%8A%9F%22%7D&gmt_create=20181022103930&_input_charset=UTF-8&outer_trade_no=290fb6c1ea12b18a440878eb2e3c8fa4&trade_amount=0.01&notify_id=1a93f8d717264710a0d4083c79e06e47&inner_trade_no=101154017595371632120
+
+>>>>>>>>>
+[2018-10-22 10:42:11]
+>>>>>>>>>
+     1.0Notify
+            notify_time=20181022104211&sign_type=RSA&notify_type=trade_status_sync&gmt_payment=20181022103930&trade_status=TRADE_SUCCESS&version=1.0&sign=LaNyTNzhVy6QESzsSpxT68tXoMb%2FW5mTBFkxCTvJWmheFuRYicSGUqN%2FsGKhlxSaNSScSY08WWVXrnE74wKWR0kQtepRNNID1OEJ%2FCVZ3NqNEzk%2FCEjenaqLFjAdJzGNy6HfqpztY11Rx3XmYmYILboJzhY3A29%2FEwqYZgaEMNU%3D&extension=%7B%22apiResultMsg%22%3A%22%E4%BA%A4%E6%98%93%E6%88%90%E5%8A%9F%22%2C%22apiResultcode%22%3A%22S%22%2C%22channelTransTime%22%3A%221398669900310%22%2C%22instPayNo%22%3A%22NI101364501102213090729%22%2C%22settlementId%22%3A%2220181022103914PP90494402%22%2C%22unityResultMessage%22%3A%22%E4%BA%A4%E6%98%93%E6%88%90%E5%8A%9F%22%7D&gmt_create=20181022103930&_input_charset=UTF-8&outer_trade_no=290fb6c1ea12b18a440878eb2e3c8fa4&trade_amount=0.01&notify_id=1a93f8d717264710a0d4083c79e06e47&inner_trade_no=101154017595371632120
+
+>>>>>>>>>
+[2018-10-22 10:53:03]
+>>>>>>>>>
+     1.0Notify
+            notify_time=20181022105303&sign_type=RSA&notify_type=trade_status_sync&trade_status=TRADE_CLOSED&version=1.0&extension=%7B%22subMerchantNo%22%3A%22200002180100%22%7D&sign=TbJKqlpyfb9T895r%2BHO7QsCuYh7bUJZ2wEL4c8Ofttjc94sQSqL0WXeGeggIkgKWIhwcuPCQ%2FJ0t8kE6aZ%2Fve0J1peMXhZRhHiRTzZ0ZoQuLAfyeLb9dcWFtvVkgSWfhcshN7nrcpCPM5xfldC2W5AJgBy6uAe2XjDR75Ht7JCc%3D&gmt_create=20181022105303&_input_charset=UTF-8&outer_trade_no=acd8bf16daef1011f8432e2e7ab1ef68&trade_amount=0.01&notify_id=bc4409a0ed9d4aa3a08e2a806fbc8e14&inner_trade_no=101154017586688109234
+
+>>>>>>>>>
+[2018-10-22 10:53:11]
+>>>>>>>>>
+     1.0Notify
+            notify_time=20181022105311&sign_type=RSA&notify_type=trade_status_sync&gmt_payment=20181022103930&trade_status=TRADE_SUCCESS&version=1.0&sign=yebLRc%2Fb28WFgPEiKBueBsE8abymQxZeZK36eGzkg5WhHH%2B%2B9mhJaGHGQIJfUjd49jx2td7c9pj1HdXdjrIUoRwUXWw88dKXcYTZ1mkUu9JKZy0D6SWSLBiuXLqF4efX2jALsbkO%2BR7%2BKdXhZ7TTfIX4h5Ap5us9d6A4pXvfr1g%3D&extension=%7B%22apiResultMsg%22%3A%22%E4%BA%A4%E6%98%93%E6%88%90%E5%8A%9F%22%2C%22apiResultcode%22%3A%22S%22%2C%22channelTransTime%22%3A%221398669900310%22%2C%22instPayNo%22%3A%22NI101364501102213090729%22%2C%22settlementId%22%3A%2220181022103914PP90494402%22%2C%22unityResultMessage%22%3A%22%E4%BA%A4%E6%98%93%E6%88%90%E5%8A%9F%22%7D&gmt_create=20181022103930&_input_charset=UTF-8&outer_trade_no=290fb6c1ea12b18a440878eb2e3c8fa4&trade_amount=0.01&notify_id=1a93f8d717264710a0d4083c79e06e47&inner_trade_no=101154017595371632120
+
+>>>>>>>>>
+[2018-10-22 10:55:11]
+>>>>>>>>>
+     1.0Notify
+            notify_time=20181022105511&sign_type=RSA&notify_type=trade_status_sync&trade_status=TRADE_CLOSED&version=1.0&extension=%7B%22subMerchantNo%22%3A%22200002180100%22%7D&sign=G0Hit6niK11eddTAfhXr5kqVAALgNIdIsPA4p68nIAzQmVhac0YElh5NK5DZ69nxnWJUctlJNaP1ch56anKWfCM%2BjW56jsMRKPSAgdcm4dVuP%2BaMEhh19mOnouz9HaviimHDQkbE%2BaYrG3bgtA48Vv3fomtOQkis3V1MTlsEyKk%3D&gmt_create=20181022105303&_input_charset=UTF-8&outer_trade_no=acd8bf16daef1011f8432e2e7ab1ef68&trade_amount=0.01&notify_id=bc4409a0ed9d4aa3a08e2a806fbc8e14&inner_trade_no=101154017586688109234
+
+>>>>>>>>>
+[2018-10-22 11:04:11]
+>>>>>>>>>
+     1.0Notify
+            notify_time=20181022110411&sign_type=RSA&notify_type=trade_status_sync&gmt_payment=20181022103930&trade_status=TRADE_SUCCESS&version=1.0&sign=pb%2B1LZd8VLxUSbwkHKZMUl7t0zHjUAzbF2xrYjp%2BCejDrMNzw76yLugXDvkHYvbAdYWiyhqBdJTSv5cqxIgHOZ4nmcMBp1wv9F92b9Fd2auXlehNOiDGj82n8YI%2FpbtfTe59Mdr5Xs69LqnnQhefDkvpDLuxDGAd1JkrjxCZANM%3D&extension=%7B%22apiResultMsg%22%3A%22%E4%BA%A4%E6%98%93%E6%88%90%E5%8A%9F%22%2C%22apiResultcode%22%3A%22S%22%2C%22channelTransTime%22%3A%221398669900310%22%2C%22instPayNo%22%3A%22NI101364501102213090729%22%2C%22settlementId%22%3A%2220181022103914PP90494402%22%2C%22unityResultMessage%22%3A%22%E4%BA%A4%E6%98%93%E6%88%90%E5%8A%9F%22%7D&gmt_create=20181022103930&_input_charset=UTF-8&outer_trade_no=290fb6c1ea12b18a440878eb2e3c8fa4&trade_amount=0.01&notify_id=1a93f8d717264710a0d4083c79e06e47&inner_trade_no=101154017595371632120
+
+>>>>>>>>>
+[2018-10-22 11:05:13]
+>>>>>>>>>
+     1.0Notify
+            notify_time=20181022110513&sign_type=RSA&notify_type=trade_status_sync&trade_status=TRADE_CLOSED&version=1.0&extension=%7B%22subMerchantNo%22%3A%22200002180100%22%7D&sign=xstP7HTym2t3n44Pk4JVvn9CpMcXnR48OrcB5gSFxh4ruxNEzcce1A12OXakHL63wzzDEAvGibeS2KrCw39dPlH%2BqxK4rrrRw1gdvGamKKL83T%2FKB8RzoRzcADXGAEvQws%2FVTFSwVBsH4r3PyTwUbES%2BA3jPnzN%2BIW2QRovepco%3D&gmt_create=20181022105303&_input_charset=UTF-8&outer_trade_no=acd8bf16daef1011f8432e2e7ab1ef68&trade_amount=0.01&notify_id=bc4409a0ed9d4aa3a08e2a806fbc8e14&inner_trade_no=101154017586688109234
+
+>>>>>>>>>
+[2018-10-22 11:16:11]
+>>>>>>>>>
+     1.0Notify
+            notify_time=20181022111611&sign_type=RSA&notify_type=trade_status_sync&trade_status=TRADE_CLOSED&version=1.0&extension=%7B%22subMerchantNo%22%3A%22200002180100%22%7D&sign=FGJgAibBDsI5VyLP%2BjijGCB8dyCzKPQugpjQn6%2FrJpWM8qX3zhA3KhXxaY8pVwAnvsPJYzTqwUrI2nWQgrnQRdXmrLdiyzIN60nuWsc1baqtZZV0SliU9saCflJ4c6mGJEvlBYQQO762DFKxwg08bk4ZBU6uxlYPZ98qY8GVLLE%3D&gmt_create=20181022105303&_input_charset=UTF-8&outer_trade_no=acd8bf16daef1011f8432e2e7ab1ef68&trade_amount=0.01&notify_id=bc4409a0ed9d4aa3a08e2a806fbc8e14&inner_trade_no=101154017586688109234
+
+>>>>>>>>>
+[2018-10-22 12:05:11]
+>>>>>>>>>
+     1.0Notify
+            notify_time=20181022120511&sign_type=RSA&notify_type=trade_status_sync&gmt_payment=20181022103930&trade_status=TRADE_SUCCESS&version=1.0&sign=VH%2FzdcWZkOlqaT8hf4%2Ff0HLsqx96om0l8tL0hXoNS599ZWimjoRMyUTmp803KuJNbcBpRcPZNFwMbTiF%2BNu9Z4bZ7a8zipFplgaMxJh%2B4BDDzhVO3XWlHJcIvEFPMZttWAOIICSSVszjyHMppxIjA3YHKv%2Bnr901FXaMd%2FPHn7M%3D&extension=%7B%22apiResultMsg%22%3A%22%E4%BA%A4%E6%98%93%E6%88%90%E5%8A%9F%22%2C%22apiResultcode%22%3A%22S%22%2C%22channelTransTime%22%3A%221398669900310%22%2C%22instPayNo%22%3A%22NI101364501102213090729%22%2C%22settlementId%22%3A%2220181022103914PP90494402%22%2C%22unityResultMessage%22%3A%22%E4%BA%A4%E6%98%93%E6%88%90%E5%8A%9F%22%7D&gmt_create=20181022103930&_input_charset=UTF-8&outer_trade_no=290fb6c1ea12b18a440878eb2e3c8fa4&trade_amount=0.01&notify_id=1a93f8d717264710a0d4083c79e06e47&inner_trade_no=101154017595371632120
+
+>>>>>>>>>
+[2018-10-22 12:17:11]
+>>>>>>>>>
+     1.0Notify
+            notify_time=20181022121711&sign_type=RSA&notify_type=trade_status_sync&trade_status=TRADE_CLOSED&version=1.0&extension=%7B%22subMerchantNo%22%3A%22200002180100%22%7D&sign=CRpPtTLl8SXpNAFXqMlUdoXWDLPgamTRQ5X6lrJEVNW%2FCCk%2F%2Fp%2BY7ITFXrXRKV%2B9L7Uj2kr9psYCDjXFytPFoxrgxMlb87GwDjIIm%2Bh7Hpq7WyV2cIQOyglk%2FTDHePFl29S91OtsHcU%2BT%2FIedhdhopiBrRi701%2Fm5w06iVc81jU%3D&gmt_create=20181022105303&_input_charset=UTF-8&outer_trade_no=acd8bf16daef1011f8432e2e7ab1ef68&trade_amount=0.01&notify_id=bc4409a0ed9d4aa3a08e2a806fbc8e14&inner_trade_no=101154017586688109234
+
+>>>>>>>>>
+[2018-10-22 14:06:13]
+>>>>>>>>>
+     1.0Notify
+            notify_time=20181022140613&sign_type=RSA&notify_type=trade_status_sync&gmt_payment=20181022103930&trade_status=TRADE_SUCCESS&version=1.0&sign=YAjYpLenOddPlbnjwnBYaC58XLLSLDE4G4Bfh7FkpPbhsEfsXKF5R1CEXlLLHm%2BmjyPODvlaHMUVRulJO2uakc1%2Fx9oD2GB9MmBYRuDeguWewuLRY%2FKCeAJc5Bl7wdmPt8HYMNzydyxWC%2BXjwzxiPkwg%2B1n%2FWoHwK1UOoiVJy6Y%3D&extension=%7B%22apiResultMsg%22%3A%22%E4%BA%A4%E6%98%93%E6%88%90%E5%8A%9F%22%2C%22apiResultcode%22%3A%22S%22%2C%22channelTransTime%22%3A%221398669900310%22%2C%22instPayNo%22%3A%22NI101364501102213090729%22%2C%22settlementId%22%3A%2220181022103914PP90494402%22%2C%22unityResultMessage%22%3A%22%E4%BA%A4%E6%98%93%E6%88%90%E5%8A%9F%22%7D&gmt_create=20181022103930&_input_charset=UTF-8&outer_trade_no=290fb6c1ea12b18a440878eb2e3c8fa4&trade_amount=0.01&notify_id=1a93f8d717264710a0d4083c79e06e47&inner_trade_no=101154017595371632120
+
+>>>>>>>>>
+[2018-10-22 14:27:11]
+>>>>>>>>>
+     1.0Notify
+            notify_time=20181022142711&sign_type=RSA&notify_type=trade_status_sync&trade_status=TRADE_CLOSED&version=1.0&extension=%7B%22subMerchantNo%22%3A%22200002180100%22%7D&sign=H8Bsb6N09S8R1xQ0GUEf%2BUfmtmMy6UxSaNeHIxv%2F2zyqdRdgkq%2BR%2FxE9CzLNTCqBoEZXQeexHqnss1Nz%2BnzyN6zHHOpyrjVZgJHOi5rwnGGf7hDSXQE36TuZA9nkWO4dSmREMq2wbdMVuUIqhRKrUMNOOmhC%2Bji65CMOBKDN3OA%3D&gmt_create=20181022105303&_input_charset=UTF-8&outer_trade_no=acd8bf16daef1011f8432e2e7ab1ef68&trade_amount=0.01&notify_id=bc4409a0ed9d4aa3a08e2a806fbc8e14&inner_trade_no=101154017586688109234
+
+>>>>>>>>>
+[2018-10-22 20:07:11]
+>>>>>>>>>
+     1.0Notify
+            notify_time=20181022200711&sign_type=RSA&notify_type=trade_status_sync&gmt_payment=20181022103930&trade_status=TRADE_SUCCESS&version=1.0&sign=JvGddO9En4i8BvUq5tlBG8KiYi2nCyiUSQ2AkEQa%2FSA5zLt%2BnrieDVBino8GPxvZOwKHeWx2x1ZB1%2BWqSuv%2BNZnUU7qLGAapeTvHxISpOw2v3vCzsuruvhu04CwhBIIlesrUgsmW8TDy%2FHBYg6FDop1uh%2BTzHV1lmGqfRvAs9MQ%3D&extension=%7B%22apiResultMsg%22%3A%22%E4%BA%A4%E6%98%93%E6%88%90%E5%8A%9F%22%2C%22apiResultcode%22%3A%22S%22%2C%22channelTransTime%22%3A%221398669900310%22%2C%22instPayNo%22%3A%22NI101364501102213090729%22%2C%22settlementId%22%3A%2220181022103914PP90494402%22%2C%22unityResultMessage%22%3A%22%E4%BA%A4%E6%98%93%E6%88%90%E5%8A%9F%22%7D&gmt_create=20181022103930&_input_charset=UTF-8&outer_trade_no=290fb6c1ea12b18a440878eb2e3c8fa4&trade_amount=0.01&notify_id=1a93f8d717264710a0d4083c79e06e47&inner_trade_no=101154017595371632120
+
+>>>>>>>>>
+[2018-10-22 20:28:11]
+>>>>>>>>>
+     1.0Notify
+            notify_time=20181022202811&sign_type=RSA&notify_type=trade_status_sync&trade_status=TRADE_CLOSED&version=1.0&extension=%7B%22subMerchantNo%22%3A%22200002180100%22%7D&sign=tQEWHdReV9%2BATM5MGsNPNttXSlFoixlpRtKqRaPGGL%2BD%2FAyudL2oWrnxcEVI7ypHfUJJBgFCpAHV%2FumiC2GCkn1sjOnunXMlmWlmX6Ss%2F1jei6kKrtOetolg7IQcnpy92sz3mpXzwbekkPdeFRNsETsW08N8DdMmnhApICg6Z2E%3D&gmt_create=20181022105303&_input_charset=UTF-8&outer_trade_no=acd8bf16daef1011f8432e2e7ab1ef68&trade_amount=0.01&notify_id=bc4409a0ed9d4aa3a08e2a806fbc8e14&inner_trade_no=101154017586688109234
+
+>>>>>>>>>

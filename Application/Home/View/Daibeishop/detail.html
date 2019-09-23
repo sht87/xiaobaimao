@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+        <link type="text/css" href="__PUBLIC__/css/jquery-weui.min.css" rel="stylesheet">
+		<link type="text/css" href="__PUBLIC__/css/weui.min.css"  rel="stylesheet"/>
+        <link type="text/css" href="__PUBLIC__/css/app.css"  rel="stylesheet"/>
+		<title><?php echo $SEOTitle?$SEOTitle:$GLOBALS['BasicInfo']['SEOTitle'];?></title>
+		<style type="text/css">
+			.dt1{
+				overflow: hidden;
+				text-overflow:ellipsis;
+				white-space: nowrap;
+			}
+		</style>
+	</head>
+	<body> 
+		<header class="header" >
+			<a href="<?php echo U('daibeishop/platweb').'?uid='.$uid;?>" class="go_left"></a> 
+			<span class="header_til">申请{$infos.Name}</span>  
+		</header> 
+		<div class="" style="height: 50px;"></div> 
+	  <!---->   
+	  <!---->
+	    <section style="padding: 10px 0;">
+		 	<dl class="dl_hot">
+		 		<a href="javascript:void(0);" class="k_logo"><img src="{$infos.Logurl}" style="width:58px; height: 58px;"></a>
+		 		<dd>{$infos.Name}<img src="__PUBLIC__/images/icon_hot.png" style="width: 45px;"></dd>
+		 		<dt class="dt1">{$infos.Intro}</dt>
+		 		<dt class="dt2">{$infos.AppNumbs}申请</dt>
+		 	</dl>
+		 	<ul class="ul_index2">
+           	 <li>
+           	 	<span class="sp_1">额度(元)</span>
+           	 	<span class="sp_2">{$infos.eduname}</span>
+           	 </li>
+           	 <li>
+           	 	<span class="sp_1">借款期限</span>
+           	 	<span class="sp_2">{$infos.Jkdays}</span>
+           	 </li>
+           	 <li style="border-right: none;">
+           	 	<span class="sp_1">日费率</span>
+           	 	<span class="sp_2" style="color:#fb8828;">{$infos.DayfeeRate}</span>
+           	 </li>
+           	 <div class="clear"></div>
+          </ul>
+          <section class="borderbt8"></section>
+		 </section>
+		 
+		 <!---->
+	 <?php if($infos['Downconts']):?>
+		  <section class="hd"></section> 
+		 <section class="comt_til comt_til1" style="padding: 10px 0;">
+			<span> 下款攻略</span>
+		 </section>
+		 <ul class="jie_ul">
+		  <?php foreach($infos['Downconts'] as $k=>$v):?>
+		 	<li><a href="javascript:void(0);">{$v}</a></li>     
+		  <?php endforeach;?>
+		 </ul>
+		 <!--end-->
+	 <?php endif;?>
+		 
+		 <!---->
+		  <section class="comt_til comt_til1" style="padding: 10px 0;">
+			<span> 申请条件</span>
+		 </section>
+		 <section class="shen_box">
+		  <?php foreach($conditArr as $k=>$v):?>
+		 	<a href="javascript:void(0);">{$v}</a>
+		  <?php endforeach;?>
+		 	<div class="clear"></div>
+		 </section>
+		 <!--end-->
+		 
+		 <!---->
+		  <section class="comt_til comt_til1" style="padding: 10px 0;">
+			<span> 所需材料</span>
+		 </section>
+		 <section class="shen_box">
+		   <?php foreach($needArr as $k=>$v):?>
+		 	 <a href="javascript:void(0);">{$v}</a>
+		   <?php endforeach;?>
+		 	 <div class="clear"></div>
+		 </section>
+		 <!--end-->
+		 
+		 <section class="center">
+		 	 <p><img src="__PUBLIC__/images/shen_1.png" style="width: 91px;"> </p>
+		 	 <p style="color:#666666;"> 申请人数<label style="color:#5461eb; font-size: 18px;">{$infos.AppNumbs}</p>
+		 </section>
+		 <!---->
+		 
+		 <!-- <section style="padding: 30px 0;">
+				<a href="<?php echo U('Daibeishop/checkinfo').'?uid='.$uid.'&id='.$infos['ID'];?>" class="btn_want" style="width: 90%;">身份验证</a>
+		 </section> -->
+		 <section style="padding: 30px 0;">
+				<a href="javascript:void(0);" class="btn_want btn_tanyan" style="width: 90%;">身份验证</a>
+		 </section>
+		 <!--申请弹窗 start-->
+		 <div class="tan_alap"></div>
+		 <div class="tan_chuang" style="border-radius: 20px">
+			 <form id="checkform">
+			 	<section style="margin:10px 0;"> 
+			 	   <div class="btn_close">
+				 	 <img src="__PUBLIC__/images/btn_close.png"  />
+				   </div>
+			 	   <div class="more_chan"><a href="<?php echo U('Daibeishop/platweb').'?uid='.$uid;?>" style="color:#fff;">更多借款产品</a></div>
+			  	   <section class="weui_reg" style="margin-top: 40px;"> 
+				 		<input class="weui-input  icon_regUser2 " type="text" name="TrueName" id="TrueName" placeholder="姓名" style="padding-left:40;  ">
+				 	</section>
+				 	
+				 	<section class="weui_reg"> 
+				 		<input class="weui-input  icon_regUser " type="text" name="Mobile" id="Mobile" placeholder="手机号" style="padding-left:40;  ">
+				 	</section>
+
+				 	<section class="weui_reg"> 
+				 		<input class="weui-input  icon_zhenfen " type="text" name="IDCard" id="IDCard" placeholder="身份证号" style="padding-left:40;  ">
+				 	</section> 
+				 	
+				 	<input type="hidden" name="uid" value="{$uid}"/>
+		            <input type="hidden" name="id" value="{$infos['ID']}"/>
+		            <input type="hidden" name="agreeid" value="1"/>
+				 	<section style="padding: 20px 0;">
+						<a href="javascript:void(0);" onclick="fnsubmit();" class="btn_want btn_tiji" style="width: 90%;">提交申请</a>
+					 </section>
+				 	
+				 </section> 
+			  </form> 
+		 </div>
+		 <!--申请弹窗 end-->
+		 <script src="__PUBLIC__/js/jquery-2.1.4.js"></script>
+		 <script src="__PUBLIC__/js/jquery-weui.min.js"></script> 
+		 <script src="__PUBLIC__/js/common.js"></script> 
+	</body>
+</html>
+<script type="text/javascript" src="__PUBLIC__/artDialog/artDialog.min.js"></script>
+<link rel="stylesheet" href="__PUBLIC__/artDialog/skins/aero.css">
+<script type="text/javascript" src="__PUBLIC__/artDialog/iframeTools.js"></script>
+<script type="text/javascript">
+	$('.btn_tanyan').click(function(){
+		 $('.tan_alap').show();
+		 $('.tan_chuang').show(); 
+	  })
+	
+	$('.btn_tiji').click(function(){
+		 $('.tan_alap').hide();
+		 $('.tan_chuang').hide();
+						 
+	  })
+
+	$('.btn_close').click(function(){
+		 $('.tan_alap').hide();
+		 $('.tan_chuang').hide();			 
+	 })
+
+	function fnsubmit(){
+		if(!$('#TrueName').val()){
+			$.alert("请输入姓名");return false;
+		}
+		if(!$('#Mobile').val()){
+			$.alert("请输入手机号码");return false;
+		}
+		if(!$('#IDCard').val()){
+			$.alert("请输入身份证号");return false;
+		}
+		//校验
+		$.ajax({
+	        type:"POST",
+	        url:"<?php echo U('Daibeishop/ajaxcheckinfo');?>",
+	        data:$('#checkform').serialize(),
+	        dataType: "json",
+	        success:function(data){
+	          if(data.result==0){
+	             $.alert(data.message);return false;
+	          }
+	          if(data.result==1){
+	             //校验成功
+	             $.alert(data.message, "", function() {
+				   //点击确认后的回调函数
+				   window.location.href = data.des;
+				 });
+	             // XB.Success(data.message, function () {
+              //       window.location.href = data.des;
+              //    });
+	          }
+	        }
+      });
+	}
+</script>

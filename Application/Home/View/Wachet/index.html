@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html style="background: #f0f0f0; ">
+<head>
+	<meta charset="utf-8">
+	<title>微信支付
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="__PUBLIC__/css/mui.min.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/app.css">
+	<script type="text/javascript">
+        //调用微信JS api 支付
+        function jsApiCall()
+        {
+            WeixinJSBridge.invoke(
+                'getBrandWCPayRequest',
+                {$jsApiParameters},
+                function(res){
+                    if(res.err_msg == "get_brand_wcpay_request:ok" ) {
+                        window.location.href = "/Member/index";
+                    }
+                    WeixinJSBridge.log(res.err_msg);
+                    //alert(res.err_code+res.err_desc+res.err_msg);
+                }
+            );
+            $('div.pay_w').hide();
+        }
+
+        function callpay()
+        {
+            if (typeof WeixinJSBridge == "undefined"){
+                if( document.addEventListener ){
+                    document.addEventListener('WeixinJSBridgeReady', jsApiCall, false);
+                }else if (document.attachEvent){
+                    document.attachEvent('WeixinJSBridgeReady', jsApiCall);
+                    document.attachEvent('onWeixinJSBridgeReady', jsApiCall);
+                }
+            }else{
+                jsApiCall();
+            }
+        }
+
+    </script>
+</head>
+<body style="background: #f0f0f0; ">
+<div class="box">
+	<header class="header">
+		<a href="javascript:history.go(-1)"  class="go_left"></a>
+		<div class="header_til " style="color: #fff;">微信支付</div>
+		<div class="clear"></div>
+	</header>
+
+	<section style="margin-top: 50px;padding: 10px 20px; color: #2c2c2c;">
+
+		<section class="borderbt8"></section>
+	    <section class="order_pay1">
+	        <span class="fl">订单金额</span>
+	        <span class="fr" style="color: #cf8345;">¥<label style="font-size: 19px;">{$order.OrderAmount}</label></span>
+	        <div class="clear"></div>
+	    </section>
+
+	    <div align="center">
+	        <div class="pay_w" style="padding-top: 20px;">正在为你加载微信支付</div>
+	        <div style="padding-top: 18px;"><a href="javascript:callpay()" style="color: #cf8345; font-size: 14px;">未支付，点击重新支付</a></div>
+	    </div>
+
+	    <div class="clear"></div>
+	    <div class="" ></div>
+
+
+	</section>
+
+</div>
+
+<section style="height: 70px;"></section>
+<script type="text/javascript" src="__PUBLIC__/js/mui.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+<script type="text/javascript">
+ $(function() {
+        callpay();
+    })
+</script>
+</body>
+
+</html>

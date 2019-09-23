@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+        <link type="text/css" href="__PUBLIC__/css/jquery-weui.min.css" rel="stylesheet">
+		<link type="text/css" href="__PUBLIC__/css/weui.min.css"  rel="stylesheet"/>
+        <link type="text/css" href="__PUBLIC__/css/app.css"  rel="stylesheet"/>
+		<title></title>
+		<style>
+			.weui-navbar:after{
+				border-bottom: none;
+			}
+			.weui-navbar__item:after{
+				
+			}
+			.weui-navbar__item{
+				margin: 10px 0;
+				padding: 0;
+			}
+			.weui-navbar__item.weui-bar__item--on{
+				color: #5461eb;
+				background:#fff;
+			}
+			 .weui-agree__checkbox:checked:before{
+			 	color: #5461eb;
+			 }
+			 .weui-media-box{
+	     	box-sizing: border-box;
+	     }
+		</style>
+	 
+	</head>
+	<body> 
+		<header class="header" >
+			<a href="javascript:history.go(-1)" class="go_left"></a> 
+			<span class="header_til">借贷产品推广</span>  
+		</header>
+		<section style="padding-top: 42px;">
+			<img src="{$adds.Pic}" style="width: 100%;">
+		</section>     
+		
+		<!---->
+		<section class="hd"></section>
+		<!---->
+		<section class="comt_til comt_til1" style="padding: 10px;">
+			<span  style="border-left: 3px solid #5461eb;"> 产品名称</span>
+		</section>
+		<ul class="ul_zhineng">
+	      	<a href="javascript:void(0);" style="width:<if condition="$iteminfo.Itype eq 1">34%<else />40%</if> ;">
+	      		<img src="{$iteminfo.Logurl}" style="<if condition="$iteminfo.Itype eq 1"> height: 50px;<else /> height: 70px;</if>">
+
+	      		<p class="p2">{$iteminfo.Name}</p>
+	      	</a>
+	      	<div class="clear"></div>
+		</ul>
+
+		<!--参与方式-->
+		<section class="comt_til comt_til1" style="padding: 10px;">
+			<span  style="border-left: 3px solid #5461eb;"> 参与方式</span>
+		</section>
+		<section>
+			<ul class="jie_ul">
+				<volist name="PartTypeArr" id="vo">
+					<li><a href="javascript:void(0);">{$vo}</a></li>
+				</volist>
+			</ul>
+		</section>
+	     <!--参与方式 END-->
+
+
+	     <!--工资介绍-->
+	     <section class="hd"></section>
+	     <section class="comt_til comt_til1" style="padding: 10px;">
+			<span  style="border-left: 3px solid #5461eb;"> 工资介绍</span>
+		 </section>
+		<section>
+			<ul class="jie_ul">
+				<volist name="FeeIntroArr" id="vo">
+					<li><a href="javascript:void(0);">{$vo}</a></li>
+				</volist>
+			</ul>
+			<ul class="ul_new29" style="padding: 10px 15px 0 10px;">
+				<li>
+					<div class="hd_zhan"></div>
+					<div class="hd_zhan"></div>
+					<div class="hd_zhan">{$iteminfo['StepBase']|number_format=2}{$iteminfo['StepUnit']}</div>
+					<div class="hd_zhan redB">{$iteminfo['StepBase']|number_format=2}{$iteminfo['StepUnit']}</div>
+					<div >
+						{$StepIntroArr[0]}
+					</div>
+				</li>
+
+				<li>
+					<div class="hd_zhan"></div>
+					<div class="hd_zhan">{$iteminfo['StepBase']+$iteminfo['StepInc1']|number_format=2}{$iteminfo['StepUnit']}</div>
+					<div class="hd_zhan redo">{$iteminfo['StepInc1']|number_format=2}{$iteminfo['StepUnit']}</div>
+					<div class="hd_zhan redB">{$iteminfo['StepBase']|number_format=2}{$iteminfo['StepUnit']}</div>
+					<div class="">
+						{$StepIntroArr[1]}
+					</div>
+				</li>
+				<li>
+					<div class="hd_zhan">{$iteminfo['StepBase']+$iteminfo['StepInc2']|number_format=2}{$iteminfo['StepUnit']}</div>
+					<div class="hd_zhan redo hd_zhan2">{$iteminfo['StepInc2']|number_format=2}{$iteminfo['StepUnit']}</div>
+					<div class="hd_zhan redB">{$iteminfo['StepBase']|number_format=2}{$iteminfo['StepUnit']}</div>
+					<div class="">
+						{$StepIntroArr[2]}
+					</div>
+				</li>
+				<div class="clear"></div>
+			</ul>
+			<ul class="ul_gongzi">
+				<li><span></span>{$iteminfo['BaseFee']}</li>
+				<li><span style="background:#fd9f25;"></span>{$iteminfo['StepFee']}</li>
+			</ul>
+		</section>
+		<!--工资介绍 end-->
+
+
+		<!--结算方式-->
+	      <section class="comt_til " style="padding: 10px 0;">
+			<span> 结算方式</span>
+		 </section>
+		 
+		 <ul class="jie_ul">
+			 <volist name="AccountTypeArr" id="vo">
+				 <li><a href="javascript:void(0);">{$vo}</a></li>
+			 </volist>
+		 </ul>
+	      <!--结算方式 end-->
+	    <?php if($lists):?>  
+	      <!--排行榜--> 
+	       <section class="comt_til" style="padding: 10px;">
+				<span style="border-left: 3px solid #5461eb;"> 排行榜</span>
+				<label style="color:#6f6f6f;">{$dateArr[0]}年{$dateArr[1]}月排行（前十名）</label>
+			</section>
+			<section style="margin-top: 20px;">
+			 <div class="weui-flex tab_til center">
+				  <div class="weui-flex__item" style="width: 10%;">名次 </div>
+				  <div class="weui-flex__item">手机号</div>
+				  <div class="weui-flex__item">放款金额(元)</div> 
+				</div> 
+			</section>
+			 <div class="numberstyle">
+	            <ul>
+	              <?php foreach($lists as $k=>$v):?>
+		             <li  class="weui-flex center"> 
+		             	  <div class="weui-flex__item frist center" style="width: 10%;"><span class="num"></span> </div>
+						  <div class="weui-flex__item">{$v.Mobile}</div>
+						  <div class="weui-flex__item">¥{$v.Money}</div>   
+		             </li>
+	              <?php endforeach;?>
+	             <div class="clear"></div>
+	          </ul>
+	        </div>
+	    <?php endif;?>  
+	 <!--排行榜 end--> 
+	 
+	 <!--立即生成二维码-->
+	 <section style="padding: 30px 0;">
+	    <a href="<?php echo U('Member/tgposter').'?id='.$iteminfo['ID'];?>" class="btn_want" style="width: 90%;">立即生成二维码</a>
+	 </section>
+	 <!--立即生成二维码 end-->
+	  <!--页面悬浮-->
+		<div class="">
+		  <?php if($GLOBALS['BasicInfo']['Ytstatus']=='3'):?>
+			<a href="{$GLOBALS['BasicInfo']['YtanUrl']}"  class="suspend_icon1"><img src="{$GLOBALS['BasicInfo']['YtanImg']}"></a>
+		  <?php endif;?>
+			<a href="<?php echo U('Index/index');?>" class="suspend_icon2"><img src="__PUBLIC__/images/suspend_icon2.png"></a>
+			<a href="javascript:history.go(-1)" class="suspend_icon3"><img src="__PUBLIC__/images/suspend_icon3.png"></a>
+		</div>
+		<!--页面悬浮 end--> 
+		   <script src="__PUBLIC__/js/jquery-2.1.4.js"></script>
+			<script src="__PUBLIC__/js/jquery-weui.min.js"></script> 
+			<script src="__PUBLIC__/js/common.js"></script> 
+		    
+	</body>
+</html>

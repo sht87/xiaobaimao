@@ -1,0 +1,85 @@
+		<include file="Layout/header"/>
+		<header class="header"  >
+			<a href="javascript:window.history.go(-1)" class="go_left"></a>
+			 <span class="header_til">{$title}</span>
+		</header>  
+      <!---->
+      <div class="weui-cells weui-cells_form" style="margin-top: 50px;">
+		  <form action="#" method="post" id="formf">
+			  <div class="weui-cell">
+				  <div class="weui-cell__hd"><label class="weui-label">原密码</label></div>
+				  <div class="weui-cell__bd">
+					  <input class="weui-input" type="password" id="oldpwd" name="oldpwd" placeholder="请输入原密码">
+				  </div>
+			  </div>
+			  <div class="weui-cell">
+				  <div class="weui-cell__hd"><label class="weui-label">新密码</label></div>
+				  <div class="weui-cell__bd">
+					  <input class="weui-input" type="password" id="newpwd" name="newpwd" placeholder="请输入新密码">
+				  </div>
+			  </div>
+			  <div class="weui-cell">
+				  <div class="weui-cell__hd"><label class="weui-label">确认密码</label></div>
+				  <div class="weui-cell__bd">
+					  <input class="weui-input" type="password" id="surepwd" name="surepwd" placeholder="请再次输入新密码">
+				  </div>
+			  </div>
+		  </form>
+	    </div>
+
+		<section style="padding: 30px 0;">
+			<a href="javascript:void(0);" class="btn_want" onclick="savepass()" style="width: 90%;">提交</a>
+		</section>
+		
+	    <!----> 
+		<include file="Layout/footer"/>
+		<script type="text/javascript">
+			function savepass() {
+				var oldpwd=$.trim($('#oldpwd').val());
+				var newpwd=$.trim($('#newpwd').val());
+				var surepwd=$.trim($('#surepwd').val());
+
+				if(!oldpwd){
+					$.alert("请输入原密码");
+					return false;
+				}
+				if(!oldpwd.match(/^[a-zA-Z]\w{5,15}$/)){
+					$.alert("原密码格式不正确");
+					return false;
+				}
+				if(!newpwd){
+					$.alert("请输入新密码");
+					return false;
+				}
+				if(!newpwd.match(/^[a-zA-Z]\w{5,15}$/)){
+					$.alert("密码必须是以英文字母开头，6-16位与数字的组合");
+					return false;
+				}
+				if(!surepwd){
+					$.alert("请再次输入新密码");
+					return false;
+				}
+				if(newpwd!=surepwd){
+					$.alert("确认密码与新密码不一致");
+					return false;
+				}
+				$.post("{:U('Member/savePwd')}",$('#formf').serialize(),function (data) {
+					if(data.result==1){
+						$.modal({
+							title: "",
+							text: "保存成功，请重新登录",
+							buttons: [
+								{
+									text: "确定", onClick: function () {
+										window.location.href="{:U('Login/index')}";
+								}
+								},
+							]
+
+						});
+					}else{
+						$.alert(data.message);
+					}
+				},'json');
+			}
+		</script>

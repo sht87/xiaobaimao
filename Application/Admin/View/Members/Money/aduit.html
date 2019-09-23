@@ -1,0 +1,63 @@
+<include file="Shared:Header" />
+<body class="Bodybg">
+<form id="FF" class="easyui-form" method="post" data-options="novalidate:true">
+    <table width="100%" border="0" cellpadding="3" cellspacing="0" class="EditTable">
+        <thead>
+        <tr>
+            <td colspan="2">说明：带<span class="Red">*</span>必填；</td>
+        </tr>
+        </thead>
+        <tbody>
+		<tr>
+			<td align="right">提现金额</td>
+			<td>￥{$res.Money}元</td>
+		</tr>
+		<tr>
+			<td width='100' align="right"><span class="Red">*</span>结果：</td>
+			<td>
+				<select id="IsAduit" name="IsAduit" class="easyui-combobox" data-options="required:true,editable:false"></select>
+			</td>
+		</tr>
+		<tr class="trBatch" style="display:none;">
+			<td align="right"><span class="Red">*</span>交易单号：</td>
+			<td>
+				<input type="text" id="Batch" name="Batch" class="easyui-textbox"  >
+			</td>
+		</tr>
+		<tr class="trRemark" style="display:none;">
+			<td align="right"><span class="Red">*</span>审核备注：</td>
+			<td>
+				<textarea rows="6" name="Remark" cols="40">{$res['Remark']}</textarea>
+			</td>
+		</tr>
+        </tbody>
+    </table>
+    <!-- @Html.AntiForgeryToken() -->
+    <input type="hidden" id="ID" name="ID" value="{$res['ID']}"/>
+</form>
+</body>
+<include file="Shared:Footer" />
+
+<script type="text/javascript">
+	$(function () {
+		$('#FF').form('load', '__URL__/loadajax?ID='+"{$res['ID']}"+'&_=' + Math.random() + '');
+
+		$('#IsAduit').combobox({
+			data:[{id:0,text:'--请选择--'},{id:1,text:'提交审核中'},{id:2,text:'审核通过'},{id:3,text:'审核未通过'}],
+			valueField:'id',
+			textField:'text',
+			onChange:function(val){
+				if(val==2){
+					$('.trBatch').css('display','');
+				}else{
+					$('.trBatch').css('display','none');
+				}
+				if(val==2 ||val==3){
+					$('.trRemark').css('display','');
+				}else{
+					$('.trRemark').css('display','none');
+				}
+			}
+		});
+	});
+</script>

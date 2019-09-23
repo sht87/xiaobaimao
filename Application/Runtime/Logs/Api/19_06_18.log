@@ -1,0 +1,70 @@
+[ 2019-06-18T23:57:47+08:00 ] 112.254.20.119 /api.php/Home/home/version?client=ios&package=com.xbm.app&upload=upload&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `xb_version` [ RunTime:0.0005s ]
+SQL: SELECT `ID`,`Ver`,`isForced`,`Url`,`Updates` FROM `xb_version` WHERE `Client` = 'ios' AND `IsDefault` = 1 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-06-18T23:57:53+08:00 ] 112.254.20.119 /api.php/center/member/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+
+[ 2019-06-18T23:57:53+08:00 ] 112.254.20.119 /api.php/Home/home/version?client=ios&package=com.xbm.app&upload=upload&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `xb_version` [ RunTime:0.0005s ]
+SQL: SELECT `ID`,`Ver`,`isForced`,`Url`,`Updates` FROM `xb_version` WHERE `Client` = 'ios' AND `IsDefault` = 1 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-06-18T23:57:58+08:00 ] 112.254.20.119 /api.php/core/tool/getcode?Mobile=18363857597&client=ios&code=1234&package=com.xbm.app&type=5&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_code` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xb_code` WHERE `Name` = '18363857597' ORDER BY UpdateTime Asc LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `xb_mem_info` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xb_mem_info` WHERE `Mobile` = '18363857597' AND `IsDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: DELETE FROM `xb_code` WHERE `ID` = 82080 [ RunTime:0.0039s ]
+SQL: INSERT INTO `xb_code` (`Name`,`Code`,`UpdateTime`) VALUES ('18363857597','8905','2019-06-18 23:57:58') [ RunTime:0.0029s ]
+
+[ 2019-06-18T23:58:06+08:00 ] 112.254.20.119 /api.php/core/tool/timestamp?client=ios&package=com.xbm.app&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+NOTIC: [8] Undefined index: 1.0.6 /www/wwwroot/xbm.mashangbang.top/Application/Api/Common/function.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xb_sys_timestamp` [ RunTime:0.0004s ]
+SQL: INSERT INTO `xb_sys_timestamp` (`Time`,`Val`) VALUES ('1560873486','6842fdfd06114251b8a9177ff17724') [ RunTime:0.0052s ]
+
+[ 2019-06-18T23:58:06+08:00 ] 112.254.20.119 /api.php/center/member/login?DeviceToken=eb9a4f12f962a03c042f1c15766f267605a4fe3d4d882d0d6d2227c5fe005d5d&client=ios&code=8905&loginType=1&mobile=18363857597&package=com.xbm.app&ticks=6842fdfd06114251b8a9177ff17724&ticksid=37911&token=ec94a53c147e8b44707a097b922a2a6b0bfd5c51c5d75e1147f37d5e092c&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+
+[ 2019-06-18T23:58:40+08:00 ] 112.9.22.233 /api.php/center/member/login?DeviceToken=eb9a4f12f962a03c042f1c15766f267605a4fe3d4d882d0d6d2227c5fe005d5d&client=ios&code=8905&loginType=1&mobile=18363857597&package=com.xbm.app&ticks=6842fdfd06114251b8a9177ff17724&ticksid=37911&token=ec94a53c147e8b44707a097b922a2a6b0bfd5c51c5d75e1147f37d5e092c&ver=1.0.6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+
